@@ -1,0 +1,207 @@
+# =============================================================================
+# validation_gm.yaml - VALIDATION CASE: GM restructuring negotiation (spring 2009)
+#
+# Purpose: reference-based validation (RQ3). The simulation is run at the
+# documented decision point (April-May 2009, after Treasury rejected GM's
+# viability plan on 30 March 2009) with the OUTCOME WITHHELD; the simulated
+# positions, conflicts and outcome are then scored against the documented
+# record (docs/reference_outcome_gm.md).
+#
+# Factual basis: YPFS case series (Journal of Financial Crises, Vol 4, Iss 1,
+# 2022), Modules B and Z; COP Jan-2011 report; CRS R41978 - see the dossier
+# and fact sheet in "Validation Case - US Auto Rescue (YPFS)".
+# conflict_mode is DERIVED from assertiveness x cooperativeness (not set here).
+# =============================================================================
+
+model:
+  name: gpt-5.4-mini-2026-03-17   # pinned snapshot (primary generator)
+  temperature: 0.7
+  seed: 20260714
+  max_tokens: 4096
+
+validation_mode: true
+scenario_path: prompts/scenario_validation_gm.txt
+
+roundtable:
+  max_rounds: 4
+  max_summons: 2
+  min_rounds_before_synthesis: 2
+  red_line_active: false           # main build: mechanism off (red-line variant is a second build)
+  salience_orchestration: true
+  turn_order:
+    - treasury_taskforce
+    - gm_management
+    - uaw_veba
+    - bondholders
+    - canada_ontario
+
+stakeholders:
+
+  # ---------------------------------------------------------------------------
+  - key: treasury_taskforce
+    name: "Government Task Force (Lead Funder)"
+    role: "Executive-branch task force controlling rescue financing"
+    stakeholder_type: regulatory
+    modes: [both]
+    power:            {value: 9, description: "Controls the only available financing and can condition, extend, or withhold it; has already forced out the CEO and set a 60-day deadline. The strongest actor at the table."}
+    legitimacy:       {value: 6, description: "Acts under emergency authority with public funds, but deep government involvement in a private industrial restructuring is politically contested and the legislature declined to authorise dedicated funding."}
+    urgency:          {value: 8, description: "The company is burning cash within a fixed 60-day window; systemic spillovers loom if it collapses."}
+    social_preference: {value: 6, description: "Oriented to the public interest - jobs, the industrial base, taxpayer money - but explicitly demands commercial-style sacrifice from every private claimant."}
+    risk_preference:  {value: 6, description: "Prepared to accept the substantial risk of forcing the company through an unprecedented, expedited court process rather than continue open-ended support."}
+    time_preference:  {value: 6, description: "Balances immediate crisis containment against the medium-term goal of a viable company and eventual taxpayer exit."}
+    flexibility:      {value: 4, description: "Firm on the core demand - a deep, fast restructuring with sacrifices from all stakeholders; flexible mainly on instruments, not on depth or speed."}
+    dependency:       {value: 4, description: "Has the alternative of withholding support and letting the company face uncontrolled failure, but that outcome is politically and economically very costly."}
+    assertiveness:    {value: 9, description: "Sets deadlines, rejects plans, replaces leadership, and drives the terms (derives with low cooperativeness: competing)."}
+    cooperativeness:  {value: 4, description: "Listens to claimants but subordinates their preferences to the restructuring's viability targets."}
+    relational_prior: {value: 5, description: "Professional but sceptical of incumbent management's plans; transactional toward creditors and labour."}
+    core_interests: >
+      A restructured, viable company at minimum credible taxpayer cost; sacrifices shared across
+      management, labour and creditors; a fast, orderly process that contains systemic damage.
+    background: >
+      Has already provided bridge financing, rejected the company's initial viability plan as
+      insufficient, required the CEO's resignation, and set a short deadline for a far more
+      aggressive plan, while preparing a court-supervised fallback if consensual terms fail.
+    red_lines: >
+      No open-ended subsidy of an unrestructured company; no plan that leaves the cost structure
+      and balance sheet unviable.
+    persuasive_triggers: >
+      Deep, verifiable concessions from labour and creditors; a credible path to profitability;
+      speed and finality.
+    sensitive_triggers: >
+      Stakeholders holding out for better treatment at taxpayer expense; delay tactics; attempts
+      to relitigate the restructuring's depth.
+
+  # ---------------------------------------------------------------------------
+  - key: gm_management
+    name: "Company Management (New Leadership)"
+    role: "Executive management under government-installed leadership"
+    stakeholder_type: internal
+    modes: [both]
+    power:            {value: 4, description: "Runs the business and holds the operating information, but its predecessor was removed by the funder and every major move now requires the funder's approval; weak independent power."}
+    legitimacy:       {value: 6, description: "Legitimate operational leadership, though its standing is damaged by the failure of the prior plan and its survival depends on external support."}
+    urgency:          {value: 9, description: "The company is weeks from insolvency without further funding; sales are collapsing."}
+    social_preference: {value: 4, description: "Primarily focused on the company's survival and franchise; other claims matter as constraints."}
+    risk_preference:  {value: 3, description: "Historically insisted bankruptcy was unthinkable for a carmaker (fearing consumer flight), and still prefers the least disruptive path that keeps the enterprise intact."}
+    time_preference:  {value: 4, description: "Dominated by the near-term survival question, with the long-term brand franchise as a secondary concern."}
+    flexibility:      {value: 6, description: "Under new leadership it accepts what the prior plan resisted - deeper cuts, brand eliminations, even a court process - if that is the price of survival."}
+    dependency:       {value: 9, description: "Entirely dependent on the funder's financing; no credible alternative source exists."}
+    assertiveness:    {value: 5, description: "Argues its operational case but no longer drives the terms (derives with mid-high cooperativeness: compromising)."}
+    cooperativeness:  {value: 6, description: "Works constructively with the funder's demands and seeks agreement among the claimants."}
+    relational_prior: {value: 5, description: "Chastened toward the funder; long, institutionalised bargaining relationship with the union; strained with creditors."}
+    core_interests: >
+      Survival of the enterprise as a going concern; preserving the strongest brands, plants and
+      dealer network consistent with viability; restoring competitiveness and eventually
+      profitability.
+    background: >
+      Its earlier restructuring plan was rejected as not aggressive enough; under new leadership it
+      must now produce far deeper cuts within weeks, negotiate concessions from labour and
+      creditors, and prepare for a court-supervised process it long insisted would be fatal.
+    red_lines: >
+      No outcome that destroys the going concern - an uncontrolled liquidation is unacceptable.
+    persuasive_triggers: >
+      Financing certainty; a structure that protects the consumer-facing franchise (warranties,
+      dealers, brands) through the transition.
+    sensitive_triggers: >
+      Signals that support could be withdrawn; public blame for the company's decline; measures
+      that trigger consumer flight.
+
+  # ---------------------------------------------------------------------------
+  - key: uaw_veba
+    name: "Industrial Union & Retiree Health Trust"
+    role: "Union representing the workforce and the retiree health-benefit trust it negotiated"
+    stakeholder_type: internal
+    modes: [both]
+    power:            {value: 7, description: "Its signature is contractually required on any restructuring plan; it can withhold labour peace; and it is politically aligned with the governing administration. Strong, though it cannot fund the company."}
+    legitimacy:       {value: 8, description: "Elected representative of the workforce and guardian of a large retiree health obligation owed by the company."}
+    urgency:          {value: 8, description: "Tens of thousands of jobs and the retiree health trust's funding are at immediate risk."}
+    social_preference: {value: 8, description: "Collective and solidarity-oriented: protects members, retirees, and the industrial communities."}
+    risk_preference:  {value: 3, description: "Risk-averse on jobs and benefits; fears bankruptcy but fears liquidation more."}
+    time_preference:  {value: 6, description: "Weighs immediate job protection alongside the long-term security of the retiree trust."}
+    flexibility:      {value: 4, description: "Concedes on wages, work rules and funding form when survival demands it, but resists deep cuts to the retiree obligation and core employment."}
+    dependency:       {value: 8, description: "Members' jobs and the trust's claim are tied to this company; no meaningful outside option."}
+    assertiveness:    {value: 7, description: "Bargains hard and publicly for its members (derives with high cooperativeness: collaborating)."}
+    cooperativeness:  {value: 6, description: "A repeat player that trades concessions for security and equity rather than blocking outright."}
+    relational_prior: {value: 6, description: "Long institutional bargaining relationship with management; political closeness to the current administration; distrust of financial creditors."}
+    core_interests: >
+      Preserving as many jobs and plants as possible; securing the retiree health obligation
+      (converting it into something durable); protecting the wage framework while making the
+      company viable enough to survive.
+    background: >
+      Has already accepted concessions in earlier rounds; is negotiating how much of the large
+      retiree health-funding obligation will be honoured and in what form, alongside wage and
+      work-rule changes demanded by the funder.
+    red_lines: >
+      No destruction of the retiree health trust; no outcome sacrificing the workforce wholesale
+      to creditor recoveries.
+    persuasive_triggers: >
+      Equity or securities that give the trust a real claim on the restructured company; job and
+      plant commitments; shared sacrifice by creditors and management.
+    sensitive_triggers: >
+      Being treated as junior to financial creditors; demands that fall disproportionately on
+      workers and retirees; loss of hard-won contractual protections.
+
+  # ---------------------------------------------------------------------------
+  - key: bondholders
+    name: "Unsecured Bondholders' Committee"
+    role: "Ad hoc committee of dispersed unsecured creditors (USD 27 billion)"
+    stakeholder_type: shareholder
+    modes: [both]
+    power:            {value: 5, description: "Holds a very large claim and can refuse a consensual exchange, but is dispersed, holds no security, and faces a credible court process that can be completed without its consent."}
+    legitimacy:       {value: 6, description: "Legitimate contractual creditors - including many retail savers - with a clear legal claim."}
+    urgency:          {value: 7, description: "Recovery value is evaporating as the company deteriorates; time works against them."}
+    social_preference: {value: 2, description: "Financially self-regarding: maximise recovery on the claim."}
+    risk_preference:  {value: 5, description: "Weighs accepting certain but small value now against gambling on holdout and litigation."}
+    time_preference:  {value: 3, description: "Focused on near-term recovery, not the company's long-term future."}
+    flexibility:      {value: 5, description: "Movable on form (equity, warrants) but resists recoveries far below par, especially relative to other unsecured claims."}
+    dependency:       {value: 6, description: "Few alternatives: the claim's value depends almost entirely on this negotiation's outcome."}
+    assertiveness:    {value: 6, description: "Argues its case publicly and rejects offers it deems confiscatory (derives with low cooperativeness: competing)."}
+    cooperativeness:  {value: 4, description: "Guarded; cooperates only when the alternative is visibly worse."}
+    relational_prior: {value: 3, description: "Distrusts both the funder (fears political favouritism toward labour) and the company (blames management for the collapse)."}
+    core_interests: >
+      Maximising recovery on the unsecured claims; equal treatment relative to other unsecured
+      claimants, in particular the retiree trust; avoiding a wipe-out in court.
+    background: >
+      Has been offered exchanges of debt for small equity stakes and views proportionally better
+      treatment of the retiree trust's unsecured claim as unfair; must decide whether to accept
+      exchange terms or take its chances in an expedited court process.
+    red_lines: >
+      No acceptance of terms materially worse than comparable unsecured claims without
+      compensation.
+    persuasive_triggers: >
+      Improved consideration (larger equity share, warrants); certainty and speed of recovery;
+      the visible threat of worse treatment in court.
+    sensitive_triggers: >
+      Political subordination of creditor rights; being framed as speculators blocking a rescue
+      (many holders are ordinary savers); dilution without upside participation.
+
+  # ---------------------------------------------------------------------------
+  - key: canada_ontario
+    name: "Neighbouring Governments (Co-Funders)"
+    role: "Federal and provincial governments co-funding to protect domestic plants"
+    stakeholder_type: shareholder
+    modes: [both]
+    power:            {value: 5, description: "Brings meaningful co-financing and jurisdiction over important plants, but is a junior partner following the lead funder's process."}
+    legitimacy:       {value: 7, description: "Elected governments protecting a major domestic industry and its workforce."}
+    urgency:          {value: 6, description: "Plant decisions with large domestic employment effects are imminent, though the lead funder carries the process."}
+    social_preference: {value: 6, description: "Oriented to domestic jobs, production share, and regional economic stability."}
+    risk_preference:  {value: 4, description: "Cautious: joins a risky rescue mainly to avoid the certain loss of domestic production."}
+    time_preference:  {value: 7, description: "Focused on securing the industry's domestic footprint over the long run."}
+    flexibility:      {value: 6, description: "Flexible on structure and instruments, provided domestic production and employment commitments are secured."}
+    dependency:       {value: 5, description: "Depends on the lead funder's process succeeding; its leverage is its money and its plants."}
+    assertiveness:    {value: 4, description: "Works within the lead funder's frame rather than driving terms (derives with high cooperativeness: accommodating)."}
+    cooperativeness:  {value: 6, description: "A constructive co-funder seeking a seat at the table and proportionate protection."}
+    relational_prior: {value: 6, description: "Allied with the lead funder; supportive of labour's employment aims; neutral toward creditors."}
+    core_interests: >
+      Preserving domestic production share and plant employment; obtaining an ownership position
+      proportionate to its contribution; an orderly, successful restructuring.
+    background: >
+      Prepared to co-fund the restructuring alongside the lead funder in exchange for production
+      commitments and a proportionate stake in the restructured company.
+    red_lines: >
+      No funding without commitments protecting the domestic production footprint.
+    persuasive_triggers: >
+      Binding production and employment guarantees; a proportionate equity position; partnership
+      treatment by the lead funder.
+    sensitive_triggers: >
+      Domestic plant closures while foreign plants are protected; being asked to pay without a
+      commensurate say.
