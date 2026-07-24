@@ -83,7 +83,9 @@ def main():
     if idx.exists():
         rows = list(csv.DictReader(open(idx, encoding="utf-8")))
         for r in rows:
-            e = evals.get(r.get("run_id", ""), {})
+            e = evals.get(r.get("run_id", ""))
+            if e is None:
+                continue                      # not evaluated in this invocation: leave row untouched
             for c in EVAL_COLS:
                 r[c] = e.get(c, "")
         fields = list(rows[0].keys())
