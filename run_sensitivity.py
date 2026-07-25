@@ -43,12 +43,24 @@ LAYERS = {
 LAYER_LOW, LAYER_HIGH = 1, 10
 
 # Per-parameter drill-down sweeps (used within an influential layer).
+# Screen-informed HYBRID drill-down (post layer screen): live layers in depth +
+# one null-confirmation probe per inert layer. Sweep targets selected by the
+# legibility-informed rule: calibration must let BOTH poles cross verbal bands.
 PARAM_SWEEPS = {
-    "management.power":         ("management", "power", 3, 9),
-    "management.assertiveness": ("management", "assertiveness", 3, 9),
-    "works.flexibility":        ("works_council", "flexibility", 2, 8),
-    "igmetall.flexibility":     ("ig_metall", "flexibility", 2, 8),
-    "saxony.power":             ("lower_saxony", "power", 3, 9),
+    # live layer: position
+    "mgmt.flexibility":     ("management", "flexibility", 2, 8),
+    "igmetall.flexibility": ("ig_metall", "flexibility", 2, 8),
+    "mgmt.dependency":      ("management", "dependency", 2, 8),
+    "works.dependency":     ("works_council", "dependency", 2, 8),
+    # live layer: interaction
+    "saxony.assertiveness": ("lower_saxony", "assertiveness", 3, 9),
+    "works.cooperativeness":("works_council", "cooperativeness", 2, 8),
+    # null-confirmation probes
+    "owners.social_pref":   ("owners", "social_preference", 2, 8),
+    "investors.power":      ("investors", "power", 3, 9),
+    # belief-layer probe (the one framework element outside the layer screen):
+    # management's relational prior, calibrated 4 (mid band) -> 2/8 cross both bands
+    "mgmt.relational_prior": ("management", "relational_prior", 2, 8),
 }
 RED_LINE_SIGNALS = ["red line", "cannot concede", "will not concede", "non-negotiable", "under no circumstances", "will not abandon"]
 

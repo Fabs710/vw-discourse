@@ -22,7 +22,7 @@ LAYERS=["layer_salience_low","layer_salience_high","layer_motivation_low","layer
 ORDERS=["order_reversed","order_random"]
 
 def base_id(run_id):
-    for suf in ("_r2","_r3","_r4","_r5"):
+    for suf in ("_r1","_r2","_r3","_r4","_r5"):
         if run_id.endswith(suf): return run_id[:-3]
     return run_id
 
@@ -50,9 +50,11 @@ def main():
         for m in ALL: d[m]=agg([fnum(r.get(m)) for r in rs])
         ag=[r.get("agreement","") for r in rs if r.get("agreement","")!=""]
         d["agreement_rate"]={"true": sum(1 for x in ag if x=="True"), "n": len(ag)}
-        # format-consistent content: embedded-call runs only (_r2.._r5)
+        # format-consistent content: embedded-call runs only. The screen batch's
+        # UNSUFFIXED first repetitions were content-scored with the isolated call
+        # (excluded); every _rN run - including the drill's _r1 - is embedded.
         d["content_fmt"]=agg([fnum(r.get("dqi_justif_content")) for r in rs
-                              if r["run_id"].endswith(("_r2","_r3","_r4","_r5"))])
+                              if r["run_id"].endswith(("_r1","_r2","_r3","_r4","_r5"))])
         # floor: token-share spread from evaluation.json
         spreads=[]
         for r in rs:
@@ -73,9 +75,13 @@ def main():
         diffs=[abs(cond[o][m]["mean"]-mm["mean"]) for o in ORDERS if cond.get(o,{}).get(m)]
         noise[m]=round(max(diffs),3) if diffs else None
 
-    # layer effects vs baseline, flagged against noise band + baseline spread
+    # condition effects vs baseline, flagged against noise band + baseline spread.
+    # Generic over ALL non-baseline, non-order conditions, so the parameter
+    # drill-down (param_* / <stakeholder>_<param>_low|high) is picked up
+    # automatically alongside the layer screen; LAYERS is kept for ordering.
     effects=[]
-    for lay in LAYERS:
+    ordered = LAYERS + sorted(c for c in cond if c not in LAYERS and c != "main" and c not in ORDERS)
+    for lay in ordered:
         if lay not in cond: continue
         for m in QUALITY+OUTCOME:
             c=cond[lay].get(m); b=cond.get("main",{}).get(m)
@@ -108,7 +114,8 @@ def main():
     L.append("## Condition means (mean / sd / n)"); L.append("")
     hdr="| condition | "+" | ".join(m.replace("dqi_","") for m in QUALITY+OUTCOME)+" | agree | rounds | content_fmt | floor_spread |"
     L.append(hdr); L.append("|"+"---|"*(len(QUALITY+OUTCOME)+5))
-    order_out=["main"]+LAYERS+ORDERS
+    drill=sorted(c for c in cond if c!="main" and c not in LAYERS and c not in ORDERS)
+    order_out=["main"]+LAYERS+drill+ORDERS
     for cid in order_out:
         if cid not in cond: continue
         cells=[]
