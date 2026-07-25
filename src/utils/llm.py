@@ -118,7 +118,7 @@ class LLMClient:
         return self._anthropic
 
     # ── unified call (with retry on transient failures) ─────────────────────
-    MAX_RETRIES = 4
+    MAX_RETRIES = 8
     def call(self, messages: list[dict], label: str = "") -> LLMResponse:
         """messages: [{"role": "system"|"user"|"assistant", "content": str}, ...]
 
@@ -140,7 +140,7 @@ class LLMClient:
                 last_err = e
                 if attempt >= self.MAX_RETRIES:
                     break
-                wait = 2 ** (attempt + 1)      # 2, 4, 8, 16 s
+                wait = min(2 ** (attempt + 1), 60)   # 2,4,8,16,32,60,60,60 s (rate-limit windows need patience)
                 print("  [retry %d/%d] %s: %s - waiting %ds" %
                       (attempt + 1, self.MAX_RETRIES, label or "call",
                        type(e).__name__, wait), flush=True)

@@ -120,6 +120,28 @@ def run_plan(conditions, client=None, repeat=1, into=None, skip_first=False):
     scen_abs = str((base_root / _load_raw()["scenario_path"]).resolve())
     rows = []
     for cond in conditions:
+        if into:
+            rf_check = root / cond["id"]
+            if (rf_check / "run_summary.json").exists():
+                summ = json.loads((rf_check / "run_summary.json").read_text(encoding="utf-8"))
+                rows.append({
+                    "run_id": cond["id"], "condition": cond["label"], "order": cond.get("order", "salience"),
+                    "rounds": summ["rounds_completed"], "convergence": summ["convergence_status"],
+                    "experts": len(summ["experts_summoned"]), "tokens": summ["total_tokens"],
+                    "in_tokens": summ.get("input_tokens", 0), "out_tokens": summ.get("output_tokens", 0),
+                    "cost_usd": summ.get("estimated_cost_usd"), "truncated": summ.get("truncated_calls", 0),
+                    **_proxies(str(rf_check)),
+                    "agreement": "", "position_move": "",
+                    "dqi_justif_level": "", "dqi_justif_content": "", "dqi_respect": "",
+                    "dqi_constructive": "", "dqi_individuation": "", "kappa_mean": "",
+                    "judge_notes": "", "run_folder": str(rf_check),
+                })
+                print("  skip (already completed, row reconstructed): %s" % cond["id"], flush=True)
+                continue
+            if rf_check.exists():                      # partial from a crashed attempt
+                import shutil
+                shutil.rmtree(rf_check)
+                print("  wiped partial folder, re-running: %s" % cond["id"], flush=True)
         raw = copy.deepcopy(_load_raw())
         raw["scenario_path"] = scen_abs
         if cond.get("override"):
@@ -164,9 +186,13 @@ def run_plan(conditions, client=None, repeat=1, into=None, skip_first=False):
         print("  done: %-22s rounds=%s tokens=%s" % (cond["id"], summ["rounds_completed"], summ["total_tokens"]))
     root.mkdir(parents=True, exist_ok=True)
     idx = root / "index.csv"
+    if not rows:
+        print("nothing to run (all conditions already completed)"); return str(root), rows
     if into and idx.exists():                     # extend the existing index
         old = list(csv.DictReader(open(idx, encoding="utf-8")))
         fields = list(old[0].keys())
+        seen = {o["run_id"] for o in old}
+        rows = [rw for rw in rows if rw["run_id"] not in seen]
         for r in rows:
             for k in fields:
                 r.setdefault(k, "")
