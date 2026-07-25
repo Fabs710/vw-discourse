@@ -139,9 +139,31 @@ def run_plan(conditions, client=None, repeat=1, into=None, skip_first=False):
                 print("  skip (already completed, row reconstructed): %s" % cond["id"], flush=True)
                 continue
             if rf_check.exists():                      # partial from a crashed attempt
-                import shutil
-                shutil.rmtree(rf_check)
-                print("  wiped partial folder, re-running: %s" % cond["id"], flush=True)
+                import shutil, os, stat, time
+                def _unlock(fn, path, exc):            # clear read-only attributes and retry
+                    os.chmod(path, stat.S_IWRITE)
+                    fn(path)
+                wiped = False
+                for attempt in range(3):
+                    try:
+                        shutil.rmtree(rf_check, onerror=_unlock)
+                        wiped = True
+                        break
+                    except PermissionError:
+                        time.sleep(2 * (attempt + 1))  # give OneDrive a moment to release handles
+                if not wiped:
+                    parked = rf_check.with_name(rf_check.name + "_partial_parked")
+                    try:
+                        rf_check.rename(parked)
+                        print("  could not delete locked partial %s - parked as %s, re-running fresh"
+                              % (cond["id"], parked.name), flush=True)
+                    except PermissionError:
+                        raise SystemExit(
+                            "Partial folder %s is locked by another process (OneDrive/Explorer). "
+                            "Close Explorer windows or pause OneDrive syncing, delete the folder "
+                            "manually, then rerun this command." % rf_check)
+                else:
+                    print("  wiped partial folder, re-running: %s" % cond["id"], flush=True)
         raw = copy.deepcopy(_load_raw())
         raw["scenario_path"] = scen_abs
         if cond.get("override"):
