@@ -10,7 +10,7 @@ analysis.json + analysis.md next to index.csv.
 
 Usage:  python analyze_sensitivity.py data/sensitivity_20260723_000046
 """
-import json, csv, argparse, statistics as st
+import json, csv, argparse, re, statistics as st
 from pathlib import Path
 from collections import defaultdict
 
@@ -20,11 +20,20 @@ ALL=QUALITY+OUTCOME+STRUCT
 LAYERS=["layer_salience_low","layer_salience_high","layer_motivation_low","layer_motivation_high",
         "layer_position_low","layer_position_high","layer_interaction_low","layer_interaction_high"]
 ORDERS=["order_reversed","order_random"]
+# Calibrated-configuration controls: no parameter is perturbed, so they must not
+# appear as "effects". main_recheck is the carried-along baseline replicate.
+CONTROLS=["main","main_recheck"]+ORDERS
+
+_REP = re.compile(r"_r\d+$")
 
 def base_id(run_id):
-    for suf in ("_r1","_r2","_r3","_r4","_r5"):
-        if run_id.endswith(suf): return run_id[:-3]
-    return run_id
+    """Strip a repetition suffix of ANY size.
+
+    Previously this matched a hard-coded list _r1.._r5, so a sixth repetition
+    formed its own singleton condition and silently corrupted the aggregation.
+    The confirmatory top-up runs to _r6, and a future one may run further.
+    """
+    return _REP.sub("", run_id)
 
 def fnum(v):
     try: return float(v)
@@ -54,7 +63,7 @@ def main():
         # UNSUFFIXED first repetitions were content-scored with the isolated call
         # (excluded); every _rN run - including the drill's _r1 - is embedded.
         d["content_fmt"]=agg([fnum(r.get("dqi_justif_content")) for r in rs
-                              if r["run_id"].endswith(("_r1","_r2","_r3","_r4","_r5"))])
+                              if _REP.search(r["run_id"])])
         # floor: token-share spread from evaluation.json
         spreads=[]
         for r in rs:
@@ -80,7 +89,7 @@ def main():
     # drill-down (param_* / <stakeholder>_<param>_low|high) is picked up
     # automatically alongside the layer screen; LAYERS is kept for ordering.
     effects=[]
-    ordered = LAYERS + sorted(c for c in cond if c not in LAYERS and c != "main" and c not in ORDERS)
+    ordered = LAYERS + sorted(c for c in cond if c not in LAYERS and c not in CONTROLS)
     for lay in ordered:
         if lay not in cond: continue
         for m in QUALITY+OUTCOME:
@@ -114,8 +123,8 @@ def main():
     L.append("## Condition means (mean / sd / n)"); L.append("")
     hdr="| condition | "+" | ".join(m.replace("dqi_","") for m in QUALITY+OUTCOME)+" | agree | rounds | content_fmt | floor_spread |"
     L.append(hdr); L.append("|"+"---|"*(len(QUALITY+OUTCOME)+5))
-    drill=sorted(c for c in cond if c!="main" and c not in LAYERS and c not in ORDERS)
-    order_out=["main"]+LAYERS+drill+ORDERS
+    drill=sorted(c for c in cond if c not in LAYERS and c not in CONTROLS)
+    order_out=["main"]+LAYERS+drill+[c for c in ("main_recheck",) if c in cond]+ORDERS
     for cid in order_out:
         if cid not in cond: continue
         cells=[]

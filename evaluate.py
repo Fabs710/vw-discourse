@@ -15,15 +15,25 @@ from pathlib import Path
 from src.evaluation.core import evaluate_run, StubJudge
 
 EVAL_COLS = ["agreement", "position_move", "dqi_justif_level", "dqi_justif_content",
-             "dqi_respect", "dqi_constructive", "dqi_individuation", "kappa_mean"]
+             "dqi_respect", "dqi_constructive", "dqi_individuation", "kappa_mean",
+             "eval_cost_usd", "eval_calls"]
 
 def build_judges(spec, dry):
-    if dry:
-        return [StubJudge("stubA", 0), StubJudge("stubB", 1)]
-    from src.utils.llm import LLMClient
+    """One client per model in `spec`. In dry mode, one STUB per model.
+
+    --dry used to return two stubs regardless of what --judges asked for, which made a
+    dry run of a single-judge audit pass silently exercise the two-judge path instead:
+    the rehearsal produced twice the calls and a populated kappa block, neither of which
+    the live command would produce. A dry run has to have the same shape as the real one
+    or it is not a rehearsal.
+    """
     models = [m.strip() for m in spec.split(",") if m.strip()]
+    if dry:
+        return [StubJudge("stub_%s" % m, i) for i, m in enumerate(models)] or [StubJudge("stubA", 0)]
+    from src.utils.llm import LLMClient
     if len(models) < 2:
-        print("WARNING: fewer than two judge families; inter-judge agreement will be unavailable.")
+        print("NOTE: a single judge - inter-judge agreement is unavailable by construction. "
+              "Correct for an independent audit pass; wrong for the reported jury.")
     return [LLMClient(m, 0.0, 20260714, 4096) for m in models]
 
 def run_folders(target):
@@ -44,6 +54,8 @@ def flatten(prof):
         "dqi_constructive": d.get("constructive_politics"),
         "dqi_individuation": d.get("individuation"),
         "kappa_mean": k.get("mean"),
+        "eval_cost_usd": (prof.get("judging_cost") or {}).get("cost_usd"),
+        "eval_calls": (prof.get("judging_cost") or {}).get("total_calls"),
     }
 
 def main():
@@ -53,9 +65,31 @@ def main():
     ap.add_argument("--judges", default="gpt-5.4-mini,claude-sonnet-5", help="comma list of judge models")
     ap.add_argument("--reference", default="", help="path to a reference-outcome file: score fidelity claims instead of the DQI")
     ap.add_argument("--skip-evaluated", action="store_true", help="skip run folders that already contain evaluation.json")
+    ap.add_argument("--suffix", default="",
+                    help="write evaluation<SUFFIX>.json instead of evaluation.json and DO NOT touch index.csv. "
+                         "Used for the judge test-retest: re-scoring the same transcripts must never overwrite "
+                         "the scores the results are built on.")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="score at most N run folders. NOTE: this takes a contiguous alphabetical "
+                         "PREFIX, so on a batch sorted by condition name it draws every run from the "
+                         "first one or two conditions. Fine for a smoke test, wrong for a sample "
+                         "meant to represent the corpus - use --only for that.")
+    ap.add_argument("--only", default="",
+                    help="comma list of run ids to score, e.g. main,order_random_r2,belief_high_r4. "
+                         "Use this to draw a stratified test-retest sample across conditions rather "
+                         "than an alphabetical prefix.")
     a = ap.parse_args()
     judges = build_judges(a.judges, a.dry)
     folders = run_folders(a.target)
+    if a.only:
+        want = [s.strip() for s in a.only.split(",") if s.strip()]
+        by_name = {f.name: f for f in folders}
+        missing = [w for w in want if w not in by_name]
+        if missing:
+            raise SystemExit("run id(s) not found in %s: %s" % (a.target, ", ".join(missing)))
+        folders = [by_name[w] for w in want]
+    if a.limit:
+        folders = folders[:a.limit]
     if a.skip_evaluated:
         before = len(folders)
         folders = [f for f in folders if not (f / "evaluation.json").exists()]
@@ -66,20 +100,37 @@ def main():
         for rf in folders:
             out = score_validation_run(str(rf), judges, a.reference)
             prof = " ".join("%s=%s" % (k, v) for k, v in out["profile"].items())
-            print("  %-24s fidelity=%s kappa=%s\n    %s" % (rf.name, out["fidelity_mean"], out["inter_judge_kappa"], prof))
+            jc = (out.get("judging_cost") or {}).get("cost_usd")
+            print("  %-24s fidelity=%s kappa=%s cost=%s\n    %s" % (
+                rf.name, out["fidelity_mean"], out["inter_judge_kappa"],
+                ("$%.4f" % jc) if jc is not None else "n/a", prof))
         return
     print("Evaluating %d run(s) with %d judge(s)%s" % (len(folders), len(judges), " [DRY]" if a.dry else ""))
     evals = {}
+    batch_cost, batch_calls, unpriced = 0.0, 0, False
     for rf in folders:
         prof = evaluate_run(str(rf), judges)
-        (rf / "evaluation.json").write_text(json.dumps(prof, indent=2, ensure_ascii=False), encoding="utf-8")
+        jc = prof.get("judging_cost") or {}
+        batch_calls += jc.get("total_calls") or 0
+        if jc.get("cost_usd") is None:
+            unpriced = True
+        else:
+            batch_cost += jc["cost_usd"]
+        (rf / ("evaluation%s.json" % a.suffix)).write_text(json.dumps(prof, indent=2, ensure_ascii=False),
+                                                           encoding="utf-8")
         evals[rf.name] = flatten(prof)
-        print("  %-22s agreement=%s pos_move=%s dqi[justif=%s respect=%s constr=%s indiv=%s] kappa=%s" % (
+        print("  %-22s agreement=%s pos_move=%s dqi[justif=%s respect=%s constr=%s indiv=%s] kappa=%s $%s (run total $%.2f)" % (
             rf.name, prof["outcome"]["agreement"], prof["outcome"]["position_move_mean"],
             prof["dqi"]["justification_level"], prof["dqi"]["respect"],
             prof["dqi"]["constructive_politics"], prof["dqi"]["individuation"],
-            prof.get("inter_judge_kappa", {}).get("mean")))
+            prof.get("inter_judge_kappa", {}).get("mean"),
+            ("%.4f" % jc["cost_usd"]) if jc.get("cost_usd") is not None else "n/a", batch_cost))
+    print("judging cost: %s over %d calls" % (
+        ("unpriced model present - see evaluation.json" if unpriced else "$%.2f" % batch_cost), batch_calls))
     idx = Path(a.target) / "index.csv"
+    if a.suffix:
+        print("suffix mode: index.csv left untouched (scores written to evaluation%s.json)" % a.suffix)
+        return
     if idx.exists():
         rows = list(csv.DictReader(open(idx, encoding="utf-8")))
         for r in rows:

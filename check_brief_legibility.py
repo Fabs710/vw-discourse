@@ -81,11 +81,22 @@ def main():
     Path("data/brief_legibility.json").write_text(json.dumps(rows,indent=2),encoding="utf-8")
     # summary stats
     def spearman(x,y):
-        n=len(x)
-        rx=sorted(range(n),key=lambda i:x[i]); ry=sorted(range(n),key=lambda i:y[i])
-        r1=[0]*n; r2=[0]*n
-        for r,i in enumerate(rx): r1[i]=r
-        for r,i in enumerate(ry): r2[i]=r
+        """Spearman rho with MID-RANK (tie-corrected) ranking.
+
+        The slider values are heavily tied - every layer-extreme variant sets the
+        same value for all six stakeholders - so ranking by raw sort order would
+        assign tied values arbitrary distinct ranks and make rho depend on input
+        ordering. Averaging ranks within tie groups is the standard definition."""
+        def ranks(v):
+            order=sorted(range(len(v)),key=lambda i:v[i]); r=[0.0]*len(v); i=0
+            while i<len(order):
+                j=i
+                while j+1<len(order) and v[order[j+1]]==v[order[i]]: j+=1
+                avg=(i+j)/2.0+1
+                for k in range(i,j+1): r[order[k]]=avg
+                i=j+1
+            return r
+        n=len(x); r1=ranks(x); r2=ranks(y)
         mx=sum(r1)/n; my=sum(r2)/n
         num=sum((r1[i]-mx)*(r2[i]-my) for i in range(n))
         den=(sum((r1[i]-mx)**2 for i in range(n))*sum((r2[i]-my)**2 for i in range(n)))**0.5

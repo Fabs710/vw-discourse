@@ -24,7 +24,7 @@ Usage:
     python run_sensitivity.py --only main,layer      # subsets: main, layer, param, order, or ids
 """
 from __future__ import annotations
-import csv, json, copy, random, datetime, argparse
+import csv, json, copy, random, datetime, argparse, re
 from pathlib import Path
 import yaml
 from src.utils.config_loader import load_config
@@ -62,6 +62,56 @@ PARAM_SWEEPS = {
     # management's relational prior, calibrated 4 (mid band) -> 2/8 cross both bands
     "mgmt.relational_prior": ("management", "relational_prior", 2, 8),
 }
+# --------------------------------------------------------------------------- #
+# All-stakeholder, single-parameter sweeps  (the rung between the layer screen
+# and the per-stakeholder drill-down).
+#
+#   layer screen : all parameters of a layer, all stakeholders, extreme poles 1/10
+#   THIS         : ONE parameter, all stakeholders, one descriptor band down/up
+#   drill-down   : ONE parameter, ONE stakeholder, band-crossing moderate poles
+#
+# The manipulation is a BAND SHIFT rather than a fixed value, because the brief
+# renders bands, not numbers (Section 5.5): moving every stakeholder to the same
+# number would leave some briefs unchanged and move others by two bands. Shifting
+# each stakeholder one band guarantees that every brief that CAN change does, by
+# exactly one step. A stakeholder already in the extreme band cannot move and is
+# reported as unmoved rather than silently left in.
+_BUCKETS = (("low", 1, 3), ("medium", 4, 6), ("high", 7, 10))
+_BAND_ORDER = ["low", "medium", "high"]
+_BAND_REP = {"low": 2, "medium": 5, "high": 8}       # representative value per band
+
+# Selected on measured admissibility (see --check-bands), not by preference:
+# these are the parameters for which the largest number of stakeholders can move
+# in both directions. Coverage: position x2, interaction x1, belief x1, motivation x1.
+# Salience is deliberately absent: salience = mean(power, legitimacy, urgency), so a
+# uniform band shift moves every stakeholder equally and leaves the orchestration
+# ranking untouched - the same degeneracy already documented for the layer screen.
+PARAM_ALL_SWEEPS = ["flexibility", "dependency", "cooperativeness", "relational_prior", "risk_preference"]
+
+def _band(v):
+    for name, lo, hi in _BUCKETS:
+        if lo <= v <= hi:
+            return name
+    return None
+
+def band_shift_plan(param, direction, raw=None):
+    """Which stakeholders move, and to what, for a one-band shift of `param`."""
+    raw = raw if raw is not None else _load_raw()
+    plan = []
+    for s in raw["stakeholders"]:
+        cell = s.get(param)
+        if not isinstance(cell, dict) or "value" not in cell:
+            continue
+        v = cell["value"]; b = _band(v); i = _BAND_ORDER.index(b)
+        j = i + direction
+        if 0 <= j < len(_BAND_ORDER):
+            plan.append({"key": s["key"], "from": v, "from_band": b,
+                         "to": _BAND_REP[_BAND_ORDER[j]], "to_band": _BAND_ORDER[j], "moved": True})
+        else:
+            plan.append({"key": s["key"], "from": v, "from_band": b,
+                         "to": v, "to_band": b, "moved": False})
+    return plan
+
 RED_LINE_SIGNALS = ["red line", "cannot concede", "will not concede", "non-negotiable", "under no circumstances", "will not abandon"]
 
 def _load_raw():
@@ -88,6 +138,11 @@ def _proxies(run_folder):
 
 def build_conditions(mode="layer", only=None):
     conds = [{"id": "main", "label": "main scenario", "order": "salience"}]
+    # A baseline replicate carried in a LATER batch, kept under its own id so it does
+    # not pool with the original baseline. Comparing main_recheck against main is the
+    # drift test: manipulation type and batch were confounded in the drill-down
+    # because no baseline was carried along, and this is the condition that closes it.
+    conds.append({"id": "main_recheck", "label": "main scenario (batch recheck)", "order": "salience"})
     if mode in ("layer", "all"):
         for layer in LAYERS:
             conds.append({"id": "layer_%s_low" % layer,  "label": "layer %s = %s (extreme-low)"  % (layer, LAYER_LOW),  "order": "salience", "layer_override": (layer, LAYER_LOW)})
@@ -97,6 +152,12 @@ def build_conditions(mode="layer", only=None):
             base = label.replace(".", "_")
             conds.append({"id": base + "_low",  "label": "%s=%s" % (label, lo), "order": "salience", "override": (k, param, lo)})
             conds.append({"id": base + "_high", "label": "%s=%s" % (label, hi), "order": "salience", "override": (k, param, hi)})
+    if mode in ("paramall", "all"):
+        for param in PARAM_ALL_SWEEPS:
+            for direction, tag in ((-1, "low"), (1, "high")):
+                conds.append({"id": "pall_%s_%s" % (param, tag),
+                              "label": "all stakeholders: %s one band %s" % (param, tag),
+                              "order": "salience", "band_shift": (param, direction)})
     conds.append({"id": "order_reversed", "label": "order: reversed", "order": "reversed"})
     conds.append({"id": "order_random",   "label": "order: random",   "order": "random"})
     if only:
@@ -107,25 +168,38 @@ def build_conditions(mode="layer", only=None):
             if "order" in sel and c["order"] in ("reversed", "random"): return True
             if "layer" in sel and c.get("layer_override"): return True
             if "param" in sel and c.get("override"): return True
+            if "paramall" in sel and c.get("band_shift"): return True
             return False
         conds = [c for c in conds if keep(c)]
     return conds
 
-def run_plan(conditions, client=None, repeat=1, into=None, skip_first=False):
+def run_plan(conditions, client=None, repeat=1, into=None, skip_first=False,
+             model=None, rounds=None, tag="", rep_from=1, max_tokens=None):
     """repeat: run each condition N times (ids suffixed _r1.._rN when N>1).
     into: append to an EXISTING batch folder (its index.csv is extended).
-    skip_first: with --into, skip _r1 because the base run already exists."""
+    skip_first: with --into, skip _r1 because the base run already exists.
+    model:  override the generator model for every run in this plan (cross-model check).
+    rounds: override the round cap for every run in this plan (robustness check).
+    tag:    appended to every run id, so an overridden run can never collide with or be
+            silently pooled into a run made under different design constants.
+    rep_from: first repetition number to generate. Needed because the FIRST repetition of
+            the screen-batch conditions is unsuffixed (`main`, not `main_r1`), so a plain
+            --repeat N top-up would not recognise it and would generate a redundant _r1.
+    max_tokens: per-call output cap; raise it for a more verbose generator model."""
     ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     root = Path(into) if into else (Path("data") / ("sensitivity_" + ts))
     expanded = []
     for cond in conditions:
-        for r in range(1, repeat + 1):
+        for r in range(rep_from, repeat + 1):
             if skip_first and r == 1:
                 continue
             c = dict(cond)
+            base = cond["id"] + (("__" + tag) if tag else "")
+            lab = cond["label"] + ((" [%s]" % tag) if tag else "")
             if repeat > 1 or skip_first:
-                c = dict(cond); c["id"] = "%s_r%d" % (cond["id"], r)
-                c["label"] = "%s [rep %d]" % (cond["label"], r)
+                c["id"] = "%s_r%d" % (base, r); c["label"] = "%s [rep %d]" % (lab, r)
+            else:
+                c["id"] = base; c["label"] = lab
             expanded.append(c)
     conditions = expanded
     base_root = Path(BASE_CONFIG).resolve().parent.parent
@@ -178,6 +252,15 @@ def run_plan(conditions, client=None, repeat=1, into=None, skip_first=False):
                     print("  wiped partial folder, re-running: %s" % cond["id"], flush=True)
         raw = copy.deepcopy(_load_raw())
         raw["scenario_path"] = scen_abs
+        if model:
+            raw["model"]["name"] = model
+        if max_tokens:
+            raw["model"]["max_tokens"] = int(max_tokens)
+        if rounds:
+            raw["roundtable"]["max_rounds"] = int(rounds)
+            # keep the floor below the cap so the monitor can still end a run early
+            raw["roundtable"]["min_rounds_before_synthesis"] = min(
+                raw["roundtable"].get("min_rounds_before_synthesis", 2), int(rounds) - 1)
         if cond.get("override"):
             k, param, val = cond["override"]
             _sh(raw, k)[param]["value"] = val
@@ -186,6 +269,11 @@ def run_plan(conditions, client=None, repeat=1, into=None, skip_first=False):
             for s in raw["stakeholders"]:
                 for p in LAYERS[layer]:
                     s[p]["value"] = val
+        if cond.get("band_shift"):
+            param, direction = cond["band_shift"]
+            for step in band_shift_plan(param, direction, raw):
+                if step["moved"]:
+                    _sh(raw, step["key"])[param]["value"] = step["to"]
         om = cond.get("order", "salience")
         if om == "salience":
             raw["roundtable"]["salience_orchestration"] = True
@@ -257,18 +345,61 @@ def _stub_client():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry", action="store_true", help="stubbed LLM, no API")
-    ap.add_argument("--mode", default="layer", choices=["layer", "param", "all"], help="which sweeps to run")
+    ap.add_argument("--mode", default="layer", choices=["layer", "param", "paramall", "all"], help="which sweeps to run")
     ap.add_argument("--only", default="", help="comma list: main, layer, param, order, or run ids")
     ap.add_argument("--repeat", type=int, default=1, help="run each condition N times (ids get _rK suffixes)")
     ap.add_argument("--into", default="", help="append runs to an existing sensitivity_<ts> folder")
     ap.add_argument("--skip-first", action="store_true", help="with --into: skip _r1 (base run already exists)")
+    ap.add_argument("--rep-from", type=int, default=1, dest="rep_from",
+                    help="first repetition to generate; use 2 when topping up a condition whose "
+                         "first repetition is unsuffixed (main, order_reversed, order_random)")
+    ap.add_argument("--max-tokens", type=int, default=0, dest="max_tokens",
+                    help="override the per-call output cap (raise for a more verbose model)")
+    ap.add_argument("--model", default="", help="override the generator model (cross-model comparison)")
+    ap.add_argument("--rounds", type=int, default=0, help="override the round cap (robustness check)")
+    ap.add_argument("--tag", default="", help="suffix for run ids; set automatically for --model/--rounds")
+    ap.add_argument("--check-bands", action="store_true",
+                    help="print the band-shift admissibility table for every parameter and exit (no API calls)")
     a = ap.parse_args()
+    if a.check_bands:
+        raw = _load_raw()
+        print("Band-shift admissibility (bands: low 1-3, medium 4-6, high 7-10)\n")
+        rows = []
+        for param in sorted({p for s_ in raw["stakeholders"] for p in s_
+                             if isinstance(s_.get(p), dict) and "value" in s_[p]}):
+            down = band_shift_plan(param, -1, raw); up = band_shift_plan(param, 1, raw)
+            nd = sum(1 for x in down if x["moved"]); nu = sum(1 for x in up if x["moved"])
+            rows.append((nd + nu, param, nd, nu, down, up))
+        for tot, param, nd, nu, down, up in sorted(rows, reverse=True):
+            mark = " <- selected" if param in PARAM_ALL_SWEEPS else ""
+            print("%-20s admissible %2d/%d   down %d/%d  up %d/%d%s"
+                  % (param, tot, 2 * len(down), nd, len(down), nu, len(up), mark))
+            for d, u in zip(down, up):
+                print("    %-16s calibrated %2d (%s)   low-> %s   high-> %s"
+                      % (d["key"], d["from"], d["from_band"],
+                         ("%d (%s)" % (d["to"], d["to_band"])) if d["moved"] else "unchanged (at floor)",
+                         ("%d (%s)" % (u["to"], u["to_band"])) if u["moved"] else "unchanged (at ceiling)"))
+            print()
+        return
     only = [x.strip() for x in a.only.split(",") if x.strip()] or None
     conds = build_conditions(a.mode, only)
-    n_eff = len(conds) * (a.repeat - (1 if a.skip_first else 0))
+    n_eff = len(conds) * max(0, a.repeat - a.rep_from + 1 - (1 if a.skip_first else 0))
     print("Plan (mode=%s, repeat=%d%s): %d runs" % (a.mode, a.repeat, ", into existing batch" if a.into else "", n_eff))
+    tag = a.tag
+    if not tag:                       # never let an overridden run pool with a standard one
+        bits = []
+        if a.model:
+            bits.append("m-" + re.sub(r"[^a-z0-9]+", "", a.model.lower())[:12])
+        if a.rounds:
+            bits.append("r%d" % a.rounds)
+        tag = "-".join(bits)
+    if a.model or a.rounds:
+        print("  overrides: model=%s rounds=%s -> run ids tagged '__%s'"
+              % (a.model or "(default)", a.rounds or "(default)", tag))
     run_plan(conds, client=_stub_client() if a.dry else None,
-             repeat=a.repeat, into=(a.into or None), skip_first=a.skip_first)
+             repeat=a.repeat, into=(a.into or None), skip_first=a.skip_first,
+             model=(a.model or None), rounds=(a.rounds or None), tag=tag,
+             rep_from=a.rep_from, max_tokens=(a.max_tokens or None))
 
 if __name__ == "__main__":
     main()

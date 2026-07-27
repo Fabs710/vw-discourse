@@ -32,6 +32,24 @@ class MissingAPIKey(RuntimeError):
     """Raised when the required API key is not configured (never retried)."""
 
 
+def _is_permanent(err: Exception) -> bool:
+    """True for failures that no amount of waiting will fix.
+
+    The retry loop exists for dropped connections, rate limits and 5xx. Retrying a
+    rejected key or a misspelled model id just burns 4 minutes of backoff before
+    reporting the same error - which is exactly what happens while configuring a new
+    judge, when typos are most likely. 429 stays transient: rate limits do clear.
+    """
+    if isinstance(err, (ImportError, ModuleNotFoundError)):
+        return True
+    status = getattr(err, "status_code", None) or getattr(getattr(err, "response", None), "status_code", None)
+    if status in (400, 401, 403, 404, 422):
+        return True
+    name = type(err).__name__
+    return name in ("AuthenticationError", "PermissionDeniedError", "NotFoundError",
+                    "BadRequestError", "UnprocessableEntityError")
+
+
 @dataclass
 class LLMResponse:
     text: str
@@ -62,10 +80,65 @@ class LLMResponse:
         }
 
 
+# ── OpenAI-compatible third-party endpoints ──────────────────────────────────
+# Google and the open-weight hosts all expose an OpenAI-compatible chat-completions
+# API. Routing them through the existing OpenAI code path rather than writing a new
+# provider per vendor is deliberate: that path has already executed several thousand
+# scored calls in this study, so a third or fourth judge inherits its retry logic,
+# its token accounting and its finish-reason handling instead of re-implementing
+# them. Only the base URL and the key change.
+#
+# Each entry: prefix -> (provider label, env var holding the key, base URL)
+COMPATIBLE = {
+    # bare vendor names -> that vendor's own OpenAI-compatible endpoint
+    "gemini":  ("google",   "GOOGLE_API_KEY",
+                "https://generativelanguage.googleapis.com/v1beta/openai/"),
+    # bare open-weight names -> whichever host OPENWEIGHT_BASE_URL points at
+    "qwen":    ("openweight", "OPENWEIGHT_API_KEY", None),
+    "llama":   ("openweight", "OPENWEIGHT_API_KEY", None),
+    "deepseek":("openweight", "OPENWEIGHT_API_KEY", None),
+    "mistral": ("openweight", "OPENWEIGHT_API_KEY", None),
+    # any 'vendor/model' slug -> an aggregator (OpenRouter, Together, ...)
+    "_aggregator": ("openweight", "OPENWEIGHT_API_KEY", None),
+}
+
+
+def _compatible_entry(model: str):
+    """Which OpenAI-compatible endpoint, if any, serves this model name.
+
+    Two naming conventions are in play and they route differently:
+
+      'gemini-3.1-pro'         bare name  -> the vendor's own endpoint (Google)
+      'google/gemini-3.1-pro'  slug form  -> an aggregator such as OpenRouter
+
+    A slash means an aggregator by definition: OpenRouter, Together and the rest
+    all namespace their catalogue as vendor/model, and the request goes to THEIR
+    endpoint with THEIR key regardless of who trained the model. Matching only on
+    a bare prefix would have sent 'google/gemini-3.1-pro' down the OpenAI path
+    with an OpenAI key, which fails with an unhelpful authentication error.
+    """
+    m = model.lower()
+    # Google's REST catalogue prefixes every id with 'models/' - that is its own naming,
+    # not an aggregator namespace, and it is exactly the form a user copies out of a
+    # model listing. Strip it before the slash rule, or 'models/gemini-3.6-flash' routes
+    # to the open-weight host and fails on a key it was never meant to use.
+    if m.startswith("models/"):
+        m = m[len("models/"):]
+    if "/" in m:
+        return COMPATIBLE["_aggregator"]
+    for prefix, entry in COMPATIBLE.items():
+        if prefix != "_aggregator" and m.startswith(prefix):
+            return entry
+    return None
+
+
 def detect_provider(model: str) -> str:
     m = model.lower()
     if m.startswith("claude"):
         return "anthropic"
+    entry = _compatible_entry(m)
+    if entry:
+        return entry[0]
     if m.startswith(("gpt", "o1", "o3", "o4", "chatgpt")):
         return "openai"
     return "openai"  # sensible default
@@ -117,6 +190,24 @@ class LLMClient:
             self._anthropic = Anthropic(api_key=key)
         return self._anthropic
 
+    def _compatible_client(self):
+        """OpenAI SDK pointed at a third-party OpenAI-compatible endpoint."""
+        if self._openai is None:
+            from openai import OpenAI
+            entry = _compatible_entry(self.model)
+            _, env_key, base = entry
+            key = os.getenv(env_key)
+            if not key:
+                raise MissingAPIKey("%s not set (see .env.example)." % env_key)
+            base = base or os.getenv("OPENWEIGHT_BASE_URL")
+            if not base:
+                raise MissingAPIKey(
+                    "OPENWEIGHT_BASE_URL not set - give the OpenAI-compatible base URL of "
+                    "whichever host serves %r (Together, Fireworks, DeepInfra, OpenRouter, ...)."
+                    % self.model)
+            self._openai = OpenAI(api_key=key, base_url=base)
+        return self._openai
+
     # ── unified call (with retry on transient failures) ─────────────────────
     MAX_RETRIES = 8
     def call(self, messages: list[dict], label: str = "") -> LLMResponse:
@@ -128,16 +219,20 @@ class LLMClient:
         last_err = None
         for attempt in range(self.MAX_RETRIES + 1):
             try:
-                if self.provider == "openai":
-                    resp = self._call_openai(messages)
-                else:
+                if self.provider == "anthropic":
                     resp = self._call_anthropic(messages)
+                else:
+                    resp = self._call_openai(messages)
                 resp.latency_s = time.time() - t0
                 return resp
             except MissingAPIKey:
                 raise                          # missing key: not transient
             except Exception as e:             # network / rate limit / 5xx
                 last_err = e
+                if _is_permanent(e):
+                    print("  [%s] permanent error, not retrying: %s: %s"
+                          % (label or "call", type(e).__name__, e), flush=True)
+                    raise
                 if attempt >= self.MAX_RETRIES:
                     break
                 wait = min(2 ** (attempt + 1), 60)   # 2,4,8,16,32,60,60,60 s (rate-limit windows need patience)
@@ -148,22 +243,29 @@ class LLMClient:
         raise last_err
 
     def _call_openai(self, messages: list[dict]) -> LLMResponse:
-        client = self._openai_client()
-        kwargs = dict(model=self.model, messages=messages, seed=self.seed)
+        # Serves OpenAI proper and every OpenAI-compatible endpoint (Google, open-weight
+        # hosts). Two parameters are not universally supported by the compatible layers
+        # and are omitted there rather than risking a 400: `seed`, and any temperature
+        # the model would reject anyway.
+        compatible = _compatible_entry(self.model) is not None
+        client = self._compatible_client() if compatible else self._openai_client()
+        kwargs = dict(model=self.model, messages=messages)
+        if not compatible:
+            kwargs["seed"] = self.seed
         if not _omit_temperature(self.model):
             kwargs["temperature"] = self.temperature
         r = client.chat.completions.create(**kwargs)
         choice = r.choices[0]
         return LLMResponse(
             text=choice.message.content or "",
-            provider="openai",
+            provider=self.provider,
             model_requested=self.model,
             model_resolved=getattr(r, "model", self.model),
             tokens=getattr(r.usage, "total_tokens", 0) if r.usage else 0,
             input_tokens=getattr(r.usage, "prompt_tokens", 0) if r.usage else 0,
             output_tokens=getattr(r.usage, "completion_tokens", 0) if r.usage else 0,
             system_fingerprint=getattr(r, "system_fingerprint", None),
-            seed=self.seed,
+            seed=None if compatible else self.seed,
             finish_reason=getattr(choice, "finish_reason", None),
             latency_s=0.0,
         )
@@ -205,8 +307,30 @@ class LLMClient:
 if __name__ == "__main__":
     assert detect_provider("o4-mini") == "openai"
     assert detect_provider("gpt-4o") == "openai"
+    assert detect_provider("gpt-5.4-mini-2026-03-17") == "openai"
     assert detect_provider("claude-opus-4-8") == "anthropic"
+    assert detect_provider("claude-sonnet-5") == "anthropic"
+    # audit judges route through the OpenAI-compatible path, not a new provider
+    assert detect_provider("gemini-3.1-pro") == "google"
+    assert detect_provider("qwen3.6-27b") == "openweight"
+    assert detect_provider("llama-4-70b-instruct") == "openweight"
+    assert detect_provider("deepseek-v3") == "openweight"
+    # aggregator slugs route to the aggregator, whoever trained the model
+    assert detect_provider("qwen/qwen3.6-27b") == "openweight"
+    assert detect_provider("google/gemini-3.1-pro") == "openweight"
+    assert _compatible_entry("google/gemini-3.1-pro")[1] == "OPENWEIGHT_API_KEY"
+    assert _compatible_entry("gemini-3.1-pro")[1] == "GOOGLE_API_KEY"
+    assert detect_provider("meta-llama/llama-4-70b-instruct") == "openweight"
+    # a Google catalogue id pasted verbatim must still reach Google
+    assert detect_provider("models/gemini-3.6-flash") == "google"
+    assert _compatible_entry("models/gemini-3.6-flash")[1] == "GOOGLE_API_KEY"
+    assert detect_provider("models/gemini-2.5-pro") == "google"
+    # a Claude model must never be captured by the compatible table
+    assert _compatible_entry("claude-sonnet-5") is None
+    assert _compatible_entry("gpt-5.4-mini") is None
+    assert _compatible_entry("gemini-3.1-pro")[1] == "GOOGLE_API_KEY"
     assert _omit_temperature("o4-mini") and _omit_temperature("gpt-5.4-mini") and not _omit_temperature("gpt-4o")
-    c = LLMClient("o4-mini")
-    print("LLMClient OK — provider:", c.provider, "| temp omitted:", _omit_temperature(c.model))
-    print("Provider routing and reproducibility wrapper verified (offline).")
+    # constructing a client must not require a key (lazy) for any provider
+    for m in ("o4-mini", "claude-sonnet-5", "gemini-3.1-pro", "qwen3.6-235b-instruct"):
+        print("   %-26s -> provider %s" % (m, LLMClient(m).provider))
+    print("Provider routing, compatible-endpoint table and reproducibility wrapper verified (offline).")

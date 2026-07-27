@@ -180,13 +180,57 @@ def floor_metrics(summ):
 # --------------------------------------------------------------------------- #
 _DIMS = ["justification_level", "justification_content", "respect", "constructive_politics", "individuation"]
 
-def _jury(judges, messages, label):
+class JudgeMeter:
+    """Accumulates judge-side token usage so evaluation cost is logged, not guessed.
+
+    The generation side has always priced itself (src/utils/pricing.estimate_cost);
+    the judging side did not, which left roughly a third of the study's API spend
+    without a receipt. This closes that gap: every jury call adds its token counts
+    here, and the totals are written into evaluation.json and index.csv.
+    """
+    def __init__(self):
+        self.per_judge = {}     # resolved model name -> {calls, input_tokens, output_tokens}
+        self.calls = 0
+
+    def record(self, response):
+        model = getattr(response, "model_resolved", None) or getattr(response, "model_requested", "unknown")
+        d = self.per_judge.setdefault(model, {"calls": 0, "input_tokens": 0, "output_tokens": 0})
+        d["calls"] += 1
+        d["input_tokens"] += getattr(response, "input_tokens", 0) or 0
+        d["output_tokens"] += getattr(response, "output_tokens", 0) or 0
+        self.calls += 1
+
+    def summary(self):
+        from src.utils.pricing import estimate_cost
+        per = {}
+        total = 0.0
+        unpriced = []
+        for model, d in self.per_judge.items():
+            c = estimate_cost(model, d["input_tokens"], d["output_tokens"])
+            per[model] = dict(d, cost_usd=c)
+            if c is None:
+                unpriced.append(model)      # unknown model: report null rather than a wrong number
+            else:
+                total += c
+        return {"per_judge": per,
+                "total_calls": self.calls,
+                "total_input_tokens": sum(d["input_tokens"] for d in self.per_judge.values()),
+                "total_output_tokens": sum(d["output_tokens"] for d in self.per_judge.values()),
+                "cost_usd": (None if unpriced else round(total, 4)),
+                "unpriced_models": unpriced}
+
+
+def _jury(judges, messages, label, meter=None):
     out = []
     for jd in judges:
-        out.append(parse_json(jd.call(messages, label).text))
+        r = jd.call(messages, label)
+        if meter is not None:
+            meter.record(r)
+        out.append(parse_json(r.text))
     return out
 
-def evaluate_run(run_folder, judges):
+def evaluate_run(run_folder, judges, meter=None):
+    meter = meter if meter is not None else JudgeMeter()
     contribs, syn, summ = segment_run(run_folder)
     roles = _load_roles(run_folder)
     per_judge_dim = {d: [[] for _ in judges] for d in _DIMS}   # for kappa
@@ -199,7 +243,7 @@ def evaluate_run(run_folder, judges):
         role = roles.get(key, key)
         s_dims = {d: [] for d in _DIMS}
         for rnd, text in items:
-            scored = _jury(judges, dqi_messages(role, text), "dqi_%s_r%d" % (key, rnd))
+            scored = _jury(judges, dqi_messages(role, text), "dqi_%s_r%d" % (key, rnd), meter)
             rec = {"stakeholder": key, "round": rnd, "chars": len(text), "judges": []}
             for ji, sc in enumerate(scored):
                 rec["judges"].append({d: sc.get(d) for d in _DIMS} |
@@ -213,7 +257,7 @@ def evaluate_run(run_folder, judges):
                     m = sum(vals) / len(vals)
                     s_dims[d].append(m); dim_means[d].append(m)
         if len(items) >= 2:
-            scored = _jury(judges, position_messages(role, items[0][1], items[-1][1]), "pos_%s" % key)
+            scored = _jury(judges, position_messages(role, items[0][1], items[-1][1]), "pos_%s" % key, meter)
             pv = [s.get("position_move") for s in scored if isinstance(s.get("position_move"), (int, float))]
             pm = sum(pv) / len(pv) if pv else None
         else:
@@ -223,7 +267,7 @@ def evaluate_run(run_folder, judges):
         per_stakeholder[key] = {d: round(sum(s_dims[d]) / len(s_dims[d]), 3) if s_dims[d] else None for d in _DIMS}
         per_stakeholder[key]["position_move"] = round(pm, 3) if pm is not None else None
 
-    ag = _jury(judges, agreement_messages(syn), "agreement") if syn else []
+    ag = _jury(judges, agreement_messages(syn), "agreement", meter) if syn else []
     ag_bools = [bool(s.get("agreement")) for s in ag if "agreement" in s]
     agreement = (sum(ag_bools) / len(ag_bools) >= 0.5) if ag_bools else None
     key_terms = [{"judge": ji, "terms": s.get("key_terms", [])} for ji, s in enumerate(ag)]
@@ -250,5 +294,6 @@ def evaluate_run(run_folder, judges):
         "contribution_scores": contribution_scores,
         "inter_judge_kappa": kappa,
         "n_judges": len(judges),
+        "judging_cost": meter.summary(),
     }
     return profile

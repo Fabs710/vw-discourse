@@ -40,7 +40,9 @@ def _messages(reference_text, transcript, synthesis):
             % (reference_text[:8000], transcript[:220000], synthesis[:16000], claims))
     return [{"role": "system", "content": sysp}, {"role": "user", "content": user}]
 
-def score_validation_run(run_folder, judges, reference_path):
+def score_validation_run(run_folder, judges, reference_path, meter=None):
+    from src.evaluation.core import JudgeMeter
+    meter = meter if meter is not None else JudgeMeter()
     rf = Path(run_folder)
     reference_text = Path(reference_path).read_text(encoding="utf-8")
     transcript = (rf / "outputs" / "full_transcript.txt").read_text(encoding="utf-8")
@@ -49,6 +51,7 @@ def score_validation_run(run_folder, judges, reference_path):
     per_judge = []
     for jd in judges:
         r = jd.call(_messages(reference_text, transcript, synthesis), "reference_validation")
+        meter.record(r)
         d = parse_json(r.text)
         scores = {}
         for cid in CLAIMS:
@@ -75,6 +78,7 @@ def score_validation_run(run_folder, judges, reference_path):
         "fidelity_mean": round(sum(valid) / len(valid), 3) if valid else None,
         "inter_judge_kappa": kappa,
         "n_judges": len(judges),
+        "judging_cost": meter.summary(),
     }
     (rf / "validation_scores.json").write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
     return out

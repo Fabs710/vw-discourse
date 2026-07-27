@@ -1,0 +1,274 @@
+Independent judge audit - 2026-07-27 00:19
+8 steps. Scoring runs first; the four analyses are free and idempotent.
+Log: audit_log_20260727_001913.txt
+LIVE - this spends money
+==============================================================================
+
+[1/8] score  scope B  Gemini            RESUMING - 2 of 9 run(s) still to score
+
+[1/8] score  scope B  Gemini            00:19:13
+        evaluate.py data/sensitivity_20260726_172041 --judges gemini-3.6-flash --suffix _audit_gemini --only layer_position_high__m-claudesonnet_r2,layer_position_high__m-claudesonnet_r3
+        NOTE: a single judge - inter-judge agreement is unavailable by construction. Correct for an independent audit pass; wrong for the reported jury.
+        Evaluating 2 run(s) with 1 judge(s)
+          layer_position_high__m-claudesonnet_r2 agreement=False pos_move=0.333 dqi[justif=2.0 respect=1.833 constr=2.0 indiv=2.0] kappa=None $0.1028 (run total $0.10)
+          layer_position_high__m-claudesonnet_r3 agreement=False pos_move=0.5 dqi[justif=2.0 respect=1.875 constr=2.0 indiv=2.0] kappa=None $0.1085 (run total $0.21)
+        judging cost: $0.21 over 62 calls
+        suffix mode: index.csv left untouched (scores written to evaluation_audit_gemini.json)
+
+[2/8] score  scope C  Gemini            00:25:46
+        evaluate.py data/sensitivity_20260723_000046 --judges gemini-3.6-flash --suffix _audit_gemini --only main,main_recheck_r1,order_reversed,order_random,layer_salience_low,layer_motivation_high,layer_position_high,layer_interaction_low,igmetall_flexibility_high_r1,mgmt_relational_prior_high_r1
+        NOTE: a single judge - inter-judge agreement is unavailable by construction. Correct for an independent audit pass; wrong for the reported jury.
+        Evaluating 10 run(s) with 1 judge(s)
+          main                   agreement=False pos_move=0.167 dqi[justif=2.0 respect=1.917 constr=1.958 indiv=2.0] kappa=None $0.0907 (run total $0.09)
+          main_recheck_r1        agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.917 constr=2.0 indiv=2.0] kappa=None $0.0892 (run total $0.18)
+          order_reversed         agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.792 constr=2.0 indiv=2.0] kappa=None $0.0934 (run total $0.27)
+          order_random           agreement=False pos_move=0.167 dqi[justif=2.0 respect=1.875 constr=2.0 indiv=2.0] kappa=None $0.1013 (run total $0.37)
+          layer_salience_low     agreement=False pos_move=0.167 dqi[justif=1.958 respect=1.958 constr=2.0 indiv=2.0] kappa=None $0.1015 (run total $0.48)
+          layer_motivation_high  agreement=False pos_move=0.167 dqi[justif=2.0 respect=1.708 constr=2.0 indiv=2.0] kappa=None $0.0981 (run total $0.57)
+          layer_position_high    agreement=False pos_move=0.333 dqi[justif=2.0 respect=1.917 constr=2.0 indiv=2.0] kappa=None $0.0928 (run total $0.67)
+          layer_interaction_low  agreement=False pos_move=0.0 dqi[justif=1.958 respect=1.792 constr=2.0 indiv=2.0] kappa=None $0.0824 (run total $0.75)
+          igmetall_flexibility_high_r1 agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.833 constr=2.0 indiv=2.0] kappa=None $0.0905 (run total $0.84)
+          mgmt_relational_prior_high_r1 agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.75 constr=2.0 indiv=2.0] kappa=None $0.0925 (run total $0.93)
+        judging cost: $0.93 over 310 calls
+        suffix mode: index.csv left untouched (scores written to evaluation_audit_gemini.json)
+
+[3/8] score  scope B  Qwen              00:55:51
+        evaluate.py data/sensitivity_20260726_172041 --judges qwen/qwen3.6-27b --suffix _audit_qwen
+        NOTE: a single judge - inter-judge agreement is unavailable by construction. Correct for an independent audit pass; wrong for the reported jury.
+        Evaluating 9 run(s) with 1 judge(s)
+          [retry 1/8] dqi_investors_r4: JSONDecodeError - waiting 2s
+          layer_position_high__m-claudesonnet_r1 agreement=False pos_move=1.5 dqi[justif=2.0 respect=1.875 constr=2.0 indiv=2.0] kappa=None $0.1834 (run total $0.18)
+          layer_position_high__m-claudesonnet_r2 agreement=False pos_move=0.5 dqi[justif=2.0 respect=1.958 constr=2.0 indiv=2.0] kappa=None $0.1798 (run total $0.36)
+          layer_position_high__m-claudesonnet_r3 agreement=False pos_move=0.333 dqi[justif=2.0 respect=1.833 constr=2.0 indiv=2.0] kappa=None $0.1864 (run total $0.55)
+          layer_position_low__m-claudesonnet_r1 agreement=False pos_move=0.833 dqi[justif=2.0 respect=1.833 constr=2.0 indiv=2.0] kappa=None $0.1894 (run total $0.74)
+          layer_position_low__m-claudesonnet_r2 agreement=False pos_move=0.5 dqi[justif=2.0 respect=1.75 constr=2.0 indiv=2.0] kappa=None $0.1965 (run total $0.94)
+          layer_position_low__m-claudesonnet_r3 agreement=False pos_move=0.167 dqi[justif=2.0 respect=1.792 constr=1.917 indiv=2.0] kappa=None $0.1851 (run total $1.12)
+          main__m-claudesonnet_r1 agreement=False pos_move=0.833 dqi[justif=2.0 respect=1.958 constr=2.0 indiv=2.0] kappa=None $0.1824 (run total $1.30)
+          main__m-claudesonnet_r2 agreement=False pos_move=0.5 dqi[justif=2.0 respect=1.875 constr=2.0 indiv=2.0] kappa=None $0.1875 (run total $1.49)
+          main__m-claudesonnet_r3 agreement=False pos_move=0.167 dqi[justif=2.0 respect=1.75 constr=1.875 indiv=2.0] kappa=None $0.1961 (run total $1.69)
+        judging cost: $1.69 over 279 calls
+        suffix mode: index.csv left untouched (scores written to evaluation_audit_qwen.json)
+
+[4/8] score  scope C  Qwen              04:19:50
+        evaluate.py data/sensitivity_20260723_000046 --judges qwen/qwen3.6-27b --suffix _audit_qwen --only main,main_recheck_r1,order_reversed,order_random,layer_salience_low,layer_motivation_high,layer_position_high,layer_interaction_low,igmetall_flexibility_high_r1,mgmt_relational_prior_high_r1
+        NOTE: a single judge - inter-judge agreement is unavailable by construction. Correct for an independent audit pass; wrong for the reported jury.
+        Evaluating 10 run(s) with 1 judge(s)
+          main                   agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.917 constr=2.0 indiv=2.0] kappa=None $0.1793 (run total $0.18)
+          main_recheck_r1        agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.875 constr=2.0 indiv=2.0] kappa=None $0.1797 (run total $0.36)
+          order_reversed         agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.75 constr=1.875 indiv=2.0] kappa=None $0.1810 (run total $0.54)
+          order_random           agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.917 constr=1.917 indiv=2.0] kappa=None $0.1920 (run total $0.73)
+          layer_salience_low     agreement=False pos_move=0.0 dqi[justif=1.958 respect=1.875 constr=1.875 indiv=2.0] kappa=None $0.1867 (run total $0.92)
+          layer_motivation_high  agreement=False pos_move=0.167 dqi[justif=2.0 respect=1.708 constr=2.0 indiv=2.0] kappa=None $0.1768 (run total $1.10)
+          layer_position_high    agreement=False pos_move=0.167 dqi[justif=1.958 respect=1.792 constr=1.958 indiv=2.0] kappa=None $0.1860 (run total $1.28)
+          layer_interaction_low  agreement=False pos_move=0.0 dqi[justif=1.958 respect=1.833 constr=1.875 indiv=2.0] kappa=None $0.1767 (run total $1.46)
+          igmetall_flexibility_high_r1 agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.917 constr=2.0 indiv=2.0] kappa=None $0.1818 (run total $1.64)
+          mgmt_relational_prior_high_r1 agreement=False pos_move=0.0 dqi[justif=2.0 respect=1.792 constr=1.917 indiv=2.0] kappa=None $0.1829 (run total $1.82)
+        judging cost: $1.82 over 310 calls
+        suffix mode: index.csv left untouched (scores written to evaluation_audit_qwen.json)
+
+[5/8] analyse scope B  Gemini            08:14:26
+        analyze_audit_judge.py data/sensitivity_20260726_172041 --suffix _audit_gemini --label Gemini
+        Audit comparison on 9 run(s), 216 contribution-level records
+        
+        dimension                    judge 1     judge 2      Gemini  audit - jury
+        --------------------------------------------------------------------------
+        justification_level            1.995       2.000       2.000        +0.002
+        justification_content          1.713       1.366       1.681        +0.141
+        respect                        1.833       1.722       1.884        +0.106
+        constructive_politics          1.981       1.977       1.991        +0.012
+        individuation                  2.000       2.000       2.000        +0.000
+        
+        dimension                   k(aud,j1)    k(aud,j2)     k(j1,j2)
+        ----------------------------------------------------------------
+        justification_level             0.000            -        0.000
+        justification_content           0.179        0.274        0.111
+        respect                         0.563        0.452        0.368
+        constructive_politics           0.325        0.566        0.206
+        individuation                       -            -            -
+        
+        A judge that sits no further from each incumbent than they sit from each other is
+        applying a comparable standard. One that sits much further is measuring something else.
+        
+        Ceiling check - the Section 9.5.6 claim that three items are dead because the CASE
+        does not exercise them, not because the two raters share a convention:
+        
+        dimension                       jury SD       audit SD   audit % at 2
+        ----------------------------------------------------------------------
+        justification_level               0.048          0.000           100%
+        justification_content             0.498          0.466            68%
+        respect                           0.416          0.320            88%
+        constructive_politics             0.143          0.096            99%
+        individuation                     0.000          0.000           100%
+        
+        Usable-output check - how often did each rater return a parseable score?
+        
+        dimension                       judge 1        judge 2         Gemini
+        ----------------------------------------------------------------------
+        justification_level                100%           100%           100%
+        justification_content              100%           100%           100%
+        respect                            100%           100%           100%
+        constructive_politics              100%           100%           100%
+        individuation                      100%           100%           100%
+        
+          Output was parseable throughout; the comparison rests on a complete set of records.
+        
+        written: data\sensitivity_20260726_172041\audit_judge_analysis_audit_gemini.json
+        The reported jury scores in evaluation.json and index.csv are untouched.
+
+[6/8] analyse scope C  Gemini            08:14:26
+        analyze_audit_judge.py data/sensitivity_20260723_000046 --suffix _audit_gemini --label Gemini
+        Audit comparison on 10 run(s), 240 contribution-level records
+        
+        dimension                    judge 1     judge 2      Gemini  audit - jury
+        --------------------------------------------------------------------------
+        justification_level            1.967       1.958       1.992        +0.029
+        justification_content          1.617       1.492       1.562        +0.008
+        respect                        1.767       1.512       1.846        +0.206
+        constructive_politics          1.983       1.929       1.996        +0.040
+        individuation                  2.000       2.000       2.000        +0.000
+        
+        dimension                   k(aud,j1)    k(aud,j2)     k(j1,j2)
+        ----------------------------------------------------------------
+        justification_level             0.392        0.155        0.423
+        justification_content           0.288        0.260        0.186
+        respect                         0.473        0.327        0.445
+        constructive_politics          -0.007        0.104        0.070
+        individuation                       -            -            -
+        
+        A judge that sits no further from each incumbent than they sit from each other is
+        applying a comparable standard. One that sits much further is measuring something else.
+        
+        Ceiling check - the Section 9.5.6 claim that three items are dead because the CASE
+        does not exercise them, not because the two raters share a convention:
+        
+        dimension                       jury SD       audit SD   audit % at 2
+        ----------------------------------------------------------------------
+        justification_level               0.190          0.091            99%
+        justification_content             0.497          0.496            56%
+        respect                           0.493          0.361            85%
+        constructive_politics             0.205          0.064           100%
+        individuation                     0.000          0.000           100%
+        
+        Usable-output check - how often did each rater return a parseable score?
+        
+        dimension                       judge 1        judge 2         Gemini
+        ----------------------------------------------------------------------
+        justification_level                100%           100%           100%
+        justification_content              100%           100%           100%
+        respect                            100%           100%           100%
+        constructive_politics              100%           100%           100%
+        individuation                      100%           100%           100%
+        
+          Output was parseable throughout; the comparison rests on a complete set of records.
+        
+        written: data\sensitivity_20260723_000046\audit_judge_analysis_audit_gemini.json
+        The reported jury scores in evaluation.json and index.csv are untouched.
+
+[7/8] analyse scope B  Qwen              08:14:27
+        analyze_audit_judge.py data/sensitivity_20260726_172041 --suffix _audit_qwen --label Qwen
+        Audit comparison on 9 run(s), 216 contribution-level records
+        
+        dimension                    judge 1     judge 2        Qwen  audit - jury
+        --------------------------------------------------------------------------
+        justification_level            1.995       2.000       2.000        +0.002
+        justification_content          1.713       1.366       1.861        +0.322
+        respect                        1.833       1.722       1.847        +0.069
+        constructive_politics          1.981       1.977       1.977        -0.002
+        individuation                  2.000       2.000       2.000        +0.000
+        
+        dimension                   k(aud,j1)    k(aud,j2)     k(j1,j2)
+        ----------------------------------------------------------------
+        justification_level             0.000            -        0.000
+        justification_content           0.251        0.093        0.111
+        respect                         0.403        0.352        0.368
+        constructive_politics          -0.014        0.128        0.206
+        individuation                       -            -            -
+        
+        A judge that sits no further from each incumbent than they sit from each other is
+        applying a comparable standard. One that sits much further is measuring something else.
+        
+        Ceiling check - the Section 9.5.6 claim that three items are dead because the CASE
+        does not exercise them, not because the two raters share a convention:
+        
+        dimension                       jury SD       audit SD   audit % at 2
+        ----------------------------------------------------------------------
+        justification_level               0.048          0.000           100%
+        justification_content             0.498          0.346            86%
+        respect                           0.416          0.385            86%
+        constructive_politics             0.143          0.203            99%
+        individuation                     0.000          0.000           100%
+        
+        Usable-output check - how often did each rater return a parseable score?
+        
+        dimension                       judge 1        judge 2           Qwen
+        ----------------------------------------------------------------------
+        justification_level                100%           100%           100%
+        justification_content              100%           100%           100%
+        respect                            100%           100%           100%
+        constructive_politics              100%           100%           100%
+        individuation                      100%           100%           100%
+        
+          Output was parseable throughout; the comparison rests on a complete set of records.
+        
+        written: data\sensitivity_20260726_172041\audit_judge_analysis_audit_qwen.json
+        The reported jury scores in evaluation.json and index.csv are untouched.
+
+[8/8] analyse scope C  Qwen              08:14:27
+        analyze_audit_judge.py data/sensitivity_20260723_000046 --suffix _audit_qwen --label Qwen
+        Audit comparison on 10 run(s), 240 contribution-level records
+        
+        dimension                    judge 1     judge 2        Qwen  audit - jury
+        --------------------------------------------------------------------------
+        justification_level            1.967       1.958       1.988        +0.025
+        justification_content          1.617       1.492       1.871        +0.317
+        respect                        1.767       1.512       1.837        +0.198
+        constructive_politics          1.983       1.929       1.942        -0.015
+        individuation                  2.000       2.000       2.000        +0.000
+        
+        dimension                   k(aud,j1)    k(aud,j2)     k(j1,j2)
+        ----------------------------------------------------------------
+        justification_level             0.537        0.137        0.423
+        justification_content           0.204        0.070        0.186
+        respect                         0.472        0.323        0.445
+        constructive_politics           0.235        0.000        0.070
+        individuation                       -            -            -
+        
+        A judge that sits no further from each incumbent than they sit from each other is
+        applying a comparable standard. One that sits much further is measuring something else.
+        
+        Ceiling check - the Section 9.5.6 claim that three items are dead because the CASE
+        does not exercise them, not because the two raters share a convention:
+        
+        dimension                       jury SD       audit SD   audit % at 2
+        ----------------------------------------------------------------------
+        justification_level               0.190          0.111            99%
+        justification_content             0.497          0.335            87%
+        respect                           0.493          0.441            87%
+        constructive_politics             0.205          0.283            95%
+        individuation                     0.000          0.000           100%
+        
+        Usable-output check - how often did each rater return a parseable score?
+        
+        dimension                       judge 1        judge 2           Qwen
+        ----------------------------------------------------------------------
+        justification_level                100%           100%           100%
+        justification_content              100%           100%           100%
+        respect                            100%           100%           100%
+        constructive_politics              100%           100%           100%
+        individuation                      100%           100%           100%
+        
+          Output was parseable throughout; the comparison rests on a complete set of records.
+        
+        written: data\sensitivity_20260723_000046\audit_judge_analysis_audit_qwen.json
+        The reported jury scores in evaluation.json and index.csv are untouched.
+
+==============================================================================
+  Gemini             $1.8819
+  Qwen               $3.5095
+  TOTAL              $5.3914
+
+8 step(s) run, 0 skipped, 475.2 minutes.
+index.csv and every reported score are untouched - all writes went to
+evaluation_audit_*.json and audit_judge_analysis_*.json.
+
+Send the four 'analyse' blocks in audit_log_20260727_001913.txt for the write-up.
