@@ -258,3 +258,34 @@ Path("data/numbers_of_record.md").write_text("\n".join(L), encoding="utf-8")
 print("written: data/numbers_of_record.json + .md")
 for k in ("corpus", "jury", "costs"):
     print(" ", k, "=", json.dumps(R[k]))
+
+# ---- judge offsets (appended 27 Jul after the sign-error correction) ----------
+# OpenAI-minus-Anthropic, per dimension, both batches, from contribution records.
+# In the table so the reconciliation catches any future sign confusion.
+def _offsets(root):
+    out = {}
+    for dim in ["justification_level", "justification_content", "respect",
+                "constructive_politics", "individuation"]:
+        vals = []
+        for d in Path(root).iterdir():
+            f = d / "evaluation.json"
+            if not f.exists(): continue
+            j = json.loads(f.read_text(encoding="utf-8"))
+            for c in j.get("contribution_scores", []):
+                if len(c.get("judges", [])) > 1:
+                    a, b = c["judges"][0].get(dim), c["judges"][1].get(dim)
+                    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+                        vals.append(a - b)
+        if vals:
+            out[dim] = {"mean_offset_openai_minus_anthropic": round(st.mean(vals), 4),
+                        "n_records": len(vals)}
+    return out
+
+R2 = json.loads(Path("data/numbers_of_record.json").read_text(encoding="utf-8"))
+R2["judge_offsets"] = {"main_batch": _offsets(MAIN), "cross_model_batch": _offsets(CROSS),
+                       "note": "judges[0]=OpenAI, judges[1]=Anthropic (build order, core.py); "
+                               "positive = OpenAI more lenient. Sign error corrected 27 Jul."}
+Path("data/numbers_of_record.json").write_text(json.dumps(R2, indent=1), encoding="utf-8")
+with Path("data/numbers_of_record.md").open("a", encoding="utf-8") as f:
+    f.write("\n## judge_offsets\n\n```json\n" + json.dumps(R2["judge_offsets"], indent=1) + "\n```\n")
+print("judge_offsets appended")
