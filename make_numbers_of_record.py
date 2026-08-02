@@ -49,7 +49,8 @@ def exact_p(a, b):
 def floor_p(na, nb):
     return (2 if na == nb else 1) / math.comb(na + nb, na)
 
-R = {"_meta": {"generated": "2026-07-27", "rule": "fix the text, never the table",
+import datetime
+R = {"_meta": {"generated": datetime.date.today().isoformat(), "rule": "fix the text, never the table",
                "source": "index.csv + analysis JSONs of the three controlled batches "
                          "+ audit outputs; HAND-ENTERED block excepted"}}
 
@@ -284,7 +285,7 @@ def _offsets(root):
 R2 = json.loads(Path("data/numbers_of_record.json").read_text(encoding="utf-8"))
 R2["judge_offsets"] = {"main_batch": _offsets(MAIN), "cross_model_batch": _offsets(CROSS),
                        "note": "judges[0]=OpenAI, judges[1]=Anthropic (build order, core.py); "
-                               "positive = OpenAI more lenient. Sign error corrected 27 Jul."}
+                               "positive = OpenAI more lenient. Sign error corrected 29 Jul."}
 Path("data/numbers_of_record.json").write_text(json.dumps(R2, indent=1), encoding="utf-8")
 with Path("data/numbers_of_record.md").open("a", encoding="utf-8") as f:
     f.write("\n## judge_offsets\n\n```json\n" + json.dumps(R2["judge_offsets"], indent=1) + "\n```\n")
