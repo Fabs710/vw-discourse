@@ -232,8 +232,11 @@ R["hand_entered"] = {
     "_rule": "each value names its source; change it only by changing the source",
     "gm_fidelity": {"value": "1.62 of 2 across ten pre-registered claims", "source": "doc 14, Sec 9.7"},
     "legibility": {"value": "independent model recovers the intended band", "source": "doc 12, Sec 5.6"},
-    "human_check_v2": {"kappa_content_v2": ".88 (Claude) / .56 (GPT)", "kappa_respect": ".50 / .31",
-                       "source": "doc 14, Sec 8.5; data/human_codes.json"},
+    "human_check_v2": {"kappa_content_v2": ".88 (Claude) / .56 (GPT)", "kappa_respect": ".50 (GPT) / .31 (Claude)",
+                       "source": "doc 14, Sec 8.5; data/human_codes.json + evaluation.json (judge order: GPT first). "
+                                 "Attribution swap corrected 2 Aug - respect/constructive columns carried each "
+                                 "other's values in the pre-correction table; content v2 was always right because "
+                                 "the rejudge script ran Claude-first."},
     "generation_total_appH": {"value": "$88.69 across 177 generated runs", "source": "Appendix H (doc 17)"},
     "judging_logged_appH": {"value": "$15.71 across 62 instrumented runs", "source": "Appendix H"},
     "pre_instrumentation_estimate": {"value": "~$22 (estimate on known call volume)", "source": "Appendix H"},
