@@ -63,7 +63,8 @@ son_main  = [r for r in X if base(r["run_id"]) == "main"]
 # ---- run counts and corpus ---------------------------------------------------
 R["corpus"] = {
     "main_batch_runs": len(M), "cross_model_runs": len(X), "round_cap_runs": len(C),
-    "controlled_runs": len(M) + len(X) + len(C),
+    "controlled_runs": len(M) + len(X) + len(C),   # the three sensitivity/robustness batches
+    "validation_case_runs": 3,            # GM runs, reported separately in Sec 9.7
     "programme_runs_generated": 177,      # incl. dev/dry batches; Appendix H table
     "baseline_n": len(mini_main),
     "conditions_main_batch": len(g),
@@ -247,7 +248,7 @@ R["costs"] = {"generation_controlled_batches": round(gen, 2),
 # ---- HAND-ENTERED: values whose source is a document, not a data file --------
 R["hand_entered"] = {
     "_rule": "each value names its source; change it only by changing the source",
-    "gm_fidelity": {"value": "1.62 of 2 across ten pre-registered claims", "source": "doc 14, Sec 9.7"},
+    "gm_fidelity": {"value": "1.62 of 2 across ten pre-specified claims", "source": "doc 14, Sec 9.7"},
     "legibility": {"value": "independent model recovers the intended band", "source": "doc 12, Sec 5.6"},
     "human_check_v2": {"kappa_content_v2": ".88 (Claude) / .56 (GPT)", "kappa_respect": ".50 (GPT) / .31 (Claude)",
                        "source": "doc 14, Sec 8.5; data/human_codes.json + evaluation.json (judge order: GPT first). "
@@ -259,7 +260,9 @@ R["hand_entered"] = {
     "pre_instrumentation_estimate": {"value": "~$22 (estimate on known call volume)", "source": "Appendix H"},
     "audit_total": {"value": "$5.65 ($0.26 sample + $5.39 scopes B/C)", "source": "Appendix H + audit log"},
     "project_total": {"value": "~$132", "source": "Appendix H"},
-    "confirmed_drill_effects": {"value": "3 of 20 contrasts, ~1 expected by chance; strongest belief/respect +0.073 p=.0087",
+    "confirmed_drill_effects": {"value": "4 of 20 contrasts at p<=0.05 (three substantive respect effects + one "
+                                         "transcript-length contrast); no chance benchmark attached - the sweeps were "
+                                         "selected on exploratory extremes (Sec 9.5.2); strongest belief/respect +0.073 p=.0087",
                                 "source": "doc 16, Sec 9.5"},
 }
 
