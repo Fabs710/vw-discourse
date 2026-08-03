@@ -119,17 +119,34 @@ R["session_test_respect"] = {
     "control_delta": round(st.mean(d_) - st.mean(c), 4), "control_p": round(exact_p(c, d_), 4)}
 
 # ---- baseline displacement (calibrated vs perturbed, completed batch) --------
+# TWO quantities, deliberately labelled. The tracked SERIES holds the comparison set
+# fixed at the eight layer-pole conditions so successive estimates are commensurable
+# (+0.102 at 11 calibrated runs -> +0.063 at 16 -> +0.040 at 27). The BROADER figure
+# compares against every perturbed run including the drill sweeps; it stays clearly
+# positive, which supports the special-point reading. An external review (2 Aug)
+# caught the two coexisting UNLABELLED - prose quoting the series, this table the
+# broad figure - which read as a contradiction. Label both; quote by name.
 CAL = {"main", "main_recheck", "order_reversed", "order_random"}
 cal = [x for cnd in CAL for x in col(g.get(cnd, []), "dqi_respect")]
-per = [x for cnd in g if cnd not in CAL for x in col(g[cnd], "dqi_respect")]
+per_all = [x for cnd in g if cnd not in CAL for x in col(g[cnd], "dqi_respect")]
+per_lay = [x for cnd in g if cnd.startswith("layer_") for x in col(g[cnd], "dqi_respect")]
 def welch_t(x, y):
     vx, vy = st.variance(x), st.variance(y)
     return (st.mean(y) - st.mean(x)) / math.sqrt(vx / len(x) + vy / len(y))
 R["baseline_displacement_respect"] = {
     "calibrated_mean": round(st.mean(cal), 4), "n_calibrated": len(cal),
-    "perturbed_mean": round(st.mean(per), 4),
-    "delta": round(st.mean(per) - st.mean(cal), 4), "welch_t": round(welch_t(cal, per), 2),
-    "history": "+0.102 (11 cal runs, Jul) -> +0.063 (16) -> this value (27)"}
+    "vs_layer_poles_series": {
+        "perturbed_mean": round(st.mean(per_lay), 4), "n_perturbed": len(per_lay),
+        "delta": round(st.mean(per_lay) - st.mean(cal), 4),
+        "welch_t": round(welch_t(cal, per_lay), 2),
+        "history": "+0.102 (11 cal runs, Jul) -> +0.063 (16) -> this value (27); "
+                   "fixed comparison set = the eight layer-pole conditions"},
+    "vs_all_perturbed": {
+        "perturbed_mean": round(st.mean(per_all), 4), "n_perturbed": len(per_all),
+        "delta": round(st.mean(per_all) - st.mean(cal), 4),
+        "welch_t": round(welch_t(cal, per_all), 2),
+        "note": "drill sweeps included; moderate-magnitude conditions also sit above "
+                "the calibrated point"}}
 
 # ---- round cap ---------------------------------------------------------------
 cap6 = [r for r in C if num(r.get("rounds")) == 6.0] or C
