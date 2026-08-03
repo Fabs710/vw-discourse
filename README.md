@@ -2,12 +2,16 @@
 
 LLM-based multi-agent simulation of a contested corporate decision — Volkswagen's
 2024 "Zukunft Volkswagen" restructuring confrontation — for the master's thesis
-*Simulating Organizational Stakeholders with AI*.
+*Parameterizing the Stakeholder: A Theory-Grounded Framework for Simulating Organizational
+Deliberation with Large Language Models* (WU Vienna, 2026).
 
-This is a clean rebuild. The orchestration design is carried over from the earlier
-prototype (rounds, expert summoning, convergence monitor, moderator, structured
-synthesis); the **parameter layer is new**, implementing the layered framework
-(BDI spine + four functional layers: Salience, Motivation, Position, Interaction).
+The engine implements the thesis's layered parameter framework (BDI spine + four
+functional layers: salience, motivation, position, interaction) with rounds, expert
+summoning, a convergence monitor, a neutral moderator and a structured synthesis.
+Every number reported in the thesis regenerates from this repository: see
+`make_numbers_of_record.py` (the reconciliation table), the `analyze_*.py` scripts,
+and the `make_fig*.py` figure generators. Licensed under the MIT License (see LICENSE);
+the run data in `data/` is included for verification.
 
 ## Key decisions (this build)
 - **Case:** Volkswagen "Zukunft Volkswagen" 2024 restructuring / collective-bargaining confrontation (core sensitivity case). A separate, smaller case is used for validation.
