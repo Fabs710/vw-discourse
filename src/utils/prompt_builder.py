@@ -54,7 +54,7 @@ _CONFLICT_DESC = {
 }
 _SEP = "\n\n---\n\n"
 
-def build_agent_brief(stakeholder, mode, round_num, red_line_active=True):
+def build_agent_brief(stakeholder, mode, round_num):
     s = stakeholder
     is_rt = (mode == SimulationMode.ROUNDTABLE)
     def line(param):
@@ -85,14 +85,7 @@ def build_agent_brief(stakeholder, mode, round_num, red_line_active=True):
           "If a proposal conflicts with your core interests, say so explicitly and explain why. Genuine "
           "disagreement is more valuable here than polite consensus. Your position shifts only if an argument "
           "specifically meets the conditions that can move you.")
-    b9 = ""
-    if is_rt and round_num >= 2 and red_line_active:
-        b9 = ("RED LINE DECLARATION - REQUIRED THIS ROUND:\nBegin your response by stating explicitly the one "
-              "position you cannot concede under any circumstances, and name the specific argument or proposal "
-              "from another stakeholder that crystallised this limit for you. Be precise and specific to what "
-              "has emerged, then continue engaging as normal.")
     blocks = [b1, b2, b3, b4, b5, b6]
     if b7: blocks.append(b7)
     blocks.append(b8)
-    if b9: blocks.append(b9)
     return _SEP.join(blocks)

@@ -67,7 +67,7 @@ MET=[("dqi_respect","respect"),("position_move","position movement"),
 a_main, b_main = rows(A,"main"), rows(B,"main")
 floor = 1/math.comb(len(a_main)+len(b_main), len(a_main))
 
-fig, axes = plt.subplots(1, 3, figsize=(10.4, 3.75),
+fig, axes = plt.subplots(1, 3, figsize=(11.2, 4.1),
                          gridspec_kw={"width_ratios":[1.5,0.95,0.95]})
 
 # ---- panel 1: standardised difference, mini vs sonnet -------------------------
@@ -83,7 +83,7 @@ cols=[VERM if p<=floor+1e-9 else (ORANGE if p<=0.05 else LGREY) for p in ps]
 ax.barh(range(len(vals)), vals, color=cols, height=0.62)
 ax.axvline(0, color=GREY, lw=0.9)
 ax.set_yticks(range(len(labs))); ax.set_yticklabels(labs, fontsize=8.2)
-ax.set_xlabel("standardised difference  (Sonnet − mini, pooled SD units)", fontsize=8.3)
+ax.set_xlabel("standardized difference  (Sonnet − mini, pooled SD units)", fontsize=8.3)
 ax.set_title("Changing the generator moves more than any\nmanipulation in the study", fontsize=9.6, fontweight="bold", loc="left")
 for i,(v,p) in enumerate(zip(vals,ps)):
     ax.text(v + (0.12 if v>=0 else -0.12), i, f"p={p:.3f}", va="center",
@@ -124,13 +124,6 @@ ax.set_title("The framework's direction survives\nthe change of engine", fontsiz
 ax.legend(fontsize=7.6, frameon=False, loc="upper left")
 for s in ("top","right"): ax.spines[s].set_visible(False)
 
-fig.text(0.0, -0.10,
-  "Left: each measure standardised by its pooled SD across both batches; vermillion = at the attainable exact permutation\n"
-  f"floor (p = {floor:.4f} for ten runs against three), amber = p < .05, grey = not significant. Centre: the verbosity control -\n"
-  "the two engines produce indistinguishable transcript volume. Right: the position layer's within-sweep contrast, which\n"
-  "cancels any baseline offset. Position movement keeps its sign on both engines; respect had no layer-level effect on the\n"
-  "mini model to replicate. At three runs per arm the floor is p = 0.10, so this panel shows direction, not significance.",
-  fontsize=7.2, color=GREY, va="top", linespacing=1.5)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT, "Fig 9.6 - Cross-Model Comparison.png"), facecolor="white")
 print("  wrote Fig 9.6 - Cross-Model Comparison.png")

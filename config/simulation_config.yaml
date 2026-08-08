@@ -27,7 +27,6 @@ roundtable:
   max_rounds: 4
   max_summons: 2
   min_rounds_before_synthesis: 2
-  red_line_active: false           # main build: mechanism OFF; the red-line variant is a separate second build
   salience_orchestration: true     # light-touch: salience sets speaking order + weighting
   turn_order:                      # fallback order; salience reorders when the flag is on
     - works_council

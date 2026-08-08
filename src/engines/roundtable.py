@@ -63,8 +63,7 @@ def run_roundtable(config: SimulationConfig, timestamp: str, run_folder: str, cl
     # provenance: freeze the exact scenario text and every generated brief with the run
     save_output(scenario, "scenario_used", run_folder)
     for k in base_keys:
-        save_output(build_agent_brief(config.get_stakeholder(k), SimulationMode.ROUNDTABLE, 2,
-                                      rt.red_line_active), f"brief_{k}", run_folder)
+        save_output(build_agent_brief(config.get_stakeholder(k), SimulationMode.ROUNDTABLE, 2), f"brief_{k}", run_folder)
 
     history: list[dict] = []
     experts: dict[str, dict] = {}
@@ -185,7 +184,7 @@ def run_roundtable(config: SimulationConfig, timestamp: str, run_folder: str, cl
                 text = expert_turn(experts[key]["persona"], round_num, False)
             else:
                 sh = config.get_stakeholder(key)
-                system = build_agent_brief(sh, SimulationMode.ROUNDTABLE, round_num, rt.red_line_active)
+                system = build_agent_brief(sh, SimulationMode.ROUNDTABLE, round_num)
                 user = agent_message(round_num, key)
                 reminder = get_regrounding_reminder(sh, round_num)
                 if reminder:
@@ -249,7 +248,6 @@ def run_roundtable(config: SimulationConfig, timestamp: str, run_folder: str, cl
             "system_fingerprint": calls[0]["system_fingerprint"] if calls else None,
             "seed": m.seed,
         },
-        "red_line_active": rt.red_line_active,
         "salience_orchestration": rt.salience_orchestration,
         "speaking_order": base_keys,
         "calls": calls,

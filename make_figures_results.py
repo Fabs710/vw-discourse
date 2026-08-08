@@ -165,9 +165,6 @@ def fig_dqi_profile():
     axes[0].invert_yaxis()
     fig.suptitle("Adapted-DQI profile across conditions: only two of five items discriminate",
                  fontsize=12, fontweight="bold", y=1.04)
-    fig.text(0.5, -0.06, "Mean ± SD per condition on the 0–2 item scale; dashed line marks the baseline. "
-                         "Individuation, justification level and constructive politics sit at their ceiling in "
-                         "every condition.", ha="center", fontsize=8, color=GREY)
     fig.tight_layout()
     save(fig, "Fig 9.2b - DQI Profile Small Multiples.png")
 
@@ -253,7 +250,7 @@ def fig_judge_bias():
     ax.hist(ks, bins=14, color=SKY, edgecolor=GREY, linewidth=0.8, zorder=3)
     med = st.median(ks)
     ax.axvline(med, color=VERM, lw=1.5, ls=(0, (3, 2)), zorder=4)
-    ax.text(med, ax.get_ylim()[1] * 0.94, f"  median {med:.2f}", color=VERM, fontsize=8, va="top")
+    ax.text(med, ax.get_ylim()[1] * 0.94, f"median {med:.2f}  ", color=VERM, fontsize=8, va="top", ha="right")
     for thr, lab in [(0.41, "moderate"), (0.61, "substantial")]:
         ax.axvline(thr, color=GREY, lw=0.9, ls=(0, (1, 1.8)), zorder=2)
         ax.text(thr, ax.get_ylim()[1] * 0.06, f" {lab}", fontsize=7, color=GREY, rotation=90, va="bottom")
@@ -269,11 +266,6 @@ def fig_judge_bias():
     # weak fail. It now states the association and its size.
     # Two lines: a single long caption forced tight_layout to widen the whole figure
     # from 3194 to 5380 px, which would print as a letterbox.
-    fig.text(0.5, -0.07,
-             "Left: both series rise across quartiles - a weak verbosity association (Spearman rho +0.23 respect,\n"
-             "+0.21 content), small against a run-to-run SD of 0.087 but in the direction the check exists to detect.\n"
-             "Right: Landis–Koch benchmarks shown for reference; the jury is pointwise, so position bias is "
-             "structurally impossible.", ha="center", va="top", fontsize=8, color=GREY)
     fig.tight_layout()
     save(fig, "Fig 8.4 - Judge Bias Checks.png")
 

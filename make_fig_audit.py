@@ -156,13 +156,6 @@ ax.set_title("The jury discriminates; the outside raters\nsit at the ceiling - c
 ax.legend(fontsize=7.4, frameon=False, loc="upper right")
 for s in ("top", "right"): ax.spines[s].set_visible(False)
 
-fig.text(0.0, -0.10,
-  "Left: quadratic weighted kappa against the blind reference coding on the 28-item sample (Section 8.5); the v2 content\n"
-  "anchor was refined against the two incumbent judges, and only they retain it. Right: share of contribution-level respect\n"
-  "scores below the 2.0 ceiling on the calibrated configuration of each engine - jury pooled across both judges, outside\n"
-  "raters scored independently. The jury separates the engines by fifteen points in the expected direction; raters marking\n"
-  "down fewer than one contribution in ten have almost no events with which to register a difference (Section 8.5.4).",
-  fontsize=7.2, color=GREY, va="top", linespacing=1.5)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT, "Fig 8.6 - Independent Rater Audit.png"), facecolor="white")
 print("  wrote Fig 8.6 - Independent Rater Audit.png")

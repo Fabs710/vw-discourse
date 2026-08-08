@@ -170,11 +170,6 @@ def fig_legibility():
     ax2.spines[["top","right"]].set_visible(False)
     fig.suptitle("Brief-legibility check: do the generated briefs communicate the parameters they encode?",
                  fontsize=11.5,fontweight="bold",y=1.01)
-    fig.text(0.5,-0.10,"All eleven parameters recover positively (rho .63-.87). Pooled recovery is near-ceiling at the "
-        "calibrated values (rho .92, MAE 0.71)\nand attenuates under extreme manipulation (rho .81, MAE 1.12) - the "
-        "quantified footprint of the banded mapping. Power and dependency are weakest:\ntheir calibration sentences "
-        "carry structural hedges, a property of the case calibration rather than of the mapping.",
-        ha="center",fontsize=7.3,color=GREY)
     save(fig,"Fig 5.6 - Brief Legibility Recovery.png")
 
 # ------------------------------------------------------- A3 validation fidelity
@@ -206,20 +201,12 @@ def fig_fidelity():
     ax.text(2.0,1.15,"maximum",ha="center",fontsize=7.6,color=GREY)
     gm=st.mean([p[c[0]] for p in profs for c in claims if c[2]=="E"])
     gh=st.mean([p[c[0]] for p in profs for c in claims if c[2]=="H"])
-    ax.text(2.28,ys[2],"ENACTMENT\npartly calibrated in\nmean %.2f"%gm,fontsize=8,color=BLUE,
-            fontweight="bold",va="center")
-    ax.text(2.28,ys[8],"HELD OUT\ngenuinely predictive\nmean %.2f"%gh,fontsize=8,color=ORANGE,
-            fontweight="bold",va="center")
-    ax.set_xlim(0,2.15); ax.set_ylim(min(ys)-0.7,1.6); ax.set_yticks([])
+    ax.set_xlim(0,2.1); ax.set_ylim(min(ys)-0.7,1.6); ax.set_yticks([])
     ax.set_xticks([0,0.5,1.0,1.5,2.0])
     ax.set_xlabel("fidelity score against the documented record (0 = contradicts, 2 = clearly consistent)")
     ax.spines[["top","right","left"]].set_visible(False)
     ax.set_title("Validation case: fidelity profile across ten documented claims",
                  fontsize=11.5,fontweight="bold",loc="left")
-    fig.text(0.5,-0.02,"Bars show the two-judge mean over three runs; dots are the individual runs. Claims whose "
-        "parameters were calibrated from the record (enactment)\nsit at or near ceiling; the genuinely held-out "
-        "claims fall away, with the documented ownership outcome (O1) not reproduced.",
-        ha="center",fontsize=7.3,color=GREY)
     save(fig,"Fig 9.7 - Validation Fidelity Profile.png")
 
 # ------------------------------------------------------------- A4 eval pipeline
@@ -228,11 +215,11 @@ def fig_pipeline():
     ax.text(5.75,5.86,"From transcript to reported effect: the evaluation pipeline",
             ha="center",fontsize=12,fontweight="bold")
     box(ax,0.15,4.28,1.42,0.92,"frozen run\nartifacts",SKY+"30",SKY,7.8)
-    box(ax,1.92,4.72,2.05,0.60,"QUALITY family\ncontribution-level DQI",BLUE+"20",BLUE,7.5,True)
-    box(ax,1.92,3.98,2.05,0.60,"OUTCOME family\nagreement, movement, terms",ORANGE+"20",ORANGE,7.1,True)
-    box(ax,1.92,3.24,2.05,0.60,"PARTICIPATION\nfloor metrics (not judged)",GREEN+"20",GREEN,7.3,True)
-    box(ax,4.32,5.02,1.78,0.50,"judge A - OpenAI family",BLUE+"14",BLUE,7.3)
-    box(ax,4.32,4.42,1.78,0.50,"judge B - Anthropic family",BLUE+"14",BLUE,7.3)
+    box(ax,1.92,4.72,2.30,0.60,"QUALITY family\nDQI per contribution",BLUE+"20",BLUE,7.3,True)
+    box(ax,1.92,3.98,2.30,0.60,"OUTCOME family\nagreement - movement - terms",ORANGE+"20",ORANGE,7.0,True)
+    box(ax,1.92,3.24,2.30,0.60,"PARTICIPATION\nfloor metrics (not judged)",GREEN+"20",GREEN,7.2,True)
+    box(ax,4.52,5.02,1.78,0.50,"judge A - OpenAI family",BLUE+"14",BLUE,7.3)
+    box(ax,4.52,4.42,1.78,0.50,"judge B - Anthropic family",BLUE+"14",BLUE,7.3)
     box(ax,6.45,4.72,1.42,0.60,"jury mean\nper dimension",BLUE+"20",BLUE,7.5)
     box(ax,6.45,3.98,1.42,0.60,"per-run\noutcome values",ORANGE+"20",ORANGE,7.5)
     box(ax,8.22,4.30,1.62,0.94,"condition aggregate\nover R repetitions\n(mean, SD, n)","#F2F2F2",GREY,7.5,True)
@@ -240,9 +227,9 @@ def fig_pipeline():
         VERM+"16",VERM,7.3,True)
     box(ax,7.05,1.62,3.95,0.62,"reported effect:   robust  |  suggestive  |  null",VERM+"26",VERM,8.2,True)
     arrow(ax,(1.57,4.74),(1.92,5.02)); arrow(ax,(1.57,4.74),(1.92,4.28)); arrow(ax,(1.57,4.74),(1.92,3.54))
-    arrow(ax,(3.97,5.02),(4.32,5.27)); arrow(ax,(3.97,5.02),(4.32,4.67))
-    arrow(ax,(6.10,5.27),(6.45,5.14)); arrow(ax,(6.10,4.67),(6.45,4.90))
-    arrow(ax,(3.97,4.28),(6.45,4.28))
+    arrow(ax,(4.22,5.02),(4.52,5.27)); arrow(ax,(4.22,5.02),(4.52,4.67))
+    arrow(ax,(6.30,5.27),(6.45,5.14)); arrow(ax,(6.30,4.67),(6.45,4.90))
+    arrow(ax,(4.22,4.28),(6.45,4.28))
     arrow(ax,(7.87,5.02),(8.22,4.95)); arrow(ax,(7.87,4.28),(8.22,4.60))
     arrow(ax,(9.03,4.30),(9.03,3.36)); arrow(ax,(9.03,2.62),(9.03,2.24))
     ax.text(1.95,3.06,"reported descriptively; never enters the screening filter",fontsize=6.8,color=GREEN,
@@ -276,7 +263,7 @@ def fig_programme():
           ("parameter drill-down: 9 sweeps x 2 poles","R = 3","54",GREEN,"done",GREEN),
           ("confirmatory top-up: 4 sweeps to R = 6","R = 6","29",GREEN,"done",GREEN),
           ("rounds-cap check (6 rounds)","R = 3","3",PURPLE,"done",PURPLE),
-          ("cross-model replication (2nd engine)","subset","9",None,"running",GREY)]
+          ("cross-model replication (2nd engine)","subset","9",None,"done",GREEN)]
     y0=5.30; h=0.475; gap=0.105
     ys=[]
     for i,(lab,rep,n,col,status,scol) in enumerate(rows):

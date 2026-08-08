@@ -25,7 +25,7 @@ CFG = yaml.safe_load(open("config/simulation_config.yaml", encoding="utf-8"))
 BY_KEY = {s["key"]: s for s in CFG["stakeholders"]}
 ORDER = CFG["roundtable"]["turn_order"]          # rows in speaking order
 
-CAMP = {"works_council": ("labour", BLUE), "ig_metall": ("labour", BLUE),
+CAMP = {"works_council": ("labor", BLUE), "ig_metall": ("labor", BLUE),
         "management": ("executive", ORANGE), "lower_saxony": ("state shareholder", GREEN),
         "owners": ("family shareholder", PURPLE), "investors": ("capital markets", SKY)}
 
@@ -59,14 +59,6 @@ for i, key in enumerate(ORDER):
 
 ax.set_title("Six parties, one table: the configured negotiation position of each stakeholder",
              fontsize=10.4, fontweight="bold", loc="left", pad=14)
-fig.text(0.005, -0.045,
-  "Rows in roundtable speaking order (a configuration value). Power, flexibility and trust (relational prior) are the 0-10\n"
-  "operationalised values read by the engine from config/simulation_config.yaml; Chapter 5 documents how each was derived\n"
-  "from the case record. The geometry of the conflict is visible in the first two columns: the Works Council combines the\n"
-  "highest power at the table with the lowest flexibility - the co-determination blocker - while the capital-market investors\n"
-  "hold the least power and the most flexibility. Colours group the camps: labour (blue), executive (orange), shareholders\n"
-  "(green, purple, light blue for state, family, capital markets).",
-  fontsize=7.2, color=GREY, va="top", linespacing=1.5)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT, "Fig 7.2 - Case Stakeholder Map.png"), facecolor="white")
 print("  wrote Fig 7.2 - Case Stakeholder Map.png")

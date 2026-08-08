@@ -44,7 +44,6 @@ class RoundtableSettings(BaseModel):
     max_rounds: int = 4
     max_summons: int = 2
     min_rounds_before_synthesis: int = 2
-    red_line_active: bool = True
     salience_orchestration: bool = True   # light-touch: salience sets speaking order
     turn_order: list[str] = Field(min_length=1)
 

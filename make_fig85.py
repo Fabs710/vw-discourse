@@ -74,12 +74,6 @@ ax.set_title("A second pass costs no generation\nand removes 18% of the noise",
 ax.set_xlim(0.7,5.4); ax.set_ylim(math.sqrt(gen2)*0.93, ts*1.06)
 for s in ("top","right"): ax.spines[s].set_visible(False)
 
-fig.text(0.0, -0.08,
-  "Ten runs re-scored by the identical jury on frozen transcripts, one run per condition across the baseline, both order\n"
-  "conditions, all four layers and both confirmed drill sweeps. The judge SD is derived from the paired differences between\n"
-  "passes as sd(difference)/sqrt(2); the generation SD is the residual. Mean signed difference across dimensions +0.031, so\n"
-  "the jury scatters around a stable value rather than drifting between passes.",
-  fontsize=7.1, color=GREY, va="top", linespacing=1.5)
 fig.tight_layout()
 fig.savefig(os.path.join(OUT, "Fig 8.5 - Judging vs Generation Variance.png"), facecolor="white")
 print("  wrote Fig 8.5 - Judging vs Generation Variance.png")
