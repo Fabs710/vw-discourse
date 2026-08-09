@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.3,
+    "openness": 0.62,
+    "declared_red_line": "al plan.\n\nBut that package must be built on these non-negotiables:\n- **no compulsory redundancies**\n- **no plant closures**\n- **binding site and job security through 2030**\n- **protection of the colle"
+  }
+}

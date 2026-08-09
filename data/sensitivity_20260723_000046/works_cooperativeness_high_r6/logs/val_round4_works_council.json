@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 8,
+    "risk_preference": 2,
+    "time_preference": 6,
+    "flexibility": 3,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 8,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.3,
+    "openness": 0.58,
+    "declared_red_line": "cially destructive and irreversible.\n\n### What is non-negotiable for us\nOur position remains:\n1. **No German plant closures**\n2. **No compulsory redundancies**\n3. **No unilateral dismantling of job-se"
+  }
+}

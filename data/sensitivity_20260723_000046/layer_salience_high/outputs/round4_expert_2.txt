@@ -1,0 +1,167 @@
+Yes. I can provide the decision matrix template and the plant-level scenario structure.
+
+## Decision matrix: closure vs negotiated restructuring vs status quo
+
+### 1) Core scenarios to compare
+For each German plant, model three cases:
+
+1. **Closure / consolidation**
+   - site shutdown or major volume transfer
+   - headcount reduction
+   - asset write-down / decommissioning
+   - production moved to other plants or external sourcing
+
+2. **Negotiated no-closure restructuring**
+   - no plant closure
+   - capacity reduction through working time, redeployment, voluntary exits, product allocation changes
+   - wage / bonus / working-time contribution
+   - management overhead cuts
+   - possible time-limited job protection
+
+3. **Status quo**
+   - no major restructuring beyond normal attrition
+   - useful as the baseline to show the cost of inaction
+
+---
+
+## 2) Plant-level data fields needed
+For each site, collect:
+
+- annual output
+- installed capacity
+- utilization rate
+- headcount by function
+- labor cost per vehicle
+- direct labor hours per vehicle
+- fixed plant overhead
+- variable production cost
+- energy and logistics cost
+- maintenance and capex needs
+- product mix and launch schedule
+- transferability of volume to other plants
+- one-off restructuring cost
+- conflict/strike exposure
+- estimated ramp-up cost if volume is moved
+
+---
+
+## 3) Financial model structure
+
+### A. Recurring annual effects
+For each scenario and plant, estimate:
+
+- labor cost savings
+- overhead savings
+- productivity gains
+- logistics changes
+- procurement effects, if material
+- lost contribution margin from removed output
+- temporary concessions that expire after a defined period
+
+### B. One-off costs
+Include:
+
+- severance
+- early retirement and bridging payments
+- redeployment and retraining
+- tooling transfer
+- plant decommissioning
+- lease / facility exit costs
+- IT and systems migration
+- ramp-up inefficiency at receiving sites
+- inventory write-offs or transfer losses
+
+### C. Conflict / industrial action costs
+Estimate separately:
+
+- strike-related lost output
+- lost shipments / delayed deliveries
+- restart inefficiency
+- supplier disruption
+- quality and launch delay costs
+- management time / crisis response cost
+
+These should be modeled probabilistically, not as a single fixed number.
+
+---
+
+## 4) Recommended output table
+
+For each plant and scenario, show:
+
+| Metric | Closure / Consolidation | Negotiated No-Closure Restructuring | Status Quo |
+|---|---:|---:|---:|
+| Annual recurring savings |  |  | 0 |
+| Annual recurring cost increases |  |  | 0 |
+| One-off restructuring costs |  |  | 0 |
+| Conflict / strike expected cost |  |  |  |
+| Net annual EBITDA impact |  |  |  |
+| Implementation time to full run-rate |  |  |  |
+| Probability of delay |  |  |  |
+| 3–5 year NPV |  |  |  |
+| Headcount impact |  |  |  |
+| Capacity impact |  |  |  |
+| Strategic / product risk |  |  |  |
+
+---
+
+## 5) What counts as a viable negotiated restructuring?
+A no-closure package is economically credible if it:
+
+- closes most of the structural fixed-cost gap
+- produces durable savings through 2030 or beyond
+- does not rely mainly on temporary wage sacrifices
+- keeps conflict costs below the closure case
+- preserves acceptable utilization levels
+- avoids large hidden costs from underabsorption or excess complexity
+
+In practice, if the savings come mostly from:
+- one-time pay moderation,
+- temporary bonuses,
+- or short-lived working-time reductions,
+
+then the package may improve liquidity but still fail to solve the structural problem.
+
+---
+
+## 6) What would make consolidation economically stronger?
+Closure or consolidation becomes more compelling if:
+
+- a plant is structurally underutilized
+- its product can be moved with limited capex
+- the receiving plant has spare capacity
+- fixed cost removal is large and durable
+- one-off transfer costs are moderate
+- strike / conflict risk is manageable
+- the 3–5 year risk-adjusted NPV clearly exceeds the negotiated alternative
+
+---
+
+## 7) Sensitivity cases to run
+At minimum, test these sensitivities:
+
+- strike lasts 1, 2, or 4 weeks
+- labor concession lasts 2, 4, or 6 years
+- volume transferred at 80%, 90%, or 100% of plan
+- receiving plant ramp-up delayed by 3 to 12 months
+- severance / exit costs +20% / +40%
+- energy, logistics, or materials inflation
+- demand downside from weak European market
+- quality or launch delay penalty
+
+---
+
+## 8) Practical interpretation
+Without plant-level numbers, nobody can honestly claim either:
+
+- that closures are definitely necessary, or
+- that a no-closure package is definitely sufficient.
+
+The evidence standard should be:
+- plant-by-plant cost base,
+- verified fixed vs variable cost split,
+- one-off transition costs,
+- conflict costs,
+- and risk-adjusted NPV over 3 to 5 years.
+
+If you want, I can next turn this into a **filled decision template with sample formulas** for EBITDA, cash flow, and NPV.

@@ -1,0 +1,486 @@
+{
+  "run_folder": "data\\sensitivity_20260726_172041\\layer_position_low__m-claudesonnet_r2",
+  "dqi": {
+    "justification_level": 2.0,
+    "justification_content": 1.625,
+    "respect": 1.875,
+    "constructive_politics": 1.958,
+    "individuation": 2.0
+  },
+  "outcome": {
+    "agreement": false,
+    "rounds": 4,
+    "convergence": "progressing",
+    "position_move_mean": 0.333,
+    "key_terms_per_judge": [
+      {
+        "judge": 0,
+        "terms": [
+          {
+            "issue": "Plant Closure Language and Optionality",
+            "outcome": "Unresolved standoff between Management's insistence on retained optionality and Labor's demand for explicit foreclosure, with a state-proposed 'silence' compromise pending endorsement."
+          },
+          {
+            "issue": "Self-Scaling Wage Contribution",
+            "outcome": "Structure and automatic trigger mechanics agreed, but the contribution ceiling remains an unfinalized proposal subject to stress-testing."
+          },
+          {
+            "issue": "Workforce Attrition Curve",
+            "outcome": "Works Council submitted data covering roughly one-third to two-fifths of the target, with the final year-by-year curve still open."
+          },
+          {
+            "issue": "Top-of-House Executive Contribution",
+            "outcome": "Proportionality principle agreed, but the specific numerical figure remains unprovided by management."
+          }
+        ]
+      }
+    ]
+  },
+  "floor": {
+    "token_share": {
+      "works_council": 0.179,
+      "ig_metall": 0.135,
+      "management": 0.169,
+      "lower_saxony": 0.214,
+      "owners": 0.147,
+      "investors": 0.156
+    },
+    "speaking_rank": {
+      "works_council": 1,
+      "ig_metall": 2,
+      "management": 3,
+      "lower_saxony": 4,
+      "owners": 5,
+      "investors": 6
+    }
+  },
+  "per_stakeholder": {
+    "works_council": {
+      "justification_level": 2.0,
+      "justification_content": 1.5,
+      "respect": 1.75,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "ig_metall": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 1.5,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "management": {
+      "justification_level": 2.0,
+      "justification_content": 1.5,
+      "respect": 2.0,
+      "constructive_politics": 1.75,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "lower_saxony": {
+      "justification_level": 2.0,
+      "justification_content": 1.75,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 1.0
+    },
+    "owners": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 1.0
+    },
+    "investors": {
+      "justification_level": 2.0,
+      "justification_content": 1.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    }
+  },
+  "contribution_scores": [
+    {
+      "stakeholder": "works_council",
+      "round": 1,
+      "chars": 2740,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The Works Council representative provides fully elaborated reasoning for their positions and offers a conditional compromise framework on labor costs, strongly reflecting the distinct legal mechanisms and priorities of German co-determination."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 2,
+      "chars": 6038,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated reasoning and concrete concessions balancing workforce burden with company viability, respectfully engages with counterarguments from management and investors, offers detailed mediating proposals, and speaks in a highly distinctive Works Council voice."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 3,
+      "chars": 6914,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The Works Council provides fully elaborated legal and logical justifications, explicitly commits to substantial employee sacrifices if the stress test shows a financial shortfall, directly engages counterarguments with respect, and advances a concrete working package and timeline tailored specifically to its role under German co-determination."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 4,
+      "chars": 5220,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated, logically linked justifications for their stance while engaging directly with counter-arguments and offering concrete alternative mechanisms to address downside risks, strongly reflecting the distinct perspective of a Works Council representative."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 1,
+      "chars": 3200,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The union speaker provides a fully elaborated rationale demanding balanced burden-sharing across management and labor, offering concrete compromise proposals on working hours and bonuses while firmly establishing union-specific leverages like warning strikes and collective bargaining autonomy."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 2,
+      "chars": 5075,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated reasoning, explicitly balances mutual constraints and burdens across all parties using a shared fairness criterion, respectfully engages counter-arguments, proposes a concrete process for quantified cost-sharing, and demonstrates clear union-specific role identity."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 3,
+      "chars": 6803,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated reasoning and offers a concrete, self-adjusting wage contribution proposal that commits labor to downside sacrifices, while maintaining a strongly distinctive trade union perspective and engaging seriously with management and investor arguments."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 4,
+      "chars": 5700,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides a fully elaborated, logically linked argument grounded in collective bargaining mechanics, engages directly with counter-arguments, offers concrete technical specifications for a self-scaling contribution mechanism that binds their own members, and speaks in an unmistakably authentic trade-union voice."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 1,
+      "chars": 3844,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated, logically linked justifications and explicitly engages with counter-arguments to propose a consensus-building criteria for alternative solutions, speaking distinctly as executive management."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 2,
+      "chars": 6058,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated justifications based on a universal viability standard, engages directly and respectfully with union and works council proposals, offers concrete consensual next steps, and speaks distinctly as executive brand management."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 3,
+      "chars": 7170,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides thoroughly elaborated arguments, accepts the union's standard of equal proportional sacrifice for top-of-house compensation, engages seriously and respectfully with counter-arguments, offers a structured proposal and timeline for joint working sessions, and speaks in a voice highly tailored to executive brand management."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 4,
+      "chars": 5384,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 1,
+          "individuation": 2,
+          "rationale": "The speaker provides a fully elaborated, logical justification for retaining executive optionality while engaging counterarguments with high respect, though maintaining a firm stance on keeping the closure option without introducing a new compromise proposal."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 1,
+      "chars": 4179,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder presents fully developed, logically linked arguments that balance burdens across management and labor while explicitly engaging counter-arguments and offering a concrete mediating proposal distinct to a state government shareholder."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 2,
+      "chars": 5599,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The Regional State Government provides a fully developed logical justification for its stance on review clauses while offering concrete state co-funding and incentives to bridge gaps between management and labor, using its unique shareholder position constructively."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 3,
+      "chars": 5470,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated reasoning and offers concrete co-funding proposals while directly and respectfully addressing counterarguments from management, investors, and the union from a distinct regional state perspective."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 4,
+      "chars": 5857,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The Regional State Government offers a fully elaborated, logically linked mediation proposal that explicitly balances the risks and political burdens of all parties while committing state co-funding, demonstrating deep engagement and role specificity."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 1,
+      "chars": 2867,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder presents fully elaborated, logically linked justifications applying a shared enterprise-viability criterion across all parties, seriously engages with counter-arguments, offers a consensual path forward, and speaks with a strongly distinctive family-owner perspective."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 2,
+      "chars": 4665,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker offers fully elaborated structural arguments grounded in an objective viability test that binds themselves to drop closures if met, demonstrates high explicit respect for other parties, proposes a clear consensus-building framework based on stress-test results, and speaks in a highly distinctive controlling shareholder voice."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 3,
+      "chars": 5505,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder articulates fully developed logical arguments based on a shared standard of performance-based accountability that applies to all sides, while engaging counter-arguments respectfully and endorsing concrete, consensual procedural solutions."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 4,
+      "chars": 4301,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder presents thoroughly elaborated justifications that balance all parties' perspectives, directly engages counter-arguments with respect, advances a mediating package solution, and speaks authentically from the family holding's governance perspective."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 1,
+      "chars": 3727,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution presents a fully elaborated, logical argument from a distinct capital markets perspective, engaging seriously with counter-arguments while setting clear conditions for a consensual alternative to plant closures."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 2,
+      "chars": 5817,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated reasoning grounded in market risk pricing, engages respectfully and constructively with other actors' concrete proposals, and speaks in a voice strongly distinctive to capital market investors."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 3,
+      "chars": 6346,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides thoroughly elaborated financial reasoning, explicitly engages with and concedes to counterarguments, constructively supports viable mechanisms to reach a deal, and speaks in an unmistakably market-oriented investor voice, though the justification content remains focused on capital pricing and risk underwriting."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 4,
+      "chars": 5704,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated reasoning centered on market pricing and return-on-sales targets, engages directly and respectfully with counter-arguments from the Works Council and Union, offers specific constructive technical proposals for the next session, and speaks in a highly distinctive institutional investor voice."
+        }
+      ]
+    }
+  ],
+  "inter_judge_kappa": {},
+  "n_judges": 1,
+  "judging_cost": {
+    "per_judge": {
+      "gemini-3.6-flash": {
+        "calls": 31,
+        "input_tokens": 51816,
+        "output_tokens": 2449,
+        "cost_usd": 0.0961
+      }
+    },
+    "total_calls": 31,
+    "total_input_tokens": 51816,
+    "total_output_tokens": 2449,
+    "cost_usd": 0.0961,
+    "unpriced_models": []
+  }
+}

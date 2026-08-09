@@ -1,0 +1,75 @@
+Yes. Within my remit, the key question is **not** “closures vs no closures” in the abstract, but **which package has the highest execution-risk-adjusted NPV** after one-time costs.
+
+## Preliminary valuation view
+With no plant-level data, the financially correct conclusion is:
+
+- **Pure closure strategy**
+  - Highest potential steady-state savings
+  - Highest one-time cost
+  - Highest execution/disruption risk
+  - Can be NPV-superior only if:
+    - the savings gap is large,
+    - the sites are structurally uneconomic,
+    - and the probability of clean execution is high enough.
+
+- **Pure non-closure strategy**
+  - Lowest upfront cost
+  - Lowest immediate conflict risk if accepted
+  - But savings are often smaller, slower, and less durable
+  - Usually inferior if the structural overcapacity gap is material.
+
+- **Hybrid strategy**
+  - Usually the best risk-adjusted candidate in a veto-heavy governance setting
+  - Captures some permanent fixed-cost reduction without paying the full closure penalty
+  - Often dominates on expected NPV if full closures face heavy strike, veto, and delay risk.
+
+## Sensitivity breakpoints
+A non-closure package becomes financially inferior when one or more of these hold:
+
+1. **Savings shortfall**
+   - Non-closure measures cover too little of the required structural gap.
+
+2. **Savings decay**
+   - Concessions are temporary, while the cost problem is permanent.
+
+3. **High implementation leakage**
+   - Working-time, wage, or productivity gains are not actually realized.
+
+4. **Conflict cost rises**
+   - If preserving sites requires repeated concessions, the cumulative cost can exceed a one-time rationalization.
+
+5. **Investment drag**
+   - If the company cannot fund future products because the restructuring is too soft, NPV deteriorates even if the sites stay open.
+
+## What I would need to quantify properly
+To produce a decision-grade comparison, I would need for each plant/function:
+
+- headcount by category
+- annual labor cost
+- production volume and utilization
+- contribution margin
+- logistics and product adjacency
+- required future capex
+- closure/decommissioning cost
+- severance and social-plan cost
+- transition production loss
+- expected strike disruption probability and duration
+
+And for the non-closure package:
+
+- exact wage moderation terms
+- bonus restraint
+- working-time reduction
+- attrition/retirement corridor assumptions
+- redeployment capacity
+- expected productivity gain
+- duration of concessions
+
+## Provisional conclusion
+Given the governance constraints described, **a hybrid is the most plausible risk-adjusted outcome** unless the company can show, with numbers, that a non-closure package fully closes the savings gap at acceptable durability and execution risk.
+
+If you want, I can now build a **simple scenario table** with illustrative numbers for:
+- non-closure,
+- hybrid,
+- closure,
+including **annual savings, one-time costs, payback period, and NPV sensitivity**.

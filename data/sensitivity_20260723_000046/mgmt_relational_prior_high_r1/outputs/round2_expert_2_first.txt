@@ -1,0 +1,263 @@
+Below is the **finance/operations assessment** the parties are asking for. I will stay within quantified restructuring economics and avoid labor/political/legal positions.
+
+## Executive answer
+
+A **non-closure restructuring can work only if the required margin gap is modest** and the company can extract enough savings from:
+- labor-cost reset,
+- shift reduction,
+- utilization improvement,
+- overhead cuts,
+- and productivity gains.
+
+If the brand’s **return-on-sales gap is structurally large**, then **non-closure measures usually do not close the full gap** because they cannot remove enough fixed plant overhead and underutilized capacity. In that case, the minimum economically credible package is typically a **hybrid**:
+- **major internal measures**, plus
+- **some capacity rationalization** through plant-line consolidation, shift removal, or partial site shutdown.
+
+## 1) What must be quantified first
+
+To answer “closure vs. non-closure,” you need three numbers:
+
+1. **Target profit uplift needed**
+   - Current ROS
+   - Target ROS
+   - Revenue base
+
+   Formula:
+   \[
+   \text{Required EBIT uplift} = (\text{Target ROS} - \text{Current ROS}) \times \text{Revenue}
+   \]
+
+2. **Available non-closure savings**
+   - labor concessions
+   - indirect headcount reduction
+   - shift rationalization
+   - procurement and overhead cuts
+   - productivity gains
+
+3. **Residual gap**
+   \[
+   \text{Gap} = \text{Required EBIT uplift} - \text{Non-closure savings}
+   \]
+
+If the residual gap remains material, a no-closure solution is not financially sufficient.
+
+---
+
+## 2) Operating logic: why closures matter so much in autos
+
+In automotive manufacturing, the cost base is split between:
+
+- **variable costs**: direct materials, logistics, some energy, piece-rate labor elements
+- **fixed / semi-fixed costs**: plant overhead, maintenance, indirect labor, depreciation, support functions, utilities, and underabsorbed factory burden
+
+A closure or true site shutdown removes a **whole fixed-cost stack**. That is why closures are often disproportionately powerful versus wage moderation alone.
+
+### Practical implication
+- **Wage concessions** improve cost per vehicle.
+- **Shift cuts** improve utilization.
+- **Headcount reduction** lowers labor cost.
+- But **only site rationalization** removes a large share of the fixed-cost burden associated with excess capacity.
+
+---
+
+## 3) Scenario framework
+
+Because I do not have audited company data in the prompt, I will set out a **scenario model** using generic but realistic automotive restructuring mechanics. These are **scenario estimates**, not verified company facts.
+
+### Scenario A — Non-closure restructuring
+Measures:
+- wage/bonus/allowance reset
+- working-time flexibility
+- attrition and voluntary exits
+- indirect overhead reduction
+- line balancing and shift cuts
+- productivity improvement
+
+Typical savings range:
+- **labor-side savings:** ~5–10% of German labor cost base
+- **overhead savings:** ~2–4% of brand revenue or equivalent
+- **total durable EBIT uplift:** often **mid-hundreds of millions to low-single-digit billions** depending on size
+
+Constraint:
+- savings are usually **limited by the inability to eliminate enough fixed factory overhead**
+
+### Scenario B — Hybrid restructuring
+Measures:
+- all Scenario A measures, plus
+- consolidation of selected lines/models
+- loss of one shift at one or more plants
+- transfer of volume from structurally underutilized sites
+- partial site or module shutdown
+
+Typical savings range:
+- **materially higher**, often enough to remove **a full site-level fixed-cost stack**
+- better chance of reaching a **step-change** in ROS
+
+### Scenario C — Full closure-led restructuring
+Measures:
+- closure of one or more German plants
+- redeployment where possible
+- deeper workforce reduction
+- elimination of site fixed costs
+
+Typical savings range:
+- highest annual run-rate savings
+- highest one-time restructuring cost
+- greatest execution risk and volume disruption
+
+---
+
+## 4) Illustrative savings bridge
+
+To make the logic concrete, here is a **generic example**.
+
+Assume:
+- brand revenue = **€40 billion**
+- current ROS = **2.0%**
+- target ROS = **5.0%**
+
+Then:
+\[
+\text{Required EBIT uplift} = (5\% - 2\%) \times 40bn = 3\% \times 40bn = €1.2bn
+\]
+
+### Example savings bridge
+| Item | Annual EBIT impact |
+|---|---:|
+| Wage/bonus moderation | €150m–€300m |
+| Attrition / workforce reduction | €100m–€250m |
+| Shift rationalization / utilization gains | €100m–€250m |
+| Indirect overhead cuts | €100m–€200m |
+| Procurement / logistics / productivity | €150m–€300m |
+| **Total non-closure savings** | **€600m–€1.3bn** |
+
+### Interpretation
+- If the required uplift is around **€600m–€900m**, a non-closure package may be feasible.
+- If the required uplift is around **€1.2bn+**, non-closure becomes much harder unless productivity and labor concessions are unusually strong.
+- If the gap is **well above €1bn**, a hybrid or closure-led solution is usually the only credible route to restore target ROS.
+
+---
+
+## 5) Plant-by-plant logic: what to look for
+
+The key metric is **cost per unit of eliminated capacity**, not just headcount.
+
+For each plant, estimate:
+1. annual output
+2. utilization rate
+3. direct labor per unit
+4. site fixed overhead
+5. logistics and supply-chain duplication
+6. depreciation and maintenance burden
+7. relocation feasibility of the product
+
+### Decision rule
+A plant becomes a closure or major consolidation candidate when:
+\[
+\text{avoidable annual fixed cost} + \text{avoidable variable cost from lost volume} \gt \text{cost of transferring volume}
+\]
+
+If a plant is below, say, **70–75% utilization** and has limited product flexibility, it usually becomes a strong rationalization candidate in a shrinking market. If a site is above that range and deeply integrated, non-closure options are more plausible.
+
+---
+
+## 6) Minimum production/capacity reduction needed
+
+Without company-specific data, I can only provide the formula and a planning range.
+
+### Capacity reduction formula
+Let:
+- \(F\) = annual fixed factory and overhead cost tied to excess capacity
+- \(V\) = variable cost savings from reduced output or efficiency
+- \(T\) = target EBIT uplift needed
+
+Then:
+\[
+\text{Needed capacity reduction} \approx \frac{T - \text{non-capacity savings}}{\text{EBIT saved per unit of capacity removed}}
+\]
+
+In auto plants, **EBIT saved per 1 percentage point of capacity removed** can be very material because it removes labor underabsorption and site overhead.
+
+### Rule of thumb
+- **Small ROS gap:** about **1 plant shift equivalent** may be enough
+- **Moderate gap:** **one full line or plant segment**
+- **Large gap:** **one whole plant or multiple sites** may be needed
+
+That is why management often pushes beyond labor concessions toward footprint reduction.
+
+---
+
+## 7) What a credible non-closure package must include
+
+A non-closure plan is only credible if it is quantified across four buckets:
+
+### A. Labor-cost reset
+- temporary wage moderation
+- bonus suspension/reduction
+- allowances removed or restructured
+- working-time adjustments
+- lower overtime and flex premiums
+
+### B. Workforce adjustment
+- attrition
+- voluntary exits
+- redeployment
+- hiring freeze
+- temporary labor reduction
+
+### C. Industrial footprint optimization
+- shift removals
+- line consolidation
+- model allocation changes
+- lower utilization targets at selected sites
+
+### D. Corporate overhead reduction
+- engineering, admin, and SG&A cuts
+- procurement savings
+- logistics simplification
+- reduced complexity in product mix
+
+If any one of these four is weak, the package tends to fall short.
+
+---
+
+## 8) My assessment of feasibility
+
+### Non-closure is feasible if:
+- the ROS gap is **moderate**
+- excess capacity is **limited or transient**
+- labor cost reset is **material and durable**
+- utilization can be lifted without major capex
+- management overhead can be reduced sharply
+
+### Non-closure is not enough if:
+- the brand has **persistent structural overcapacity**
+- several plants operate at low utilization
+- the market is shrinking
+- fixed-cost burden is too high
+- competitors are structurally cheaper
+
+In that case, management may still be able to avoid full closures, but only by accepting a **partial footprint reduction**.
+
+---
+
+## 9) Bottom line
+
+From a restructuring finance standpoint:
+
+- **Non-closure solutions can close a savings gap only if that gap is modest.**
+- **If the company needs a step-change in ROS, the numbers usually force some capacity rationalization.**
+- The economically correct question is not “closure or no closure,” but:
+  **How much fixed-cost removal is required, and what footprint reduction is needed to get it?**
+
+If you want, I can next build a **side-by-side numeric scenario table** with:
+1. closure-based,
+2. non-closure,
+3. hybrid,
+
+showing:
+- annual savings,
+- one-time restructuring costs,
+- headcount impact,
+- capacity removed,
+- and likely ROS effect.

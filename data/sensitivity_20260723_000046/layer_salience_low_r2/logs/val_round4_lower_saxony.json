@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "lower_saxony",
+  "salience": 1.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 1,
+    "legitimacy": 1,
+    "urgency": 1,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.35,
+    "openness": 0.78,
+    "declared_red_line": "en cannot fall one-sidedly on the workforce. Your red lines on compulsory redundancies and site destruction are politically understandable and, in my view, legitimate.\n\nBut I also need to be frank: a"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.45,
+    "openness": 0.54,
+    "declared_red_line": "o the Works Council and Union\nI support your core red lines:\n- no German plant closures,\n- no compulsory redundancies.\n\nThat is not just a political slogan for us; it is a serious boundary. I also sup"
+  }
+}

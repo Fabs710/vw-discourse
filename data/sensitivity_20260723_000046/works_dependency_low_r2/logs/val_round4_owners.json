@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.49,
+    "frustration": 0.25,
+    "openness": 0.66,
+    "declared_red_line": "ons, those are coherent. But if they are absolute red lines without a quantified alternative that closes the savings gap, then they become a veto on restructuring.\n\nThat is not something I can support"
+  }
+}

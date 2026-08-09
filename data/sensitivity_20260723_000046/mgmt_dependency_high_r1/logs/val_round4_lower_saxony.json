@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.54,
+    "frustration": 0.05,
+    "openness": 0.74,
+    "declared_red_line": "To the works council and union: I understand the red lines, and I share the concern about hollowing out sites. But I will not support a package that simply preserves every structure and hopes the num"
+  }
+}

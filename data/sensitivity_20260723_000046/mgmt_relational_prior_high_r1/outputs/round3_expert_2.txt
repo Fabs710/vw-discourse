@@ -1,0 +1,393 @@
+Below is a **finance/operations-only** scenario framework based on the information in the conversation. I am **not** using any company-internal plant data beyond what has been stated, so this is a **quantified structure and model**, not a verified company disclosure.
+
+## 1) What is verified vs. estimated
+
+### Verified from the discussion
+- The brand is **below its return-on-sales target**.
+- German operations are judged to have a **structural cost disadvantage** and **overcapacity**.
+- The key question is whether the gap can be closed **without plant closures**.
+- Internal measures on the table include:
+  - redeployment
+  - qualification
+  - working-time changes
+  - shift rationalisation
+  - productivity improvements
+  - overhead reductions
+- The expert assessment says:
+  - **non-closure can work if the savings gap is moderate**
+  - if the gap is large, **fixed-cost removal through footprint rationalisation becomes more likely**
+
+### Estimated for scenario purposes
+Because the exact current EBIT/ROS gap is not provided, I have to express the package as a **gap bridge**.
+
+I will use a practical restructuring planning convention:
+
+- Let **required EBIT uplift** = amount needed to restore target ROS.
+- Let **non-closure savings** = annual run-rate savings from all measures that do not close a plant.
+- Let **residual gap** = required EBIT uplift minus non-closure savings.
+- If residual gap is still material, the company likely needs **capacity reduction / footprint rationalisation**.
+
+---
+
+## 2) Planning logic and formulas
+
+### Core formula
+\[
+\text{Residual gap} = \text{Required EBIT uplift} - \text{Non-closure savings}
+\]
+
+### ROS effect approximation
+If revenue is stable, then:
+
+\[
+\Delta ROS \approx \frac{\Delta EBIT}{Revenue}
+\]
+
+So if a package adds €500m EBIT on €40bn revenue, ROS improves by:
+
+\[
+500/40{,}000 = 1.25\% \text{ points}
+\]
+
+---
+
+## 3) Scenario table — group level
+
+I will frame three cases, consistent with the conversation:
+
+- **A. Non-closure scenario**
+- **B. Hybrid scenario**
+- **C. Closure-based scenario**
+
+Because no exact gap is provided, I show the economics in **ranges**. These are realistic restructuring planning ranges for a major automotive OEM footprint, not verified disclosures.
+
+### Assumption set for illustration
+- Brand revenue base: **€35bn–€45bn**
+- Current ROS gap to target: **roughly 1.0–3.0 percentage points**
+- Required EBIT uplift: **€350m–€1,350m** annually
+- One-time restructuring costs: **€300m–€2,000m** depending on depth
+
+---
+
+### A) Non-closure scenario
+**Measures**
+- wage moderation / labor contribution
+- no-compulsory-redundancy attrition program
+- early retirement / voluntary exits
+- reduced temporary labor
+- shift cuts / line balancing
+- internal redeployment
+- overhead reduction
+- productivity improvements
+
+**Expected annual savings**
+- **€250m–€650m**
+
+**One-time restructuring cost**
+- **€150m–€500m**
+  - severance incentives
+  - retraining
+  - redeployment
+  - process changes
+  - tooling / line adjustments
+
+**Headcount impact**
+- **1,500–4,000 FTE** reduction, mostly through attrition/voluntary exits
+
+**Capacity removed**
+- **5%–12%** effective capacity reduction via shifts and utilization cuts, but plants remain open
+
+**ROS improvement**
+- If revenue is €40bn:
+  - €250m EBIT uplift = **+0.6 pp ROS**
+  - €650m EBIT uplift = **+1.6 pp ROS**
+
+**Residual gap risk**
+- If required EBIT uplift is above ~€650m, the residual gap remains **material** and the package likely falls short.
+
+**Assessment**
+- Feasible only if the company’s gap is **moderate**
+- Strongest politically and operationally
+- Weakest on removing **fixed plant cost**
+
+---
+
+### B) Hybrid scenario
+**Measures**
+- all non-closure measures above, plus
+- selective footprint rationalisation
+- line consolidation
+- partial site shrinkage
+- model migration between plants
+- possible closure of a line, not necessarily an entire site
+
+**Expected annual savings**
+- **€500m–€1,100m**
+
+**One-time restructuring cost**
+- **€500m–€1,200m**
+  - line transfer
+  - retooling
+  - logistics change
+  - redundancy incentives
+  - asset impairment
+
+**Headcount impact**
+- **3,000–7,000 FTE**
+
+**Capacity removed**
+- **10%–20%** effective capacity reduction
+
+**ROS improvement**
+- At €40bn revenue:
+  - €500m = **+1.25 pp ROS**
+  - €1,100m = **+2.75 pp ROS**
+
+**Residual gap risk**
+- Usually closes a **mid-sized** savings gap
+- More credible if one or more sites are structurally underutilized
+
+**Assessment**
+- Best balance between economics and execution risk
+- Still avoids the highest-impact political decision: full plant closure
+- More likely to remove enough fixed cost than pure non-closure
+
+---
+
+### C) Closure-based scenario
+**Measures**
+- one or more plant closures
+- major footprint consolidation
+- larger workforce reduction
+- deeper overhead reset
+- possible relocation of production to higher-utilization sites
+
+**Expected annual savings**
+- **€900m–€1,800m**
+
+**One-time restructuring cost**
+- **€1,000m–€2,500m**
+  - severance
+  - site exit costs
+  - asset write-downs
+  - logistics relocation
+  - launch/retooling
+  - contractual settlements
+
+**Headcount impact**
+- **5,000–12,000 FTE** or more, depending on plant size and supplier footprint
+
+**Capacity removed**
+- **15%–30%** or more, depending on the number of sites closed
+
+**ROS improvement**
+- At €40bn revenue:
+  - €900m = **+2.25 pp ROS**
+  - €1,800m = **+4.5 pp ROS**
+
+**Residual gap risk**
+- Lowest risk of under-delivering on savings
+- Highest execution and conflict risk
+- Largest one-time cash burden
+
+**Assessment**
+- Most powerful for fixed-cost removal
+- Strongest if the savings gap is large and structural
+- Most disruptive and costly upfront
+
+---
+
+## 4) Plant-by-plant economics framework
+
+You asked for a plant-by-plant bridge. Since no plant-specific data is disclosed here, the correct way to structure it is by **site economics**:
+
+For each German plant, estimate:
+
+1. **Current annual fixed cost**
+   - plant overhead
+   - maintenance
+   - utilities
+   - local management
+   - depreciation/lease burden
+2. **Variable cost per unit**
+3. **Current utilization**
+4. **Break-even volume**
+5. **Savings available from non-closure measures**
+6. **Incremental savings from line consolidation or partial shutdown**
+7. **Exit cost if the plant is closed**
+
+### Decision rule by plant
+A plant becomes a candidate for deeper action if:
+
+\[
+\text{Utilization} < \text{Break-even utilization}
+\]
+
+and
+
+\[
+\text{Savings from internal measures} < \text{Required cost reduction}
+\]
+
+In practical terms:
+
+- **High utilization, strong product pipeline** → candidate for non-closure measures only
+- **Medium utilization, shrinking volumes** → candidate for hybrid footprint reduction
+- **Low utilization, high fixed cost** → likely needs closure or equivalent consolidation
+
+---
+
+## 5) Illustrative plant classification model
+
+This is a **scenario template**, not a claim about any specific site.
+
+### Type 1: High-utilization plant
+- Utilization: **>80%**
+- Fixed-cost absorption is acceptable
+- Non-closure measures can work
+- Savings potential:
+  - **€30m–€80m per year**
+
+### Type 2: Mid-utilization plant
+- Utilization: **65%–80%**
+- Some line consolidation possible
+- Hybrid measures likely needed
+- Savings potential:
+  - **€70m–€180m per year**
+
+### Type 3: Underutilized plant
+- Utilization: **<65%**
+- Fixed-cost burden is high
+- Closure or major shrinkage may be the only way to remove enough cost
+- Savings potential:
+  - **€150m–€400m+ per year**
+
+This is why management keeps returning to footprint reduction: **underutilized plants lock in fixed cost** that working-time or attrition alone cannot fully erase.
+
+---
+
+## 6) Minimum capacity reduction logic if closures are avoided
+
+If the company wants to avoid closures entirely, the minimum required capacity reduction usually has to come from:
+
+- shift removal
+- line shutdown for specific models
+- fewer operating days
+- more efficient sequencing
+- internal transfer of volume
+- lower staffing density
+
+However, those measures typically remove **effective capacity**, not all site cost.
+
+### Rule of thumb
+To materially restore margins **without closure**, the company would often need:
+
+- **10%–15% effective capacity reduction**
+- plus a meaningful labor-cost reset
+- plus overhead cuts
+- plus at least moderate productivity gains
+
+If the needed savings gap exceeds what those measures can deliver, the residual gap remains.
+
+---
+
+## 7) Break-even and margin restoration logic
+
+### Example calculation
+Assume:
+- Revenue = **€40bn**
+- Current ROS = **2.0%**
+- Target ROS = **4.0%**
+
+Then:
+- Current EBIT = **€800m**
+- Target EBIT = **€1.6bn**
+- Required EBIT uplift = **€800m**
+
+Now compare scenarios:
+
+#### Non-closure package
+- Savings = **€500m**
+- Residual gap = **€300m**
+- ROS improves from 2.0% to **3.25%**
+
+#### Hybrid package
+- Savings = **€900m**
+- Residual gap = **€0m**
+- ROS improves to **4.25%** if revenue holds
+
+#### Closure-based package
+- Savings = **€1.3bn**
+- Residual gap = **0m**
+- ROS improves to **5.25%**
+- but with much larger one-time cost
+
+This is the core decision logic:
+- If the target gap is **around €500m**, non-closure may be enough.
+- If the gap is **around €800m–€1.1bn**, hybrid is more realistic.
+- If the gap is **above €1.1bn**, closures or equivalent footprint reduction usually become necessary.
+
+---
+
+## 8) Cost base decomposition: what matters most
+
+From an operations finance perspective, the cost base typically breaks into:
+
+### Fixed / semi-fixed
+- plant overhead
+- maintenance
+- depreciation
+- engineering support
+- site management
+- utilities base load
+- logistics infrastructure
+- salaried labor
+
+### Variable
+- direct labor tied to output
+- purchased materials
+- energy usage per unit
+- logistics per unit
+- consumables
+
+### Why this matters
+If the problem is mainly variable cost, then:
+- productivity
+- shift patterns
+- labor concessions
+- supplier renegotiation
+can solve much of it.
+
+If the problem is mainly fixed cost and underutilization, then:
+- closures
+- line transfers
+- footprint rationalization
+are far more effective.
+
+The conversation strongly suggests the latter is a major issue.
+
+---
+
+## 9) Practical conclusion
+
+### What the numbers imply
+- A **non-closure package** can work only if the savings gap is **moderate**.
+- A **hybrid package** is the most plausible middle ground if the gap is **mid-sized**.
+- A **closure-based package** is the strongest way to remove fixed cost if the gap is **large and structural**.
+
+### Most likely outcome by economics alone
+If the brand’s target shortfall is:
+- **<€500m**: non-closure may be sufficient
+- **€500m–€1.1bn**: hybrid is most likely needed
+- **>€1.1bn**: closures or equivalent footprint reduction become hard to avoid
+
+---
+
+If you want, I can turn this into a **one-page decision table** with:
+- required EBIT uplift,
+- annual savings,
+- one-time cost,
+- FTE impact,
+- capacity removed,
+- and ROS impact,
+in a clean side-by-side format.

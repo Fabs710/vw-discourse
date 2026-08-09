@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 1,
+    "cooperativeness": 1,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.46,
+    "frustration": 0.35,
+    "openness": 0.78,
+    "declared_red_line": "and **“no compulsory redundancies”** can be fixed red lines regardless of the economic outcome. That is not a restructuring framework; it is a veto on the very tools that may be necessary to restore c"
+  }
+}

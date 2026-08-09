@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "uaw_veba",
+  "salience": 7.67,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 6,
+    "flexibility": 4,
+    "dependency": 8,
+    "assertiveness": 7,
+    "cooperativeness": 6,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.1,
+    "openness": 0.5,
+    "declared_red_line": null
+  }
+}

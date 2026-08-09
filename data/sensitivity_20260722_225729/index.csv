@@ -1,0 +1,12 @@
+run_id,condition,order,rounds,convergence,experts,tokens,in_tokens,out_tokens,cost_usd,truncated,agent_turns,red_line_declarations,transcript_chars,agreement,position_move,dqi_justif_level,dqi_justif_content,dqi_respect,dqi_constructive,dqi_individuation,kappa_mean,judge_notes,run_folder
+main,main scenario,salience,4,plateauing,2,447529,412417,35112,0.4673,0,30,11,144603,,,,,,,,,,data\sensitivity_20260722_225729\main
+layer_salience_low,layer salience = 1 (extreme-low),salience,4,plateauing,2,396859,366438,30421,0.4117,0,29,9,126929,,,,,,,,,,data\sensitivity_20260722_225729\layer_salience_low
+layer_salience_high,layer salience = 10 (extreme-high),salience,4,plateauing,2,389254,358785,30469,0.4062,0,28,9,124977,,,,,,,,,,data\sensitivity_20260722_225729\layer_salience_high
+layer_motivation_low,layer motivation = 1 (extreme-low),salience,4,plateauing,2,445133,411737,33396,0.4591,0,30,16,138724,,,,,,,,,,data\sensitivity_20260722_225729\layer_motivation_low
+layer_motivation_high,layer motivation = 10 (extreme-high),salience,4,plateauing,2,388456,357661,30795,0.4068,0,28,10,123955,,,,,,,,,,data\sensitivity_20260722_225729\layer_motivation_high
+layer_position_low,layer position = 1 (extreme-low),salience,4,plateauing,2,499085,459640,39445,0.5222,0,30,20,162724,,,,,,,,,,data\sensitivity_20260722_225729\layer_position_low
+layer_position_high,layer position = 10 (extreme-high),salience,4,plateauing,2,397108,363886,33222,0.4224,0,26,9,133600,,,,,,,,,,data\sensitivity_20260722_225729\layer_position_high
+layer_interaction_low,layer interaction = 1 (extreme-low),salience,4,plateauing,2,404085,373586,30499,0.4174,0,30,8,124607,,,,,,,,,,data\sensitivity_20260722_225729\layer_interaction_low
+layer_interaction_high,layer interaction = 10 (extreme-high),salience,4,plateauing,2,435113,401647,33466,0.4518,0,29,13,142269,,,,,,,,,,data\sensitivity_20260722_225729\layer_interaction_high
+order_reversed,order: reversed,reversed,4,plateauing,2,391586,359602,31984,0.4136,0,28,13,125315,,,,,,,,,,data\sensitivity_20260722_225729\order_reversed
+order_random,order: random,random,4,plateauing,1,358761,329321,29440,0.3795,0,26,12,120498,,,,,,,,,,data\sensitivity_20260722_225729\order_random

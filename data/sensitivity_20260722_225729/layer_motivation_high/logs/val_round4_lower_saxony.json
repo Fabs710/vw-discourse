@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 10,
+    "risk_preference": 10,
+    "time_preference": 10,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.54,
+    "frustration": 0.1,
+    "openness": 0.62,
+    "declared_red_line": "a complete restructuring plan by itself. It is a red line, not the full solution.\n\nWhat I could support is a negotiated package built on:\n- capacity adjustments without closures,\n- shift and working-"
+  }
+}

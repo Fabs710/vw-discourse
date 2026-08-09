@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.45,
+    "openness": 0.66,
+    "declared_red_line": "# To the works council\nWe are aligned on the main red lines, and that matters.\n\nYour insistence on site and job protection is legitimate. I also agree that any labour contribution must be **temporary,"
+  }
+}

@@ -1,0 +1,57 @@
+**Independent Actuary/Valuation Expert — Response to Round 4**
+
+Several technical requests were directed at this office this round. I'll address each in turn, flag the methodological dependencies the parties should understand before they sign anything, and decline the items outside my mandate.
+
+---
+
+**1. Trust claim-size determination (Union's request)**
+
+The Union has asked that the actuarial work product include an explicit dollar figure for the Trust's converting claim, derived from the same census and claims-experience data used to build the liability model, so that governance-seat proportionality and instrument-equivalence testing draw on one consistent number rather than two separately-derived ones. This is methodologically sound and I will structure the deliverable that way.
+
+The claim size will be calculated as the **actuarial present value of the accumulated postretirement benefit obligation (APBO)** — the health and life obligation attributable to service already rendered — using:
+
+- **Plan census data**: current retiree counts, dependents, age/gender distribution, years of service.
+- **Historical claims experience**: per-capita claims cost by age band, typically trended over a 3–5 year base period to smooth volatility.
+- **Healthcare cost trend rate**: an assumed initial trend (commonly 7–9% in current market conditions for this type of obligation) grading down to an ultimate trend rate (commonly 4.5–5%) over 10–15 years, per Society of Actuaries and standard Getzen-model methodology.
+- **Discount rate**: matched to a high-quality corporate bond yield curve appropriate to the duration of expected benefit payments — this is not the same discount rate used for enterprise valuation, and the two should not be conflated.
+- **Mortality/longevity assumptions**: current mortality tables with generational improvement scales; longevity risk is a first-order sensitivity for a retiree population of this scale and should be stress-tested independently.
+
+I flag one sensitivity explicitly: the claim-size figure is materially sensitive to the trend-rate assumption, which is the same assumption at issue in the instrument-equivalence test below. The two exercises should be run against the *same* trend-rate assumption set, not independently derived ones that could drift apart and produce an inconsistency between "how big is the claim" and "how much is the capped instrument worth."
+
+---
+
+**2. Instrument-equivalence test — symmetric scrutiny**
+
+The Task Force has confirmed the standard I proposed: same rigor applied to the Trust's capped/trend-indexed funded obligation and the Committee's CVR/deferred note. Mechanically, this requires:
+
+- **For the Trust's instrument**: stochastic or scenario-based projection of the capped obligation's expected payout under a distribution of future trend-rate outcomes, discounted to present value, with the cap's value-suppressing effect quantified explicitly (i.e., how much value the cap actually removes relative to an uncapped obligation, under both median and tail trend scenarios).
+- **For the Committee's instrument**: a comparable stochastic or scenario-based projection of enterprise value at the CVR's trigger dates, using externally sourced forecasts (equity research consensus, comparable-company trading multiples, or an independent DCF) — not management's own projections and not the Committee's preferred number — discounted at a rate reflecting the instrument's risk profile (which, given CVR subordination and payoff contingency, is not the same as a risk-free or even a senior-debt rate).
+- **Equivalence test**: compare expected present value and, critically, the *variance/shape* of each instrument's payoff distribution — a capped obligation and a contingent equity-linked instrument can have equal expected value while carrying very different risk profiles for the holder. I will report both the point estimate and the distributional comparison; equal expected value is a necessary but not sufficient condition for the Task Force's "equivalent value" standard, and I'll flag this distinction explicitly in the deliverable rather than let a single expected-value match paper over a real difference in risk-bearing.
+
+Both parties have agreed to accept a downward correction if the test runs against them. I note for the record that this commitment is only meaningful if the underlying assumption sourcing is genuinely external and disclosed — I will publish the assumption sources and sensitivity ranges alongside the result, not just the conclusion.
+
+---
+
+**3. Linkage between facility review outcome and CVR valuation (Committee's point)**
+
+The Committee is correct, as a matter of valuation methodology, that the enterprise-value forecast feeding the CVR's expected payout is not independent of the footprint outcome. Plant closures, capacity reduction, and brand elimination directly affect projected revenue, margin, and capital intensity — the core drivers of any DCF or comparable-multiple enterprise value estimate.
+
+This creates a genuine sequencing dependency: **the instrument-equivalence test cannot be finalized on a placeholder enterprise-value forecast if the facility review is expected to move the footprint materially.** My recommendation is procedural, not substantive — I don't take a position on how the Task Force should sequence its sign-off — but as a matter of technical accuracy: the equivalence test should be run twice, once on current assumptions to give all parties an early read, and once on final assumptions after the facility review closes, with only the second version treated as dispositive for closing. Running it once against stale assumptions and treating it as final risks an equivalence finding that doesn't survive the footprint determination made twelve days later.
+
+---
+
+**4. Warranty backstop sizing**
+
+Management's preliminary sizing of $1.1–1.4 billion is a reasonable order of magnitude for a bounded, last-resort warranty exposure of this kind, but I have not yet independently verified the underlying claims-frequency and severity assumptions, and the Union's shop-floor input on realistic claim volumes is a legitimate and useful data source — frontline service data often reveals claim patterns that top-down actuarial models miss, particularly for older or discontinued vehicle lines where claims experience is thin.
+
+Standard methodology here is a **loss-reserving approach** (chain-ladder or Bornhuetter-Ferguson, adjusted for the discontinuity of a brand-elimination event, which breaks the usual assumption of stable historical development patterns). I will produce a point estimate with a confidence interval, not a single number, and recommend the backstop be sized at a level reflecting a specified confidence threshold (e.g., 75th or 90th percentile of the modeled distribution) rather than the mean — a last-resort mechanism that only covers the expected case defeats its own purpose.
+
+---
+
+**Declined items — outside mandate**
+
+- **Incentive plan benchmarking against comparable restructurings**: this is an executive compensation design question, not an actuarial or enterprise-valuation matter. I'd redirect the parties to an independent compensation consultant for that benchmark exercise; I can confirm methodology for enterprise-value or liability questions, but comparable-pay-package selection is a different discipline.
+- **Whether the twelve-day facility review fits inside the remaining calendar window**: this is a process and negotiation-timeline question for the Task Force and parties, not a valuation question. I have no view on it.
+- **Governance seat allocation formula and consent-threshold design**: these are structuring and negotiation questions. I can calculate proportional claim sizes once they're fixed; how those translate into board seats or voting thresholds is not an actuarial determination.
+
+I'll have the equivalence test and claim-size figures ready on the timeline the process requires, contingent on receiving final census/claims data and the post-facility-review enterprise-value inputs when available.

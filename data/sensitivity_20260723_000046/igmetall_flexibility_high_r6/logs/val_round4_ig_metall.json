@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 8,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.4,
+    "openness": 0.58,
+    "declared_red_line": "e seriously.\n\n## To the works council\nI hear your red lines, and on the key issues we are aligned:\n- no compulsory redundancies,\n- no one-sided burden shifting,\n- no empty guarantees that evaporate on"
+  }
+}

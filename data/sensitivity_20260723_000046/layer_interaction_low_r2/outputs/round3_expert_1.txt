@@ -1,0 +1,130 @@
+Understood. As the independent plant-level financial modeller, I can now frame the comparison in a way that is decision-useful for restructuring.
+
+## What I can assess now
+I can compare:
+- **no-closure package** vs. **closure/consolidation package**
+- plant-by-plant **fixed cost, utilization, and product allocation**
+- likely **one-off restructuring costs**
+- **redeployment feasibility**
+- **time to margin impact**
+- and the main **implementation constraints**
+
+## What I cannot yet quantify from the record
+The conversation so far does **not** provide the actual plant-level dataset needed to produce a defensible financial model. So I cannot truthfully state exact savings or job impacts without making up numbers.
+
+To produce a real comparison, I need at minimum for each German plant:
+1. current annual output and rated capacity
+2. current utilization rate
+3. current product lines and future product allocation assumptions
+4. plant-level fixed costs
+5. variable cost per unit or cost stack
+6. headcount by function and by plant
+7. planned capex to remain competitive
+8. logistics/inbound-outbound cost differentials
+9. labor flexibility and redeployment constraints
+10. likely closure/consolidation one-off costs:
+   - severance
+   - decommissioning
+   - asset write-downs
+   - transfer/logistics changes
+   - tool relocation
+   - runout and overlap costs
+
+## What can be inferred at a high level
+Based on the stakeholder positions and the restructuring logic, the company is probably facing:
+- **structural overcapacity**
+- **high fixed labor and overhead burden**
+- **insufficient future product allocation at some sites**
+- **a mismatch between domestic cost base and market pricing pressure**
+
+That means the financial question is not whether savings are needed, but:
+- **can enough durable savings be extracted without closures?**
+- or
+- **does footprint reduction deliver materially better economics after transition costs?**
+
+## How the scenario comparison should be structured
+
+### 1) Baseline gap
+Model the annual gap to target margin as:
+
+**Required improvement = current EBIT shortfall + EV transition underutilization cost + excess fixed overhead + underabsorbed depreciation/logistics penalties**
+
+This must be plant-allocated, not just group-level.
+
+### 2) No-closure scenario
+This should include:
+- working-time reductions or flexibility
+- wage moderation / temporary concessions
+- voluntary attrition and internal redeployment
+- productivity gains
+- management overhead reduction
+- capex reallocation
+- product mix changes within existing sites
+
+For each plant, estimate:
+- fixed-cost savings
+- labor-cost savings
+- capacity reduction achieved without closure
+- remaining utilization
+- residual overcapacity
+- whether the site is still viable after 2027–2030
+
+### 3) Closure/consolidation scenario
+This should include:
+- site closure or major consolidation
+- volume transfer to retained plants
+- labor shedding
+- asset impairment
+- logistics impact
+- temporary dual-running costs during transition
+- one-off social and technical costs
+
+For each plant, estimate:
+- annual recurring savings
+- one-off restructuring cost
+- time to breakeven on restructuring
+- post-consolidation utilization at receiving plants
+- capex required at receiving plants
+
+## The key decision test
+A closure/consolidation package is economically superior only if:
+
+**Net present value of recurring savings – one-off transition cost – added logistics/capex burden**
+is materially better than the no-closure alternative, **and** the retained footprint can absorb the transferred volume without creating new bottlenecks.
+
+A no-closure package is credible only if it can:
+- reduce fixed cost enough,
+- lower effective capacity enough,
+- and secure future volume/product allocation,
+without simply deferring the same problem into the next cycle.
+
+## Redeployment feasibility test
+Surplus labor can be redeployed only if one or more of these are true:
+- same-site absorption into future programs
+- transfer to nearby plants with compatible skill sets
+- natural attrition covers a material share
+- retraining time is short relative to product ramp timing
+- wage and classification rules allow flexible use
+
+Redeployment is weak if:
+- skills are highly site-specific
+- future programs are not yet approved
+- nearby plants are already near full utilization
+- the time horizon is shorter than retraining/qualification time
+
+## Practical conclusion at this stage
+From an industrial restructuring standpoint, the **no-closure option remains possible but unproven**. The **closure/consolidation option remains economically plausible** but cannot be validated without plant-level figures and transition-cost data.
+
+## What I recommend next
+If you want, I can produce a **plant-level model template** immediately, with:
+- line items
+- formulas
+- scenario outputs
+- and a decision table
+
+If you provide the plant dataset, I can then estimate:
+- annual savings by scenario
+- job impact
+- redeployment capacity
+- capex requirements
+- and time to margin recovery.

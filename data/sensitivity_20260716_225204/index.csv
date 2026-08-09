@@ -1,0 +1,2 @@
+run_id,condition,order,rounds,convergence,experts,tokens,in_tokens,out_tokens,cost_usd,truncated,agent_turns,red_line_declarations,transcript_chars,judge_conflict,judge_realism,judge_notes,run_folder
+main,main scenario,salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,data/sensitivity_20260716_225204/main

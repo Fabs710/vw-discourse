@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.15,
+    "openness": 0.8,
+    "declared_red_line": "l legacy protections\n\ncan be treated as immovable red lines **and** still produce a credible restructuring.\n\nThat is not a restructuring settlement unless it closes the savings gap in a hard, durable"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 1,
+    "dependency": 1,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.25,
+    "openness": 0.4,
+    "declared_red_line": "To the works council and IG Metall\nI support your red lines on closures and compulsory redundancies. But I also think we should be precise:\n- “no closures” does **not** mean “no adjustments”\n- “no red"
+  }
+}

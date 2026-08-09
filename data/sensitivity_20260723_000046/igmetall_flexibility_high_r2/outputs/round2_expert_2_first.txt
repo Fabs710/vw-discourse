@@ -1,0 +1,283 @@
+## Expert assessment: exact savings gap between a closure-led package and a non-closure package
+
+I can model the economics, but I cannot determine the actual company-specific numbers without plant-level data. So I will give:
+
+1. the **decision framework**,
+2. a **worked illustrative comparison**,
+3. the **savings gap formula**, and
+4. the **execution-risk adjustment** that matters for whether a non-closure package is truly equivalent.
+
+---
+
+## 1) Core economic principle
+
+If the company has **structural overcapacity**, then a non-closure package must do more than reduce wages. It must also remove enough **fixed cost** and **semi-fixed capacity cost** to match what closures would otherwise eliminate.
+
+That means the relevant comparison is not:
+
+- “closures vs no closures”
+
+but:
+
+- **net present value of recurring savings**
+  minus
+- **one-time restructuring costs**
+  adjusted for
+- **probability of successful implementation**
+
+A non-closure package is only economically equivalent if:
+
+> **Expected NPV of non-closure savings ≥ expected NPV of closure-led savings**
+
+---
+
+## 2) What usually drives the gap
+
+### Closure-led package
+A plant closure usually removes:
+- site fixed overhead,
+- plant labor,
+- support functions,
+- maintenance and utilities,
+- underabsorbed capacity cost.
+
+But it also creates:
+- severance and social plan costs,
+- transfer/logistics costs,
+- write-downs,
+- ramp-up costs at receiving sites,
+- potential disruption to supply.
+
+### Non-closure package
+A non-closure package can reduce:
+- labor cost,
+- working time,
+- shift count,
+- some overhead,
+- some headcount through attrition,
+- some capacity through partial line reduction.
+
+But it usually leaves:
+- most site fixed cost,
+- more overhead leakage,
+- more underutilization,
+- more execution risk that savings will erode over time.
+
+So the economic question is whether the non-closure package removes **enough recurring cost** to offset the fact that the plant footprint remains.
+
+---
+
+## 3) Illustrative model: one major German plant
+
+Because the prompt does not provide actual data, I will use a reasonable **illustrative range** for a large automotive plant. This is **not a forecast**.
+
+### Assumptions for illustration
+- Plant annual fixed and semi-fixed cost burden: **€250m–€450m**
+- Direct and indirect headcount tied to site: **2,500–4,500**
+- Closure one-time cost: **€300m–€700m**
+- Non-closure one-time cost: **€80m–€250m**
+- Discount rate for restructuring NPV: **8%–10%**
+- Planning horizon: **5 years**
+
+### Scenario A: Closure-led package
+Illustrative effects:
+- Annual gross savings: **€180m–€320m**
+- One-time cost: **€300m–€700m**
+- Net annual savings after transition: **€120m–€260m**
+- Recurrence: high, because the cost base is permanently removed
+
+### Scenario B: Non-closure package
+Illustrative effects if genuinely deep:
+- Wage/working-time concessions: **€60m–€140m/year**
+- Headcount reduction via attrition/redeployment: **€30m–€80m/year**
+- Capacity reduction/productivity measures: **€40m–€120m/year**
+- Total recurring savings: **€130m–€340m/year**
+- One-time cost: **€80m–€250m**
+- Recurrence: medium, but only if the concessions are durable and enforceable
+
+### Immediate interpretation
+A strong non-closure package can sometimes approach closure economics on paper. But that only happens if it is:
+- large,
+- durable,
+- and actually reduces capacity, not just wage rates.
+
+A weak or medium package will usually fall short.
+
+---
+
+## 4) The exact savings gap: how to calculate it
+
+The right calculation is:
+
+### For each option:
+**Expected NPV = Σ [Savings_t × Probability_t / (1+r)^t] – One-time costs**
+
+Where:
+- `Savings_t` = recurring annual savings in year t
+- `Probability_t` = probability-adjusted realization of those savings
+- `r` = discount rate
+- One-time costs include severance, write-offs, transfer, retraining, logistics, consultants, etc.
+
+### Savings gap:
+**Gap = NPV(closure-led) – NPV(non-closure)**
+
+If the gap is positive, closure is economically stronger.  
+If the gap is near zero, non-closure may be equivalent.  
+If the gap is negative, the non-closure package is better economically.
+
+---
+
+## 5) Probability adjustment matters
+
+This is where many negotiations become misleading.
+
+A non-closure package often looks attractive on paper, but its **realization probability** is lower because:
+- wage concessions may expire,
+- productivity measures may not stick,
+- headcount reductions may be slower than planned,
+- future bargaining can reopen the deal,
+- underutilized capacity continues to create hidden cost.
+
+A closure-led package has high certainty once executed, but with higher upfront cost and labor conflict risk.
+
+### Practical probability ranges
+For modeling purposes only:
+- Closure implementation success: **80%–95%**
+- Non-closure full-savings success: **50%–80%**
+
+That difference can erase a large part of the apparent savings advantage of a non-closure deal.
+
+---
+
+## 6) A worked savings-gap example
+
+Let’s compare two packages over five years.
+
+### Closure-led package
+- Annual net savings: **€200m**
+- One-time cost: **€500m**
+- Probability-adjusted realization: **90%**
+
+Approximate 5-year undiscounted value:
+- Savings: €200m × 5 = **€1.0bn**
+- Probability-adjusted savings: **€900m**
+- Minus one-time cost: **€500m**
+- Approximate net value: **€400m**
+
+### Non-closure package
+- Annual net savings: **€170m**
+- One-time cost: **€150m**
+- Probability-adjusted realization: **65%**
+
+Approximate 5-year undiscounted value:
+- Savings: €170m × 5 = **€850m**
+- Probability-adjusted savings: **€552.5m**
+- Minus one-time cost: **€150m**
+- Approximate net value: **€402.5m**
+
+### Result
+In this illustration, the two packages are nearly equal in gross economic value.
+
+But if the non-closure package falls to:
+- **€120m/year savings**
+- and **60% realization probability**
+
+then:
+
+- 5-year savings = €600m
+- probability-adjusted = €360m
+- minus €150m cost = **€210m net**
+
+Now the closure-led package is clearly superior by about **€190m**.
+
+So the exact gap is highly sensitive to:
+- annual recurring savings,
+- durability,
+- and execution confidence.
+
+---
+
+## 7) What usually makes the gap widen
+
+The gap usually widens in favor of closure when:
+
+1. **capacity utilization is already low**
+2. **the plant’s product has weak margin**
+3. **other German or European plants can absorb the volume**
+4. **labor concessions are temporary or reversible**
+5. **fixed overhead is large relative to labor**
+6. **the company needs savings quickly, not over many years**
+
+The gap narrows when:
+1. the non-closure package includes **real footprint reduction**
+2. the company can move a better product into the site
+3. labor concessions are **durable and enforceable**
+4. headcount can fall materially through natural attrition
+5. investment raises output and margin enough to offset the fixed-cost burden
+
+---
+
+## 8) My judgment on this scenario
+
+Based on the facts given:
+- management believes German factory costs are materially above target,
+- the brand is missing its return-on-sales goal,
+- there is structural overcapacity,
+- European demand is weak,
+- competition is intense.
+
+On those facts, my judgment is:
+
+### Most likely outcome
+A **modest non-closure package is not economically equivalent** to a closure-led package.
+
+### What could be equivalent
+Only a **deep non-closure package** could plausibly match closure economics, and it would need all of the following:
+- substantial labor-cost moderation,
+- capacity reduction with real output removal,
+- headcount decline mostly via redeployment/attrition,
+- product-mix improvement,
+- binding durability through 2030 or a similarly long horizon,
+- and strong implementation discipline.
+
+If any of those are missing, the non-closure option probably leaves a **material savings gap**.
+
+---
+
+## 9) Practical conclusion
+
+### The key question is not ideology
+It is this:
+
+> **How much recurring annual savings does the non-closure package actually deliver, after probability adjustment, compared with the closure-led package?**
+
+### My best high-level assessment
+- **Closure-led restructuring**: higher recurring savings, higher one-time cost, higher certainty after execution
+- **Non-closure restructuring**: lower one-time cost, but often materially lower recurring savings unless unusually deep
+- **Savings gap**: likely **material** unless the non-closure package includes real capacity removal and durable labor-cost concessions
+
+---
+
+## 10) What I would ask management for next
+
+To resolve this properly, management should provide:
+1. plant-by-plant fixed cost
+2. utilization rates
+3. model allocation and margin by site
+4. headcount by function and site
+5. one-time closure cost by plant
+6. a quantified non-closure package with annual savings by measure
+7. probability assumptions for each savings stream
+
+With that, the exact gap can be calculated cleanly.
+
+If you want, I can next provide a **side-by-side table** with:
+- closure-led package,
+- non-closure package,
+- hybrid package,
+
+including:
+- annual savings,
+- one-time cost,
+- NPV,
+- and execution-risk haircut.

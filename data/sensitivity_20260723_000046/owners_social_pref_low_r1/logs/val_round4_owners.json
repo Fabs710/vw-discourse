@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.3,
+    "openness": 0.74,
+    "declared_red_line": "restructuring of the footprint\n\ncan be treated as non-negotiable from the start.\n\nThat is not a realistic governing position for a company with this cost structure.\n\nYou are asking us to rule out the"
+  }
+}

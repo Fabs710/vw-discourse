@@ -1,0 +1,12 @@
+run_id,condition,order,rounds,convergence,experts,tokens,in_tokens,out_tokens,cost_usd,truncated,agent_turns,red_line_declarations,transcript_chars,agreement,position_move,dqi_justif,dqi_respect,dqi_constructive,individuation,judge_notes,run_folder
+main,main scenario,salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/main
+layer_salience_low,layer salience = 1 (extreme-low),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_salience_low
+layer_salience_high,layer salience = 10 (extreme-high),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_salience_high
+layer_motivation_low,layer motivation = 1 (extreme-low),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_motivation_low
+layer_motivation_high,layer motivation = 10 (extreme-high),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_motivation_high
+layer_position_low,layer position = 1 (extreme-low),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_position_low
+layer_position_high,layer position = 10 (extreme-high),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_position_high
+layer_interaction_low,layer interaction = 1 (extreme-low),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_interaction_low
+layer_interaction_high,layer interaction = 10 (extreme-high),salience,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/layer_interaction_high
+order_reversed,order: reversed,reversed,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/order_reversed
+order_random,order: random,random,4,progressing,0,330,0,0,0.0,0,24,24,2108,,,,,,,,data/sensitivity_20260717_212644/order_random

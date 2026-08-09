@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 1.0,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 1,
+    "legitimacy": 1,
+    "urgency": 1,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.4,
+    "openness": 0.74,
+    "declared_red_line": "ng jobs and sites. I also understand why you draw red lines. But I have to be equally clear: a blanket **“no closures, no compulsory redundancies”** position is not enough unless you can demonstrate a"
+  }
+}

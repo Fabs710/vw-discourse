@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 1,
+    "dependency": 1,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.25,
+    "openness": 0.4,
+    "declared_red_line": "y to shape the outcome at all.\n\nSo I support your red lines on:\n- no mass layoffs as a first resort,\n- no one-sided attack on the workforce,\n- no sidelining of co-determination,\n- no reckless closure"
+  }
+}

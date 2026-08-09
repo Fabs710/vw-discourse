@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.4,
+    "openness": 0.54,
+    "declared_red_line": "otiated defence of employment.\n\nSo I support your red lines, but I will not support a strategy that leaves management free to claim that nothing substantial is on offer.\n\n## To Management\nYour positio"
+  }
+}

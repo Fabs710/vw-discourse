@@ -1,0 +1,133 @@
+What follows is a restructuring-law / pension-design assessment, not a view on the broader industrial politics.
+
+## Core feasibility point
+
+A retiree health trust can be converted into durable value in a rescue, but only if the replacement is:
+1. **bounded**,
+2. **financeable from the post-restructuring cash flow**, and
+3. **clearly integrated into the new capital structure**.
+
+If the trust is given something that is effectively senior to the unsecured debt, the likely result is either:
+- a higher unsecured haircut,
+- a smaller operating footprint,
+- or a failed deal that goes to the court-supervised route.
+
+So the task is not “protect the trust or the bondholders,” but “design a replacement claim that is durable enough to be credible and weak enough to be financeable.”
+
+## Structurally workable instruments for the retiree trust
+
+The most common rescue structures, in increasing order of protection, are:
+
+### 1) Pure unsecured replacement obligation
+- Lowest protection.
+- Easiest to finance.
+- Often too weak to satisfy a retiree trust in practice.
+
+### 2) Subordinated note plus contingent value rights
+- A fixed claim, but junior to senior financing and often junior or pari passu with other unsecured claims depending on the plan.
+- CVRs give upside if performance improves.
+- This is usually the easiest “real value” structure that does not create a new priority problem.
+
+### 3) Preferred equity in the restructured company
+- Gives the trust an ongoing economic interest.
+- Can be structured with:
+  - cumulative dividends,
+  - liquidation preference,
+  - anti-dilution protections,
+  - redemption mechanics,
+  - and limited governance rights.
+- This is often better than debt if the goal is to avoid clogging the balance sheet with fixed cash obligations.
+
+### 4) Limited secured or quasi-secured instrument
+- Strongest protection short of actual priority in the capital structure.
+- Usually the hardest to justify if unsecured creditors are already taking deep haircuts.
+- If used, it must be tightly capped and amortization-light, or it can recreate distress.
+
+## What is most likely to work here
+
+Given the facts you provided, the most financeable design is usually a **hybrid package**, not a single instrument.
+
+A plausible structure would be:
+
+- **Material haircut to the legacy retiree health obligation**
+- Replacement with:
+  - **preferred equity** in the new company,
+  - plus a **small subordinated note** or limited payment stream,
+  - plus **contingent value rights** tied to future EBITDA, free cash flow, or equity value thresholds.
+
+That combination does three things:
+- preserves some durable economic value for retirees,
+- avoids creating a cash drain the company cannot bear,
+- and reduces the chance that bondholders can credibly argue that retirees received a disguised senior claim.
+
+## Tradeoff with bondholders
+
+The bondholders’ objection is legally and economically predictable: if the trust gets a claim that is more protected than unsecured debt, then the unsecured recovery pool shrinks.
+
+That means the package has to be internally consistent:
+- If the trust receives more protection, **bondholders must receive a correspondingly clear recovery package** in equity/warrants.
+- If bondholders are asked to take the deepest loss, then the trust instrument should be more like preferred equity or CVRs, not a quasi-senior debt claim.
+
+In practice, the trust cannot be insulated from the rest of the capital structure. It has to be fitted into it.
+
+## Governance and trust design
+
+If the trust receives preferred equity or a quasi-equity instrument, governance should usually include:
+
+- a **trustee or independent fiduciary**,
+- restrictions on sale/transfer,
+- limits on voting power so it does not control the operating company,
+- anti-dilution protection only within narrow bounds,
+- clear valuation and reporting rights,
+- and a defined exit or monetization pathway.
+
+This matters because a trust holding equity can otherwise become an illiquid, politically contested control block.
+
+## Key constraints
+
+### 1) No open-ended liability
+If the replacement instrument has variable cash requirements that cannot be forecast, it undermines viability.
+
+### 2) No disguised priority creep
+If the trust looks senior in practice, bondholders will resist and financing will become harder.
+
+### 3) No mismatch between operating footprint and legacy burden
+A smaller company cannot support the same retiree promise as the pre-crisis enterprise.
+
+### 4) Credible funding source
+The replacement must be supportable by:
+- enterprise cash flow,
+- sponsor/public bridge financing,
+- or value from the equity stack.
+
+## Most likely package shape, if the goal is settlement
+
+A settlement would most plausibly involve:
+
+- a **large haircut** to the legacy retiree health claim,
+- conversion of the remainder into a **preferred equity / CVR package**,
+- possibly a **small capped note**,
+- and **equity in the new company** shared among:
+  - public funders,
+  - possibly the trust,
+  - and unsecured creditors.
+
+That gives the trust durable value without making the company unfinanceable.
+
+## Main implementation risk
+
+The biggest risk is not the instrument itself; it is **overpromising on value**.
+
+If the replacement is marketed as “secured” or “protected” but the new company cannot support it, then the company just recreates insolvency and the trust ends up litigating anyway. The design has to be conservative enough that the operating plan can actually carry it.
+
+## Bottom line
+
+A retiree health trust can be converted into durable equity or security, but in this scenario the best-fit structure is probably:
+
+- **haircut the legacy claim materially**,
+- **replace it with preferred equity plus contingent upside**,
+- and, if necessary, add only a **small capped debt-like component**.
+
+That is the most defensible way to preserve pensioner/retiree protection while keeping the enterprise financeable and reducing the chance of a failed restructuring.
+
+If you want, I can next sketch a **sample term-sheet structure** showing how the trust, bondholders, and public funders could be allocated claims and equity without creating a new priority problem.

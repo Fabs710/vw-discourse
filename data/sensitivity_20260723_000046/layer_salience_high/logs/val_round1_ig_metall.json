@@ -1,0 +1,25 @@
+{
+  "round": 1,
+  "agent": "ig_metall",
+  "salience": 10.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 10,
+    "legitimacy": 10,
+    "urgency": 10,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.1,
+    "openness": 0.5,
+    "declared_red_line": null
+  }
+}

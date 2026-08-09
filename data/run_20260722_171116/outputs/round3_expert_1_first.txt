@@ -1,0 +1,42 @@
+# Independent Actuary/Valuation Expert — Response to Joint Summons
+
+I've been asked to test the economic equivalence of two proposed residual instruments — the Trust's trusteed funded obligation with a cost-indexed cap, and the Committee's CVR/deferred note — at the proposed 55–60% conversion rate. I'll set out methodology, data requirements, and the specific sensitivities that will drive the answer, since the answer does not exist yet in the abstract; it exists only once specific instrument terms are run through a model. I'll also flag, upfront, what I can and cannot adjudicate.
+
+## 1. Framing the Question Correctly
+
+Economic equivalence between two different instrument forms cannot be assessed by comparing face percentages or nominal caps. It requires computing the **expected present value (EPV)** of each instrument's cash flows under a consistent set of actuarial and financial assumptions, then comparing that EPV — as a percentage of each claim's allowed amount — against the other. The Task Force's ruling is methodologically sound: two claims can receive "the same effective recovery" through different vehicles only if EPVs are equated at a common discount rate and a common confidence level for the underlying risk. That is a valuation exercise, not a negotiation.
+
+## 2. What Each Instrument Actually Is, Actuarially
+
+**The Trust's funded obligation with a cost-indexed cap** is, in substance, a retiree medical liability annuity with an escalator ceiling. Its value depends on:
+- The **healthcare cost trend rate** assumed (historically 6–8% gross trend for retiree medical, versus general inflation of 2–3%) — this is the single largest driver of value and the most easily "gamed" assumption the Union is right to flag.
+- **Mortality and longevity assumptions** for the covered retiree population — plan-specific, not generic, mortality tables should be used, reflecting actual demographics (blue-collar industrial workforce mortality typically runs shorter than white-collar, which cuts liability duration but also cuts total payout — this needs explicit disclosure, not an assumed table.
+- **The cap mechanism itself**: if trend is capped at, say, 5% annually while unconstrained trend historically runs higher, the cap transfers real value away from the Trust over a 15–20 year horizon. The value of that transferred risk needs to be quantified as an explicit "cap value" subtracted from the uncapped liability's PV — this is standard actuarial practice for capped OPEB obligations and is directly analogous to valuing a collar on an interest rate.
+- **Funding mechanics**: whether the obligation is pre-funded in a trust (VEBA-style) with defined asset backing, or an unfunded corporate promise, changes the appropriate discount rate materially — a funded, asset-backed trust obligation should be discounted closer to a risk-free/investment-grade rate; an unfunded promise carries the company's own credit risk and should be discounted accordingly, which lowers its value, not raises it.
+
+**The Committee's CVR/deferred note** is a financial instrument with:
+- A stated or implied maturity and coupon (if any).
+- Payment contingent on a trigger (equity value threshold, asset sale proceeds, earnings hurdle) if structured as a CVR, or fixed schedule if a straight deferred note.
+- Credit risk equivalent to the reorganized company's unsecured/subordinated capital structure — this should be modeled using a recovery/default framework (e.g., a binomial or Monte Carlo simulation of enterprise value paths against the trigger), not a static discount.
+
+These are structurally different risk profiles: one is a long-duration, inflation-linked liability with demographic risk; the other is a shorter-duration, equity/enterprise-value-contingent financial claim. Equating them requires a **common valuation date, a common capital structure/enterprise value forecast, and a common discount rate curve appropriate to each instrument's actual risk** — not one convenience rate applied to both.
+
+## 3. Methodology I Will Apply
+
+1. **Base case liability/claim modeling**: build the Trust's uncapped retiree medical liability using plan census data, plan-specific mortality, and a disclosed trend assumption (I will require the trend assumption to be benchmarked against the company's own historical claims experience and an external index — not a negotiated number).
+2. **Cap value quantification**: compute the value of the escalator cap as the difference between capped and uncapped liability PV — this is the number that determines whether the Trust's "same percentage" is actually the same value.
+3. **CVR/deferred note simulation**: model the Committee's instrument against a range of enterprise value outcomes for the reorganized company (using the equity pool ceiling the Task Force has requested from Management as an input), producing an expected payout distribution, not a single point estimate.
+4. **Common discount rate framework**: apply risk-appropriate discount rates to each — I will not use a single blended rate across both instruments, as that is the most common way such comparisons get quietly biased.
+5. **Sensitivity testing**: report results across a range of trend, mortality, and enterprise-value assumptions (not a single "expected" case), so both sides can see where the comparison is robust and where it is assumption-driven.
+
+## 4. Key Sensitivities I Flag Now
+
+- **Healthcare trend assumption** is the largest lever on the Trust side — a 100 bps difference in assumed trend can shift long-duration OPEB liability value by 15–25%. This must be sourced independently, not proposed by either party.
+- **Enterprise value forecast** is the largest lever on the Committee side — the CVR/deferred note's value is highly sensitive to the post-emergence equity value path, which in turn depends on the footprint and cost-structure assumptions still being finalized. I cannot produce a stable valuation until Management's total equity pool ceiling (requested by the Task Force) is fixed.
+- **Discount rate choice** for the funded obligation versus the note will itself be contested — I will disclose my rate-setting methodology in full so it can be audited by both sides' advisors.
+
+## 5. What I Cannot Do
+
+I can tell you whether the two instruments are economically equivalent at stated assumptions, and I can show you how sensitive that equivalence is to each assumption. I **cannot** tell you whether the assumptions themselves — the trend rate, the enterprise value forecast, the discount rate — are the "right" ones to negotiate around; that is a bargaining question, not an actuarial one. Nor can I opine on governance seat allocation, footprint depth, wage policy, or whether either party is negotiating in good faith — those are outside my domain and are for the Task Force and the parties themselves to resolve.
+
+**I require, before I can produce a result**: plan census/demographic data for the retiree population, the company's historical retiree medical claims experience, the proposed CVR/note term sheet, and Management's projected post-emergence enterprise value range. Absent the last item in particular, any comparison I produce this round will be preliminary and assumption-bound rather than dispositive.

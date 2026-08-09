@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "bondholders",
+  "salience": 6.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 7,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 6,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.3,
+    "openness": 0.54,
+    "declared_red_line": "top-up in warrants or convertible rights.  \n   • Under no circumstances will we accept a permanently subordinated upside position relative to the Trust.\n\n3. Governance Rights and Covenants  \n   • Boa"
+  }
+}

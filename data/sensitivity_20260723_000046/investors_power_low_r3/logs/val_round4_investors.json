@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "investors",
+  "salience": 4.67,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 3,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.2,
+    "openness": 0.78,
+    "declared_red_line": "irectly.\n\n## Where we disagree\n\n### On the labour red lines\nI do **not** accept “no closures, no compulsory redundancies, binding job guarantees through 2030” as a viable end-state if the economics do"
+  }
+}

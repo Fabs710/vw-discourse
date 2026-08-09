@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 1.0,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 1,
+    "legitimacy": 1,
+    "urgency": 1,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.4,
+    "openness": 0.7,
+    "declared_red_line": "To the Works Council\nI understand and respect the red lines on forced redundancies and the desire to keep German sites open. I also understand why you insist on binding guarantees.\n\nBut I have to be e"
+  }
+}

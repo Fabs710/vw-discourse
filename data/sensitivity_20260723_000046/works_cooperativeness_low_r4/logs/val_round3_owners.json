@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.2,
+    "openness": 0.62,
+    "declared_red_line": "s, then you need to present something more than a red line. You need a package with numbers that can genuinely replace the economics of closure or deep capacity reduction.\n\nI am not asking for sacrifi"
+  }
+}

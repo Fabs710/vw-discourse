@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.35,
+    "openness": 0.66,
+    "declared_red_line": "options.\n\n## To the works council and union\nYour red lines are understandable, and on the core issue I stand with you:\n- no plant closures as a starting point,\n- no compulsory redundancies,\n- no dism"
+  }
+}

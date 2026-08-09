@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.25,
+    "openness": 0.78,
+    "declared_red_line": "he works council and union\nI agree with your core red lines:\n- no plant closures as a default answer,\n- no compulsory redundancies as an easy option,\n- no hidden dismantling of sites through outsourci"
+  }
+}

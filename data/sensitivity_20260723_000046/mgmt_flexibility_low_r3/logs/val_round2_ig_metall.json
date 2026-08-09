@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.15,
+    "openness": 0.5,
+    "declared_red_line": "d flexibility effort.\n\nBut this only works if the red lines are respected:\n1. **No plant closures**\n2. **No compulsory redundancies**\n3. **No unilateral attack on the collective wage agreement**\n4. **"
+  }
+}

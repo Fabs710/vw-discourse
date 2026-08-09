@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 1,
+    "cooperativeness": 1,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.25,
+    "openness": 0.62,
+    "declared_red_line": "ers contributing visibly and measurably**\n\n### My red line\n- Any closure of a German plant\n- Any forced layoff\n- Any settlement that leaves employees carrying the full burden\n\n### One concrete comprom"
+  }
+}

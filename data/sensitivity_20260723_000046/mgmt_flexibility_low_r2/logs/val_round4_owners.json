@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.45,
+    "openness": 0.62,
+    "declared_red_line": "at is not a restructuring plan; it is a political red line. If those lines make the economics impossible, then they are not protecting the company — they are preserving inefficiency.\n\nThe expert’s inp"
+  }
+}

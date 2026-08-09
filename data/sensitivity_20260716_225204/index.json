@@ -1,0 +1,22 @@
+[
+  {
+    "run_id": "main",
+    "condition": "main scenario",
+    "order": "salience",
+    "rounds": 4,
+    "convergence": "progressing",
+    "experts": 0,
+    "tokens": 330,
+    "in_tokens": 0,
+    "out_tokens": 0,
+    "cost_usd": 0.0,
+    "truncated": 0,
+    "agent_turns": 24,
+    "red_line_declarations": 24,
+    "transcript_chars": 2108,
+    "judge_conflict": "",
+    "judge_realism": "",
+    "judge_notes": "",
+    "run_folder": "data/sensitivity_20260716_225204/main"
+  }
+]

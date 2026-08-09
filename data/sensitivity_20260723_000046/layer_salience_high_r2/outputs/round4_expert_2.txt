@@ -1,0 +1,289 @@
+Yes — I can build the comparative model. Since no plant-level numbers were provided, I’ll give a **board-ready framework with bounded scenario ranges** and show exactly what additional data would tighten the estimate.
+
+## 1) Executive conclusion
+
+Based on the governance constraints and the typical economics of German auto restructuring:
+
+- **Closure-based packages** usually deliver the **largest durable fixed-cost reduction**, but also the **highest one-time charges and implementation risk**.
+- **Closure-free packages** are often **faster to negotiate and lower conflict**, but they usually **do not remove enough fixed cost** unless the labor contribution is unusually large and durable.
+- A **hybrid** is often the most plausible outcome: limited footprint reduction plus wage/flexibility/overhead measures.
+
+My preliminary view is:
+
+- If the company’s annual structural gap is **modest** relative to domestic fixed cost, a closure-free deal may work.
+- If the gap is **material** but not extreme, a hybrid is most likely to clear it.
+- If the gap is **large**, closures become economically hard to avoid unless the company accepts a very large labor contribution and/or much lower capacity utilization.
+
+## 2) Model structure
+
+I would compare the scenarios on five dimensions:
+
+1. **Annual recurring savings**
+2. **One-time restructuring charges**
+3. **Durability through 2030**
+4. **Implementation risk / probability of delivery**
+5. **Risk-adjusted net present value**
+
+A useful board test is:
+
+> **Risk-adjusted value = PV of recurring savings × probability of delivery − restructuring charges − lost margin during transition**
+
+## 3) Illustrative scenario ranges
+
+Because site data is missing, the ranges below are **illustrative for a large German OEM domestic base**, not company-specific facts.
+
+### A. Closure-free restructuring
+Typical tools:
+- working-time moderation
+- wage restraint / temporary labor-cost relief
+- bonus restraint
+- overhead cuts
+- internal redeployment
+- voluntary exits
+- productivity measures
+
+**Illustrative annual savings:**  
+- **€0.3bn to €1.0bn per year**
+
+**One-time charges:**  
+- **€0.2bn to €0.8bn**  
+  mostly severance, qualification, redeployment, systems costs
+
+**Durability:**  
+- Often **medium**, because labor concessions can expire or need renewal
+- Strongest if embedded in a long agreement through 2030
+
+**Implementation risk:**  
+- **Low to medium** operationally  
+- **Medium** financially if savings depend on recurring concessions
+
+**Main limitation:**  
+This path often struggles to remove enough **fixed cost** if the company has genuine structural overcapacity.
+
+---
+
+### B. Hybrid restructuring
+Typical tools:
+- limited footprint rationalization
+- voluntary exits / attrition / redeployment
+- labor cost concessions
+- partial capacity reduction
+- some function consolidation
+- investment commitments to remaining sites
+
+**Illustrative annual savings:**  
+- **€0.8bn to €1.8bn per year**
+
+**One-time charges:**  
+- **€0.7bn to €2.5bn**  
+  depending on number of sites/lines adjusted and workforce transition costs
+
+**Durability:**  
+- **Medium to high** if the footprint reduction is real and the labor package is contractually durable
+
+**Implementation risk:**  
+- **Medium**  
+  because it depends on board approval, labor acceptance, and sequencing
+
+**Main advantage:**  
+This is often the best trade-off between **structural savings** and **governance feasibility**.
+
+---
+
+### C. Closure-based restructuring
+Typical tools:
+- plant closure or major line shutdown
+- workforce reduction
+- transfer of production elsewhere
+- permanent capacity removal
+
+**Illustrative annual savings:**  
+- **€1.5bn to €3.0bn+ per year**
+
+**One-time charges:**  
+- **€2.0bn to €6.0bn+**  
+  severance, asset write-downs, transfer costs, lease exit, cleanup, ramp-up elsewhere, supply-chain disruption
+
+**Durability:**  
+- **High** on paper, because fixed cost is permanently removed
+
+**Implementation risk:**  
+- **High** in a co-determined German setting  
+- savings may arrive later than planned if conflict delays execution
+
+**Main weakness:**  
+The risk-adjusted value can be worse than the gross savings suggest if strikes, vetoes, or political delay are severe.
+
+---
+
+## 4) What “minimum savings target” likely means
+
+Without company numbers, the target is usually set by combining:
+
+- current domestic fixed cost
+- excess capacity
+- target return on sales
+- required funding for EV/product transition
+
+For a large European carmaker, the implied annual gap that restructuring must close is often in the range of:
+
+- **€1bn to €3bn per year** for a material turnaround
+
+That does **not** mean the full gap must come from labor. Usually it is shared across:
+
+- labor cost
+- plant footprint
+- overhead
+- procurement
+- product mix
+- capital allocation
+
+But if domestic labor and plant structure are central, then the restructuring package must remove enough recurring fixed cost to matter.
+
+## 5) Site-by-site logic
+
+A board-ready model should be built at **plant level**, not just company level.
+
+For each site, I would calculate:
+
+### Inputs
+- annual units
+- capacity utilization
+- labor cost per unit
+- fixed overhead
+- logistics cost
+- depreciation / asset intensity
+- product importance
+- expected future volume
+
+### Output by site
+- **closure-free savings** from:
+  - work-time changes
+  - wage moderation
+  - voluntary exits
+  - function consolidation
+  - productivity gains
+
+- **hybrid incremental savings**
+  - reduced lines
+  - partial site rationalization
+  - internal relocation
+
+- **closure savings**
+  - full fixed-cost removal
+  - less relocation cost
+  - minus transfer/ramp-up costs elsewhere
+
+### Decision rule
+A site is a candidate for closure or major rationalization if:
+
+> **annual avoidable fixed cost > annual savings from non-closure measures + transition penalty**
+
+Where the transition penalty includes:
+- lower output during changeover
+- logistics costs
+- duplicate overhead
+- governance delay risk
+
+---
+
+## 6) Illustrative break-even test
+
+A simple management test:
+
+If closure-free measures can deliver:
+
+- **at least 70% to 80% of the savings of closure**
+- with materially lower conflict risk
+- and without sacrificing future capacity
+
+then a closure-free or low-closure deal may be economically preferable.
+
+If closure-free measures deliver only:
+
+- **30% to 50%** of the closure savings
+
+then they are usually insufficient unless the company’s required margin improvement is small.
+
+---
+
+## 7) Margin impact illustration
+
+Assume annual vehicle volume of a domestic business large enough that:
+
+- **€1bn savings** = roughly **tens of basis points to low single-digit points** of ROS improvement depending on revenue base
+
+Very roughly:
+
+- **€1bn savings** could move margin by **~0.5 to 1.0 percentage points** at a large OEM revenue base
+- **€2bn savings** could move margin by **~1.0 to 2.0 points**
+
+That is why the exact savings target matters so much.
+
+---
+
+## 8) Probability-adjusted view
+
+If I probability-weight the scenarios in a co-determined German setting:
+
+- **Closure-free**: higher probability of signing, lower probability of full economic sufficiency
+- **Hybrid**: moderate probability of signing, highest probability of acceptable economic sufficiency
+- **Closure-based**: lower probability of timely execution, but highest gross savings if implemented
+
+So the risk-adjusted winner is often the **hybrid**, even if the gross savings are not the largest.
+
+---
+
+## 9) What I would request next
+
+To convert this from a scenario framework into a true board model, I need:
+
+### Company-level
+- current domestic fixed-cost base
+- target return-on-sales
+- current utilization by plant
+- current labor cost per vehicle
+- current overhead allocation
+- expected 2028–2030 volume and mix
+
+### Site-level
+- headcount by site
+- output by site
+- direct labor cost
+- overhead
+- asset intensity
+- logistics and transfer cost
+- product allocation outlook
+
+### Labor-package assumptions
+- wage moderation magnitude
+- working-time reduction or flexibility
+- bonus restraint
+- voluntary departure volumes
+- redeployment capacity
+- duration of concessions
+
+### Closure assumptions
+- which plant(s), full or partial
+- severance and transfer costs
+- ramp-up cost elsewhere
+- timing to realize savings
+- supply-chain disruption cost
+
+---
+
+## 10) Bottom line
+
+My current finance assessment is:
+
+- **Closure-free**: possible only if the savings target is modest and the labor contribution is large and durable.
+- **Hybrid**: most plausible economically and politically.
+- **Closure-based**: strongest on gross cost removal, but highest one-time cost and highest governance risk.
+
+If you want, I can next turn this into a **one-page board table** with columns for:
+- annual savings
+- one-time charges
+- NPV through 2030
+- implementation risk
+- impact on headcount
+- and likelihood of board approval.

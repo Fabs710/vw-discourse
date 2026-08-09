@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 1,
+    "dependency": 1,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.25,
+    "openness": 0.5,
+    "declared_red_line": "# To the works council\nWe are aligned on the core red lines:\n- no closures,\n- no forced redundancies,\n- no dismantling of the job-security framework,\n- no weakening of co-determination.\n\nI also agree"
+  }
+}

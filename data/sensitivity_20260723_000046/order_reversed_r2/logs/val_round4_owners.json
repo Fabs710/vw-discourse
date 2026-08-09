@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.3,
+    "openness": 0.74,
+    "declared_red_line": "forceable,\n- and large enough to matter.\n\nThat is non-negotiable.\n\n### To management\nYour diagnosis has credibility. There is clearly overcapacity and a cost base that is not fit for the market enviro"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.35,
+    "openness": 0.62,
+    "declared_red_line": "**\n\n## To the works council\nWe are aligned on the red lines:\n- no plant closures in Germany,\n- no compulsory redundancies,\n- no dismantling of the collective wage framework.\n\nThe expert’s numbers stre"
+  }
+}

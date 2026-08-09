@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.49,
+    "frustration": 0.25,
+    "openness": 0.58,
+    "declared_red_line": "want to acknowledge that plainly — it addresses a red line I named in Round 1, and I won't pretend otherwise. But I need to be precise about what \"runs through proper collective bargaining\" means proc"
+  }
+}

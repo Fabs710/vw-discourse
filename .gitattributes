@@ -1,0 +1,3 @@
+# Byte-exact storage: no line-ending normalization anywhere.
+# The data/ tree is a frozen record; analysis scripts assert byte-stable regeneration.
+* -text

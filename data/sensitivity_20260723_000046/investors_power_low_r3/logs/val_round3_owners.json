@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.35,
+    "openness": 0.66,
+    "declared_red_line": "e parties should stop pretending that categorical red lines are a substitute for a viable plan.\n\n## Bottom line\nI am **open to avoiding closures**, but only if the alternative is genuinely equivalent"
+  }
+}

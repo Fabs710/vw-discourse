@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 8,
+    "risk_preference": 2,
+    "time_preference": 6,
+    "flexibility": 3,
+    "dependency": 2,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.45,
+    "openness": 0.58,
+    "declared_red_line": "y weakening of co-determination**\n\nThose are hard red lines. Not “starting points.” Not “preferences.” Red lines.\n\n## Where I agree with others\nI do agree on one thing: the company needs a durable sol"
+  }
+}

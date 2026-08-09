@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 10.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 10,
+    "legitimacy": 10,
+    "urgency": 10,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.35,
+    "openness": 0.54,
+    "declared_red_line": "# To the works council\nWe are aligned on the core red lines: **no plant closures and no compulsory redundancies**. That is not just a slogan; it is the minimum condition for industrial peace.\n\nWhere I"
+  }
+}

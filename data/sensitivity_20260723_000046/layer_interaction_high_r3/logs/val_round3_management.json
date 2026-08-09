@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.4,
+    "openness": 0.7,
+    "declared_red_line": "ental\n\n### 1) “No closures” cannot be an absolute red line\nI do **not** accept the claim that closures must be excluded in advance.\n\nIf the numbers show that some capacity is structurally non-viable,"
+  }
+}

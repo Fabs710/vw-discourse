@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 8,
+    "risk_preference": 2,
+    "time_preference": 6,
+    "flexibility": 3,
+    "dependency": 6,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.3,
+    "openness": 0.58,
+    "declared_red_line": "r: **the burden of proof has not shifted, and the red lines have not moved.**\n\nWe all agree Volkswagen needs a durable restructuring. What I do **not** accept is the repeated attempt to define “durabl"
+  }
+}

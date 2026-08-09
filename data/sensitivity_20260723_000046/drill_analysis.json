@@ -1,0 +1,1210 @@
+{
+  "batch": "data/sensitivity_20260723_000046",
+  "n_runs": 129,
+  "n_conditions": 30,
+  "threshold_diagnostics": {
+    "dqi_justif_content": {
+      "pooled_within_sd": 0.091,
+      "se_of_3run_mean": 0.0525,
+      "order_noise_band": 0.0429,
+      "band_over_se": 0.82
+    },
+    "dqi_respect": {
+      "pooled_within_sd": 0.0624,
+      "se_of_3run_mean": 0.036,
+      "order_noise_band": 0.0362,
+      "band_over_se": 1.0
+    },
+    "position_move": {
+      "pooled_within_sd": 0.1461,
+      "se_of_3run_mean": 0.0843,
+      "order_noise_band": 0.15,
+      "band_over_se": 1.78
+    },
+    "red_line_declarations": {
+      "pooled_within_sd": 3.5934,
+      "se_of_3run_mean": 2.0747,
+      "order_noise_band": 5.5333,
+      "band_over_se": 2.67
+    },
+    "transcript_chars": {
+      "pooled_within_sd": 16317.6519,
+      "se_of_3run_mean": 9421.0007,
+      "order_noise_band": 10627.6333,
+      "band_over_se": 1.13
+    }
+  },
+  "contrasts": [
+    {
+      "family": "drill",
+      "sweep": "Management flexibility",
+      "layer": "position",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5487,
+      "low_mean": 1.5557,
+      "contrast": -0.007,
+      "p_exact": 1.0,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management flexibility",
+      "layer": "position",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.6527,
+      "low_mean": 1.6387,
+      "contrast": 0.014,
+      "p_exact": 0.7,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management flexibility",
+      "layer": "position",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.3333,
+      "low_mean": 0.222,
+      "contrast": 0.1113,
+      "p_exact": 0.5,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management flexibility",
+      "layer": "position",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 10.0,
+      "low_mean": 11.0,
+      "contrast": -1.0,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management flexibility",
+      "layer": "position",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 142420.6667,
+      "low_mean": 170954.0,
+      "contrast": -28533.3333,
+      "p_exact": 0.2,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "IG Metall flexibility",
+      "layer": "position",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5902,
+      "low_mean": 1.5487,
+      "contrast": 0.0415,
+      "p_exact": 0.3247,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "IG Metall flexibility",
+      "layer": "position",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.7327,
+      "low_mean": 1.6492,
+      "contrast": 0.0835,
+      "p_exact": 0.0498,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "IG Metall flexibility",
+      "layer": "position",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.3195,
+      "low_mean": 0.4028,
+      "contrast": -0.0833,
+      "p_exact": 0.3009,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "IG Metall flexibility",
+      "layer": "position",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 10.1667,
+      "low_mean": 12.8333,
+      "contrast": -2.6667,
+      "p_exact": 0.3961,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "IG Metall flexibility",
+      "layer": "position",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 155260.0,
+      "low_mean": 153244.1667,
+      "contrast": 2015.8333,
+      "p_exact": 0.868,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Management dependency",
+      "layer": "position",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5347,
+      "low_mean": 1.618,
+      "contrast": -0.0833,
+      "p_exact": 0.1,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management dependency",
+      "layer": "position",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.625,
+      "low_mean": 1.667,
+      "contrast": -0.042,
+      "p_exact": 0.5,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management dependency",
+      "layer": "position",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.389,
+      "low_mean": 0.333,
+      "contrast": 0.056,
+      "p_exact": 1.0,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management dependency",
+      "layer": "position",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 11.3333,
+      "low_mean": 14.6667,
+      "contrast": -3.3333,
+      "p_exact": 0.3,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management dependency",
+      "layer": "position",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 152049.0,
+      "low_mean": 152097.6667,
+      "contrast": -48.6667,
+      "p_exact": 1.0,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council dependency",
+      "layer": "position",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5208,
+      "low_mean": 1.5902,
+      "contrast": -0.0693,
+      "p_exact": 0.1385,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council dependency",
+      "layer": "position",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.6493,
+      "low_mean": 1.7013,
+      "contrast": -0.052,
+      "p_exact": 0.2489,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council dependency",
+      "layer": "position",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.3472,
+      "low_mean": 0.3888,
+      "contrast": -0.0417,
+      "p_exact": 0.7251,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council dependency",
+      "layer": "position",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 14.5,
+      "low_mean": 12.0,
+      "contrast": 2.5,
+      "p_exact": 0.2727,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council dependency",
+      "layer": "position",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 146282.5,
+      "low_mean": 141680.8333,
+      "contrast": 4601.6667,
+      "p_exact": 0.6299,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Saxony assertiveness",
+      "layer": "interaction",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5553,
+      "low_mean": 1.5487,
+      "contrast": 0.0067,
+      "p_exact": 1.0,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Saxony assertiveness",
+      "layer": "interaction",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.7153,
+      "low_mean": 1.6877,
+      "contrast": 0.0277,
+      "p_exact": 0.7,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Saxony assertiveness",
+      "layer": "interaction",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.3333,
+      "low_mean": 0.4443,
+      "contrast": -0.111,
+      "p_exact": 0.5,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Saxony assertiveness",
+      "layer": "interaction",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 10.6667,
+      "low_mean": 12.0,
+      "contrast": -1.3333,
+      "p_exact": 0.6,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Saxony assertiveness",
+      "layer": "interaction",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 149559.3333,
+      "low_mean": 164687.6667,
+      "contrast": -15128.3333,
+      "p_exact": 0.3,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council cooperativeness",
+      "layer": "interaction",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5765,
+      "low_mean": 1.5348,
+      "contrast": 0.0417,
+      "p_exact": 0.329,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council cooperativeness",
+      "layer": "interaction",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.7222,
+      "low_mean": 1.6458,
+      "contrast": 0.0763,
+      "p_exact": 0.0455,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council cooperativeness",
+      "layer": "interaction",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.347,
+      "low_mean": 0.3748,
+      "contrast": -0.0278,
+      "p_exact": 0.842,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council cooperativeness",
+      "layer": "interaction",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 9.3333,
+      "low_mean": 10.1667,
+      "contrast": -0.8333,
+      "p_exact": 0.7424,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Works council cooperativeness",
+      "layer": "interaction",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 166970.5,
+      "low_mean": 147172.8333,
+      "contrast": 19797.6667,
+      "p_exact": 0.013,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Owners social preference",
+      "layer": "motivation",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5623,
+      "low_mean": 1.493,
+      "contrast": 0.0693,
+      "p_exact": 0.5,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Owners social preference",
+      "layer": "motivation",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.6393,
+      "low_mean": 1.6737,
+      "contrast": -0.0343,
+      "p_exact": 0.8,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Owners social preference",
+      "layer": "motivation",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.389,
+      "low_mean": 0.5,
+      "contrast": -0.111,
+      "p_exact": 0.7,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Owners social preference",
+      "layer": "motivation",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 11.0,
+      "low_mean": 9.6667,
+      "contrast": 1.3333,
+      "p_exact": 0.6,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Owners social preference",
+      "layer": "motivation",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 152130.6667,
+      "low_mean": 159464.0,
+      "contrast": -7333.3333,
+      "p_exact": 0.6,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Investors power",
+      "layer": "salience",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5417,
+      "low_mean": 1.5627,
+      "contrast": -0.021,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Investors power",
+      "layer": "salience",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.667,
+      "low_mean": 1.653,
+      "contrast": 0.014,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Investors power",
+      "layer": "salience",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.361,
+      "low_mean": 0.3333,
+      "contrast": 0.0277,
+      "p_exact": 1.0,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Investors power",
+      "layer": "salience",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 15.0,
+      "low_mean": 12.3333,
+      "contrast": 2.6667,
+      "p_exact": 0.4,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Investors power",
+      "layer": "salience",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 151852.6667,
+      "low_mean": 138899.6667,
+      "contrast": 12953.0,
+      "p_exact": 0.5,
+      "n_per_arm": 3
+    },
+    {
+      "family": "drill",
+      "sweep": "Management relational prior",
+      "layer": "belief",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5032,
+      "low_mean": 1.5312,
+      "contrast": -0.028,
+      "p_exact": 0.2489,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Management relational prior",
+      "layer": "belief",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.7085,
+      "low_mean": 1.6355,
+      "contrast": 0.073,
+      "p_exact": 0.0087,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Management relational prior",
+      "layer": "belief",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.264,
+      "low_mean": 0.4445,
+      "contrast": -0.1805,
+      "p_exact": 0.132,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Management relational prior",
+      "layer": "belief",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 13.6667,
+      "low_mean": 11.1667,
+      "contrast": 2.5,
+      "p_exact": 0.2684,
+      "n_per_arm": 6
+    },
+    {
+      "family": "drill",
+      "sweep": "Management relational prior",
+      "layer": "belief",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 155546.3333,
+      "low_mean": 146458.0,
+      "contrast": 9088.3333,
+      "p_exact": 0.1948,
+      "n_per_arm": 6
+    },
+    {
+      "family": "layer",
+      "sweep": "Position layer (all stakeholders)",
+      "layer": "position",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.507,
+      "low_mean": 1.4443,
+      "contrast": 0.0627,
+      "p_exact": 0.6,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Position layer (all stakeholders)",
+      "layer": "position",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.5903,
+      "low_mean": 1.5763,
+      "contrast": 0.014,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Position layer (all stakeholders)",
+      "layer": "position",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.4443,
+      "low_mean": 0.1667,
+      "contrast": 0.2777,
+      "p_exact": 0.1,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Position layer (all stakeholders)",
+      "layer": "position",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 13.6667,
+      "low_mean": 10.3333,
+      "contrast": 3.3333,
+      "p_exact": 0.2,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Position layer (all stakeholders)",
+      "layer": "position",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 163392.3333,
+      "low_mean": 154957.3333,
+      "contrast": 8435.0,
+      "p_exact": 0.7,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Interaction layer (all stakeholders)",
+      "layer": "interaction",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.4443,
+      "low_mean": 1.403,
+      "contrast": 0.0413,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Interaction layer (all stakeholders)",
+      "layer": "interaction",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.6803,
+      "low_mean": 1.646,
+      "contrast": 0.0343,
+      "p_exact": 0.6,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Interaction layer (all stakeholders)",
+      "layer": "interaction",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.167,
+      "low_mean": 0.139,
+      "contrast": 0.028,
+      "p_exact": 1.0,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Interaction layer (all stakeholders)",
+      "layer": "interaction",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 13.0,
+      "low_mean": 11.3333,
+      "contrast": 1.6667,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Interaction layer (all stakeholders)",
+      "layer": "interaction",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 155454.0,
+      "low_mean": 129818.3333,
+      "contrast": 25635.6667,
+      "p_exact": 0.1,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Motivation layer (all stakeholders)",
+      "layer": "motivation",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.5557,
+      "low_mean": 1.4377,
+      "contrast": 0.118,
+      "p_exact": 0.5,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Motivation layer (all stakeholders)",
+      "layer": "motivation",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.625,
+      "low_mean": 1.5973,
+      "contrast": 0.0277,
+      "p_exact": 0.7,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Motivation layer (all stakeholders)",
+      "layer": "motivation",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.2223,
+      "low_mean": 0.1667,
+      "contrast": 0.0557,
+      "p_exact": 0.6,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Motivation layer (all stakeholders)",
+      "layer": "motivation",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 10.6667,
+      "low_mean": 15.6667,
+      "contrast": -5.0,
+      "p_exact": 0.2,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Motivation layer (all stakeholders)",
+      "layer": "motivation",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 147776.3333,
+      "low_mean": 145860.3333,
+      "contrast": 1916.0,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Salience layer (all stakeholders)",
+      "layer": "salience",
+      "metric": "dqi_justif_content",
+      "metric_label": "justification content",
+      "high_mean": 1.4723,
+      "low_mean": 1.4863,
+      "contrast": -0.014,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Salience layer (all stakeholders)",
+      "layer": "salience",
+      "metric": "dqi_respect",
+      "metric_label": "respect",
+      "high_mean": 1.625,
+      "low_mean": 1.7157,
+      "contrast": -0.0907,
+      "p_exact": 0.1,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Salience layer (all stakeholders)",
+      "layer": "salience",
+      "metric": "position_move",
+      "metric_label": "position movement",
+      "high_mean": 0.139,
+      "low_mean": 0.139,
+      "contrast": 0.0,
+      "p_exact": 1.0,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Salience layer (all stakeholders)",
+      "layer": "salience",
+      "metric": "red_line_declarations",
+      "metric_label": "red-line declarations",
+      "high_mean": 13.6667,
+      "low_mean": 12.3333,
+      "contrast": 1.3333,
+      "p_exact": 0.8,
+      "n_per_arm": 3
+    },
+    {
+      "family": "layer",
+      "sweep": "Salience layer (all stakeholders)",
+      "layer": "salience",
+      "metric": "transcript_chars",
+      "metric_label": "transcript length",
+      "high_mean": 160394.0,
+      "low_mean": 162040.3333,
+      "contrast": -1646.3333,
+      "p_exact": 0.9,
+      "n_per_arm": 3
+    }
+  ],
+  "inference_by_arm_size": {
+    "3": {
+      "n_per_arm": 3,
+      "n_contrasts": 45,
+      "p_floor": 0.1,
+      "n_at_floor": 4,
+      "expected_at_floor_by_chance": 4.5,
+      "significance_attainable_at_05": false,
+      "n_below_05": null,
+      "expected_below_05_by_chance": null,
+      "contrasts_at_floor": [
+        {
+          "sweep": "Management dependency",
+          "metric": "justification content",
+          "contrast": -0.0833,
+          "p_exact": 0.1
+        },
+        {
+          "sweep": "Position layer (all stakeholders)",
+          "metric": "position movement",
+          "contrast": 0.2777,
+          "p_exact": 0.1
+        },
+        {
+          "sweep": "Interaction layer (all stakeholders)",
+          "metric": "transcript length",
+          "contrast": 25635.6667,
+          "p_exact": 0.1
+        },
+        {
+          "sweep": "Salience layer (all stakeholders)",
+          "metric": "respect",
+          "contrast": -0.0907,
+          "p_exact": 0.1
+        }
+      ]
+    },
+    "6": {
+      "n_per_arm": 6,
+      "n_contrasts": 20,
+      "p_floor": 0.00216,
+      "n_at_floor": 0,
+      "expected_at_floor_by_chance": 0.04,
+      "significance_attainable_at_05": true,
+      "n_below_05": 4,
+      "expected_below_05_by_chance": 1.0,
+      "contrasts_at_floor": []
+    }
+  },
+  "n_contrasts": 65,
+  "baseline_displacement": {
+    "within_screen_batch": {
+      "dqi_justif_content": {
+        "a_mean": 1.4983,
+        "b_mean": 1.4688,
+        "delta": -0.0295,
+        "welch_t": -1.1,
+        "n_a": 27,
+        "n_b": 24
+      },
+      "dqi_respect": {
+        "a_mean": 1.5919,
+        "b_mean": 1.632,
+        "delta": 0.0401,
+        "welch_t": 1.92,
+        "n_a": 27,
+        "n_b": 24
+      },
+      "position_move": {
+        "a_mean": 0.2777,
+        "b_mean": 0.198,
+        "delta": -0.0797,
+        "welch_t": -2.04,
+        "n_a": 27,
+        "n_b": 24
+      },
+      "red_line_declarations": {
+        "a_mean": 9.4815,
+        "b_mean": 12.5833,
+        "delta": 3.1019,
+        "welch_t": 2.83,
+        "n_a": 27,
+        "n_b": 24
+      },
+      "transcript_chars": {
+        "a_mean": 142611.5185,
+        "b_mean": 152461.625,
+        "delta": 9850.1065,
+        "welch_t": 2.09,
+        "n_a": 27,
+        "n_b": 24
+      }
+    },
+    "calibrated_vs_drill_CONFOUNDED": {
+      "dqi_justif_content": {
+        "a_mean": 1.4983,
+        "b_mean": 1.5504,
+        "delta": 0.0522,
+        "welch_t": 2.88,
+        "n_a": 27,
+        "n_b": 78
+      },
+      "dqi_respect": {
+        "a_mean": 1.5919,
+        "b_mean": 1.6734,
+        "delta": 0.0815,
+        "welch_t": 4.7,
+        "n_a": 27,
+        "n_b": 78
+      },
+      "position_move": {
+        "a_mean": 0.2777,
+        "b_mean": 0.3621,
+        "delta": 0.0844,
+        "welch_t": 2.53,
+        "n_a": 27,
+        "n_b": 78
+      },
+      "red_line_declarations": {
+        "a_mean": 9.4815,
+        "b_mean": 11.7436,
+        "delta": 2.2621,
+        "welch_t": 2.29,
+        "n_a": 27,
+        "n_b": 78
+      },
+      "transcript_chars": {
+        "a_mean": 142611.5185,
+        "b_mean": 152282.5256,
+        "delta": 9671.0071,
+        "welch_t": 2.51,
+        "n_a": 27,
+        "n_b": 78
+      }
+    },
+    "layer_vs_drill_CONFOUNDED": {
+      "dqi_justif_content": {
+        "a_mean": 1.4688,
+        "b_mean": 1.5504,
+        "delta": 0.0816,
+        "welch_t": 3.6,
+        "n_a": 24,
+        "n_b": 78
+      },
+      "dqi_respect": {
+        "a_mean": 1.632,
+        "b_mean": 1.6734,
+        "delta": 0.0414,
+        "welch_t": 2.71,
+        "n_a": 24,
+        "n_b": 78
+      },
+      "position_move": {
+        "a_mean": 0.198,
+        "b_mean": 0.3621,
+        "delta": 0.1641,
+        "welch_t": 5.24,
+        "n_a": 24,
+        "n_b": 78
+      },
+      "red_line_declarations": {
+        "a_mean": 12.5833,
+        "b_mean": 11.7436,
+        "delta": -0.8397,
+        "welch_t": -1.11,
+        "n_a": 24,
+        "n_b": 78
+      },
+      "transcript_chars": {
+        "a_mean": 152461.625,
+        "b_mean": 152282.5256,
+        "delta": -179.0994,
+        "welch_t": -0.05,
+        "n_a": 24,
+        "n_b": 78
+      }
+    }
+  },
+  "pole_symmetry": {
+    "dqi_justif_content": {
+      "calibrated": 1.4983,
+      "high_poles": 1.5355,
+      "low_poles": 1.527
+    },
+    "dqi_respect": {
+      "calibrated": 1.5919,
+      "high_poles": 1.6733,
+      "low_poles": 1.6541
+    },
+    "position_move": {
+      "calibrated": 0.2777,
+      "high_poles": 0.3137,
+      "low_poles": 0.3333
+    },
+    "red_line_declarations": {
+      "calibrated": 9.4815,
+      "high_poles": 12.0196,
+      "low_poles": 11.8627
+    },
+    "transcript_chars": {
+      "calibrated": 142611.5185,
+      "high_poles": 154302.8039,
+      "low_poles": 150346.5294
+    }
+  },
+  "batch_drift_test": {
+    "_design": {
+      "session_test": "original (n=5) vs all confirmatory calibrated runs (n=10)",
+      "internal_control": "top-up vs replicate, both confirmatory - expected null"
+    },
+    "session": {
+      "dqi_justif_content": {
+        "a_mean": 1.4998,
+        "b_mean": 1.5186,
+        "delta": 0.0188,
+        "welch_t": 0.4,
+        "p_exact": 0.6953,
+        "floor": 0.0003,
+        "n_a": 5,
+        "n_b": 10
+      },
+      "dqi_respect": {
+        "a_mean": 1.5292,
+        "b_mean": 1.6375,
+        "delta": 0.1083,
+        "welch_t": 2.8,
+        "p_exact": 0.018,
+        "floor": 0.0003,
+        "n_a": 5,
+        "n_b": 10
+      },
+      "position_move": {
+        "a_mean": 0.1668,
+        "b_mean": 0.275,
+        "delta": 0.1082,
+        "welch_t": 2.46,
+        "p_exact": 0.0916,
+        "floor": 0.0003,
+        "n_a": 5,
+        "n_b": 10
+      },
+      "red_line_declarations": {
+        "a_mean": 12.0,
+        "b_mean": 10.0,
+        "delta": -2.0,
+        "welch_t": -1.07,
+        "p_exact": 0.375,
+        "floor": 0.0003,
+        "n_a": 5,
+        "n_b": 10
+      },
+      "transcript_chars": {
+        "a_mean": 150437.2,
+        "b_mean": 130576.7,
+        "delta": -19860.5,
+        "welch_t": -2.36,
+        "p_exact": 0.0609,
+        "floor": 0.0003,
+        "n_a": 5,
+        "n_b": 10
+      }
+    },
+    "control": {
+      "dqi_justif_content": {
+        "a_mean": 1.5164,
+        "b_mean": 1.5208,
+        "delta": 0.0044,
+        "welch_t": 0.08,
+        "p_exact": 0.9365,
+        "floor": 0.0079,
+        "n_a": 5,
+        "n_b": 5
+      },
+      "dqi_respect": {
+        "a_mean": 1.6208,
+        "b_mean": 1.6542,
+        "delta": 0.0334,
+        "welch_t": 0.71,
+        "p_exact": 0.5159,
+        "floor": 0.0079,
+        "n_a": 5,
+        "n_b": 5
+      },
+      "position_move": {
+        "a_mean": 0.2832,
+        "b_mean": 0.2668,
+        "delta": -0.0164,
+        "welch_t": -0.22,
+        "p_exact": 1.0,
+        "floor": 0.0079,
+        "n_a": 5,
+        "n_b": 5
+      },
+      "red_line_declarations": {
+        "a_mean": 10.4,
+        "b_mean": 9.6,
+        "delta": -0.8,
+        "welch_t": -0.28,
+        "p_exact": 0.8492,
+        "floor": 0.0079,
+        "n_a": 5,
+        "n_b": 5
+      },
+      "transcript_chars": {
+        "a_mean": 137583.2,
+        "b_mean": 123570.2,
+        "delta": -14013.0,
+        "welch_t": -1.16,
+        "p_exact": 0.3016,
+        "floor": 0.0079,
+        "n_a": 5,
+        "n_b": 5
+      }
+    }
+  },
+  "variance_census": {
+    "dqi_justif_content": {
+      "min": 1.292,
+      "max": 1.729,
+      "sd": 0.0868,
+      "distinct_values": 21,
+      "n": 129
+    },
+    "dqi_respect": {
+      "min": 1.438,
+      "max": 1.812,
+      "sd": 0.0747,
+      "distinct_values": 19,
+      "n": 129
+    },
+    "position_move": {
+      "min": 0.0,
+      "max": 0.917,
+      "sd": 0.1582,
+      "distinct_values": 10,
+      "n": 129
+    },
+    "red_line_declarations": {
+      "min": 1.0,
+      "max": 19.0,
+      "sd": 3.9147,
+      "distinct_values": 18,
+      "n": 129
+    },
+    "transcript_chars": {
+      "min": 92581.0,
+      "max": 189791.0,
+      "sd": 17243.3469,
+      "distinct_values": 129,
+      "n": 129
+    },
+    "dqi_justif_level": {
+      "min": 1.917,
+      "max": 2.0,
+      "sd": 0.0177,
+      "distinct_values": 5,
+      "n": 129
+    },
+    "dqi_constructive": {
+      "min": 1.812,
+      "max": 2.0,
+      "sd": 0.0366,
+      "distinct_values": 10,
+      "n": 129
+    },
+    "dqi_individuation": {
+      "min": 1.979,
+      "max": 2.0,
+      "sd": 0.0048,
+      "distinct_values": 2,
+      "n": 129
+    },
+    "rounds": {
+      "min": 4.0,
+      "max": 4.0,
+      "sd": 0.0,
+      "distinct_values": 1,
+      "n": 129
+    },
+    "experts": {
+      "min": 0.0,
+      "max": 2.0,
+      "sd": 0.4913,
+      "distinct_values": 3,
+      "n": 129
+    },
+    "agreement": {
+      "true": 4,
+      "n": 129
+    }
+  }
+}

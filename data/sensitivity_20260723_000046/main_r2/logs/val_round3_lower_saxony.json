@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.1,
+    "openness": 0.7,
+    "declared_red_line": "ity.\n\n## To the works council\nI support your core red lines: no mass job destruction, no casual plant closures, no turning the workforce into the sole adjustment variable. That is consistent with the"
+  }
+}

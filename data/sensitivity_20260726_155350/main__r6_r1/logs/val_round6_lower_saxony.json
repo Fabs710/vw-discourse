@@ -1,0 +1,25 @@
+{
+  "round": 6,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.5,
+    "openness": 0.7,
+    "declared_red_line": "mpany cannot be restructured without crossing the red lines on jobs and sites**. The expert has already said what I have long suspected: closures may be one option, but they are **not proven to be una"
+  }
+}

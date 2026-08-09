@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 10,
+    "dependency": 10,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.4,
+    "openness": 0.74,
+    "declared_red_line": "o the works council: **yes, we are aligned on the non-negotiables** — no plant closures in Germany, no compulsory redundancies, and no dismantling of the collective wage framework. I support that line"
+  }
+}

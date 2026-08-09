@@ -1,0 +1,50 @@
+Understood. I’ll stay within industrial planning and capacity math.
+
+### What I can provide next
+I can help build a **plant-by-plant capacity and redeployment assessment** for the German footprint, including:
+- current utilization vs. minimum viable utilization,
+- structural overcapacity estimate,
+- feasible internal redeployment,
+- repurposing/conversion requirements,
+- and a scenario comparison:
+  1. **site-preserving**
+  2. **capacity-consolidation**
+
+### What I need to do that properly
+Please provide, ideally by site:
+- annual nameplate capacity
+- current output and forecast output through 2030
+- model allocation / pipeline
+- shifts and effective hours
+- fixed and variable cost split, if available
+- headcount by site and function
+- known constraints on transfer, tooling, or logistics
+- any capex estimate for conversion or retooling
+
+### How I would assess it
+For each plant, I would calculate:
+- **utilization = output / nameplate capacity**
+- **overcapacity = nameplate – forecast output**
+- **minimum viable utilization threshold**  
+  Typically depends on plant type, product mix, and fixed-cost absorption; in automotive final assembly, underutilization below roughly **60–70%** often becomes structurally difficult without either volume transfer, product addition, or major cost reset. Supplier/body shop/paint constraints can make the threshold effectively higher.
+
+### Likely industrial logic
+Without site data, I cannot name which plants are viable. But in large OEM footprints, the usual outcomes are:
+- **high-utilization plants** can often absorb more volume or new models;
+- **mid-utilization plants** can sometimes be stabilized through product transfer, shift changes, or partial consolidation;
+- **low-utilization plants** usually require either:
+  - a new product,
+  - major conversion capex,
+  - or closure/consolidation.
+
+### Redeployment options I would test
+- shift consolidation and higher line loading
+- internal transfer of components or derivative models
+- conversion from one architecture to another
+- CKD/SKD or niche production
+- battery, e-drive, or other EV component assignment where industrially compatible
+- centralization of shared functions outside final assembly
+
+### Important constraint
+I can assess **industrial feasibility**, not governance or labor strategy.  
+If you want, send me the plant list and whatever utilization/capacity numbers you have, and I’ll turn it into a concise site-by-site analysis.

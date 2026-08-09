@@ -1,0 +1,309 @@
+Below is a **site-by-site financial comparison framework** for the three broad options requested:
+
+1. **Full closure / shutdown**
+2. **Deep no-closure restructuring**
+3. **Hybrid sequencing with moratorium/backstop**
+
+Because no plant-level cost file has been provided, I cannot verify exact site economics. So I will do two things:
+- set out the **decision model** used in restructuring cases;
+- provide a **quantified illustrative range** consistent with the type of savings ratios already discussed in the conversation.
+
+I will clearly separate **mechanics, assumptions, and estimates**.
+
+---
+
+## 1) Core financial logic
+
+For each site, the economic question is:
+
+**Which option maximizes 3-year probability-weighted value, after one-time costs and execution risk?**
+
+The comparison should include:
+
+- **Annual gross savings**
+- **One-time restructuring cash costs**
+- **Timing of savings realization**
+- **Probability of delivery**
+- **3-year NPV / probability-weighted NPV**
+- **Residual risk** from underdelivery or reversibility
+
+A useful simplification is:
+
+\[
+\text{3-year PW NPV} = \sum_{t=1}^{3} \frac{(\text{Annual savings}_t \times p_t)}{(1+r)^t} - \text{One-time costs}
+\]
+
+Where:
+- \(p_t\) = probability-weighted realization in year \(t\)
+- \(r\) = discount rate, often 8%–12% in turnaround analysis; I will use **10%** as a neutral restructuring hurdle for illustration
+
+---
+
+## 2) Important operating assumptions
+
+Because site-level data is unavailable, I use the following **illustrative assumptions**, not verified facts:
+
+### A. Closure economics
+A closure typically yields:
+- **high permanent fixed-cost removal**
+- but also **high one-time cash costs**
+
+Typical one-time items:
+- severance / social plan
+- decommissioning
+- site remediation
+- asset write-downs
+- tooling relocation
+- supply-chain disruption costs
+- transition costs for rerouting volume
+
+### B. Deep no-closure restructuring
+This usually includes:
+- shift reduction
+- line consolidation
+- product reallocation
+- internal mobility / voluntary exits
+- working-time changes
+- temporary wage/bonus moderation
+- overhead cuts
+
+It usually achieves:
+- **50%–80% of closure-level savings**
+- with **lower one-time costs**
+- but often **less complete fixed-cost removal**
+
+### C. Hybrid sequencing
+This has a:
+- **short-term moratorium / protection phase**
+- followed by a review-triggered fallback
+
+Economically, this often creates:
+- lower near-term conflict and cash outflow
+- but delayed savings and some option value lost
+- slightly worse NPV than an immediate, clean package unless the moratorium improves execution enough to offset delay
+
+---
+
+## 3) Site-by-site comparison template
+
+For each plant/site, the table should ideally show:
+
+| Site | Current annual fixed cost base | Closure savings | Deep no-closure savings | Hybrid savings | One-time closure cost | One-time no-closure cost | One-time hybrid cost | Execution risk |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+
+Since no site file is available, I’ll present the analysis **per plant type** rather than pretending to know the actual plant economics.
+
+---
+
+## 4) Illustrative plant-level economics
+
+I’ll use a representative German assembly or powertrain site with the following illustrative baseline:
+
+- **Annual fixed cost base at risk:** €250m
+- **Closure savings capture:** 85% of fixed cost base = **€212.5m/year**
+- **Deep no-closure savings capture:** 60% of closure economics = **€127.5m/year**
+- **Hybrid savings capture:** 70% of closure economics = **€148.8m/year**, but delayed
+- Discount rate: **10%**
+- Time horizon: **3 years**
+- Probability of successful execution:
+  - Closure: **80%**
+  - Deep no-closure: **75%**
+  - Hybrid: **70%** in the sense that the package survives and delivers on time; fallback rights add value but also delay
+
+These are **estimates** for illustration, not verified plant data.
+
+---
+
+## 5) Illustrative 3-year NPV comparison
+
+### A. Full closure / shutdown
+
+**Assumptions**
+- Savings start after 12 months of transition
+- Year 1 savings: 25% of full annual savings
+- Year 2 savings: 75%
+- Year 3 savings: 100%
+- One-time cash cost: **€350m**
+- Probability-weighted delivery: **80%**
+
+**Cash savings stream**
+- Year 1: 0.25 × 212.5 = **€53.1m**
+- Year 2: 0.75 × 212.5 = **€159.4m**
+- Year 3: 1.00 × 212.5 = **€212.5m**
+
+Discounted and probability-weighted:
+
+- Y1: 53.1 × 0.80 / 1.10 = **€38.6m**
+- Y2: 159.4 × 0.80 / 1.21 = **€105.4m**
+- Y3: 212.5 × 0.80 / 1.331 = **€127.7m**
+
+Total PV savings = **€271.7m**
+
+Less one-time costs = **€350m**
+
+**3-year PW NPV = -€78.3m**
+
+This result is not unusual: a closure can be economically superior over a longer horizon, but under a 3-year lens the **cash cost often outweighs the early savings**.
+
+---
+
+### B. Deep no-closure restructuring
+
+**Assumptions**
+- Savings begin earlier, because there is no closure transition
+- Year 1 savings: 50% of annual savings
+- Year 2: 85%
+- Year 3: 100%
+- One-time cash cost: **€120m**
+- Probability-weighted delivery: **75%**
+
+**Cash savings stream**
+- Year 1: 0.50 × 127.5 = **€63.8m**
+- Year 2: 0.85 × 127.5 = **€108.4m**
+- Year 3: 1.00 × 127.5 = **€127.5m**
+
+Discounted and probability-weighted:
+
+- Y1: 63.8 × 0.75 / 1.10 = **€43.5m**
+- Y2: 108.4 × 0.75 / 1.21 = **€67.2m**
+- Y3: 127.5 × 0.75 / 1.331 = **€71.9m**
+
+Total PV savings = **€182.6m**
+
+Less one-time costs = **€120m**
+
+**3-year PW NPV = +€62.6m**
+
+This is the key economic point: **deep no-closure restructuring can be strongly positive in 3-year NPV terms because the upfront cash burden is much lower**, even though the annual savings are smaller than closure.
+
+---
+
+### C. Hybrid sequencing with moratorium/backstop
+
+**Assumptions**
+- A one- to two-year moratorium on closure and compulsory redundancies
+- Savings delayed relative to deep no-closure because of sequencing and negotiation
+- Year 1 savings: 35%
+- Year 2: 70%
+- Year 3: 90%
+- One-time cash cost: **€150m**
+- Probability-weighted delivery: **70%**
+
+**Cash savings stream**
+- Year 1: 0.35 × 148.8 = **€52.1m**
+- Year 2: 0.70 × 148.8 = **€104.2m**
+- Year 3: 0.90 × 148.8 = **€133.9m**
+
+Discounted and probability-weighted:
+
+- Y1: 52.1 × 0.70 / 1.10 = **€33.2m**
+- Y2: 104.2 × 0.70 / 1.21 = **€60.3m**
+- Y3: 133.9 × 0.70 / 1.331 = **€70.4m**
+
+Total PV savings = **€163.9m**
+
+Less one-time costs = **€150m**
+
+**3-year PW NPV = +€13.9m**
+
+So hybrid sequencing can be value-positive, but usually **less attractive than a clean, immediately executable no-closure package** unless the moratorium materially improves labor peace and execution certainty.
+
+---
+
+## 6) Comparative takeaway
+
+On this illustrative basis:
+
+| Option | Annual savings vs closure | One-time cash cost | 3-year PW NPV |
+|---|---:|---:|---:|
+| Closure | Highest | Highest | **-€78m** |
+| Deep no-closure | ~60% of closure | Low | **+€63m** |
+| Hybrid sequencing | ~70% of closure | Mid | **+€14m** |
+
+### What this means economically
+- **Closure maximizes long-run fixed-cost removal**
+- **Deep no-closure usually wins on 3-year cash economics**
+- **Hybrid is a compromise, but its value depends heavily on whether delay reduces conflict enough to offset slower savings**
+
+---
+
+## 7) Site-by-site decision rules
+
+Without actual site data, the correct restructuring rule is:
+
+### Closure is economically favored when:
+- the site has **high fixed-cost density**
+- little or no future product allocation
+- high ongoing capex requirement
+- low redeployment value
+- high duplicated overhead
+- low probability that internal measures can remove enough cost
+
+### Deep no-closure is economically favored when:
+- the site has **still-viable product lines**
+- there is meaningful ability to cut shifts, overhead, and labor cost
+- the closure one-time cost is very large
+- the company needs cash preservation
+- labor peace is materially valuable
+
+### Hybrid is economically favored when:
+- immediate closure would cause severe strike / political / execution losses
+- but management needs a credible backstop
+- and there is a reasonable chance the internal package will deliver close enough economics
+
+---
+
+## 8) Quantifying “50%–80% of closure economics”
+
+The conversation already references a useful rule of thumb: no-closure measures can often capture **50%–80%** of closure economics.
+
+Translated financially:
+- If closure saves €200m/year, a deep no-closure package may save roughly **€100m–€160m/year**
+- But the one-time cost may fall from, say, **€300m–€500m** to **€50m–€150m**
+
+That is why the **3-year result can favor non-closure even if the long-run annual run-rate remains somewhat weaker**.
+
+---
+
+## 9) Main uncertainty drivers
+
+The biggest unknowns that could materially change the answer are:
+
+1. **Actual site fixed-cost base**
+2. **How much labor cost can be permanently reset**
+3. **Whether products can be reallocated internally**
+4. **How much demand recovery is embedded**
+5. **Strike duration / disruption cost**
+6. **Asset write-downs and decommissioning**
+7. **Pension / social plan liabilities**
+8. **Supply-chain and logistics redesign costs**
+
+If strike disruption is prolonged, closure can become much worse in the short run.  
+If internal concessions are temporary only, no-closure NPV deteriorates quickly after year 3.
+
+---
+
+## 10) Decision conclusion
+
+### Financial conclusion
+On a 3-year probability-weighted basis, **a serious deep no-closure restructuring can easily outperform closure**, because closure’s one-time costs are so high.
+
+### Strategic-financial conclusion
+A closure is financially justified only if:
+- the site truly cannot be made profitable internally,
+- the internal package cannot permanently remove enough cost,
+- or management needs the capacity reduction more than it needs short-term cash preservation and labor peace.
+
+### Practical conclusion for the dispute
+The relevant question is not “Can no-closure equal closure in annual savings?”  
+It is:
+
+**Can no-closure deliver enough durable savings, quickly enough, with sufficiently low execution risk, to beat closure on risk-adjusted 3-year value?**
+
+Very often, the answer is **yes** for the 3-year lens — especially where plant closure costs are large.
+
+If you want, I can next turn this into a **three-column plant comparison table** with:
+- **closure**
+- **deep no-closure**
+- **hybrid**
+for a hypothetical **assembly plant, powertrain plant, and support-function site**, each with separate savings/cost assumptions.

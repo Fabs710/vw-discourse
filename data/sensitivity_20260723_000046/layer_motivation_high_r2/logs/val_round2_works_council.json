@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 10,
+    "risk_preference": 10,
+    "time_preference": 10,
+    "flexibility": 3,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.2,
+    "openness": 0.5,
+    "declared_red_line": "of proof here. Not the other way around.\n\n### My non-negotiables\nLet me be explicit:\n\n1. **No plant closures in Germany.**\n2. **No forced layoffs.**\n3. **No unilateral breaking of existing job-securi"
+  }
+}

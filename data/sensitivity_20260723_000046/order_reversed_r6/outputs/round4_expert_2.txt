@@ -1,0 +1,59 @@
+Understood. In my restructuring finance/costing capacity, the key point is this:
+
+## What can be said now
+A no-closure package is economically acceptable only if, on a **risk-adjusted NPV basis**, it matches or exceeds the closure alternative after including:
+
+- closure one-off costs
+- saved fixed cash costs from closure
+- extra logistics / transfer costs
+- any replacement capex at retained sites
+- timing delays to savings
+- execution risk from labor conflict or underdelivery
+
+So the real test is:
+
+\[
+NPV_{non-closure} \ge NPV_{closure}
+\]
+
+If that is not true, then “no closures” is financially inferior unless there is a compensating advantage such as much lower one-off cost or materially lower implementation risk.
+
+## Practical threshold
+Without plant data, I cannot give a credible single euro figure. The threshold depends on:
+- severance cost
+- number of sites
+- utilization gap
+- wage-concession duration
+- required capex
+- discount rate
+- expected strike / delay risk
+
+But as a rule of thumb:
+- if a no-closure package delivers **less than ~70–80% of closure savings** on a durable cash basis, it usually needs a strong offsetting advantage to be competitive.
+- if it delivers **90%+ of closure savings** and avoids large closure costs, it can often be superior.
+
+## What the model must show
+For each plant:
+- current cash cost
+- utilization
+- closure one-off cost
+- closure annual savings
+- non-closure annual savings
+- non-closure transition cost
+- NPV of both options
+- payback of both options
+- ROS impact
+
+## Main financial sensitivities
+The biggest swing factors are:
+1. severance and decommissioning costs
+2. speed of labor-cost realization
+3. durability of concessions
+4. extra capex to keep sites open
+5. demand forecast
+6. strike / implementation delay risk
+
+## Bottom line
+Right now, no party has supplied enough data to justify a definitive threshold. The next step is a **plant-by-plant incremental cash-flow model** comparing closure vs. non-closure.
+
+If you want, I can provide a **filled-in template table and formula set** for the comparison.

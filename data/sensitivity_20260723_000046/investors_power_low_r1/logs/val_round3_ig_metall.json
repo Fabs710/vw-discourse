@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.15,
+    "openness": 0.66,
+    "declared_red_line": "# To the Works Council\nWe are aligned on the core red lines:\n- no compulsory redundancies,\n- no one-sided burden shifting,\n- no dismantling of collective protections,\n- and no restructuring that treat"
+  }
+}

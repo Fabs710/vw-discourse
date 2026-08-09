@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.25,
+    "openness": 0.74,
+    "declared_red_line": "nged.\n\n### To the works council\nI understand your red lines on job security and site closures. I also understand why you want binding guarantees. But I cannot endorse a position that says, in effect,"
+  }
+}

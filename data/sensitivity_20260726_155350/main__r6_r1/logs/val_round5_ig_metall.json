@@ -1,0 +1,25 @@
+{
+  "round": 5,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.45,
+    "openness": 0.74,
+    "declared_red_line": "ing compulsory redundancies. That is a legitimate red line.\n\nWhere I would sharpen it is this: we should not allow the employer to claim that “preserving all sites” is impossible without even disclosi"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.1,
+    "openness": 0.62,
+    "declared_red_line": "## To the works council and union\nI support your red lines on **no compulsory redundancies** and strong protection of jobs and sites. Those are not just bargaining positions; they are core to the reg"
+  }
+}

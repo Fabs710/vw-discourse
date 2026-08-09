@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.25,
+    "openness": 0.58,
+    "declared_red_line": "e need more than declarations.\n\nSo I support your red line against closures and compulsory redundancies, but I want you to engage seriously on:\n- meaningful capacity reduction,\n- measurable labour-cos"
+  }
+}

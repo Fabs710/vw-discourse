@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.4,
+    "openness": 0.78,
+    "declared_red_line": "I am arguing that **deep structural savings** are non-negotiable, and if the non-closure package does not achieve them, deeper footprint reduction must remain available.\n\n## On the expert assessment\nT"
+  }
+}

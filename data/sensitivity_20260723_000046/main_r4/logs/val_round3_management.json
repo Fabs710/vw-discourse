@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.49,
+    "frustration": 0.2,
+    "openness": 0.74,
+    "declared_red_line": "be blunt: **I am not open to a package whose only red line is protecting every plant and every job as they currently stand**. That is not a restructuring. It is a delay of the inevitable.\n\n## What is"
+  }
+}

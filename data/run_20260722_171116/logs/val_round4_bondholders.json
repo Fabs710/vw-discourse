@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "bondholders",
+  "salience": 6.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 7,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 6,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.54,
+    "frustration": 0.15,
+    "openness": 0.58,
+    "declared_red_line": null
+  }
+}

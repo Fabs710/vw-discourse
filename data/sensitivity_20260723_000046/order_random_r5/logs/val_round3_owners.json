@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.25,
+    "openness": 0.5,
+    "declared_red_line": "does not, then the company must not be trapped by red lines that preserve all sites but destroy competitiveness.\n\nSo my message is simple:\n- **Test the non-closure route.**\n- **Do not assume it is suf"
+  }
+}

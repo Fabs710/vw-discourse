@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 8,
+    "risk_preference": 2,
+    "time_preference": 6,
+    "flexibility": 3,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.41,
+    "frustration": 0.55,
+    "openness": 0.6,
+    "declared_red_line": "nt closures and forced redundancies.\n\nThat is the red line.\n\nA “review” can be about whether management and owners have delivered their part, whether investment has happened, whether productivity meas"
+  }
+}

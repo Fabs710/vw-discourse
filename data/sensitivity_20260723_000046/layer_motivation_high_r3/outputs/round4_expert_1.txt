@@ -1,0 +1,177 @@
+Yes. From a turnaround finance/modeling perspective, the central question is not whether closures are “good” or “bad” in the abstract, but whether a non-closure package can deliver **comparable risk-adjusted economic value** after accounting for:
+
+- annual cash savings,
+- one-time restructuring charges,
+- implementation timing,
+- strike / veto / legal risk,
+- and the probability that savings actually stick.
+
+## Decision framework
+
+The financially relevant comparison is:
+
+### Closure-based scenario
+Typically:
+- larger gross fixed-cost reduction,
+- higher one-time cash costs,
+- higher governance and industrial conflict risk,
+- longer implementation timeline if blocked,
+- stronger structural certainty if executed.
+
+### Non-closure scenario
+Typically:
+- lower one-time cash outlay,
+- lower symbolic/political rupture,
+- potentially faster to agree,
+- but often smaller and less durable savings,
+- and greater risk that the package erodes over time unless tightly enforced.
+
+---
+
+## What “equivalent economic effect” means
+
+A non-closure package is financially equivalent only if it can deliver:
+
+1. **Similar annual EBIT improvement**
+2. **Similar cash cost reduction**
+3. **Similar durability through 2030+**
+4. **High probability of implementation**
+5. **Low leakage risk from later reversals or renegotiation**
+
+In practice, that means I would test it on a **risk-adjusted NPV** basis.
+
+---
+
+## Rule of thumb threshold
+
+Without company-specific data, I would use this practical threshold:
+
+A non-closure package is economically credible only if it can capture roughly **70–85% of the annual run-rate savings** of a closure-based plan, **and** do so with materially lower execution risk and materially lower one-time cost.
+
+If it captures less than that, it usually becomes a delay mechanism rather than a true substitute.
+
+Why that range?
+- Because closures usually deliver the deepest structural savings.
+- But closures also carry high failure risk in German co-determination settings.
+- So a somewhat smaller savings package can still be rational if it is much easier to implement and much cheaper upfront.
+
+---
+
+## Simple break-even logic
+
+A non-closure package can “beat” closures if:
+
+\[
+NPV_{non-closure} = PV(\text{savings}) - \text{restructuring cost} - \text{execution risk penalty}
+\]
+
+exceeds:
+
+\[
+NPV_{closure} = PV(\text{larger savings}) - \text{higher restructuring cost} - \text{delay / conflict penalty}
+\]
+
+So the key is not just savings size; it is:
+- time to benefit,
+- probability-weighted realization,
+- and avoidance of conflict-induced delay.
+
+---
+
+## Illustrative model ranges
+
+If we were screening this decision, I would think in rough bands like this:
+
+### Closure scenario
+- **Annual run-rate savings:** high
+- **One-time cost:** high
+- **Execution probability:** medium to low unless governance support is secured
+- **Time to full benefit:** 1–3 years
+- **NPV sensitivity:** very sensitive to delay
+
+### Non-closure scenario
+- **Annual run-rate savings:** medium to high, but usually less than closure
+- **One-time cost:** medium
+- **Execution probability:** higher if negotiated
+- **Time to full benefit:** often faster
+- **NPV sensitivity:** sensitive to slippage and partial dilution
+
+If non-closure measures can produce savings quickly and reliably, they can outperform closures even with smaller nominal savings.
+
+---
+
+## What would make a non-closure package credible
+
+It needs to be **quantified in four buckets**:
+
+### 1. Labor cost
+- temporary pay moderation,
+- bonus/variable compensation reduction,
+- working-time changes,
+- removal or suspension of allowances/guarantees.
+
+### 2. Capacity and footprint
+- shift reductions,
+- line consolidation,
+- product specialization by site,
+- reduced overtime,
+- redeployment out of overstaffed areas.
+
+### 3. Headcount
+- voluntary exits,
+- retirement bridging,
+- redeployment,
+- attrition.
+
+### 4. Productivity / overhead
+- indirect headcount cuts,
+- procurement/SG&A reduction,
+- process redesign,
+- industrial utilization gains.
+
+If the package does not visibly move all four levers, it is unlikely to close the structural gap.
+
+---
+
+## Main risks in a non-closure package
+
+The biggest risks are:
+
+- **savings leakage** over time,
+- **reopening of concessions** after the first tranche,
+- **insufficient headcount reduction**,
+- **underestimated overhead rigidity**,
+- **capacity remaining too dispersed**,
+- **delayed EBIT impact** if implementation is staged too gently.
+
+In my experience, non-closure packages often fail not because the arithmetic is impossible, but because the measures are too soft, too temporary, or too easily renegotiated.
+
+---
+
+## My modeler’s conclusion
+
+### Financially, a non-closure package becomes acceptable if:
+- it closes most of the gap to closure-based savings,
+- it is front-loaded enough to matter before the next product cycle,
+- and it is contractually durable enough to survive labor conflict and future renegotiation.
+
+### If it cannot do that:
+then closures remain the more credible structural reset, despite the higher execution risk.
+
+---
+
+## Practical bottom line
+
+If management is asking whether a no-closure deal can substitute for closures, my answer is:
+
+- **Yes, in principle**
+- **Only if** the package delivers roughly **70–85% of the closure-based annual savings**
+- **and** reduces execution risk enough to improve risk-adjusted NPV
+- **and** contains enforceable capacity/headcount reductions, not just temporary labor concessions
+
+If you want, I can next build a **side-by-side scenario template** for:
+1. closure case,
+2. no-closure case,
+3. hybrid phased case,
+
+with assumptions for savings, restructuring cost, timing, and NPV sensitivity.

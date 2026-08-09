@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.2,
+    "openness": 0.7,
+    "declared_red_line": "ree\n\n### To the works council and union\nYour core red lines remain too absolute.\n\nA blanket **“no plant closures, no compulsory redundancies, all sites protected through 2030”** is not an economic pla"
+  }
+}

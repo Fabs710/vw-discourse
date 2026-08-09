@@ -1,0 +1,197 @@
+Yes — on the current information, the correct finance answer is **not yet “closure” or “no closure”**. It is:
+
+> **A non-closure package is acceptable only if its durable NPV savings are at least equal to the closure-based alternative, after accounting for one-offs, delay, and execution risk.**
+
+Below is a **decision matrix** you can use immediately, plus the **threshold logic** for the non-closure trigger package.
+
+---
+
+# 1) Decision matrix: what to compare
+
+## A. Closure-based restructuring
+Typical elements:
+- plant closure(s)
+- capacity exit / line consolidation
+- headcount reduction
+- severance and social-plan costs
+- impairments / write-downs
+- wind-down, relocation, and logistics costs
+- possible strike/disruption cost during execution
+
+## B. Non-closure / no-forced-redundancy package
+Typical elements:
+- no immediate closures
+- shift and line reductions
+- working-time flexibility
+- wage restraint / bonus sacrifice / concessions
+- voluntary departures
+- redeployment / retraining
+- management overhead cuts
+- possibly capex discipline / delayed investment
+- if guarantees are binding: a “protection cost” or lower flexibility value
+
+---
+
+# 2) The key economic test
+
+A non-closure package is economically equivalent only if:
+
+\[
+NPV(\text{non-closure incremental savings}) - \text{one-time costs} \ge NPV(\text{closure-based incremental savings}) - \text{one-time costs}
+\]
+
+If you want the **minimum annual savings threshold** for the non-closure package:
+
+\[
+S_{NC} \ge S_{CL} + \frac{(C_{NC,1} - C_{CL,1}) \cdot r}{1-(1+r)^{-T}}
+\]
+
+Where:
+- \(S_{NC}\) = annual recurring savings from the non-closure package
+- \(S_{CL}\) = annual recurring savings from the closure package
+- \(C_{NC,1}\) = one-off cost of the non-closure package
+- \(C_{CL,1}\) = one-off cost of the closure package
+- \(r\) = discount rate
+- \(T\) = analysis horizon
+
+Interpretation:
+- If non-closure has **lower one-offs**, it can tolerate somewhat lower recurring savings.
+- If non-closure savings are **temporary or reversible**, its effective NPV falls sharply.
+
+---
+
+# 3) Practical board-level decision matrix
+
+| Criterion | Closure-based package | Non-closure package |
+|---|---:|---:|
+| One-off cost | High | Low to medium |
+| Recurring annual savings | High | Medium to high only if concessions are deep |
+| NPV | Often strong if savings are large | Must be benchmarked vs closure |
+| Payback | Often longer due to one-offs | Often faster if savings start immediately |
+| ROS impact | Usually stronger if structural | Can be sufficient if durable and large enough |
+| Execution risk | Medium-high | Medium-high if voluntary / enforceability is weak |
+| Industrial disruption | High | Lower |
+| Risk of savings fade | Low | Higher unless binding and long-dated |
+| Flexibility retained | Higher | Lower if guarantees are binding |
+
+---
+
+# 4) What makes a non-closure package fail financially
+
+A non-closure package usually fails the economic test if one or more of these is true:
+
+1. **Savings are too small**
+   - wage restraint and voluntary exits do not offset the fixed-cost base
+
+2. **Savings are not durable**
+   - temporary concessions expire before the company is back on target
+
+3. **Utilization remains too low**
+   - keeping all sites open with too much slack destroys margin
+
+4. **Execution underdelivers**
+   - voluntary-only headcount cuts often miss target
+
+5. **Hidden costs offset the savings**
+   - duplicate overhead, logistics, retraining, or guarantee costs
+
+6. **The package delays rather than solves**
+   - a trigger mechanism without hard consequences becomes a time-buying device
+
+---
+
+# 5) Payback test
+
+\[
+Payback = \frac{\text{One-time restructuring cost}}{\text{Annual recurring savings}}
+\]
+
+Rule of thumb:
+- **< 2 years**: very strong
+- **2–4 years**: usually workable if savings are durable
+- **> 4 years**: difficult unless the strategic risk reduction is substantial
+
+For an OEM in a cyclical market, **early payback matters a lot** because savings delayed into later years are less reliable.
+
+---
+
+# 6) ROS impact
+
+\[
+\Delta ROS = \frac{\Delta EBIT}{Revenue}
+\]
+
+So if the package improves EBIT by:
+- €500m on €100bn revenue = **+0.5 percentage points ROS**
+- €1.0bn on €100bn revenue = **+1.0 percentage point ROS**
+
+If the brand is materially below target, the restructuring needs to move ROS by enough to reach the hurdle **and** cover cyclical downside.
+
+---
+
+# 7) Trigger package: what “hard” means financially
+
+A trigger mechanism only has value if it is:
+
+- **objective**: based on EBIT, ROS, cash, utilization, or cost metrics
+- **near-term**: not “review in three years”
+- **automatic or highly credible**
+- **linked to pre-agreed deeper measures**
+
+If the trigger merely reopens talks later, its economic value is low.  
+If it activates additional measures when targets are missed, it is much more credible.
+
+---
+
+# 8) Minimum non-closure threshold logic
+
+To support a no-closure settlement, management should identify:
+
+### Group-level thresholds
+- minimum annual recurring savings
+- minimum NPV
+- maximum acceptable payback
+- target ROS by year
+- maximum allowed execution risk
+
+### Plant-level thresholds
+For each site:
+- current fixed cost burden
+- savings from shift cuts / line consolidation
+- savings from labor concessions
+- residual gap after non-closure measures
+- incremental savings if the site were closed
+
+Then the board can answer:
+> Does keeping this site open, with the proposed concessions, still beat closing it on a risk-adjusted NPV basis?
+
+That is the correct comparison.
+
+---
+
+# 9) What I would want in a one-page model
+
+For each scenario:
+
+- Annual EBIT uplift
+- One-off restructuring cost
+- NPV over 5–7 years
+- Payback period
+- ROS at steady state
+- Execution risk rating
+- Sensitivity to volume, strike risk, and savings fade
+
+---
+
+# 10) Bottom line
+
+At this stage, the decision should be framed as:
+
+- **Support a non-closure package** if it delivers **durable, enforceable savings** equal to or better than closure on an NPV basis.
+- **Support a closure package** if non-closure savings are too small, too slow, or too reversible.
+
+If you want, I can next provide a **fill-in template** with line items and formulas for:
+1. closure case,
+2. non-closure case,
+3. trigger threshold,
+4. and the minimum savings needed to justify “no closures.”

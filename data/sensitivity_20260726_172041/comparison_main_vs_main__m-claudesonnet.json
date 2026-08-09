@@ -1,0 +1,160 @@
+{
+  "a": {
+    "batch": "data/sensitivity_20260723_000046",
+    "condition": "main",
+    "label": "gpt-5.4-mini",
+    "n": 5,
+    "provenance": {
+      "model": "gpt-5.4-mini-2026-03-17",
+      "seed": 20260714,
+      "rounds": 4
+    }
+  },
+  "b": {
+    "batch": "data/sensitivity_20260726_172041",
+    "condition": "main__m-claudesonnet",
+    "label": "claude-sonnet-5",
+    "n": 3,
+    "provenance": {
+      "model": "claude-sonnet-5",
+      "seed": 20260714,
+      "rounds": 4
+    }
+  },
+  "p_floor": 0.01786,
+  "significance_attainable_at_05": true,
+  "comparisons": [
+    {
+      "metric": "dqi_respect",
+      "label": "respect",
+      "a_mean": 1.5292,
+      "b_mean": 1.7847,
+      "delta": 0.2555,
+      "welch_t": 7.06,
+      "p_exact": 0.0179,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "dqi_justif_content",
+      "label": "justification content",
+      "a_mean": 1.4998,
+      "b_mean": 1.5763,
+      "delta": 0.0765,
+      "welch_t": 1.8,
+      "p_exact": 0.1964,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "dqi_justif_level",
+      "label": "justification level",
+      "a_mean": 1.9502,
+      "b_mean": 2.0,
+      "delta": 0.0498,
+      "welch_t": 3.55,
+      "p_exact": 0.125,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "dqi_constructive",
+      "label": "constructive politics",
+      "a_mean": 1.9584,
+      "b_mean": 1.993,
+      "delta": 0.0346,
+      "welch_t": 2.13,
+      "p_exact": 0.1786,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "dqi_individuation",
+      "label": "individuation",
+      "a_mean": 2.0,
+      "b_mean": 2.0,
+      "delta": 0.0,
+      "welch_t": null,
+      "p_exact": 1.0,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "position_move",
+      "label": "position movement",
+      "a_mean": 0.1668,
+      "b_mean": 0.8887,
+      "delta": 0.7219,
+      "welch_t": 3.68,
+      "p_exact": 0.0179,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "red_line_declarations",
+      "label": "red-line declarations",
+      "a_mean": 12.0,
+      "b_mean": 6.6667,
+      "delta": -5.3333,
+      "welch_t": -3.73,
+      "p_exact": 0.0357,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "transcript_chars",
+      "label": "transcript length",
+      "a_mean": 150437.2,
+      "b_mean": 150405.0,
+      "delta": -32.2,
+      "welch_t": -0.01,
+      "p_exact": 0.9821,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "rounds",
+      "label": "rounds completed",
+      "a_mean": 4.0,
+      "b_mean": 4.0,
+      "delta": 0.0,
+      "welch_t": null,
+      "p_exact": 1.0,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "experts",
+      "label": "experts summoned",
+      "a_mean": 2.0,
+      "b_mean": 0.0,
+      "delta": -2.0,
+      "welch_t": null,
+      "p_exact": 0.0179,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "tokens",
+      "label": "total tokens",
+      "a_mean": 460556.8,
+      "b_mean": 685540.3333,
+      "delta": 224983.5333,
+      "welch_t": 13.1,
+      "p_exact": 0.0179,
+      "n_a": 5,
+      "n_b": 3
+    },
+    {
+      "metric": "cost_usd",
+      "label": "generation cost",
+      "a_mean": 0.4814,
+      "b_mean": 1.935,
+      "delta": 1.4536,
+      "welch_t": 33.78,
+      "p_exact": 0.0179,
+      "n_a": 5,
+      "n_b": 3
+    }
+  ]
+}

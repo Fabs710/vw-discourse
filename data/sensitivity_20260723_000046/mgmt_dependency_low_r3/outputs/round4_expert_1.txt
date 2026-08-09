@@ -1,0 +1,167 @@
+I can do the restructuring finance comparison, but I need to stay explicit about the missing inputs.
+
+## What is still missing
+To produce a defensible side-by-side model of:
+- **non-closure**
+- **hybrid capacity reduction**
+- **closure scenario**
+
+I need at least:
+1. **Current plant-by-plant volumes and utilization**
+2. **Headcount by plant/function**
+3. **Average labor cost per employee**
+4. **Fixed cost base by site**
+5. **Variable contribution margin per vehicle/unit**
+6. **One-time closure costs**  
+   - severance / social plan
+   - asset write-downs
+   - contract termination
+   - relocation / ramp-down costs
+7. **Strike/disruption assumptions**
+   - probability
+   - duration
+   - output loss per week
+8. **Capex commitments** under each scenario
+9. **Time horizon** for NPV
+10. **Discount rate / WACC**
+
+Without those, any exact answer would be false precision.
+
+---
+
+## What I can say now, based on the dispute record
+From the conversation, the only quantified item I can treat as a working range is the expert’s earlier statement that a **non-closure package might generate roughly €150m–€370m per year** in recurring savings if measures are deep enough.
+
+That implies:
+
+- If the **residual annual gap** is **≤ about €150m**, a non-closure package is likely financeable on a recurring basis.
+- If the gap is **€150m–€370m**, a deep non-closure package might work, but only if execution is strong and the one-time transition cost is manageable.
+- If the gap is **> €370m annually**, then non-closure measures alone may be insufficient unless the package includes very material capacity rationalization or owner contributions.
+
+---
+
+## Financial logic of the three scenarios
+
+### 1) Non-closure package
+Typical elements:
+- working-time flexibility
+- temporary wage moderation / deferred pay
+- bonus restraint
+- redeployment
+- voluntary exits
+- management overhead cuts
+- procurement savings
+- productivity improvements
+
+**Financial profile**
+- Lower one-time cost
+- Lower disruption risk
+- Savings are partly reversible
+- Recurring savings can be meaningful, but usually capped
+
+**Best when**
+- the residual gap is moderate
+- labor cost is a large share of the problem
+- there is some excess labor capacity but not severe excess plant capacity
+
+### 2) Hybrid capacity reduction
+Typical elements:
+- shift reductions
+- line consolidation
+- product reallocation
+- site specialization
+- selective voluntary exits
+- targeted asset rationalization
+
+**Financial profile**
+- Moderate one-time cost
+- Some disruption risk
+- More durable savings than purely temporary measures
+- Better fit if capacity is structurally too high but closures are politically/operationally costly
+
+**Best when**
+- the gap is too large for labor moderation alone
+- closures are too destructive
+- there is redundant capacity that can be removed without shutting a plant outright
+
+### 3) Closure scenario
+Typical elements:
+- plant shutdown or major site exit
+- workforce reduction
+- asset impairment
+- relocation of output
+- supply-chain reconfiguration
+
+**Financial profile**
+- Highest one-time cash cost
+- Highest labor conflict / strike risk
+- Highest disruption risk
+- Potentially the largest recurring savings if a site is structurally unneeded
+
+**Best when**
+- overcapacity is severe
+- fixed-cost burden is high
+- alternative measures cannot close the gap
+- the expected recurring savings materially exceed one-time and disruption costs on an NPV basis
+
+---
+
+## How I would compare them in the model
+For each scenario:
+
+### NPV formula
+**NPV = PV(recurring savings) – one-time restructuring costs – PV(disruption losses) – PV(strike losses) – PV(extra capex)**
+
+Where:
+- recurring savings are annual and durable
+- one-time costs happen in year 0–2
+- disruption losses depend on ramp-down speed and labor conflict
+- strike losses can be material if a closure path escalates conflict
+
+---
+
+## Practical interpretation for this case
+Given the governance constraints described:
+- employee side has an effective veto
+- state and family have blocking power
+- investors want margin repair
+- management wants durable cost reduction
+
+That means the **economic hurdle for closures is not just financial, but also executional**.
+
+So the closure option must beat non-closure not only on base savings, but also after:
+- strike probability
+- delayed implementation
+- plant ramp-down inefficiency
+- reputational cost
+- supplier disruption
+- lower productivity during transition
+
+In many German industrial restructurings, those transition costs are large enough that closure needs to produce **substantially higher recurring savings** to justify itself.
+
+---
+
+## My provisional conclusion
+With current information, the most defensible statement is:
+
+- A **non-closure package is plausible** if the recurring gap is in the low-to-mid hundreds of millions and can be closed with durable labor, management, and owner contributions.
+- A **hybrid package** is the most likely economically balanced solution if the gap is larger but not extreme.
+- A **closure-led solution** only becomes financially dominant if the residual gap remains materially above what non-destructive measures can cover, and if one-time and disruption costs do not overwhelm the savings.
+
+---
+
+## If you want, I can build the actual comparison
+Send me any of the following and I’ll produce a proper scenario table:
+- headcount and labor cost by site
+- estimated annual savings target
+- closure cost estimates
+- assumed strike duration/probability
+- discount rate
+- planning horizon
+
+Then I can give you:
+1. **annual savings bridge**
+2. **one-time cash cost**
+3. **NPV by scenario**
+4. **break-even analysis**
+5. **sensitivity ranges** for strike risk and savings execution.

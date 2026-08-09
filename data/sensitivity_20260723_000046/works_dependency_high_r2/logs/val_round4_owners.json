@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.2,
+    "openness": 0.66,
+    "declared_red_line": "To the works council and union\nI understand your red lines, but I do **not** accept them as absolute.\n\n“No plant closures” and “no compulsory redundancies” as categorical vetoes are not compatible wi"
+  }
+}

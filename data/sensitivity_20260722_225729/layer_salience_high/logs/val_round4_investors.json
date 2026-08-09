@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "investors",
+  "salience": 10.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 10,
+    "legitimacy": 10,
+    "urgency": 10,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.25,
+    "openness": 0.7,
+    "declared_red_line": "agree\n### To the works council and IG Metall\nYour red lines are understandable politically, but from a shareholder perspective they are still too absolute.\n\nYou continue to insist on:\n- no closures,\n-"
+  }
+}

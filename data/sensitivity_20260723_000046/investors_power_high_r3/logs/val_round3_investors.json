@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "investors",
+  "salience": 6.67,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 9,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.15,
+    "openness": 0.66,
+    "declared_red_line": "e if it blocks the economics. It cannot. If those red lines prevent meaningful structural improvement, then they are not a responsible protection of the company — they are a veto on competitiveness."
+  }
+}

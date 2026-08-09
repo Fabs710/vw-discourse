@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 10,
+    "risk_preference": 10,
+    "time_preference": 10,
+    "flexibility": 3,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.3,
+    "openness": 0.6,
+    "declared_red_line": "y a claim.\n\n## To the union\nWe are aligned on the red lines, and that matters.\n\nBut I want to be precise: a temporary wage restraint or bonus waiver can only ever be part of a deal if it is exchanged"
+  }
+}

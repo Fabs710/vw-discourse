@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "investors",
+  "salience": 4.67,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 3,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.49,
+    "frustration": 0.25,
+    "openness": 0.7,
+    "declared_red_line": "osures as such, and I am not attached to labour’s red lines as such. I am attached to one thing: a credible, durable return to competitive margins.** If the package does not get the company back to a"
+  }
+}

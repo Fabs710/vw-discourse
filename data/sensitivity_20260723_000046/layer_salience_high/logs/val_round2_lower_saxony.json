@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "lower_saxony",
+  "salience": 10.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 10,
+    "legitimacy": 10,
+    "urgency": 10,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.2,
+    "openness": 0.58,
+    "declared_red_line": "res because it is administratively easier.\n\n## My red line\nI will oppose any outcome that:\n- sidelines the state’s blocking role,\n- strips the workforce of co-determination leverage,\n- or uses restruc"
+  }
+}

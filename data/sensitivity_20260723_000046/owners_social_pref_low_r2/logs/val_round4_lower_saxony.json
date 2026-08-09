@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.4,
+    "openness": 0.8,
+    "declared_red_line": "## To the works council and union\nI support your red lines on closures and forced redundancies. But I want to be equally frank: if we want to avoid closures, then we have to be prepared for **serious"
+  }
+}

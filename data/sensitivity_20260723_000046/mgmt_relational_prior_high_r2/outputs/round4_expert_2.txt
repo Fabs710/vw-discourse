@@ -1,0 +1,208 @@
+Yes. Below is a **decision template** you can use to compare **closure, no-closure, and hybrid** options on a plant-by-plant basis.
+
+## 1) Purpose of the template
+The aim is to determine whether a **no-closure package is economically equivalent** to closure, using the same financial test for each plant:
+- **NPV of savings**
+- **speed of savings**
+- **durability**
+- **execution certainty**
+- **investment capacity preserved**
+
+---
+
+## 2) Plant-by-plant decision matrix
+
+For each plant, populate the following:
+
+### A. Baseline economics
+- Annual units / output
+- Current utilization %
+- Direct labor cost
+- Manufacturing overhead
+- Allocated corporate overhead
+- Energy and utilities
+- Logistics / inbound-outbound cost
+- Capex required to keep the site viable
+- Working capital requirement
+- Current EBIT contribution
+- Current fixed cost burden
+
+### B. Closure scenario
+- One-time closure cost:
+  - severance
+  - legal / consultation
+  - site wind-down
+  - asset write-down
+  - transfer / dual-running cost
+  - supply-chain change cost
+- Run-rate annual savings:
+  - fixed labor
+  - overhead
+  - maintenance
+  - utilities
+  - site admin
+- Timing:
+  - start of savings
+  - full realization date
+- Residual costs after closure:
+  - stranded contracts
+  - retained overhead
+  - pension / remediation / lease obligations
+- Execution risk:
+  - strike / delay probability
+  - supply disruption
+- NPV over 5–10 years
+
+### C. No-closure scenario
+- Annual savings from:
+  - voluntary exits
+  - working-time reduction
+  - wage moderation / bonus restraint
+  - shift reduction
+  - product / volume reallocation
+  - automation / productivity gains
+  - management / overhead cuts
+- One-time implementation cost:
+  - incentives
+  - retraining
+  - redeployment
+  - capex
+  - transition support
+- Timing:
+  - ramp-up period
+  - first savings date
+  - full run-rate date
+- Durability:
+  - expiry risk
+  - renegotiation risk
+  - rebound risk
+- Execution risk:
+  - labor conflict
+  - non-compliance
+  - volume shortfall
+- NPV over 5–10 years
+
+### D. Hybrid scenario
+- Split of savings between:
+  - internal measures
+  - footprint reduction
+- Same fields as above
+- Optional site-by-site sequencing
+
+---
+
+## 3) Core tests
+
+### Test 1: Present value equivalence
+A no-closure package is only economically equivalent if:
+
+**NPV(no-closure savings) ≥ NPV(closure savings) – incremental risk penalty**
+
+Where the risk penalty reflects:
+- lower certainty
+- slower implementation
+- durability risk
+- higher reinvestment needs
+
+### Test 2: Fixed-cost reduction sufficiency
+The package must reduce the **structural fixed-cost base**, not merely defer it.
+
+A good rule is:
+- if savings are mostly temporary labor concessions, the package is weak
+- if savings permanently remove headcount, overhead, and capacity cost, it is stronger
+
+### Test 3: Capacity correction
+If the company has genuine overcapacity, then the solution must show:
+- lower installed capacity, or
+- materially lower effective capacity through shifts and product allocation
+
+If capacity stays unchanged, the business may still be oversized even if wage costs fall.
+
+### Test 4: Investment capacity
+The solution must preserve enough cash for:
+- EV / platform investment
+- battery / software transition
+- tooling and model launches
+
+A “cheap” restructuring that starves investment is not value-creating.
+
+---
+
+## 4) Practical scoring framework
+For each plant, score each scenario 1–5 on:
+
+- **Savings magnitude**
+- **Savings durability**
+- **Speed**
+- **Execution certainty**
+- **Strategic importance of site**
+- **Supply-chain disruption**
+- **Reinvestment burden**
+- **Labor conflict risk**
+
+Then weight them, for example:
+- 30% economics
+- 20% durability
+- 20% execution certainty
+- 15% strategic / network value
+- 15% investment capacity
+
+A plant with:
+- low utilization,
+- high fixed cost,
+- weak strategic role,
+- and high replacement savings
+is a likely closure candidate unless a no-closure package produces near-equal NPV.
+
+A plant with:
+- high strategic importance,
+- high utilization potential,
+- and lower fixed cost
+is more suitable for internal restructuring.
+
+---
+
+## 5) Decision thresholds
+A useful operating threshold:
+
+### No-closure package is credible if:
+- it captures at least **85–100% of closure NPV** on a risk-adjusted basis,
+- most savings are structural,
+- implementation can be completed within an acceptable period,
+- and the package does not require repeated renegotiation.
+
+### Hybrid package is preferred if:
+- no-closure comes close but not fully,
+- some footprint correction is needed,
+- internal measures cover part of the gap,
+- and closures can be limited to the weakest sites or lines.
+
+### Closure is economically hard to avoid if:
+- the gap is large,
+- savings from internal measures are too small,
+- the site has chronically poor utilization,
+- and the strategic case for retention is weak.
+
+---
+
+## 6) What data is still needed
+To complete the analysis, I would need:
+- plant-level fixed cost and utilization
+- product and volume forecast by site
+- headcount by function and shift
+- labor-cost structure by plant
+- lease, pension, remediation, and contractual exit costs
+- capex required to retain each site
+- logistics impact of reallocation
+- union / strike risk assumptions
+- discount rate and forecast horizon
+
+---
+
+## 7) Bottom line
+The right question is not “closure or no closure?”  
+It is:
+
+**Which package delivers the greatest durable reduction in structural cost, at the lowest risk-adjusted NPV cost, while preserving the needed investment capacity?**
+
+If you want, I can next turn this into a **one-page scoring table** you can fill in for each plant.

@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.49,
+    "frustration": 0.25,
+    "openness": 0.78,
+    "declared_red_line": "ership and governance standpoint, I cannot accept red lines that would make a genuine restructuring impossible before the numbers are even tested.\n\nIf the full no-closure, no-forced-layoff route can t"
+  }
+}

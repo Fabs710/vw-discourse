@@ -1,0 +1,716 @@
+{
+  "run_folder": "data\\sensitivity_20260723_000046\\mgmt_relational_prior_high_r5",
+  "dqi": {
+    "justification_level": 1.938,
+    "justification_content": 1.479,
+    "respect": 1.688,
+    "constructive_politics": 1.938,
+    "individuation": 2.0
+  },
+  "outcome": {
+    "agreement": false,
+    "rounds": 4,
+    "convergence": "plateauing",
+    "position_move_mean": 0.5,
+    "key_terms_per_judge": [
+      {
+        "judge": 0,
+        "terms": [
+          {
+            "issue": "Plant closures / compulsory redundancies",
+            "outcome": "Still unresolved; closures remained a disputed fallback, not a settled endpoint."
+          },
+          {
+            "issue": "Sequencing and proof standard",
+            "outcome": "Agreed in principle on audit-first and plant-by-plant comparison through 2030."
+          },
+          {
+            "issue": "Non-closure restructuring package",
+            "outcome": "Live proposal range: voluntary exits, redeployment, flexibility, and productivity measures were accepted as part of the package."
+          },
+          {
+            "issue": "Governance / veto rights",
+            "outcome": "No change agreed; co-determination and state blocking power remained intact."
+          }
+        ]
+      },
+      {
+        "judge": 1,
+        "terms": [
+          {
+            "issue": "Closure admissibility",
+            "outcome": "Unresolved standoff: management/investors/family want closures kept as fallback, employee side/state want them excluded now."
+          },
+          {
+            "issue": "Sequencing and burden of proof",
+            "outcome": "Live proposal: audit-first standstill with no closures during audit, but disagreement remains on whether alternatives must prove insufficiency or prove sufficiency."
+          },
+          {
+            "issue": "Definition of equivalence/success",
+            "outcome": "Unresolved: employee/state define success as preserving sites and jobs while shareholder side defines it as permanent cost/capacity reduction regardless of site changes."
+          },
+          {
+            "issue": "Non-closure package content",
+            "outcome": "Agreed in principle: voluntary exits, redeployment, working-time flexibility, productivity gains, and contributions included, pending quantification."
+          },
+          {
+            "issue": "Governance and blocking rights",
+            "outcome": "Unresolved standoff: state and co-determination actors demand preserved veto power while management wants flexibility to act if audit is negative."
+          }
+        ]
+      }
+    ]
+  },
+  "floor": {
+    "token_share": {
+      "works_council": 0.158,
+      "ig_metall": 0.176,
+      "management": 0.185,
+      "lower_saxony": 0.158,
+      "owners": 0.173,
+      "investors": 0.15
+    },
+    "speaking_rank": {
+      "works_council": 1,
+      "ig_metall": 2,
+      "management": 3,
+      "lower_saxony": 4,
+      "owners": 5,
+      "investors": 6
+    }
+  },
+  "per_stakeholder": {
+    "works_council": {
+      "justification_level": 1.75,
+      "justification_content": 1.375,
+      "respect": 1.5,
+      "constructive_politics": 1.875,
+      "individuation": 2.0,
+      "position_move": 0.5
+    },
+    "ig_metall": {
+      "justification_level": 2.0,
+      "justification_content": 1.25,
+      "respect": 1.625,
+      "constructive_politics": 1.875,
+      "individuation": 2.0,
+      "position_move": 0.5
+    },
+    "management": {
+      "justification_level": 2.0,
+      "justification_content": 1.375,
+      "respect": 1.125,
+      "constructive_politics": 1.875,
+      "individuation": 2.0,
+      "position_move": 0.5
+    },
+    "lower_saxony": {
+      "justification_level": 1.875,
+      "justification_content": 1.375,
+      "respect": 1.875,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "owners": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 1.0
+    },
+    "investors": {
+      "justification_level": 2.0,
+      "justification_content": 1.5,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.5
+    }
+  },
+  "contribution_scores": [
+    {
+      "stakeholder": "works_council",
+      "round": 1,
+      "chars": 1359,
+      "judges": [
+        {
+          "justification_level": 1,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is strongly works-council-specific and gives a clear, partly reasoned rejection of closures and layoffs while proposing negotiated alternatives, but it frames the issue largely around protecting German jobs and existing guarantees rather than a fully balanced all-parties criterion."
+        },
+        {
+          "justification_level": 1,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 1,
+          "individuation": 2,
+          "rationale": "The Works Council asserts firm redlines and lists alternative measures but gives little developed reasoning linking them to feasibility, frames the argument mainly around protecting workers with only instrumental nods to shared sacrifice, and takes a mostly positional though partly proposal-oriented stance distinctive to labor representation."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 2,
+      "chars": 5293,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is highly reasoned, explicitly respectful but firm toward other parties, offers multiple concrete compromise proposals, and is strongly specific to plant-level employee representation and co-determination concerns."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The Works Council develops detailed reasoning and a concrete counter-proposal, engages substantively with each stakeholder while framing demands mostly around protecting the workforce rather than an all-party balancing standard, though it does call for shared sacrifice from management and owners too."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 3,
+      "chars": 6368,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is highly developed and role-specific, with extensive reasons, respectful engagement across stakeholders, a clear mediation-oriented package of alternatives, and a strongly identifiable works-council defense of job security and co-determination."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The works council mounts a detailed, well-elaborated burden-of-proof argument against each stakeholder while offering a concrete list of negotiable non-closure measures and summoning an auditor, though its core justification remains anchored in protecting worker jobs rather than a fully symmetric shared standard."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 4,
+      "chars": 7038,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement gives extensive, logically connected reasons for rejecting closure-first bargaining, explicitly frames fairness and viability across all parties, respectfully engages multiple counterarguments, proposes a detailed non-closure restructuring path, and is strongly specific to a works council role defending jobs, co-determination, and plant continuity."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The Works Council delivers a highly developed, role-specific rejection of closures grounded in demands for evidentiary proof and audits, engaging respectfully but firmly with each stakeholder while offering concrete non-closure alternatives, though its justification structure still privileges workforce protection as the fixed bottom line rather than a criterion that could cut against its own position."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 1,
+      "chars": 2248,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement gives a developed shared-sacrifice argument with specific negotiated measures and explicit respect for the works council’s point, while remaining strongly union-specific in defending jobs, sites, and collective bargaining."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The union develops a fairly elaborated reciprocity argument demanding management/owner sacrifice alongside worker concessions tied to job/site guarantees, engages respectfully with the works council and management's competitiveness claim while firmly rejecting one-sided fixes, and offers a concrete negotiation framework, all clearly framed from a union bargaining perspective."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 2,
+      "chars": 6223,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is strongly union-specific and constructive, with detailed, respectful demands for shared sacrifice and alternative measures, but its justification is mostly grounded in protecting labor and German sites rather than an explicitly symmetric standard applying equally to all parties."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The union develops detailed, linked reasoning across multiple stakeholders, demands a fairness-based shared-sacrifice standard (though still centered on protecting labor), engages counterparts' arguments directly but combatively, offers a concrete alternative package, and is highly distinctive to a union's bargaining role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 3,
+      "chars": 7111,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 1,
+          "individuation": 2,
+          "rationale": "The statement is highly developed and stakeholder-specific, respectfully engages multiple parties with detailed counterarguments and a concrete audit-based proposal, but it remains strongly anchored in the union's own interests and largely positional in rejecting closures rather than offering a fully mediating settlement."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The union delivers a well-developed, evidence-demanding rebuttal to each stakeholder that engages seriously with counterarguments while proposing a concrete audit mechanism and conditional concessions, though its justification ultimately centers on protecting workers rather than a fully neutral shared standard."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 4,
+      "chars": 6586,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement gives detailed, structured reasons and evidence requests, frames the case around a joint viability standard that could constrain all sides, responds respectfully to multiple stakeholders, proposes a concrete negotiated package, and is highly specific to union interests in job protection and collective bargaining."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The union offers a well-developed, evidence-demanding argument that engages each stakeholder respectfully while proposing concrete alternatives, but its structure ultimately privileges worker protections as non-negotiable rather than a neutral shared standard."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 1,
+      "chars": 3482,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is a detailed, management-specific argument grounded in company viability and structural cost pressures, respectfully acknowledging some union points while pushing a clear but conditional restructuring proposal that keeps closures as a fallback."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "Management lays out a fairly developed economic justification and offers a conditional negotiation path, but frames sacrifice mainly as something labour must provide, keeping self-interest primary despite the 'shared sacrifice' language."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 2,
+      "chars": 5741,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution is a detailed, role-specific management argument that repeatedly justifies demands with competitiveness and durability concerns, engages opponents respectfully but firmly, and proposes a conditional negotiated package rather than a purely positional stance."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 1,
+          "individuation": 2,
+          "rationale": "Management builds a fairly developed, though self-serving, economic argument demanding equivalent, quantified savings from all parties while engaging each stakeholder's specific claims respectfully but firmly, without offering a concrete mediating proposal beyond restating criteria."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 3,
+      "chars": 7979,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement gives detailed, logically connected reasons for keeping closures and compulsory redundancies on the table, frames the issue around company-wide viability and competitiveness, and directly engages multiple parties’ objections with a solution-seeking demand for audited alternatives, though it remains strongly management-centered."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "Management presents a well-developed, evidence-based argument with a nominally universal test (comparable/durable savings) but consistently frames the burden of proof on other parties while keeping closures as its own reserved option, engaging respectfully yet firmly with each stakeholder and proposing a concrete audit mechanism."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 4,
+      "chars": 5662,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker gives detailed, logically connected reasons centered on structural cost, competitiveness, and audit-based evidence, while respectfully engaging multiple stakeholders and proposing a quantified, mixed-measures negotiation framework characteristic of executive management restructuring."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "Management delivers a well-developed, criterion-based argument (the audit test) applied evenhandedly across all stakeholders, engaging respectfully but firmly with each party's position while proposing a concrete audit mechanism, all strongly distinctive to an executive restructuring role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 1,
+      "chars": 3240,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement gives a developed, multi-part justification rooted in regional stability, fairness, and long-term viability, explicitly balances burdens across labor, management, owners, and the region, respectfully acknowledges the need for restructuring while proposing alternatives to closures and layoffs, and is highly specific to a regional state shareholder with blocking rights."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The regional government fully develops its reasoning, balances demands on labor, management and owners while invoking a fairness/viability standard, engages respectfully with management's position while firmly opposing it, offers a concrete conditional proposal, and reflects a distinctly political-shareholder role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 2,
+      "chars": 4820,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution gives detailed, reasoned objections and a negotiated alternative grounded in the state’s special statute, regional employment, and industrial base, while respectfully engaging all sides and insisting on a conditional, solution-oriented restructuring."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The state government offers a well-developed, party-by-party argument with specific asks and a concrete conditional proposal, but its 'minimum line' ultimately privileges regional employment/political interests over a fully neutral joint criterion."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 3,
+      "chars": 6180,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is highly role-specific and constructive, with explicit engagement across parties, a detailed evidentiary demand and negotiated threshold, but it mostly grounds the case in the state’s regional and governance interests rather than a fully general all-parties fairness standard."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The state government offers a well-elaborated, criterion-based argument demanding proof of necessity while proposing a concrete quantified alternative package, engaging respectfully with all parties, though its own bottom-line still centers on protecting jobs/plants and its statutory role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 4,
+      "chars": 6225,
+      "judges": [
+        {
+          "justification_level": 1,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is a role-specific, respectful and solution-seeking demand for a quantified alternative restructuring that balances company viability with regional and statutory obligations, but its reasoning is only moderately developed and centered on the state’s interests and governance role."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The state government offers a well-developed, multi-party-engaged argument with a concrete proposal (audit, threshold criteria) while defending its own statutory role and regional interests, making it highly distinctive but still primarily protective of its own veto power and regional base rather than a fully neutral joint standard."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 1,
+      "chars": 3989,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is heavily reasoned, explicitly balances the interests of employees, management, owners, and the company’s long-term viability, proposes a negotiated durable restructuring, and is clearly voiced from a controlling shareholder governance perspective."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The controlling family holding offers a fully elaborated, balanced justification invoking a shared viability standard applied to all parties (management, labor, and owners), engages respectfully with competing positions, and proposes a mediating solution while remaining distinctly framed as a governance/ownership perspective focused on long-term asset value."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 2,
+      "chars": 4274,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement is highly reasoned and role-specific, openly respects other parties while rejecting extremes, proposes a negotiated package with concrete elements, and grounds its appeal in the controlling family holding’s stewardship and value-preservation role."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The controlling family holding gives a well-elaborated, criterion-based argument (a viability test applicable to all parties including management and capital) while respectfully engaging counter-positions and proposing a balanced negotiated package, making it distinctly recognizable as an owner-steward voice."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 3,
+      "chars": 6361,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement gives extensive, logically linked reasoning grounded in governance, competitiveness, and verified plant-level economics, explicitly engages opposing sides respectfully, proposes a mediated audit-based path, and is strongly specific to a controlling family shareholder role."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The holding offers a well-developed, evenhanded justification applying a shared viability standard to all parties, engages respectfully with each stakeholder's arguments while proposing a concrete audit mechanism, and speaks in a distinctly ownership/governance voice."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 4,
+      "chars": 7027,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution gives a detailed, evidence-based stewardship argument for testing non-closure alternatives while preserving fallback options if they fail, and it engages each party respectfully with a role-specific governance perspective."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The controlling family holding offers a fully elaborated, evenhanded balancing test applied to all parties (management, works council, union, state, auditor) with a jointly held viability criterion, engages each side's arguments respectfully, and proposes a concrete audit-based mediating path, all distinctively framed around ownership stewardship and capital preservation."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 1,
+      "chars": 4154,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement gives a well-developed, economically reasoned case focused on restoring competitiveness and equity value, explicitly balances investor interests with other stakeholders’ burdens and conditions support on a jointly held viability criterion, engages others respectfully while disagreeing, proposes a concrete mediated package with clear conditions, and is strongly characteristic of dispersed capital-market shareholders."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The investors present a well-developed, criterion-based test (competitive margin restoration) applied evenhandedly to all parties' proposals, engage respectfully but firmly with each stakeholder's position, and offer a concrete four-point framework while remaining distinctly focused on equity value and market discipline."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 2,
+      "chars": 4538,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The statement offers a detailed, conditional, and role-specific investor perspective that balances multiple parties’ concerns while demanding quantified, durable economic improvements and a credible alternative to closures."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The investor delivers a fully reasoned, criterion-based demand (four measurable conditions applied evenhandedly to labor, management, state, and family holding) while proposing an independent bridge review, making it highly distinctive and constructive, though the equivalence standard still ultimately serves shareholder value."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 3,
+      "chars": 5113,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker offers a detailed, logically structured investor-focused argument that balances competing parties against competitiveness criteria, respectfully engages disagreements, proposes a mediated hybrid solution, and is highly specific to dispersed capital-market shareholders."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The investor lays out a fully elaborated, criterion-based test (permanence, scale, execution certainty) applied evenhandedly to labor, management, the state, and the family holding, while proposing a concrete joint verification mechanism, making it highly individuated and constructive."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 4,
+      "chars": 5225,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker gives a detailed, structured, role-specific argument for verifying competitiveness and testing alternatives before closures, while grounding the appeal in shareholder value, but the stance remains conditional and instrumental rather than a fully joint fairness standard."
+        },
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The investor lays out a detailed, evidence-based test (plant-by-plant audit) applied evenhandedly across all stakeholders, engages respectfully with each party's arguments, and proposes a concrete conditional mediating framework, all while remaining distinctly capital-market-focused on margin recovery and value preservation."
+        }
+      ]
+    }
+  ],
+  "inter_judge_kappa": {
+    "justification_level": 0.647,
+    "justification_content": 0.195,
+    "respect": 0.524,
+    "constructive_politics": -0.059,
+    "individuation": 1.0,
+    "mean": 0.461
+  },
+  "n_judges": 2,
+  "judging_cost": {
+    "per_judge": {
+      "gpt-5.4-mini-2026-03-17": {
+        "calls": 31,
+        "input_tokens": 50524,
+        "output_tokens": 2507,
+        "cost_usd": 0.0492
+      },
+      "claude-sonnet-5": {
+        "calls": 31,
+        "input_tokens": 79591,
+        "output_tokens": 4577,
+        "cost_usd": 0.205
+      }
+    },
+    "total_calls": 62,
+    "total_input_tokens": 130115,
+    "total_output_tokens": 7084,
+    "cost_usd": 0.2542,
+    "unpriced_models": []
+  }
+}

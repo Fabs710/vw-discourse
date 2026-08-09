@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 8,
+    "risk_preference": 2,
+    "time_preference": 6,
+    "flexibility": 3,
+    "dependency": 6,
+    "assertiveness": 1,
+    "cooperativeness": 1,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.4,
+    "openness": 0.6,
+    "declared_red_line": "ition remains unchanged\nI am not moving off these red lines:\n\n- **No German plant closures**\n- **No compulsory redundancies**\n- **Preservation of co-determination**\n- **Preservation of the job-securit"
+  }
+}

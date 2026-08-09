@@ -1,0 +1,175 @@
+Yes — within restructuring finance and scenario modeling, the next useful step is a **decision framework template** for the scenario table.
+
+## 1) Core question to answer
+For each restructuring path, does the company achieve:
+
+- **sufficient permanent annual savings**
+- **acceptable one-time cash cost**
+- **manageable execution risk**
+- **adequate liquidity runway**
+- **acceptable impact on ROS / margin**
+
+All scenarios should be judged on the **same baseline** and the **same timing horizon**.
+
+---
+
+## 2) Recommended scenario set
+Use three cases:
+
+1. **No-closure scenario**
+   - no German plant closures
+   - no compulsory redundancies
+   - savings from work-time, redeployment, productivity, management cuts, wage/cost concessions
+
+2. **Minimal-closure scenario**
+   - one limited closure or partial footprint reduction
+   - preserves most sites
+   - combines structural capacity removal with labor measures
+
+3. **Closure-led scenario**
+   - more aggressive footprint reduction
+   - highest structural savings
+   - highest one-time cost and execution risk
+
+---
+
+## 3) Table structure
+For each scenario, show:
+
+### A. Operating bridge
+- Current annual operating cost base
+- Less: permanent labor savings
+- Less: plant/fixed-cost savings
+- Less: overhead / management savings
+- Less: procurement / other SG&A savings
+- Less: productivity / utilization gains
+- Equals: post-restructuring run-rate cost base
+
+### B. One-time costs
+- Severance / termination cost
+- Closure / decommissioning cost
+- Relocation / transfer cost
+- Training / redeployment cost
+- Contractual / settlement cost
+- Consulting / advisory / implementation cost
+- Equals: total restructuring cash cost
+
+### C. Cash timing
+- Year 1 cash cost
+- Year 2 cash cost
+- Year 3 cash cost
+- Savings ramp by year
+- Net cumulative cash effect by year
+
+### D. Margin impact
+- Revenue baseline
+- EBITDA / EBIT improvement
+- Return on sales before and after
+- Break-even volume shift, if relevant
+
+### E. Risk assessment
+- Labor-relations risk
+- Supervisory board approval risk
+- Implementation delay risk
+- Demand / utilization risk
+- Savings leakage risk
+
+### F. Strategic / investment effects
+- Capex freed up or required
+- EV / future platform investment capacity
+- Supplier / logistics effects
+- Site concentration effects
+
+---
+
+## 4) Minimum decision-grade metrics
+At a minimum, each scenario should report:
+
+- **Annual recurring savings**
+- **One-time restructuring cost**
+- **Net present value of savings**
+- **Payback period**
+- **Cash breakeven year**
+- **EBIT / ROS uplift**
+- **Headcount impact**
+- **Capacity removed**
+- **Implementation risk score**
+
+---
+
+## 5) Sensitivity cases
+Every scenario should be stress-tested against:
+
+- volume down 10%
+- volume flat
+- volume up modestly
+- wage inflation above base
+- slower-than-planned headcount exit
+- delayed site closure / implementation slippage
+- lower-than-expected productivity gains
+
+This matters because a scenario can look good on paper but fail under downside volume or delayed execution.
+
+---
+
+## 6) Simple evaluation rule
+A useful restructuring finance test is:
+
+**A scenario is credible only if its risk-adjusted NPV of savings exceeds its one-time cost by a clear margin, and liquidity remains adequate during the implementation period.**
+
+If two scenarios are close on NPV, then the one with:
+- lower execution risk,
+- lower cash drain,
+- and faster payback  
+is generally stronger financially.
+
+---
+
+## 7) What I would ask management to disclose
+To make the comparison real, management should provide:
+
+- current plant-level fixed and variable cost
+- utilization by site
+- line / product profitability
+- labor cost per unit
+- overhead allocation methodology
+- planned annual savings by measure
+- one-time cost assumptions by measure
+- timing of cash outflow and savings ramp
+- capex implications of each scenario
+
+Without this, the debate remains rhetorical.
+
+---
+
+## 8) What the employee-side package must quantify
+If the no-closure case is being proposed seriously, it should quantify:
+
+- hours reduction / flexible working-time effect
+- redeployment capacity by site
+- attrition assumptions
+- training cost and timing
+- management overhead cuts
+- wage / allowance / bonus restraint
+- owner or company-funded bridging support
+- probability that savings are permanent
+
+---
+
+## 9) Practical output format
+A good board-level appendix would look like this:
+
+| Metric | No-closure | Minimal-closure | Closure-led |
+|---|---:|---:|---:|
+| Annual recurring savings | x | y | z |
+| One-time cash cost | a | b | c |
+| Payback period | p1 | p2 | p3 |
+| NPV of savings | n1 | n2 | n3 |
+| EBITDA / ROS uplift | e1 | e2 | e3 |
+| Headcount impact | h1 | h2 | h3 |
+| Capacity removed | k1 | k2 | k3 |
+| Execution risk | low/med/high | low/med/high | low/med/high |
+
+---
+
+If you want, I can next build a **fully populated template with example numbers and formulas** that you can use as the basis for the scenario bridge.

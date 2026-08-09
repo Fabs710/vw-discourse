@@ -1,0 +1,223 @@
+Below is the most defensible **finance-and-costing framework** for comparing a **closure-based restructuring** versus a **non-closure alternative**. Because no hard numbers were provided, I will give a **model structure**, the **required inputs**, and the **decision logic** that should be applied once management supplies the data.
+
+## 1) What must be quantified
+
+To compare the options properly, management needs a common baseline:
+
+### A. Current run-rate cost base
+Break the German operations into:
+- **Fixed costs**: plant overhead, salaried support, depreciation, utilities minimum load, maintenance, property costs, logistics contracts, IT, etc.
+- **Variable costs**: direct labour if flexed by output, materials, energy tied to volume, freight, warranty/quality tied to volume.
+- **Semi-fixed / step costs**: shifts, line staffing, contractor pools, shared services.
+
+### B. Target savings gap
+You need to identify:
+- current **EBIT / ROS shortfall**
+- required **annual cost reduction**
+- time horizon over which savings must be sustainable
+
+A useful question is:
+> What annual EBITDA or EBIT improvement is needed to restore the brand to target ROS after the restructuring?
+
+### C. Restructuring cash costs
+For each option, quantify:
+- **severance and termination costs**
+- **closure costs**: site decommissioning, remediation, contract breakage, transfer costs, asset write-downs
+- **transition costs**: dual-running, move costs, hiring elsewhere, training, logistics reconfiguration
+- **investment / capex**: automation, tooling, product transfer, new plant adaptation
+- **labour-concession costs**: compensation for wage cuts, shorter hours, deferred pay, guarantees, voluntary severance premiums
+
+### D. Timing
+For each measure, specify:
+- when savings start
+- ramp-up profile
+- whether savings are temporary or durable
+- whether there is an upfront cash outflow before benefits begin
+
+---
+
+## 2) How to model the two alternatives
+
+## Option 1: Closure-based restructuring
+This typically has:
+
+### Benefits
+- larger **structural fixed-cost reduction**
+- potential reduction in overcapacity and better plant loading
+- stronger durability if the site is fully exited
+
+### Costs
+- high one-off restructuring charges
+- severance and social-plan costs
+- closure/remediation costs
+- possible negative cash effects from asset impairments
+- transition disruption and temporary inefficiency
+
+### Financial logic
+Closure makes sense if:
+
+**PV of incremental savings from closure**
+minus
+**PV of closure and transition costs**
+> **PV of savings from any non-closure alternative**
+
+In other words, closure is justified only if the **net present value** is superior to the alternatives.
+
+---
+
+## Option 2: Non-closure alternative
+This typically includes combinations of:
+- capacity reduction without full site exit
+- shift reduction / line rationalisation
+- working-time changes
+- wage moderation or temporary pay cuts
+- removal of guarantees or allowances
+- voluntary departures / natural attrition
+- transfer of some production to lower-cost sites
+- productivity improvements and automation
+
+### Benefits
+- lower immediate cash cost
+- avoids some closure and remediation costs
+- may reduce disruption and execution risk
+- may preserve production continuity
+
+### Costs / limits
+- savings may be smaller or less durable
+- may require ongoing concessions
+- some costs can be “recurrent” rather than structural
+- if job and site guarantees are too strong, future flexibility is reduced
+- if overcapacity remains, the company may continue carrying excess fixed cost
+
+### Financial logic
+A non-closure package is acceptable only if it produces:
+- **comparable annual savings**
+- with **similar durability**
+- and without hidden future costs that offset the headline savings
+
+---
+
+## 3) Decision test: the comparison that matters
+
+The correct comparison is not “closure vs no closure” in the abstract. It is:
+
+### A. Incremental annual savings
+For each package:
+- baseline annual cost
+- post-restructuring annual cost
+- annual savings by year
+
+### B. One-time restructuring cost
+Include all upfront and near-term cash costs.
+
+### C. NPV over a planning horizon
+Use a 5–10 year horizon, depending on product cycle and investment life.
+
+A simplified formula:
+
+**NPV = Σ [Savings_t / (1+r)^t] − Σ [RestructuringCashCost_t / (1+r)^t]**
+
+Where:
+- **Savings_t** = annual cost savings in year t
+- **r** = discount rate / WACC
+- **RestructuringCashCost_t** = closure, severance, transition, capex, and concession costs
+
+---
+
+## 4) What would make closure financially superior?
+
+Closure-based restructuring is usually financially superior if:
+1. the plant has **persistently low utilization**
+2. it contains **high fixed cost per unit**
+3. non-closure measures would require **large recurring concessions**
+4. capacity reduction without closure leaves **too much stranded cost**
+5. product allocation can be shifted elsewhere without excessive logistics cost
+
+In that case, closure converts:
+- recurring fixed losses
+into
+- one-time restructuring charges
+
+That is often economically attractive if the payback period is acceptable.
+
+---
+
+## 5) What would make the non-closure alternative superior?
+
+A non-closure package can be financially superior if:
+1. the plant remains operationally efficient at lower volume
+2. savings come from genuine productivity gains, not just temporary concessions
+3. closure would require very high remediation or transfer costs
+4. the site has specialized assets that would be expensive to duplicate
+5. labour-cost measures are large, binding, and durable enough
+
+But if the non-closure option depends mainly on:
+- one-off wage concessions,
+- temporary freezes,
+- or deferred adjustment,
+
+then the model should treat those as **time-limited**, not as permanent savings.
+
+---
+
+## 6) Key sensitivity variables
+
+The final answer will likely turn on four variables:
+
+### 1. Utilization after restructuring
+If output remains low, fixed costs stay high.
+
+### 2. Labour-cost savings durability
+Temporary concessions have much lower NPV than permanent structural reductions.
+
+### 3. Transition and logistics cost
+Moving production elsewhere can be expensive and may erase headline savings.
+
+### 4. Severance / closure magnitude
+High redundancy payments and social-plan costs can make closure unattractive if the annual savings are modest.
+
+---
+
+## 7) Provisional recommendation on analysis method
+
+Management should produce a **side-by-side bridge** for both options:
+
+### For each option:
+- current annual cost base
+- headcount reduction
+- wage bill reduction
+- fixed overhead reduction
+- capex required
+- one-off restructuring cash costs
+- annual savings by year
+- NPV at the company’s WACC
+- payback period
+- sensitivity cases:
+  - high / base / low savings
+  - high / base / low implementation cost
+  - delayed implementation scenario
+
+---
+
+## 8) What cannot be concluded yet
+
+At present, it is **not possible** to say whether closure or non-closure is financially better, because the necessary inputs are missing:
+- current cost gap
+- target savings
+- plant-level fixed cost and variable cost data
+- severance and closure costs
+- capex needs
+- savings timing
+- probability of execution and labour-concession durability
+
+---
+
+## 9) Bottom line
+
+From a restructuring finance perspective:
+
+- **Closure** is justified if it produces materially larger and more durable savings than non-closure measures, after all one-time costs are included.
+- **Non-closure** is justified if it can deliver the same NPV savings with lower disruption and lower restructuring cash cost.
+- The deciding metric is **not** the political acceptability of the package; it is the **net present value of durable cost reduction**.
+
+If you want, I can next provide a **numeric template** for the side-by-side model, with line items and formulas that management could fill in immediately.

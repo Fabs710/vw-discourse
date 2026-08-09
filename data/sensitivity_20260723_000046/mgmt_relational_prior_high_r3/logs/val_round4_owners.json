@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.15,
+    "openness": 0.7,
+    "declared_red_line": "agree\n\n### 1) To the Works Council and Union\nYour red lines are understandable, but as stated they are too absolute to be a complete answer.\n\n- **“No plant closures” in all circumstances**\n- **“No com"
+  }
+}

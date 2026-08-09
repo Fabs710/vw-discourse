@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 8,
+    "risk_preference": 2,
+    "time_preference": 6,
+    "flexibility": 1,
+    "dependency": 1,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.2,
+    "openness": 0.5,
+    "declared_red_line": "are not “options” from our perspective. They are red lines.\n\nManagement says alternatives only matter if they deliver the same savings as closures. Then show us the numbers. Do not use that argument"
+  }
+}

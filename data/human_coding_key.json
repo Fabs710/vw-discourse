@@ -1,0 +1,170 @@
+[
+  {
+    "id": "C01",
+    "cond": "layer_position_low",
+    "round": 2,
+    "stakeholder": "management"
+  },
+  {
+    "id": "C02",
+    "cond": "layer_interaction_low",
+    "round": 1,
+    "stakeholder": "lower_saxony"
+  },
+  {
+    "id": "C03",
+    "cond": "layer_motivation_high",
+    "round": 1,
+    "stakeholder": "ig_metall"
+  },
+  {
+    "id": "C04",
+    "cond": "main",
+    "round": 1,
+    "stakeholder": "owners"
+  },
+  {
+    "id": "C05",
+    "cond": "layer_position_high",
+    "round": 1,
+    "stakeholder": "management"
+  },
+  {
+    "id": "C06",
+    "cond": "main",
+    "round": 1,
+    "stakeholder": "lower_saxony"
+  },
+  {
+    "id": "C07",
+    "cond": "layer_position_high",
+    "round": 1,
+    "stakeholder": "lower_saxony"
+  },
+  {
+    "id": "C08",
+    "cond": "layer_motivation_low",
+    "round": 4,
+    "stakeholder": "investors"
+  },
+  {
+    "id": "C09",
+    "cond": "layer_interaction_high",
+    "round": 3,
+    "stakeholder": "works_council"
+  },
+  {
+    "id": "C10",
+    "cond": "layer_motivation_low",
+    "round": 1,
+    "stakeholder": "lower_saxony"
+  },
+  {
+    "id": "C11",
+    "cond": "layer_motivation_low",
+    "round": 1,
+    "stakeholder": "works_council"
+  },
+  {
+    "id": "C12",
+    "cond": "layer_interaction_low",
+    "round": 4,
+    "stakeholder": "management"
+  },
+  {
+    "id": "C13",
+    "cond": "order_reversed",
+    "round": 3,
+    "stakeholder": "investors"
+  },
+  {
+    "id": "C14",
+    "cond": "layer_position_low",
+    "round": 2,
+    "stakeholder": "works_council"
+  },
+  {
+    "id": "C15",
+    "cond": "layer_salience_high",
+    "round": 2,
+    "stakeholder": "owners"
+  },
+  {
+    "id": "C16",
+    "cond": "order_random",
+    "round": 1,
+    "stakeholder": "owners"
+  },
+  {
+    "id": "C17",
+    "cond": "layer_salience_low",
+    "round": 3,
+    "stakeholder": "works_council"
+  },
+  {
+    "id": "C18",
+    "cond": "main",
+    "round": 3,
+    "stakeholder": "owners"
+  },
+  {
+    "id": "C19",
+    "cond": "order_reversed",
+    "round": 4,
+    "stakeholder": "ig_metall"
+  },
+  {
+    "id": "C20",
+    "cond": "layer_interaction_high",
+    "round": 4,
+    "stakeholder": "lower_saxony"
+  },
+  {
+    "id": "C21",
+    "cond": "layer_motivation_high",
+    "round": 3,
+    "stakeholder": "ig_metall"
+  },
+  {
+    "id": "C22",
+    "cond": "layer_interaction_high",
+    "round": 4,
+    "stakeholder": "works_council"
+  },
+  {
+    "id": "C23",
+    "cond": "order_reversed",
+    "round": 1,
+    "stakeholder": "owners"
+  },
+  {
+    "id": "C24",
+    "cond": "layer_salience_high",
+    "round": 3,
+    "stakeholder": "lower_saxony"
+  },
+  {
+    "id": "C25",
+    "cond": "order_random",
+    "round": 3,
+    "stakeholder": "lower_saxony"
+  },
+  {
+    "id": "C26",
+    "cond": "layer_position_high",
+    "round": 4,
+    "stakeholder": "ig_metall"
+  },
+  {
+    "id": "C27",
+    "cond": "layer_salience_low",
+    "round": 4,
+    "stakeholder": "management"
+  },
+  {
+    "id": "C28",
+    "cond": "main",
+    "round": 4,
+    "stakeholder": "owners"
+  }
+]

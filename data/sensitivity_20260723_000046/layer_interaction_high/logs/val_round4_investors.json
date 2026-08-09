@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "investors",
+  "salience": 5.33,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.54,
+    "frustration": 0.1,
+    "openness": 0.78,
+    "declared_red_line": "Where we disagree\n\n### 1) “No closures” as a hard red line\nWe do **not** support an absolute no-closure stance.\n\nThat is not because we prefer closures for their own sake. It is because we will not ba"
+  }
+}

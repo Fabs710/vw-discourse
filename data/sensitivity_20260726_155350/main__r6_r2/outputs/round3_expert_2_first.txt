@@ -1,0 +1,239 @@
+Below is the closure-equivalent savings bridge I would use for decision-making. Because the discussion so far contains **ranges but no company-specific plant P&Ls**, this has to be a **bounded estimate**, not a precise forecast.
+
+## Executive view
+
+A **credible non-closure package can match closure economics only if it produces all three of the following**:
+
+1. **Fixed-cost removal** at site and network level, not just variable savings  
+2. **Material labor-cost reset** over multiple years  
+3. **Capacity reduction large enough** to lift utilization and reduce absorption losses
+
+In practical terms, the conversation’s own benchmark is consistent with:
+
+- **Headcount reduction:** ~15% to 20%
+- **Capacity reduction:** ~10% to 25%
+- **Implementation horizon:** ~2 to 3 years
+
+That is the right order of magnitude if the goal is to be economically comparable to closure.
+
+---
+
+## 1) Savings bridge logic
+
+For an industrial auto operation, the annual savings bridge usually splits into:
+
+- **Direct labor**
+  - wages, salaries, social charges, overtime, bonus, shift premiums
+- **Site overhead**
+  - plant management, support functions, maintenance, utilities, security, logistics interfaces
+- **Corporate/network overhead**
+  - duplicated engineering, planning, HR, quality, production control
+- **Variable cost / procurement**
+  - mostly unchanged by closure unless volume is lost externally
+- **Capacity utilization effect**
+  - underused fixed assets and labor absorption loss if volume falls without footprint reduction
+- **Transition / restructuring costs**
+  - severance, retirement bridges, dismantling, transfer costs, retraining, write-offs
+- **Deferred effects**
+  - lower future capex, lower maintenance, lower complexity, possibly lower warranty/quality leakage if simplification is real
+
+---
+
+## 2) Three scenario set
+
+### A. Closure scenario
+This is the benchmark for “hard” savings.
+
+**Mechanics**
+- Full plant closure or permanent line/site shutdown
+- Transfer of some volume elsewhere
+- Elimination of associated headcount, overhead, and fixed site costs
+- Some cost of displaced production absorbed by other plants, but with lower total overhead base
+
+**Annual steady-state savings composition**
+- **Labor cost:** high
+- **Site overhead:** high
+- **Corporate/network overhead:** moderate
+- **Capacity utilization effect:** high
+- **Variable cost:** limited or neutral
+- **Transition costs:** high in years 1–2
+
+**Typical annual steady-state gross savings**
+- For a major German auto plant: **~€150m to €350m per site equivalent**, depending on size, product mix, and whether the site carries stamping, assembly, or powertrain functions.
+
+**Restructuring cost**
+- Often **€75m to €250m+ one-time**, sometimes more if there are large workforce measures, asset write-downs, and transfer expenses.
+
+**Net present value**
+- Usually strongest if the site is genuinely excess capacity and the lost fixed cost base is not rebuilt elsewhere.
+
+---
+
+### B. Moderate non-closure scenario
+This is a “site-preserving but materially smaller” solution.
+
+**Mechanics**
+- No formal closure
+- One or more lines stopped or consolidated
+- Shift reductions, weekend elimination, slower pace
+- Voluntary exits and retirements
+- Working-time changes and labor-cost concessions
+- Some production reassigned within the German network
+
+**Likely impact**
+- **Headcount reduction:** ~8% to 12%
+- **Capacity reduction:** ~5% to 10%
+- **Labor-cost relief:** moderate
+- **Site overhead:** only partially removed
+- **Utilization:** improves somewhat, but not fully
+
+**Annual steady-state gross savings**
+- Roughly **€70m to €180m** for a large plant cluster or significant site segment
+
+**Why it often falls short**
+- A large share of fixed cost remains
+- Support functions are not eliminated enough
+- Volume is cut, but not enough to materially reset the cost base
+- You often get **temporary peace, not full economics**
+
+**Conclusion**
+- Usually **insufficient** if management needs a closure-equivalent reset
+
+---
+
+### C. Deep non-closure scenario
+This is the only non-closure route that can plausibly approximate closure economics.
+
+**Mechanics**
+- No formal closure, but a major footprint and workforce reset
+- Strong product consolidation
+- Material shift elimination / line rationalization
+- Voluntary exits plus phased retirement plus internal transfers
+- Meaningful wage moderation or bonus restraint
+- Procurement and overhead cuts
+- Clear network reallocation of volumes
+
+**Likely impact**
+- **Headcount reduction:** ~15% to 20%
+- **Capacity reduction:** ~10% to 25%
+- **Labor-cost relief:** material and recurring
+- **Site overhead:** partially or substantially removed, depending on whether an entire line or support block is exited
+- **Utilization:** improves materially
+
+**Annual steady-state gross savings**
+- Roughly **€120m to €300m** for a large German auto site or comparable footprint block
+
+**Important caveat**
+- To match closure economics, the deep non-closure package must not just reduce labor. It must also remove enough **support, complexity, and underabsorbed fixed cost**.
+
+**Conclusion**
+- This is the only non-closure scenario that can reasonably be described as **closure-equivalent** in economic effect.
+
+---
+
+## 3) Illustrative savings bridge by category
+
+Below is a normalized bridge for a large German automotive site cluster. I am using broad ranges because no base cost data were supplied.
+
+### Closure scenario
+- **Direct labor savings:** 35% to 45% of total annual gross savings
+- **Site overhead savings:** 20% to 30%
+- **Corporate/network overhead savings:** 10% to 15%
+- **Utilization / absorption gains:** 15% to 25%
+- **Transition costs:** negative in years 1–2
+
+### Moderate non-closure
+- **Direct labor savings:** 30% to 40%
+- **Site overhead savings:** 10% to 15%
+- **Corporate/network overhead savings:** 5% to 10%
+- **Utilization / absorption gains:** 10% to 15%
+- **Residual fixed-cost drag:** still large
+
+### Deep non-closure
+- **Direct labor savings:** 35% to 45%
+- **Site overhead savings:** 15% to 25%
+- **Corporate/network overhead savings:** 10% to 15%
+- **Utilization / absorption gains:** 15% to 25%
+- **Residual fixed-cost drag:** reduced but not eliminated
+
+---
+
+## 4) What the company would need to show in a proper bridge
+
+Management should provide, per scenario:
+
+1. **Starting cost base**
+   - direct labor
+   - indirect labor
+   - site overhead
+   - corporate allocations
+   - depreciation / run-rate fixed cost
+2. **Volume baseline**
+   - units, shifts, capacity, utilization
+3. **Headcount by function**
+   - production, maintenance, logistics, engineering, admin
+4. **Savings by lever**
+   - exits
+   - wage moderation
+   - shift/working-time change
+   - overhead cuts
+   - procurement
+   - asset rationalization
+5. **Transition costs**
+   - severance
+   - retirement programs
+   - training / transfers
+   - write-downs
+6. **Timing**
+   - year 1, year 2, year 3 steady state
+7. **Sensitivity**
+   - what happens if only voluntary exits are achieved
+   - what happens if wage concessions expire
+   - what happens if volume underperforms
+
+Without that, the debate is not really about economics; it is about bargaining posture.
+
+---
+
+## 5) My quantified judgment
+
+### Closure scenario
+- **Most certain** path to full fixed-cost reset
+- Highest transition cost
+- Strongest ability to remove site overhead and structural excess
+
+### Moderate non-closure scenario
+- **Usually not enough**
+- Good for labor peace or partial adjustment
+- Weak as a closure substitute
+
+### Deep non-closure scenario
+- **Plausibly sufficient**, but only if:
+  - headcount falls by about **15%–20%**
+  - capacity falls by about **10%–25%**
+  - labor cost is reset for **2–3 years**
+  - site overhead is actually reduced, not just shifted around
+
+If the deep non-closure package does **not** remove enough fixed cost and support overhead, it will not be closure-equivalent.
+
+---
+
+## 6) Bottom line
+
+From a restructuring finance perspective:
+
+- **Closure** is the cleanest way to eliminate excess fixed cost.
+- **Moderate non-closure** is generally too shallow.
+- **Deep non-closure** can work, but only if it produces **closure-like economics**, meaning:
+  - substantial headcount reduction,
+  - material capacity reduction,
+  - recurring labor-cost relief,
+  - and real site overhead elimination.
+
+If you want, I can turn this into a **single decision table** with:
+- annual savings,
+- one-time restructuring cost,
+- NPV,
+- headcount impact,
+- capacity impact,
+- and a “closure-equivalent score” for each scenario.

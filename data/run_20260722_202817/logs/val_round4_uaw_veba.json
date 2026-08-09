@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "uaw_veba",
+  "salience": 7.67,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 6,
+    "flexibility": 4,
+    "dependency": 8,
+    "assertiveness": 7,
+    "cooperativeness": 6,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.41,
+    "frustration": 0.45,
+    "openness": 0.62,
+    "declared_red_line": "some dealers will be rationalized.\n\nBut there are red lines:\n- no destruction of the retiree trust,\n- no wholesale sacrifice of the workforce,\n- no fake “equal treatment” that in practice means bondho"
+  }
+}

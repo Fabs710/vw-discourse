@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.2,
+    "openness": 0.74,
+    "declared_red_line": "leed margin and flexibility.\n\n### What I think is non-negotiable\nFrom the controlling owners’ perspective, these are the real constraints:\n\n- **The cost base must come down durably.**\n- **Overcapacity"
+  }
+}

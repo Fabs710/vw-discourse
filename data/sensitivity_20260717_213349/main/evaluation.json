@@ -1,0 +1,93 @@
+{
+  "run_folder": "data/sensitivity_20260717_213349/main",
+  "dqi": {
+    "justification_level": 1.5,
+    "justification_content": 1.0,
+    "respect": 1.0,
+    "constructive_politics": 0.0,
+    "individuation": 1.5
+  },
+  "outcome": {
+    "agreement": false,
+    "rounds": 4,
+    "convergence": "progressing",
+    "position_move_mean": 1.5
+  },
+  "floor": {
+    "token_share": {
+      "works_council": 0.167,
+      "ig_metall": 0.167,
+      "management": 0.167,
+      "lower_saxony": 0.167,
+      "owners": 0.167,
+      "investors": 0.167
+    },
+    "speaking_rank": {
+      "works_council": 1,
+      "ig_metall": 2,
+      "management": 3,
+      "lower_saxony": 4,
+      "owners": 5,
+      "investors": 6
+    }
+  },
+  "per_stakeholder": {
+    "works_council": {
+      "justification_level": 1.5,
+      "justification_content": 1.0,
+      "respect": 1.0,
+      "constructive_politics": 0.0,
+      "individuation": 1.5,
+      "position_move": 1.5
+    },
+    "ig_metall": {
+      "justification_level": 1.5,
+      "justification_content": 1.0,
+      "respect": 1.0,
+      "constructive_politics": 0.0,
+      "individuation": 1.5,
+      "position_move": 1.5
+    },
+    "management": {
+      "justification_level": 1.5,
+      "justification_content": 1.0,
+      "respect": 1.0,
+      "constructive_politics": 0.0,
+      "individuation": 1.5,
+      "position_move": 1.5
+    },
+    "lower_saxony": {
+      "justification_level": 1.5,
+      "justification_content": 1.0,
+      "respect": 1.0,
+      "constructive_politics": 0.0,
+      "individuation": 1.5,
+      "position_move": 1.5
+    },
+    "owners": {
+      "justification_level": 1.5,
+      "justification_content": 1.0,
+      "respect": 1.0,
+      "constructive_politics": 0.0,
+      "individuation": 1.5,
+      "position_move": 1.5
+    },
+    "investors": {
+      "justification_level": 1.5,
+      "justification_content": 1.0,
+      "respect": 1.0,
+      "constructive_politics": 0.0,
+      "individuation": 1.5,
+      "position_move": 1.5
+    }
+  },
+  "inter_judge_kappa": {
+    "justification_level": 0.0,
+    "justification_content": 1.0,
+    "respect": 1.0,
+    "constructive_politics": 1.0,
+    "individuation": 0.0,
+    "mean": 0.6
+  },
+  "n_judges": 2
+}

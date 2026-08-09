@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.25,
+    "openness": 0.62,
+    "declared_red_line": "atives.**\n\n## To the works council and union\nYour red lines on compulsory redundancies and closures are politically and socially understandable. I support your insistence that labour should not be the"
+  }
+}

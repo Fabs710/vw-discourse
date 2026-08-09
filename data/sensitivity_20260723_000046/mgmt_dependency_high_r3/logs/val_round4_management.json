@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 8,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.45,
+    "openness": 0.74,
+    "declared_red_line": "me be equally direct.\n\nI hear the employee side’s red lines, and I understand why they are being drawn. But I do **not** accept that “no closures, no compulsory redundancies, no framework change” is a"
+  }
+}

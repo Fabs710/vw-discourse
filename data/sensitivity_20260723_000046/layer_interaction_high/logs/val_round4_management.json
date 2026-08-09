@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.3,
+    "openness": 0.7,
+    "declared_red_line": "I will be direct.\n\nI hear the repeated red lines from the works council and the union: no plant closures, no forced redundancies, no weakening of co-determination, and job guarantees throug"
+  }
+}

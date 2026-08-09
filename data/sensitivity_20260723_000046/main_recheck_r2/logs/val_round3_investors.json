@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "investors",
+  "salience": 5.33,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.25,
+    "openness": 0.62,
+    "declared_red_line": "re we disagree\n\n### 1) No-closure / no-redundancy red lines\nI understand the political and social logic, but from a capital markets perspective those red lines are acceptable **only if they still deli"
+  }
+}

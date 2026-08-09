@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 10,
+    "dependency": 10,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.35,
+    "openness": 0.82,
+    "declared_red_line": "the works council and IG Metall\nI understand your red lines, and I share part of your concern: a prolonged industrial conflict would destroy value and weaken the company. You are right to reject a cos"
+  }
+}

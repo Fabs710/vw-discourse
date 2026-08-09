@@ -1,0 +1,25 @@
+{
+  "round": 6,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.6,
+    "openness": 0.66,
+    "declared_red_line": "y direct.\n\nThe Works Council is right on the core red lines, and management is still not answering the central question: **why should the workforce be the primary shock absorber for a structural probl"
+  }
+}

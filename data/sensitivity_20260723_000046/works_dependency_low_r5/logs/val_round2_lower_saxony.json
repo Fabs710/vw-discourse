@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.25,
+    "openness": 0.58,
+    "declared_red_line": "### To the works council and union\nI support the red line against **German plant closures** and I support rejecting **compulsory redundancies** as a first resort. But I also need to be honest: simply"
+  }
+}

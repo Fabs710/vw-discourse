@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 10,
+    "risk_preference": 10,
+    "time_preference": 10,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.3,
+    "openness": 0.74,
+    "declared_red_line": "mum condition for any serious discussion.\n\n### My non-negotiables\nLet me be explicit, because the pressure is rising and there is no point in ambiguity:\n\n1. **No compulsory redundancies.**\n2. **No pla"
+  }
+}

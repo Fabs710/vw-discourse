@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.5,
+    "openness": 0.8,
+    "declared_red_line": "e Works Council and the Union: you keep repeating red lines as if repetition makes them economically valid. It does not.\n\nIf we preserve every German site, forbid compulsory reductions entirely, and k"
+  }
+}

@@ -1,0 +1,301 @@
+Below is a **finance-only decision matrix framework** for comparing a **closure-based restructuring** with a **non-closure / no-forced-redundancy package**. Because no numeric baseline has been provided, I cannot compute actual savings, NPV, or payback yet; I’ll therefore give the **minimum defensible model structure**, the **threshold logic**, and the **exact inputs needed** to quantify the choice.
+
+---
+
+# 1) Decision matrix: what must be compared
+
+## Scenario A — Closure-based restructuring
+Includes some combination of:
+- plant closure(s)
+- capacity exit
+- headcount reduction
+- severance and social-plan costs
+- asset write-downs / impairment
+- site remediation and wind-down costs
+- transitional logistics / rerouting costs
+- lost contribution margin during ramp-down
+- one-time implementation costs
+
+## Scenario B — Non-closure package
+Includes some combination of:
+- no immediate closures
+- capacity reduction via shifts/lines/utilization
+- working-time flexibility
+- wage restraint / bonus sacrifice / concessions
+- voluntary exits only
+- redeployment / retraining / mobility
+- overhead and management cost reduction
+- possibly lower capital intensity / delayed capex
+- ongoing protection costs if guarantees are binding
+
+---
+
+# 2) Core financial test: “economically equivalent” means what?
+
+A non-closure package is financially equivalent to closure-based restructuring only if, **on a risk-adjusted basis**, it delivers:
+
+1. **Equivalent recurring annual EBIT improvement**
+2. **Equivalent NPV** over the restructuring horizon
+3. **Acceptable payback period**
+4. **Acceptable execution risk**
+5. **No material hidden liabilities** from guarantees or deferred actions
+
+A practical test is:
+
+> **NPV(non-closure incremental savings after implementation costs) ≥ NPV(closure-based savings after implementation costs)**
+
+or, more strictly,
+
+> **NPV(non-closure package relative to “do nothing”) ≥ NPV(closure package relative to “do nothing”)**
+
+---
+
+# 3) Minimum model structure
+
+## 3.1 Annual savings line items
+For each scenario, separate into:
+
+### Recurring savings
+- payroll reduction
+- overtime / shift premium reduction
+- overhead reduction
+- maintenance/utilities reduction from lower utilization
+- logistics simplification
+- procurement savings from volume and footprint consolidation
+- lower depreciation if capex is deferred or assets are retired
+
+### Recurring costs
+- retained idle capacity cost
+- extra logistics from keeping multiple sites open
+- ongoing bonus or guarantee cost
+- retraining / redeployment cost
+- duplicate fixed cost during transition
+- strike/disruption risk cost if you want a risk load
+
+### One-time restructuring costs
+- severance
+- closure/wind-down costs
+- demolition / remediation
+- impairment/write-downs
+- contract termination penalties
+- IT / relocation / moving costs
+- project management and advisory costs
+
+---
+
+# 4) Threshold formulae
+
+## 4.1 Annual savings threshold for non-closure to match closure
+Let:
+
+- \( S_{NC} \) = recurring annual savings from non-closure package
+- \( C_{NC,1} \) = one-time non-closure implementation costs
+- \( S_{CL} \) = recurring annual savings from closure package
+- \( C_{CL,1} \) = one-time closure costs
+- \( r \) = discount rate
+- \( T \) = analysis horizon in years
+
+Then the non-closure package must satisfy:
+
+\[
+NPV(S_{NC}) - C_{NC,1} \ge NPV(S_{CL}) - C_{CL,1}
+\]
+
+If savings are level annuities:
+
+\[
+S_{NC} \cdot \frac{1-(1+r)^{-T}}{r} - C_{NC,1} \ge S_{CL} \cdot \frac{1-(1+r)^{-T}}{r} - C_{CL,1}
+\]
+
+Rearranged into a **minimum required annual savings threshold**:
+
+\[
+S_{NC} \ge S_{CL} + \frac{(C_{NC,1} - C_{CL,1}) \cdot r}{1-(1+r)^{-T}}
+\]
+
+So the non-closure package needs either:
+- more recurring savings, or
+- lower upfront costs, or
+- both.
+
+---
+
+# 5) Payback logic
+
+If management/investors want a payback test, calculate:
+
+\[
+Payback = \frac{\text{One-time restructuring cost}}{\text{Annual recurring savings}}
+\]
+
+Use this separately for each scenario.
+
+Typical interpretation:
+- **< 2 years**: very strong
+- **2–4 years**: usually acceptable if durable
+- **> 4 years**: usually harder to justify unless strategic risk reduction is large
+
+For a carmaker in a cyclical sector, a **shorter payback** is usually preferred because market conditions can change before savings fully mature.
+
+---
+
+# 6) ROS impact
+
+If the company’s core brand is below target ROS, measure impact as:
+
+\[
+\Delta ROS = \frac{\Delta EBIT}{Revenue}
+\]
+
+Where:
+- \(\Delta EBIT\) = annual recurring improvement after restructuring
+- Revenue should be the relevant steady-state revenue base
+
+Example interpretation:
+- If revenue is €100bn and restructuring improves EBIT by €1bn, ROS improves by **1.0 percentage point**.
+
+This is often the cleanest “board-level” metric to compare scenarios.
+
+---
+
+# 7) Threshold savings by package type
+
+## 7.1 Closure-based package
+Usually characterized by:
+- higher upfront cost
+- larger recurring savings
+- greater execution and industrial disruption risk
+- potential write-downs/impairments
+
+The closure package is preferable if:
+
+\[
+\text{Recurring savings gain} \times PVAF > \text{extra one-time closure cost}
+\]
+
+Where PVAF is the present value annuity factor.
+
+## 7.2 Non-closure package
+Usually characterized by:
+- lower upfront cost
+- lower recurring savings unless concessions are deep
+- lower asset write-down risk
+- higher risk of “fade” if concessions expire or are hard to enforce
+
+The non-closure package is preferable only if the **durable recurring savings** are large enough to compensate for the fact that fixed costs remain embedded.
+
+---
+
+# 8) Sensitivity analysis: the variables that matter most
+
+You should run sensitivities on:
+
+1. **Volume decline / utilization**
+   - Lower volume makes fixed-cost absorption worse
+   - Non-closure packages become less effective if underutilization persists
+
+2. **Headcount reduction achieved**
+   - Voluntary-only programs often underdeliver versus target
+
+3. **Wage concession permanence**
+   - If temporary, NPV falls sharply
+
+4. **Energy / logistics / material inflation**
+   - Can erode savings
+
+5. **Discount rate**
+   - Higher rate penalizes late savings and favors faster closure-based savings if immediate
+
+6. **Implementation delay**
+   - Delay is expensive in cyclical downturns
+
+7. **Strike/disruption probability**
+   - This is material if labor conflict is ongoing; it can be modeled as expected lost margin
+
+---
+
+# 9) What “trigger package” means financially
+
+A trigger mechanism is only credible if it is **hard-coded into the economics**.
+
+Example:
+- Year 1–2: non-closure package implemented
+- Milestone: if EBIT margin or cash savings miss target by date X, then pre-agreed deeper measures are activated
+
+Financially, this reduces expected downside only if the trigger is:
+- objective
+- timely
+- enforceable
+- and not easily deferred
+
+Otherwise it is simply a delay option with weak value.
+
+---
+
+# 10) Provisional decision matrix template
+
+| Criterion | Closure-based package | Non-closure package |
+|---|---:|---:|
+| Upfront cost | High | Low to medium |
+| Recurring savings | High | Medium if concessions are deep |
+| NPV | Depends on magnitude/timing | Must be benchmarked against closure |
+| Payback | Often longer due to one-off costs | Often faster if savings start immediately |
+| ROS impact | Often stronger if cuts are structural | Can be adequate if labor savings are durable |
+| Execution risk | Medium-high | Medium-high if voluntary/guarantees weaken delivery |
+| Industrial disruption | High | Lower |
+| Value of flexibility retained | Higher | Lower if guarantees are binding |
+| Risk of savings fade | Lower | Higher unless binding and long-dated |
+
+---
+
+# 11) What data is missing
+
+To produce the actual matrix you requested, I need at minimum:
+
+### Company-level
+- current revenue
+- current EBIT / ROS target
+- current plant fixed cost base
+- current variable cost per unit
+- current capacity and utilization
+- forecast volume by year
+
+### Scenario-specific
+For each plant/site:
+- headcount
+- average fully loaded labor cost
+- severance assumptions
+- asset book value and impairment assumptions
+- closure wind-down/remediation costs
+- transport/logistics cost changes
+- capex required to keep site open
+- savings from working-time changes, wage restraint, voluntary exits, shift cuts
+- timing of each saving and cost item
+
+### Finance assumptions
+- discount rate / WACC
+- analysis horizon
+- tax rate
+- probability-weighted disruption risk, if included
+- inflation assumptions
+
+---
+
+# 12) Provisional conclusion, limited to costing
+
+At this stage, the financially correct position is:
+
+- A **non-closure package is only supportable if it closes the quantified savings gap on a durable NPV basis**.
+- A **closure package is only supportable if its incremental recurring savings justify the one-time closure and disruption costs**.
+- The decision should not turn on labels like “acceptable” or “unacceptable,” but on whether the package delivers:
+  - sufficient annual cost reduction,
+  - acceptable payback,
+  - and a credible path back to target ROS.
+
+If you want, I can turn this into a **fillable one-page spreadsheet-style matrix** with formula cells for:
+- annual savings
+- one-time costs
+- NPV
+- payback
+- ROS impact
+- and the minimum non-closure savings threshold.

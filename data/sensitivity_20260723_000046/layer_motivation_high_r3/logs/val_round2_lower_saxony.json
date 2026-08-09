@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 10,
+    "risk_preference": 10,
+    "time_preference": 10,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.05,
+    "openness": 0.5,
+    "declared_red_line": "o the works council and union\nI support your core red lines:\n- no compulsory redundancies as the first instrument,\n- no hollowing-out of German sites,\n- no one-sided burden shift onto employees.\n\nBut"
+  }
+}

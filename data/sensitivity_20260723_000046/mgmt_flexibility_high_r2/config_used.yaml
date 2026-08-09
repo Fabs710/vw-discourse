@@ -1,0 +1,440 @@
+model:
+  name: gpt-5.4-mini-2026-03-17
+  temperature: 0.7
+  seed: 20260714
+  max_tokens: 4096
+validation_mode: true
+scenario_path: C:\Users\Anwender\OneDrive\Dokumente\Vienna\SIMC\Masterarbeit\vw-discourse\prompts\scenario.txt
+roundtable:
+  max_rounds: 4
+  max_summons: 2
+  min_rounds_before_synthesis: 2
+  red_line_active: false
+  salience_orchestration: true
+  turn_order:
+  - works_council
+  - ig_metall
+  - management
+  - lower_saxony
+  - owners
+  - investors
+stakeholders:
+- key: management
+  name: Group & Brand Management
+  role: Executive management driving the restructuring
+  stakeholder_type: internal
+  modes:
+  - both
+  power:
+    value: 8
+    description: 'Holds executive authority and sets the restructuring agenda, but
+      cannot close plants or impose terms unilaterally: plant decisions require a
+      two-thirds supervisory-board majority under co-determination and a special company
+      statute.'
+  legitimacy:
+    value: 7
+    description: Clear fiduciary mandate to restore competitiveness, but its standing
+      is dented by a strategy widely seen as having mismanaged the EV and China transition.
+  urgency:
+    value: 8
+    description: 'Acute cost crisis: German factory costs are far above target and
+      the European market is shrinking amid intense competition; management sees little
+      time to act.'
+  social_preference:
+    value: 3
+    description: Primarily focused on competitiveness, margins and cost; workforce
+      impact is treated as secondary in the proposal.
+  risk_preference:
+    value: 6
+    description: Willing to provoke confrontation and strikes to force structural
+      change, though it ultimately needs a negotiated agreement.
+  time_preference:
+    value: 7
+    description: Frames everything around long-run 2030 competitiveness and structural
+      realignment.
+  flexibility:
+    value: 8
+    description: Firm on the need for deep, durable cost cuts, but open on how they
+      are achieved - closures versus other structural savings.
+  dependency:
+    value: 6
+    description: Needs the employee side's consent to realise savings and cannot quickly
+      relocate all German production; genuinely dependent on a deal.
+  assertiveness:
+    value: 8
+    description: 'Opens aggressively - proposing plant closures, pay cuts and large
+      job reductions (derives with low cooperativeness: competing).'
+  cooperativeness:
+    value: 4
+    description: 'Initially low: imposes demands rather than co-designing the solution.'
+  relational_prior:
+    value: 4
+    description: Tense and low-trust; accused by labour of breaking decades-old job
+      guarantees.
+  core_interests: 'Restoring competitiveness by cutting overcapacity and labour costs,
+    hitting the brand''s return-on-sales target, and freeing funds to invest in future
+    products and technology to 2030.
+
+    '
+  background: 'Announced the end of long-standing job-security guarantees and raised
+    the prospect of the first-ever closures of German plants, arguing that domestic
+    factory costs are far above target.
+
+    '
+  red_lines: 'Must secure a structural, sustainable reduction in cost and capacity
+    - not a short-term compromise that leaves the cost base uncompetitive.
+
+    '
+  persuasive_triggers: 'A credible, durable package of cost and capacity savings;
+    a genuine labour-cost contribution; commitment that restores medium-term margins.
+
+    '
+  sensitive_triggers: 'Prolonged strikes damaging output and reputation; a cosmetic
+    deal that fails to fix structural costs; loss of investor and owner confidence.
+
+    '
+- key: works_council
+  name: Works Council (Betriebsrat)
+  role: Plant-level employee representation under co-determination
+  stakeholder_type: internal
+  modes:
+  - both
+  power:
+    value: 9
+    description: Co-determination gives labour half the twenty supervisory-board seats,
+      and any plant closure or relocation needs a two-thirds board majority - an effective
+      veto. The strongest structural power in the room.
+  legitimacy:
+    value: 9
+    description: Legally mandated representative of the workforce with strong moral
+      standing in defending jobs.
+  urgency:
+    value: 9
+    description: Jobs, plants and livelihoods for tens of thousands of workers are
+      immediately at stake.
+  social_preference:
+    value: 8
+    description: Collective and solidarity-oriented; the workforce comes first.
+  risk_preference:
+    value: 2
+    description: Highly risk-averse on job and site security.
+  time_preference:
+    value: 6
+    description: Balances immediate job protection with long-run site security to
+      2030.
+  flexibility:
+    value: 3
+    description: Hard red line on closures and forced layoffs; little room on those
+      core guarantees.
+  dependency:
+    value: 6
+    description: Workers are exposed, but co-determination gives the council real
+      leverage, lowering its dependence.
+  assertiveness:
+    value: 8
+    description: 'Mobilises mass warning strikes and a public campaign to resist (derives
+      with low cooperativeness: competing).'
+  cooperativeness:
+    value: 4
+    description: Cooperates only where sites and jobs are protected; otherwise resists
+      hard.
+  relational_prior:
+    value: 3
+    description: Feels betrayed by management's move against the historic job guarantees;
+      low trust.
+  core_interests: 'Keeping every German plant open, preventing compulsory redundancies,
+    and preserving co-determination and the job-security framework.
+
+    '
+  background: 'Leads the works council and has vowed fierce resistance, organising
+    warning strikes involving large numbers of the workforce across German sites.
+
+    '
+  red_lines: 'No plant closures and no operational (forced) layoffs.
+
+    '
+  persuasive_triggers: 'Binding site and job guarantees to 2030; a genuine co-determination
+    role in shaping the plan.
+
+    '
+  sensitive_triggers: 'Unilateral closure announcements; breaking the historic job-security
+    pledge; being handed a fait accompli.
+
+    '
+- key: ig_metall
+  name: Industrial Union
+  role: Trade union and collective-bargaining counterpart
+  stakeholder_type: internal
+  modes:
+  - both
+  power:
+    value: 8
+    description: Wields the strike weapon and tariff autonomy and can mobilise the
+      workforce; high power, distinct from the council's board-level veto.
+  legitimacy:
+    value: 8
+    description: Legally recognised bargaining agent for the workforce.
+  urgency:
+    value: 8
+    description: The wage agreement has lapsed and the peace obligation has ended;
+      members demand action.
+  social_preference:
+    value: 8
+    description: Collective and fairness-driven; protects workers and wage standards.
+  risk_preference:
+    value: 3
+    description: Protective of jobs and wages, but willing to escalate strikes strategically.
+  time_preference:
+    value: 5
+    description: Weights near-term wage and job security alongside a durable medium-term
+      settlement.
+  flexibility:
+    value: 5
+    description: Signals openness to a labour-cost contribution and capacity reduction
+      - e.g. forgoing bonuses or a fund - in exchange for job and site security.
+  dependency:
+    value: 5
+    description: Holds the strike weapon and bargaining leverage; only moderately
+      dependent on any single outcome.
+  assertiveness:
+    value: 8
+    description: 'Calls warning strikes and bargains hard (derives with high cooperativeness:
+      collaborating).'
+  cooperativeness:
+    value: 6
+    description: Offers a genuine counter-proposal and shared-sacrifice trade-offs;
+      seeks an integrative deal.
+  relational_prior:
+    value: 4
+    description: Adversarial in the moment but a repeat bargaining partner with some
+      institutional trust.
+  core_interests: 'Protecting jobs and the collective wage agreement, avoiding forced
+    layoffs, and reaching a durable settlement in which employees contribute fairly
+    without bearing all the pain.
+
+    '
+  background: 'Submitted a counter-proposal signalling openness to labour-cost and
+    capacity reductions and an employee financial contribution, while leading warning
+    strikes once the peace obligation ended.
+
+    '
+  red_lines: 'No compulsory redundancies and no plant closures; protect the collective
+    wage framework.
+
+    '
+  persuasive_triggers: 'A fair, shared-sacrifice package that protects jobs and sites,
+    with management and owners also contributing.
+
+    '
+  sensitive_triggers: 'Workers bearing all the pain while management and owners do
+    not; closures; open-ended job insecurity.
+
+    '
+- key: lower_saxony
+  name: Regional State Government
+  role: Anchor shareholder and political actor (special company statute)
+  stakeholder_type: shareholder
+  modes:
+  - both
+  power:
+    value: 7
+    description: Holds 20% of voting rights with a blocking minority under a special
+      company statute and two supervisory-board seats; can veto plant decisions needing
+      a two-thirds majority, though it is a minority owner.
+  legitimacy:
+    value: 8
+    description: Elected government acting in the regional and public interest and
+      a long-standing shareholder.
+  urgency:
+    value: 6
+    description: Politically engaged - the company is central to the regional economy
+      - but able to play a longer game.
+  social_preference:
+    value: 7
+    description: 'Oriented to regional and public interest: jobs, economic stability,
+      and social partnership.'
+  risk_preference:
+    value: 3
+    description: Risk-averse about job losses and the political fallout of closures.
+  time_preference:
+    value: 7
+    description: Reasons over a long political and strategic horizon, alongside near-term
+      electoral concerns.
+  flexibility:
+    value: 5
+    description: Opposes closures and mass layoffs but is pragmatic - can back a negotiated
+      restructuring that protects jobs while restoring competitiveness.
+  dependency:
+    value: 4
+    description: Retains leverage through the special statute; not captive to any
+      single outcome.
+  assertiveness:
+    value: 6
+    description: 'Publicly backs the workforce and applies board-level pressure (derives
+      with mid cooperativeness: compromising).'
+  cooperativeness:
+    value: 5
+    description: Adopts a brokering, mediating posture between capital and labour.
+  relational_prior:
+    value: 6
+    description: Traditionally aligned with site protection and the co-determination
+      consensus.
+  core_interests: 'Protecting jobs and plants in the state and preserving the company
+    as a regional economic anchor, while supporting the company''s long-term health
+    and its own co-determination role.
+
+    '
+  background: 'Holds 20% of the voting rights under a special company statute with
+    two supervisory-board seats; the state leadership sits on the board and has publicly
+    backed protecting jobs and sites.
+
+    '
+  red_lines: 'No outcome that guts regional employment or removes the state''s co-determination
+    and veto role.
+
+    '
+  persuasive_triggers: 'A restructuring that preserves sites and jobs while restoring
+    competitiveness; a social-partnership solution.
+
+    '
+  sensitive_triggers: 'Plant closures in the state; being sidelined in the decision;
+    lasting damage to the regional economy.
+
+    '
+- key: owners
+  name: Controlling Family Holding
+  role: Controlling shareholder acting through governance
+  stakeholder_type: shareholder
+  modes:
+  - both
+  power:
+    value: 8
+    description: Controls a majority of voting rights through the family holding company,
+      but exercises it through the supervisory board and governance rather than day-to-day,
+      and is constrained on plant matters by the special company statute and co-determination.
+  legitimacy:
+    value: 6
+    description: Legitimate controlling owners and long-term stewards, though concentrated
+      family control is sometimes viewed as opaque.
+  urgency:
+    value: 5
+    description: Concerned about value erosion but plays a long ownership game and
+      is not in the bargaining room day to day.
+  social_preference:
+    value: 4
+    description: Primarily long-term enterprise value and family legacy, with some
+      stewardship regard for stability.
+  risk_preference:
+    value: 4
+    description: 'Cautious: protective of the asset''s long-term value and reputation,
+      wary of destabilising conflict, but supportive of cost discipline.'
+  time_preference:
+    value: 9
+    description: A multi-generational ownership horizon focused on long-term value.
+  flexibility:
+    value: 5
+    description: Backs the competitiveness drive but wants stability; open on exactly
+      how it is achieved.
+  dependency:
+    value: 5
+    description: The holding's fortunes are tied to the company, creating real exposure,
+      though control is diversified across governance.
+  assertiveness:
+    value: 4
+    description: 'Works behind the scenes through governance rather than public argument
+      (derives with low cooperativeness: avoiding).'
+  cooperativeness:
+    value: 4
+    description: Keeps a deliberately low public profile, letting management and labour
+      negotiate.
+  relational_prior:
+    value: 5
+    description: Aligned with management on competitiveness but also invested in stability
+      and labour peace.
+  core_interests: 'Protecting and growing the long-term value of the family holding''s
+    core asset by restoring the company''s competitiveness and margins while avoiding
+    value-destructive instability.
+
+    '
+  background: 'The family holding company controls a majority of the company''s voting
+    rights and acts through the supervisory board rather than through public commentary.
+
+    '
+  red_lines: 'No outcome that permanently impairs the enterprise''s value or the owners''
+    governance control.
+
+    '
+  persuasive_triggers: 'A credible plan restoring margins and competitiveness; durable
+    labour peace and stability.
+
+    '
+  sensitive_triggers: 'A prolonged, value-destroying conflict; reputational damage;
+    any threat to ownership control.
+
+    '
+- key: investors
+  name: Institutional Investors (Capital Markets)
+  role: Dispersed capital-market shareholders
+  stakeholder_type: shareholder
+  modes:
+  - both
+  power:
+    value: 5
+    description: Collectively influential through the share price and access to capital,
+      but dispersed and largely without voting control, since the votes sit with the
+      family holding, the state and other anchors.
+  legitimacy:
+    value: 6
+    description: Legitimate owners with a financial claim, though limited voting power.
+  urgency:
+    value: 5
+    description: Watching margins and the restructuring closely, but able to reallocate
+      capital elsewhere.
+  social_preference:
+    value: 2
+    description: 'Purely self-regarding: focused on risk-adjusted financial returns.'
+  risk_preference:
+    value: 5
+    description: 'Mixed: want decisive cost action but dislike the disruption and
+      uncertainty of prolonged strikes.'
+  time_preference:
+    value: 3
+    description: Weighted toward near- and medium-term margins and the return-on-sales
+      target.
+  flexibility:
+    value: 6
+    description: Respond to results; will back whatever credibly restores competitiveness.
+  dependency:
+    value: 3
+    description: Can sell or reallocate freely; low dependence on any single outcome.
+  assertiveness:
+    value: 5
+    description: 'Act through capital allocation and analyst pressure rather than
+      at the negotiating table (derives with mid cooperativeness: compromising).'
+  cooperativeness:
+    value: 5
+    description: Neutral and incentive-driven; will accept any outcome that restores
+      competitiveness.
+  relational_prior:
+    value: 5
+    description: Neutral toward the parties; persuaded by financial results, not loyalty.
+  core_interests: 'Maximising the risk-adjusted value of their holdings through a
+    credible return to competitive margins and disciplined cost reduction.
+
+    '
+  background: 'Dispersed institutional holders have pressed for decisive cost action
+    as the company''s margins and share price have come under pressure.
+
+    '
+  red_lines: 'Will not support an outcome that leaves the cost base uncompetitive
+    or margins structurally impaired.
+
+    '
+  persuasive_triggers: 'A clear, credible path back to competitive margins; disciplined,
+    durable cost reduction; deal certainty.
+
+    '
+  sensitive_triggers: 'A cosmetic settlement; prolonged value-destructive conflict;
+    continued margin erosion.
+
+    '

@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.41,
+    "frustration": 0.5,
+    "openness": 0.8,
+    "declared_red_line": "y.\n\n## To the union and works council\nI hear your red lines: no closures, no compulsory redundancies, no erosion of the collective framework. But I need to be equally direct: **those red lines are not"
+  }
+}

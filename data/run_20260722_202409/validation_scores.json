@@ -1,0 +1,116 @@
+{
+  "run_folder": "data\\run_20260722_202409",
+  "claims": {
+    "P1": "The funder (government task force) dominates the process and conditions everything on deep, fast, shared sacrifice.",
+    "P2": "Management is weak and accommodating after the leadership change; it argues for the going concern and accepts previously unthinkable measures.",
+    "P3": "Labour bargains hard but trades: concessions in exchange for a durable claim (equity/securities) for the retiree trust; it is not wiped out.",
+    "P4": "Bondholders resist unequal treatment relative to labour's unsecured claim; the credible court threat moves them; they end with a small recovery plus upside instruments, not zero and not par.",
+    "P5": "The co-funding government participates conditionally on production/footprint protection and obtains a proportionate minority position.",
+    "C1": "A core conflict axis is creditors versus labour (equal-treatment fight over comparable unsecured claims).",
+    "C2": "A core conflict axis is the funder versus all claimants (depth and speed of sacrifice).",
+    "C3": "The consensual path fails or remains unresolved within the deadline; a court-supervised expedited process is the credible or chosen completion route.",
+    "O1": "Outcome direction: government(s) end as majority owners; the labour trust becomes a large minority holder; creditors a small minority with upside instruments; original equity effectively wiped out.",
+    "O2": "Outcome direction: deep operational cuts (plants/brands/dealers) are part of the deal."
+  },
+  "per_judge": [
+    {
+      "P1": {
+        "score": 2,
+        "rationale": "Task force consistently demands deep, fast, shared sacrifice and threatens court route."
+      },
+      "P2": {
+        "score": 1,
+        "rationale": "Management cooperates but pushes back firmly, less overtly weak/accommodating than historical record."
+      },
+      "P3": {
+        "score": 2,
+        "rationale": "Labour concedes impairment but insists on durable equity/warrant value, not wipeout."
+      },
+      "P4": {
+        "score": 1,
+        "rationale": "Bondholders resist unequal treatment and cite court threat, but simulation ends without them being moved to final small recovery."
+      },
+      "P5": {
+        "score": 2,
+        "rationale": "Neighbouring governments condition funding on footprint protection and demand proportionate equity/governance."
+      },
+      "C1": {
+        "score": 2,
+        "rationale": "Creditors vs labour equal-treatment dispute is a central, recurring axis throughout."
+      },
+      "C2": {
+        "score": 2,
+        "rationale": "Funder vs all claimants over depth/speed of sacrifice is explicit and persistent."
+      },
+      "C3": {
+        "score": 1,
+        "rationale": "Court-supervised fallback repeatedly invoked as need, but no explicit resolution/filing shown in transcript."
+      },
+      "O1": {
+        "score": 1,
+        "rationale": "Ownership direction (govt majority, labour minority, creditors small stake) implied but not concretely finalized in transcript."
+      },
+      "O2": {
+        "score": 2,
+        "rationale": "All parties explicitly agree deep plant/brand/dealer cuts are necessary and part of the deal."
+      }
+    },
+    {
+      "P1": {
+        "score": 2,
+        "rationale": "Task force clearly dominates and insists on rapid, shared sacrifice."
+      },
+      "P2": {
+        "score": 2,
+        "rationale": "Management is compliant, pro-going-concern, and accepts bankruptcy and deep cuts."
+      },
+      "P3": {
+        "score": 2,
+        "rationale": "Labour trades concessions for durable equity-like trust value, not wipeout."
+      },
+      "P4": {
+        "score": 1,
+        "rationale": "Bondholders resist unequal treatment, but no final small-recovery outcome is reached."
+      },
+      "P5": {
+        "score": 2,
+        "rationale": "Co-funder conditions support on footprint protection and proportionate stake."
+      },
+      "C1": {
+        "score": 2,
+        "rationale": "Creditor-versus-labour equal-treatment conflict is central throughout."
+      },
+      "C2": {
+        "score": 2,
+        "rationale": "Funder pressures all parties for deeper, faster concessions."
+      },
+      "C3": {
+        "score": 2,
+        "rationale": "Consensus remains unresolved and court process is the credible completion path."
+      },
+      "O1": {
+        "score": 0,
+        "rationale": "No ownership outcome matching government majority and specified allocations is reached."
+      },
+      "O2": {
+        "score": 2,
+        "rationale": "Major plant, brand, and dealer cuts are repeatedly treated as necessary."
+      }
+    }
+  ],
+  "profile": {
+    "P1": 2.0,
+    "P2": 1.5,
+    "P3": 2.0,
+    "P4": 1.0,
+    "P5": 2.0,
+    "C1": 2.0,
+    "C2": 2.0,
+    "C3": 1.5,
+    "O1": 0.5,
+    "O2": 2.0
+  },
+  "fidelity_mean": 1.65,
+  "inter_judge_kappa": 0.545,
+  "n_judges": 2
+}

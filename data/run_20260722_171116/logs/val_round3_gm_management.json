@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "gm_management",
+  "salience": 6.33,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 4,
+    "legitimacy": 6,
+    "urgency": 9,
+    "social_preference": 4,
+    "risk_preference": 3,
+    "time_preference": 4,
+    "flexibility": 6,
+    "dependency": 9,
+    "assertiveness": 5,
+    "cooperativeness": 6,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.1,
+    "openness": 0.54,
+    "declared_red_line": null
+  }
+}

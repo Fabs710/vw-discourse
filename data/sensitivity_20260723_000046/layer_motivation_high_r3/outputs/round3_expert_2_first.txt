@@ -1,0 +1,268 @@
+Below is a structured **restructuring finance assessment** of the question now before the parties:
+
+> **Can a non-closure package deliver risk-adjusted economic outcomes comparable to, or better than, a closure-based restructuring under this German governance setup?**
+
+I will stay within restructuring finance/modeling.
+
+---
+
+## 1) Short answer
+
+**Yes, but only under a fairly demanding condition set.**
+
+A **non-closure** package can be economically competitive **if and only if** it produces:
+1. **large enough annual fixed-cost reduction**,  
+2. **durable effect through 2030 or longer**,  
+3. **high execution certainty**, and  
+4. **limited “backsliding” risk** when temporary labor measures expire.
+
+If the non-closure package is mainly:
+- temporary wage restraint,
+- voluntary exits without meaningful capacity reduction,
+- or process improvements without real footprint shrinkage,
+
+then it will usually **underperform a closure-based package on risk-adjusted EBIT/NPV**.
+
+Given the governance features you described — co-determination vetoes, family control, state blocking position, and elevated strike risk — the biggest financial issue is not just the gross savings gap, but **implementation probability and delay**.
+
+---
+
+## 2) The right comparison framework
+
+The correct decision metric is not announced headcount reduction. It is:
+
+### Risk-adjusted NPV of restructuring
+\[
+\text{Risk-adjusted NPV} = \sum_{t=1}^{T} \frac{\mathbb{E}[\Delta EBIT_t \times P(\text{realization}_t)]}{(1+r)^t} - \text{PV(one-time costs)}
+\]
+
+Where:
+- \(\Delta EBIT_t\) = annual operating benefit,
+- \(P(\text{realization}_t)\) = probability benefits actually materialize in period \(t\),
+- \(r\) = discount rate / hurdle,
+- one-time costs include severance, decommissioning, dual-running, legal, logistics, impairment, and transition costs.
+
+### Key point
+A plan with slightly lower gross savings can beat a “stronger” plan if it has:
+- much lower execution risk,
+- faster implementation,
+- lower one-time cash burn,
+- and fewer delay penalties.
+
+---
+
+## 3) What typically drives value in each package
+
+## A. Closure-based restructuring
+### Financial strengths
+- Removes **structural fixed costs**:
+  - plant overhead,
+  - site support,
+  - maintenance,
+  - logistics,
+  - duplicated management layers,
+  - part of indirect labor.
+- Usually gives the **largest durable annual EBIT improvement**.
+- Can improve capacity utilization at remaining plants.
+
+### Financial weaknesses
+- High one-time cash outlay:
+  - severance,
+  - transition,
+  - decommissioning,
+  - contract termination,
+  - possible impairment.
+- High probability of:
+  - strike delay,
+  - legal challenge,
+  - supervisory board deadlock,
+  - political intervention.
+- Long ramp period; savings may arrive only gradually.
+
+### Typical financial profile
+- **Year 0–1:** negative cash/EBIT due to restructuring charge
+- **Years 2–5:** strong positive EBIT contribution if executed
+- **Persistent benefit:** high, if the closure is real and irreversible
+
+---
+
+## B. Non-closure restructuring
+### Financial strengths
+- Lower headline disruption.
+- Lower severance/exit cash.
+- Faster to sign if negotiated.
+- Better chance of preserving social peace and avoiding immediate production loss.
+
+### Financial weaknesses
+- Savings are often:
+  - smaller,
+  - more reversible,
+  - more dependent on bargaining renewals,
+  - and less effective at reducing fixed overhead.
+- If capacity remains structurally excessive, the package may not fix margin pressure.
+- Temporary concessions can roll off in 2–4 years and recreate the problem.
+
+### Typical financial profile
+- **Year 0:** lower restructuring cost
+- **Years 1–3:** moderate savings, but only if enforceable
+- **Years 4–5:** risk of benefit decay if measures expire
+
+---
+
+## C. Hybrid package
+This is often the most realistic in a veto-constrained German setting.
+
+A hybrid can combine:
+- one plant closure or partial site rationalization,
+- non-closure capacity reduction elsewhere,
+- voluntary exits,
+- working-time changes,
+- temporary labor-cost moderation,
+- management overhead cuts,
+- and investment commitments.
+
+Financially, a good hybrid often offers:
+- most of the durable fixed-cost benefit of closure,
+- less conflict than a full closure program,
+- lower one-time cost than closing multiple sites,
+- better probability of board approval than a pure closure strategy.
+
+---
+
+## 4) Probabilistic implementation risk matters a lot here
+
+Because there are effective veto positions and strike capacity, the expected value of each package should be adjusted for:
+
+- **strike probability**
+- **strike duration**
+- **veto / board delay probability**
+- **legal challenge probability**
+- **risk of dilution / renegotiation**
+- **risk that temporary concessions expire and savings reverse**
+
+### Practical modeling implication
+A closure plan with **30–50% delay probability** and a long industrial dispute can lose a substantial share of its theoretical NPV.
+
+Likewise, a non-closure plan can look attractive on paper but fail if:
+- the employee contribution is too small,
+- there is no enforceable exit of excess capacity,
+- or savings are only temporary.
+
+---
+
+## 5) What savings level is likely needed?
+
+You have not provided company financials, so I cannot give a precise euro target. But structurally, if management says the German cost base is materially above target and the brand misses ROS, then the required package usually needs to deliver:
+
+- **meaningful annual fixed-cost reduction**
+- enough to move operating margin by a visible step
+- plus a confidence effect on future investment capacity
+
+In industrial turnaround terms, the package must typically cover:
+1. **run-rate EBIT lift**
+2. **restructuring charge payback**
+3. **buffer against implementation leakage**
+
+If the company needs, for example, a mid-hundreds-of-millions annual EBIT improvement, then:
+- small wage moderation alone is unlikely to be enough;
+- a capacity rationalization without site closure may still be enough if it is deep;
+- one closure may be enough if the plant is high-cost and subscale;
+- multiple small concessions may not sum to a durable solution.
+
+---
+
+## 6) Decision rule I would use
+
+### Non-closure package is financially preferable if:
+- it can deliver at least **~80–90% of closure-equivalent annual savings**,
+- with **substantially lower one-time cost**,
+- and with **higher execution certainty**,
+- and the savings are locked in contractually through 2030+.
+
+### Closure-based package is financially preferable if:
+- non-closure measures only produce **~40–70% of required structural savings**,
+- or are mainly temporary,
+- or the package requires repeated renegotiation,
+- or governance deadlock makes implementation slow enough that NPV collapses.
+
+### Hybrid is preferable if:
+- one or more closures are needed to remove excess fixed cost,
+- but a full closure program would trigger excessive delay or conflict,
+- and a mixed package can preserve enough labor peace to realize savings sooner.
+
+---
+
+## 7) My base-case assessment for this scenario
+
+Based on the facts provided:
+
+### Likely outcome if no closures
+A pure non-closure package is **unlikely** to fully solve the structural problem unless it includes:
+- a very large labor-cost reset,
+- real capacity reduction,
+- voluntary exits at scale,
+- and enforceable long-duration commitments.
+
+If it is mostly a temporary wage freeze plus exit incentives, then the package will probably **fail the risk-adjusted EBIT test**.
+
+### Likely outcome with closures
+A closure-based package probably has the **highest gross structural savings**, but its risk-adjusted value depends on whether the board can actually implement it without a long strike/legal freeze.
+
+Given the veto structure, closure may be economically strong in theory but materially discounted in practice by:
+- delay,
+- conflict,
+- and implementation uncertainty.
+
+### Most likely financially superior solution
+A **hybrid package** is the most plausible risk-adjusted winner:
+- selective capacity/site reduction,
+- deep non-closure labor measures,
+- voluntary exits,
+- overhead cuts,
+- and investment commitments.
+
+That is often the best compromise between:
+- structural savings,
+- implementability,
+- and NPV preservation.
+
+---
+
+## 8) What numbers would be needed for a proper model
+
+To produce a real scenario comparison, I would need:
+
+1. **Plant-level fixed cost and contribution margin**
+2. **Headcount by site and function**
+3. **Estimated severance / exit cost per head**
+4. **Expected annual savings by measure**
+5. **Ramp timing of savings**
+6. **One-time transition/decommissioning cost**
+7. **Probability of strike**
+8. **Expected strike duration / lost output**
+9. **Probability of supervisory-board approval**
+10. **Probability that savings survive to 2030**
+11. **Discount rate / hurdle rate**
+12. **Any capex required to consolidate production**
+
+Without these, any euro estimate would be illustrative only.
+
+---
+
+## 9) Concise conclusion
+
+### Financial judgment
+- **Closure**: highest gross structural savings, highest one-time cost, highest conflict risk.
+- **Non-closure**: lower one-time cost, lower conflict risk, but often insufficient unless very deep and durable.
+- **Hybrid**: usually the best risk-adjusted option in a veto-constrained governance environment.
+
+### Bottom line
+If the employee side can offer a **quantified, enforceable, long-duration package** that materially reduces the fixed-cost base and capacity, then **non-closure can be value-preserving**.
+
+If not, then **closure becomes the economically credible route** to restore margin and protect long-term competitiveness.
+
+If you want, I can next build a **simple 3-scenario numerical model** with illustrative assumptions:
+1. closure-led,
+2. non-closure-led,
+3. hybrid,
+including NPV, payback, and sensitivity to strike delay.

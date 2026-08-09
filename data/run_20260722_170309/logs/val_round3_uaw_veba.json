@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "uaw_veba",
+  "salience": 7.67,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 6,
+    "flexibility": 4,
+    "dependency": 8,
+    "assertiveness": 7,
+    "cooperativeness": 6,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.4,
+    "openness": 0.58,
+    "declared_red_line": "m for creditor recovery.\n\n## On the task force’s “non-negotiable line”\nYou say you will not finance an unrestructured company or one that preserves the full cash burden of legacy liabilities. Understo"
+  }
+}

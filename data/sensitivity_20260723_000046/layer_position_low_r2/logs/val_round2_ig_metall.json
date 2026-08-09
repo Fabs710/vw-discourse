@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 1,
+    "dependency": 1,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.2,
+    "openness": 0.4,
+    "declared_red_line": "can deliver substantial savings without crossing red lines:\n- reduced capacity,\n- longer-term working-time adaptation,\n- voluntary exit packages,\n- temporary wage components,\n- bonus moderation,\n- an"
+  }
+}

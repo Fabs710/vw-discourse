@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "investors",
+  "salience": 5.33,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.2,
+    "openness": 0.58,
+    "declared_red_line": "?**\n\nSo far, the employee side has been strong on red lines, but weak on quantified equivalence. Saying “keep every German plant open” is not a savings plan.\n\n## On the “no forced layoffs” claim\nWe pr"
+  }
+}

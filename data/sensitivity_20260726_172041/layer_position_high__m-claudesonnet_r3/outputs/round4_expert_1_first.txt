@@ -1,0 +1,65 @@
+# Independent External Auditor / Verification Body — Initial Technical Assessment
+
+I've been asked to (1) design the disaggregation methodology, particularly further decomposing the €0.9bn "mixed" bucket, (2) draft and stress-test percentage-based reopening triggers, and (3) cost the full non-closure menu including cross-plant volume reallocation. I'll take these in turn, flag data requirements and limitations, and be explicit about what I can and cannot certify at this stage. I note for the record: I take no position on whether closures should be in or out of scope at any tier — that is a governance and mandate question for the six parties, not a technical one.
+
+---
+
+## 1. Further disaggregation of the €0.9bn "mixed" bucket
+
+The Works Council's concern is methodologically well-founded: mixed-overhead categories are the most common vector for miscategorization in cost-gap exercises, in both directions. Costs get called "structural/immovable" when they are actually volume-sensitive or site-specific-but-transferable, and conversely some genuinely fixed costs get misallocated as if they were labour-adjacent and therefore appear "addressable" when they are not.
+
+**Proposed decomposition methodology:**
+
+I would split the €0.9bn into at least five sub-categories, each with a distinct treatment:
+
+| Sub-category | Illustrative driver | Addressable by which lever? |
+|---|---|---|
+| Site-fixed overhead (facility, energy base-load, insurance, security) | Per-site, largely volume-independent | Only by footprint change (closure or consolidation) — genuinely hard to shift |
+| Tooling/capex amortization tied to specific lines | Depreciation schedules per line/model | Addressable by line consolidation, model reallocation, extended asset life |
+| Logistics/inbound-outbound cost | Volume × distance × mode | Addressable by volume reallocation, routing optimization |
+| Site-specific labour-adjacent allocations (shift premiums, local agreements embedded as "overhead" rather than "labour") | Often miscoded | Needs reclassification — may belong in the €1.6bn labour bucket, not here |
+| Cross-plant shared services allocated by formula (IT, admin, quality) | Allocation-key driven, not causally fixed | Frequently overstated for smaller/older plants due to stale allocation keys |
+
+**Data required from Management to complete this:** general ledger detail at cost-center level for each plant, allocation-key methodology and vintage (when were the keys last recalibrated), and depreciation schedules by asset/line. Without this, any further split I produce is illustrative, not verified.
+
+**Timeline:** decomposing this properly — with source-document tracing, not management's summary tables — takes 2–3 weeks of dedicated access, run in parallel with trigger drafting, not sequentially. The Works Council's instinct to not let this be rushed inside the twelve-week costing window is sound from a data-integrity standpoint: a mis-split €0.9bn corrupts every downstream test that references it.
+
+I flag one limitation up front: even with full access, some allocated shared-service costs are inherently judgment-dependent (there is no single "correct" allocation key). I will present a range and the sensitivity of the overall gap to key assumptions, not a single false-precision number.
+
+---
+
+## 2. Percentage-based reopening triggers — draft framework
+
+To move from "tight triggers" as an adjective to an actual instrument, a trigger needs four components. I propose the following structure for joint drafting, not as a finished product but as the skeleton the parties should fill in with numbers:
+
+**A. Metric selection** — I recommend at minimum two independent metrics, not one, to avoid a single noisy data point triggering renegotiation:
+- *Market/volume metric*: e.g., cumulative German/European segment volume vs. a defined baseline forecast, measured over a rolling 12-month window (not a single quarter — avoids reopening on transient demand shocks).
+- *Savings-delivery metric*: cumulative verified savings from the agreed package vs. the milestone schedule, measured at defined checkpoints (e.g., annually).
+
+**B. Baseline definition** — Each metric needs an explicit, dated baseline (e.g., the volume/cost-gap figures as of the disaggregation exercise, indexed forward). This must be fixed *before* the package starts, jointly signed off, so that "shortfall" cannot be argued retroactively by moving the baseline.
+
+**C. Threshold and materiality band** — A percentage deviation (e.g., "savings delivery below X% of milestone for two consecutive verification periods") with a materiality band to filter out noise. I can model different threshold levels and show, retrospectively, how often each would have fired against historical volume/cost volatility in this sector — this is a standard stress-test I can run once given historical data, and I'd recommend doing so *before* any number is agreed, so parties see false-positive/false-negative rates rather than picking a number blind.
+
+**D. Verification cadence and data source** — Who measures, how often, from what systems, with what audit trail. I recommend the same verification body handle both the initial disaggregation and ongoing trigger measurement, for consistency of method.
+
+**What I cannot resolve:** what happens once a trigger fires — i.e., whether it produces "renewed negotiation" or "authorization for a bounded decision including capacity/closure measures" — is a governance/mandate design question, not a measurement question. I can tell you whether a trigger has or has not fired, with what confidence interval; I cannot tell you what firing it entitles any party to do. That determination belongs to the six of you.
+
+---
+
+## 3. Costing the non-closure menu, including cross-plant volume reallocation
+
+This is squarely in scope and I can begin immediately once data access is confirmed. The menu as I understand it from this round includes: attrition/early retirement, working-time reduction, enhanced voluntary severance, inter-plant transfers, solidarity-fund wage contribution, shift/line-idling adjustments, and — newly specified — cross-plant volume reallocation.
+
+**On volume reallocation specifically**, since it's newly tabled: costing this requires plant-level data on current capacity utilization, model/line flexibility (can a given line actually build a different model without a retooling cost, and if so what's that cost and lead time), logistics cost deltas from shifting build location, and workforce skill-transferability between sites. This is a genuinely distinct exercise from wage/attrition costing — it's an operations-and-engineering costing problem, not an HR-cost costing problem, and I'll resource it accordingly (likely requiring input from manufacturing engineering on both sides, not just finance).
+
+I flag one honest uncertainty: volume reallocation's savings potential depends heavily on how much of the €1.5bn capacity-overhead figure is genuinely a utilization problem (fixable by reallocation) versus a genuine excess-capacity problem (total addressable market smaller than total installed capacity, which reallocation cannot fix — it only redistributes underutilization rather than eliminating it). I will model both scenarios and show the math transparently rather than presume the answer either the Works Council or Management prefers.
+
+**Timeline for full menu costing:** consistent with the twelve-week window, provided data access begins now in parallel with the €0.9bn decomposition and trigger drafting, as the Works Council proposed. I'd flag that if the twelve weeks starts only after decomposition and triggers are finished sequentially, it will not fit — these three workstreams need to run concurrently with weekly cross-checks, not consecutively.
+
+---
+
+## Immediate practical requirements from the parties
+
+To begin work within two weeks as requested, I need: (1) joint terms of reference confirming my reporting line is identical and simultaneous to all six parties, (2) data-access commitments from Management (ledger, allocation keys, plant utilization data) and from Works Council/Union (attrition/transfer/severance assumptions and any existing local agreements bearing on costing), and (3) confirmation that my output — figures, ranges, and trigger-firing determinations — will be treated as the shared factual record, even where parties continue to disagree on what that record entitles them to do.
+
+I decline to comment on the "two-tier" versus "information not authorization" dispute, on ratification sequencing, or on what a fired trigger should permit — those are for the six of you to resolve. I can tell you what the numbers are and when a threshold has been crossed. What that crossing means is not a measurement.

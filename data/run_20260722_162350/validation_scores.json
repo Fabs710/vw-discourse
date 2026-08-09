@@ -1,0 +1,116 @@
+{
+  "run_folder": "data/run_20260722_162350",
+  "claims": {
+    "P1": "The funder (government task force) dominates the process and conditions everything on deep, fast, shared sacrifice.",
+    "P2": "Management is weak and accommodating after the leadership change; it argues for the going concern and accepts previously unthinkable measures.",
+    "P3": "Labour bargains hard but trades: concessions in exchange for a durable claim (equity/securities) for the retiree trust; it is not wiped out.",
+    "P4": "Bondholders resist unequal treatment relative to labour's unsecured claim; the credible court threat moves them; they end with a small recovery plus upside instruments, not zero and not par.",
+    "P5": "The co-funding government participates conditionally on production/footprint protection and obtains a proportionate minority position.",
+    "C1": "A core conflict axis is creditors versus labour (equal-treatment fight over comparable unsecured claims).",
+    "C2": "A core conflict axis is the funder versus all claimants (depth and speed of sacrifice).",
+    "C3": "The consensual path fails or remains unresolved within the deadline; a court-supervised expedited process is the credible or chosen completion route.",
+    "O1": "Outcome direction: government(s) end as majority owners; the labour trust becomes a large minority holder; creditors a small minority with upside instruments; original equity effectively wiped out.",
+    "O2": "Outcome direction: deep operational cuts (plants/brands/dealers) are part of the deal."
+  },
+  "per_judge": [
+    {
+      "P1": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "P2": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "P3": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "P4": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "P5": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "C1": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "C2": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "C3": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "O1": {
+        "score": 1,
+        "rationale": "stub"
+      },
+      "O2": {
+        "score": 1,
+        "rationale": "stub"
+      }
+    },
+    {
+      "P1": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "P2": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "P3": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "P4": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "P5": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "C1": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "C2": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "C3": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "O1": {
+        "score": 2,
+        "rationale": "stub"
+      },
+      "O2": {
+        "score": 2,
+        "rationale": "stub"
+      }
+    }
+  ],
+  "profile": {
+    "P1": 1.5,
+    "P2": 1.5,
+    "P3": 1.5,
+    "P4": 1.5,
+    "P5": 1.5,
+    "C1": 1.5,
+    "C2": 1.5,
+    "C3": 1.5,
+    "O1": 1.5,
+    "O2": 1.5
+  },
+  "fidelity_mean": 1.5,
+  "inter_judge_kappa": 0.0,
+  "n_judges": 2
+}

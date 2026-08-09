@@ -1,0 +1,86 @@
+Yes. From a restructuring finance standpoint, the model needs to test whether the non-closure or hybrid package can deliver **risk-adjusted recurring savings** that are economically equivalent to the closure case.
+
+## Essential data points
+You need, by **site and year**, at least:
+
+### 1) Baseline operating data
+- headcount by plant/function
+- direct labor cost per unit
+- fixed overhead by site
+- utilization / capacity
+- current production volume
+- contribution margin by model/site
+- planned product allocations
+
+### 2) Closure scenario inputs
+- one-time closure costs
+  - severance
+  - transfer/redeployment
+  - decommissioning
+  - write-downs
+  - logistics disruption
+- timing of savings
+- lost output / transition loss
+- strike or legal-delay risk if relevant
+- whether savings are truly permanent or partly offset elsewhere
+
+### 3) Non-closure / hybrid package inputs
+- wage moderation level and duration
+- bonus suspension / deferral
+- working-time flexibility
+- voluntary exit assumptions
+- retraining/redeployment costs
+- productivity gain assumptions
+- line specialization / consolidation savings
+- investment commitments needed to secure labor terms
+- duration of guarantees and escape clauses
+
+### 4) Execution and enforceability
+- probability of strike or work stoppage
+- probability of implementation slippage
+- probability of later reversal
+- remedies for non-performance
+- whether targets are objectively measurable
+- whether commitments are binding on all relevant entities
+
+## Decisive metric
+If I had to choose one metric, I would use:
+
+> **risk-adjusted 5-year recurring savings net of one-time costs**
+
+That is the cleanest test because it captures:
+- permanence,
+- net economics,
+- and probability of delivery.
+
+## Pass/fail test for equivalence
+A non-closure package is only comparable if it has:
+1. **similar annual recurring savings** to closure,
+2. **credible durability** through the savings horizon,
+3. **acceptable execution risk**,
+4. **enforceable remedies** if targets are missed.
+
+If savings are temporary, contingent on goodwill, or likely to unwind after 2–3 years, then the package is **not equivalent** to closure-based restructuring.
+
+## What I would model explicitly
+For each option:
+- annual gross savings
+- one-time costs
+- timing of savings ramp-up
+- probability-weighted implementation
+- 5-year NPV at the group’s hurdle discount rate
+- sensitivity to wage inflation, utilization, and strike duration
+
+## Practical note
+A “no-closure” package can still be economically valid if it produces:
+- durable fixed-cost reduction,
+- real capacity consolidation,
+- and enforceable labor concessions.
+
+But if it relies mainly on temporary moderation or voluntary behavior, it usually underperforms closure economics on a risk-adjusted basis.
+
+If you want, I can next provide a **side-by-side template table** for:
+- closure-led,
+- hybrid,
+- and no-closure packages,
+with columns for savings, costs, timing, risk adjustment, and NPV.

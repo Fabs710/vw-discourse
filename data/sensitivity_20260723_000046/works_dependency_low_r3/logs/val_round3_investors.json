@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "investors",
+  "salience": 5.33,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.15,
+    "openness": 0.7,
+    "declared_red_line": "To the works council and union\nWe understand your red lines, but let’s be clear: **“No closures, no compulsory redundancies” is not, by itself, a financial solution**. We will not support a package th"
+  }
+}

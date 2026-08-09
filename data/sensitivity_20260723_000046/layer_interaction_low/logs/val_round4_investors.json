@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "investors",
+  "salience": 5.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 1,
+    "cooperativeness": 1,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.3,
+    "openness": 0.74,
+    "declared_red_line": "To the works council and union\nWe understand your red lines, but an **absolute no** to closures and an **absolute no** to compulsory redundancies is only credible if you can still deliver the required"
+  }
+}

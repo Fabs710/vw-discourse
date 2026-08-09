@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.49,
+    "frustration": 0.3,
+    "openness": 0.54,
+    "declared_red_line": "rect.\n\nI agree with the works council on the core red lines: **no plant closures, no compulsory redundancies, and no dismantling of job security as the price of management’s turnaround failure**. And"
+  }
+}

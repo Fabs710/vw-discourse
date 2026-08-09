@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.4,
+    "openness": 0.58,
+    "declared_red_line": "ue.\n\n## To the works council\n\nI support your core red lines:\n- no German plant closures,\n- no compulsory redundancies,\n- no erosion of co-determination,\n- and no open-ended sacrifice by the workforce."
+  }
+}

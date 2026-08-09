@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "investors",
+  "salience": 10.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 10,
+    "legitimacy": 10,
+    "urgency": 10,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.3,
+    "openness": 0.86,
+    "declared_red_line": "are unlikely to be sufficient.\n\nThat supports our red line: **no settlement that leaves the cost base structurally uncompetitive**.\n\nBut the expert also confirmed something else important:\n- a **mixed"
+  }
+}

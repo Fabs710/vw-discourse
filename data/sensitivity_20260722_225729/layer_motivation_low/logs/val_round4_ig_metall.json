@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.44,
+    "frustration": 0.45,
+    "openness": 0.5,
+    "declared_red_line": "e very clear: even before that table arrives, our red lines remain.  \n**No closures. No forced redundancies.**\n\nIf management wants serious negotiation, it should stop using closure threats as the sta"
+  }
+}

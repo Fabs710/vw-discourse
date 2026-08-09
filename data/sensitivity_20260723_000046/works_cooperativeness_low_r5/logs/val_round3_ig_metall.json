@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 8,
+    "cooperativeness": 6,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.3,
+    "openness": 0.62,
+    "declared_red_line": "n.\n\n## Bottom line\nI am not softening on the core red lines:\n- **No compulsory redundancies.**\n- **No closure-first restructuring.**\n- **No unilateral erosion of wage standards.**\n\nBut I am keeping th"
+  }
+}

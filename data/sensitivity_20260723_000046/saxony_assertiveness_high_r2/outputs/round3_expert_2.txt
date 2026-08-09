@@ -1,0 +1,191 @@
+Yes — I can lay out the **quantitative comparison framework** for the three restructuring scenarios. Below is the model structure I would use to compare them site by site.
+
+## 1) Scenario definitions
+
+### A. Closure-based restructuring
+Assumes:
+- one or more German plants are fully closed,
+- production is reassigned to remaining sites or externalized,
+- redundant fixed cost and headcount are removed,
+- associated capex and restructuring costs are incurred upfront.
+
+### B. Hybrid / partial consolidation
+Assumes:
+- no full plant closure, or only limited closures,
+- one or more sites lose specific lines, shifts, functions, or models,
+- capacity is concentrated into fewer remaining lines/sites,
+- overhead and indirect cost are reduced structurally.
+
+### C. Non-closure restructuring
+Assumes:
+- all named German sites remain formally open,
+- cost reduction comes from consolidation within plants, working-time changes, redeployment, voluntary exits, functional simplification, and labor-cost measures,
+- no full site exit, but installed capacity and fixed cost still decline materially.
+
+---
+
+## 2) Site-by-site data needed
+
+For each plant, you need the following baseline inputs:
+
+### Operational
+- Installed capacity by model/line/shift
+- Current output volume
+- Utilization rate
+- Product mix and forecast mix to 2030
+- Share of EV / ICE / hybrid production
+- Changeover frequency and complexity
+
+### Cost
+- Direct labor cost
+- Indirect labor cost
+- Maintenance and utilities
+- Plant overhead
+- Logistics in/out
+- Warranty / scrap / quality cost
+- Depreciation tied to site assets
+
+### Workforce
+- Direct headcount
+- Indirect headcount
+- Temporary labor
+- Skill specificity / redeployment feasibility
+- Expected natural attrition through 2030
+
+### Capex and implementation
+- Required retooling capex to preserve or reconfigure the site
+- Capex required to move volume to another site
+- One-off restructuring costs
+- Severance / social plan costs
+- IT, tooling, and logistics migration costs
+- Downtime during changeover
+
+---
+
+## 3) Core output metrics for comparison
+
+For each scenario, calculate:
+
+### A. Capacity effect
+- Installed capacity removed
+- Effective output capacity remaining
+- Post-restructuring utilization by site
+
+### B. Cost effect
+- Annual fixed-cost savings
+- Annual variable-cost impact
+- Annual logistics impact
+- Annual overhead reduction
+- Annual labor-cost reduction
+- Net run-rate savings after stabilization
+
+### C. Financial effect
+- Restructuring cash cost
+- Capex required
+- Payback period
+- NPV of savings to 2030
+- EBIT / operating margin impact by year
+- Sensitivity to volume shortfall
+
+### D. Risk effect
+- Execution risk
+- Labor disruption risk
+- Ramp-up / transfer risk
+- Supply continuity risk
+- Underutilization risk at remaining sites
+
+---
+
+## 4) The right comparison logic
+
+The key question is not “closure vs. no closure” in the abstract. It is:
+
+> **How much permanent fixed cost and installed capacity is removed, at what implementation cost, and with what residual risk?**
+
+A non-closure package is only economically comparable if it removes roughly the same:
+- fixed overhead,
+- indirect headcount,
+- complexity,
+- and underutilized capacity.
+
+If it only shifts costs around or defers them, it will underperform on NPV and margin recovery.
+
+---
+
+## 5) Recommended model table structure
+
+For each site, I would use a table like this:
+
+| Site | Current Output | Capacity | Utilization | Direct HC | Indirect HC | Fixed Cost | Variable Cost/unit | Logistics Cost | Model Allocation | Scenario A Impact | Scenario B Impact | Scenario C Impact |
+|------|----------------|----------|-------------|-----------|-------------|------------|-------------------|----------------|-----------------|------------------|------------------|------------------|
+
+Then a second table for each scenario:
+
+| Metric | Closure-Based | Hybrid | Non-Closure |
+|--------|---------------|--------|-------------|
+| Capacity removed | | | |
+| Headcount reduced | | | |
+| Fixed cost saved p.a. | | | |
+| One-off restructuring cost | | | |
+| Capex required | | | |
+| Net annual savings | | | |
+| NPV to 2030 | | | |
+| Payback period | | | |
+| Residual utilization | | | |
+| Execution risk | | | |
+
+---
+
+## 6) Practical benchmark logic
+
+In automotive networks, the least defensible scenario is usually:
+- low utilization remains at several plants,
+- indirect cost stays largely intact,
+- capex is spent to preserve too many sites,
+- and savings depend mostly on temporary labor concessions.
+
+The most credible non-closure scenario is one where:
+- one or more lines, shifts, or functions are removed permanently,
+- duplication across plants is eliminated,
+- logistics flows are simplified,
+- indirect headcount is materially cut,
+- and the remaining sites are brought to healthier utilization.
+
+---
+
+## 7) What I would treat as decisive in the model
+
+The scenario is credible only if it can show all four:
+
+1. **Permanent savings**
+   - not just a 2–3 year effect
+
+2. **Sufficient capacity reduction**
+   - enough to lift residual utilization materially
+
+3. **Acceptable implementation cost**
+   - capex and restructuring charges do not overwhelm NPV
+
+4. **Manageable execution risk**
+   - no large quality, ramp, or supply disruption
+
+---
+
+## 8) What I still need to model credibly
+
+To do this properly for the company in question, I would need:
+- plant list and product allocation,
+- current and forecast volumes by site,
+- workforce split by direct/indirect,
+- fixed-cost accounts by site,
+- logistics network flows,
+- capex by option,
+- and the target margin / savings requirement management is working to.
+
+Without that, any plant-by-plant numeric conclusion would be speculative.
+
+If you want, I can next provide a **one-page scenario model template** with specific formulas for:
+- utilization,
+- fixed-cost absorption,
+- net savings,
+- and NPV to 2030.

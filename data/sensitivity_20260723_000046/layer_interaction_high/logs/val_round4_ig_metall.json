@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "ig_metall",
+  "salience": 8.0,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 8,
+    "legitimacy": 8,
+    "urgency": 8,
+    "social_preference": 8,
+    "risk_preference": 3,
+    "time_preference": 5,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.41,
+    "frustration": 0.55,
+    "openness": 0.58,
+    "declared_red_line": "es,\n- but **not** plant closure.\n\n## What remains non-negotiable\n- **No German plant closures**\n- **No forced redundancies**\n- **No dismantling of the collective wage framework**\n- **No weakening of c"
+  }
+}

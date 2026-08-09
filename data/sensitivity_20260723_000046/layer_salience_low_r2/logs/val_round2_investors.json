@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "investors",
+  "salience": 1.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 1,
+    "legitimacy": 1,
+    "urgency": 1,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.25,
+    "openness": 0.66,
+    "declared_red_line": "cial protection is understandable, but **absolute red lines** are only credible if you can replace them with a restructuring that is numerically equivalent.\n\nSo far, the burden you are asking to avoid"
+  }
+}

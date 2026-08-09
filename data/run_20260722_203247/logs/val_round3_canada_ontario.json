@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "canada_ontario",
+  "salience": 6.0,
+  "conflict_mode": "accommodating",
+  "params": {
+    "power": 5,
+    "legitimacy": 7,
+    "urgency": 6,
+    "social_preference": 6,
+    "risk_preference": 4,
+    "time_preference": 7,
+    "flexibility": 6,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 6,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.05,
+    "openness": 0.54,
+    "declared_red_line": null
+  }
+}

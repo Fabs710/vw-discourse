@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "investors",
+  "salience": 5.33,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 5,
+    "cooperativeness": 5,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.52,
+    "frustration": 0.1,
+    "openness": 0.54,
+    "declared_red_line": null
+  }
+}

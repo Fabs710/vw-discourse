@@ -1,0 +1,640 @@
+{
+  "scores": [
+    {
+      "id": "C01",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C02",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C03",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C04",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C05",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C06",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C07",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C08",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C09",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C10",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C11",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 1,
+          "justification_content": 2,
+          "respect": 0,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C12",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C13",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C14",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C15",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C16",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C17",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C18",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C19",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C20",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C21",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C22",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C23",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C24",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C25",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C26",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C27",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    },
+    {
+      "id": "C28",
+      "scores": {
+        "gemini-3.6-flash": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        },
+        "qwen/qwen3.6-27b": {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2
+        }
+      }
+    }
+  ],
+  "statistics": {
+    "n_items": 28,
+    "judges": [
+      "gemini-3.6-flash",
+      "qwen/qwen3.6-27b"
+    ],
+    "human_codes": true,
+    "usable_output_rate": {
+      "gemini-3.6-flash": 1.0,
+      "qwen/qwen3.6-27b": 1.0
+    },
+    "pairs": {
+      "gemini-3.6-flash vs qwen/qwen3.6-27b": {
+        "justification_level": {
+          "kappa": 0.0,
+          "exact": 0.964
+        },
+        "justification_content": {
+          "kappa": 0.286,
+          "exact": 0.643
+        },
+        "respect": {
+          "kappa": 0.462,
+          "exact": 0.857
+        },
+        "constructive_politics": {
+          "kappa": null,
+          "exact": 1.0
+        },
+        "individuation": {
+          "kappa": null,
+          "exact": 1.0
+        },
+        "mean_kappa": 0.249
+      },
+      "gemini-3.6-flash vs HUMAN": {
+        "justification_level": {
+          "kappa": null,
+          "exact": 1.0
+        },
+        "justification_content": {
+          "kappa": 0.071,
+          "exact": 0.536
+        },
+        "respect": {
+          "kappa": 0.5,
+          "exact": 0.821
+        },
+        "constructive_politics": {
+          "kappa": 0.0,
+          "exact": 0.786
+        },
+        "individuation": {
+          "kappa": 0.0,
+          "exact": 0.964
+        },
+        "mean_kappa": 0.143
+      },
+      "qwen/qwen3.6-27b vs HUMAN": {
+        "justification_level": {
+          "kappa": 0.0,
+          "exact": 0.964
+        },
+        "justification_content": {
+          "kappa": 0.172,
+          "exact": 0.607
+        },
+        "respect": {
+          "kappa": 0.462,
+          "exact": 0.75
+        },
+        "constructive_politics": {
+          "kappa": 0.0,
+          "exact": 0.786
+        },
+        "individuation": {
+          "kappa": 0.0,
+          "exact": 0.964
+        },
+        "mean_kappa": 0.127
+      }
+    },
+    "judging_cost": {
+      "per_judge": {
+        "gemini-3.6-flash": {
+          "calls": 28,
+          "input_tokens": 42205,
+          "output_tokens": 2222,
+          "cost_usd": 0.08
+        },
+        "qwen/qwen3.6-27b": {
+          "calls": 28,
+          "input_tokens": 42988,
+          "output_tokens": 70135,
+          "cost_usd": 0.1807
+        }
+      },
+      "total_calls": 56,
+      "total_input_tokens": 85193,
+      "total_output_tokens": 72357,
+      "cost_usd": 0.2607,
+      "unpriced_models": []
+    }
+  }
+}

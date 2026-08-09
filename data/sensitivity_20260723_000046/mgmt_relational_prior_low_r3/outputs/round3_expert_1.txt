@@ -1,0 +1,39 @@
+The single most decision-useful dataset is the **site-by-site cost and utilization bridge**.
+
+If I had to choose only one, I would pick **plant-level unit economics combined with utilization**, because that is what determines whether a site is:
+- structurally viable,
+- temporarily underloaded,
+- or persistently uneconomic even after labor concessions.
+
+### Why this is the decisive dataset
+- **Utilization rates alone** tell you whether capacity is underused, but not whether the plant can still cover its fixed burden.
+- **Unit economics by plant alone** tell you cost competitiveness, but not whether volume can be restored through product allocation or shifts.
+- The **cost-gap bridge** is ultimately the decision document, but it is only credible if it is built from plant-level unit economics and utilization.
+
+### What it must include
+For each German site:
+- installed capacity and current output
+- utilization by line / shift
+- direct labor cost
+- indirect labor and overhead
+- energy, logistics, maintenance
+- depreciation / fixed burden
+- break-even volume
+- savings achievable without closures:
+  - working-time changes
+  - voluntary exits
+  - redeployment
+  - productivity gains
+  - product-mix changes
+- residual gap after those measures
+
+### What it would tell you
+- If the residual gap is **modest**, a no-closure settlement may be viable.
+- If the residual gap is **large and recurring**, then some footprint reduction is probably the minimum durable remedy.
+
+### Bottom line
+If you want the clearest answer to “can the company stabilize without closures?”, the best single dataset is:
+
+**a plant-by-plant cost gap bridge built on utilization and break-even economics.**
+
+If useful, I can next provide a **template table** for that audit.

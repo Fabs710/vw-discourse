@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "investors",
+  "salience": 5.33,
+  "conflict_mode": "collaborating",
+  "params": {
+    "power": 5,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 2,
+    "risk_preference": 5,
+    "time_preference": 3,
+    "flexibility": 6,
+    "dependency": 3,
+    "assertiveness": 10,
+    "cooperativeness": 10,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.1,
+    "openness": 0.62,
+    "declared_red_line": "tructuring tools.\n\n## Our position on the current red lines\nWe will **not** support an arrangement that:\n- protects every site regardless of economics,\n- preserves an above-peer cost base,\n- or turns"
+  }
+}

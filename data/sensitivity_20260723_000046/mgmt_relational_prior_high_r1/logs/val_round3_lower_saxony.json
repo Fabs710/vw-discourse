@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "lower_saxony",
+  "salience": 7.0,
+  "conflict_mode": "compromising",
+  "params": {
+    "power": 7,
+    "legitimacy": 8,
+    "urgency": 6,
+    "social_preference": 7,
+    "risk_preference": 3,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 4,
+    "assertiveness": 6,
+    "cooperativeness": 5,
+    "relational_prior": 6
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.2,
+    "openness": 0.66,
+    "declared_red_line": "n the works council and union\nI respect the clear red lines on:\n- no forced redundancies,\n- no one-sided burden on labour,\n- no dismantling of the social partnership model.\n\nThose positions are legiti"
+  }
+}

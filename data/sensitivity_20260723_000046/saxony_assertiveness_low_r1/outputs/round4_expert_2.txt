@@ -1,0 +1,333 @@
+Yes — I can build the scenario table now, but I need to be explicit about one limitation:
+
+**I do not have verified plant-by-plant financials, headcount, utilization, or product allocation data for each site.**  
+So the model below is a **decision-grade framework with estimated ranges**, not an audited company valuation. I will distinguish:
+- **verified facts from the case material**, and
+- **estimates / assumptions** used to produce the savings model.
+
+## 1) Verified facts from the case record
+
+### What is confirmed
+- The company has a **structural cost and capacity problem** in Germany.
+- Management believes German factory costs are **above target and above competitors**.
+- The core brand is **missing its return-on-sales target**.
+- Plant closure, partial footprint reduction, and non-closure restructuring are all being discussed.
+- Co-determination and governance mean any closure scenario faces **high approval barriers**.
+- The labour side strongly resists closures and compulsory redundancies.
+- The company is a **large German automotive manufacturer with several domestic plants**, but no plant-specific operating data were provided in the prompt.
+
+### What is not confirmed
+- Exact plant names, headcount, utilization, and cost base.
+- Exact annual savings management has in mind.
+- Exact one-time restructuring cost by site.
+- Exact ROS baseline.
+
+Because of that, the model below uses **standard automotive footprint economics** and **scenario ranges**.
+
+---
+
+## 2) Modelling assumptions
+
+To make the comparison decision-useful, I assume a representative large German carmaker footprint with **three typical plant types**:
+
+1. **Assembly plant**  
+2. **Powertrain / components plant**  
+3. **Body / mixed production plant**
+
+I also assume:
+- The company’s German footprint contains **material overcapacity**.
+- Savings from non-closure measures are real but limited by the fact that fixed costs remain.
+- Partial footprint reduction captures some fixed-cost savings without full closure.
+- Full closure captures the largest recurring savings but comes with the highest one-time cost and implementation risk.
+
+### ROS translation assumption
+For a large carmaker, I assume annual group revenue is roughly in the **tens of billions of euros**.  
+As a rule of thumb in this model:
+
+- **€100m recurring operating improvement ≈ 0.1–0.2 percentage points of ROS**, depending on revenue base.
+- I use **0.15 pp ROS per €100m** as a central planning conversion.
+
+This is only a heuristic.
+
+---
+
+# 3) Plant-by-plant savings model
+
+## Plant A: Assembly plant
+This is usually the most valuable site to analyse because it tends to carry:
+- large headcount,
+- expensive shift patterns,
+- high fixed overhead,
+- strong logistics linkages.
+
+### Scenario A — Non-closure measures only
+Measures:
+- working-time reduction
+- overtime elimination
+- agency labor reduction
+- bonus restraint
+- productivity improvement
+- limited redeployment
+
+**Estimated one-time cost:** €25m–€60m  
+(mainly severance for voluntary exits, training, system changes, and transition costs)
+
+**Annual recurring savings:** €70m–€140m
+
+**Timing of cash flows**
+- Year 0–1: negative cash flow from transition costs
+- Year 1–2: savings ramp up
+- Year 2 onward: full run-rate savings
+
+**Payback:** ~0.5–1.5 years
+
+**ROS impact:** +0.1 to +0.2 pp
+
+---
+
+### Scenario B — Partial footprint reduction
+Measures:
+- one-shift reduction or line consolidation
+- narrower model allocation
+- more permanent headcount reduction through attrition + voluntary exits
+- some asset rationalization
+
+**Estimated one-time cost:** €80m–€180m  
+(severance, asset write-downs, relocation, logistics change, reconfiguration)
+
+**Annual recurring savings:** €150m–€260m
+
+**Timing**
+- Year 0–1: restructuring costs
+- Year 1–3: transition period
+- Year 3 onward: stable run-rate savings
+
+**Payback:** ~1.5–3.0 years
+
+**ROS impact:** +0.2 to +0.4 pp
+
+---
+
+### Scenario C — Full closure
+Measures:
+- ramp-down
+- severance / social plan
+- asset disposal or impairment
+- production relocation
+
+**Estimated one-time cost:** €250m–€600m
+
+**Annual recurring savings:** €220m–€380m
+
+**Timing**
+- Year 0–2: high cash outflow
+- Year 2–4: savings begin to normalize
+- Year 4 onward: full savings
+
+**Payback:** ~2.5–5.0 years
+
+**ROS impact:** +0.3 to +0.6 pp
+
+---
+
+## Plant B: Powertrain / components plant
+These sites often have:
+- high fixed capital intensity,
+- more specialized equipment,
+- higher closure impairment risk,
+- but also strong savings potential if underutilized.
+
+### Scenario A — Non-closure measures only
+
+**Estimated one-time cost:** €15m–€40m  
+**Annual recurring savings:** €40m–€90m  
+**Payback:** ~0.5–1.5 years  
+**ROS impact:** +0.05 to +0.15 pp
+
+### Scenario B — Partial footprint reduction
+
+**Estimated one-time cost:** €60m–€150m  
+**Annual recurring savings:** €100m–€180m  
+**Payback:** ~1.5–3.0 years  
+**ROS impact:** +0.15 to +0.25 pp
+
+### Scenario C — Full closure
+
+**Estimated one-time cost:** €180m–€450m  
+**Annual recurring savings:** €150m–€300m  
+**Payback:** ~2.5–5.0 years  
+**ROS impact:** +0.2 to +0.45 pp
+
+---
+
+## Plant C: Body / mixed production plant
+These are often more flexible than powertrain sites, but the economics vary widely depending on product allocation.
+
+### Scenario A — Non-closure measures only
+
+**Estimated one-time cost:** €20m–€50m  
+**Annual recurring savings:** €50m–€100m  
+**Payback:** ~0.5–1.5 years  
+**ROS impact:** +0.07 to +0.15 pp
+
+### Scenario B — Partial footprint reduction
+
+**Estimated one-time cost:** €70m–€160m  
+**Annual recurring savings:** €120m–€220m  
+**Payback:** ~1.5–3.0 years  
+**ROS impact:** +0.15 to +0.3 pp
+
+### Scenario C — Full closure
+
+**Estimated one-time cost:** €200m–€500m  
+**Annual recurring savings:** €180m–€320m  
+**Payback:** ~2.5–5.0 years  
+**ROS impact:** +0.25 to +0.5 pp
+
+---
+
+# 4) Consolidated scenario comparison
+
+Below is the **portfolio-level** summary if the company pursues a coordinated restructuring across multiple plants.
+
+## Scenario A: Non-closure measures only
+Likely components:
+- working-time reduction
+- wage/bonus restraint
+- overtime and agency labor reduction
+- productivity improvements
+- redeployment and attrition
+- management overhead cuts
+
+### Company-wide estimate
+**One-time restructuring cost:** €60m–€150m  
+**Annual recurring savings:** €200m–€430m  
+**Payback:** ~0.5–1.5 years  
+**ROS impact:** +0.3 to +0.6 pp
+
+### Interpretation
+This is the **least destructive** path and the fastest to implement.  
+But it may be **insufficient** if the structural gap is large and persistent.
+
+---
+
+## Scenario B: Partial footprint reduction
+Likely components:
+- one-shift conversions
+- line or hall consolidation
+- site specialization
+- selective model reallocation
+- permanent workforce reduction through voluntary exits + attrition
+
+### Company-wide estimate
+**One-time restructuring cost:** €180m–€450m  
+**Annual recurring savings:** €400m–€800m  
+**Payback:** ~1.5–3.0 years  
+**ROS impact:** +0.6 to +1.2 pp
+
+### Interpretation
+This is often the **best compromise** if non-closure measures are not enough.  
+It preserves some industrial presence while removing enough fixed cost to matter.
+
+---
+
+## Scenario C: Full closure scenario
+Likely components:
+- one or more plant closures
+- relocation of production
+- supplier and logistics network changes
+- larger severance and impairment burden
+
+### Company-wide estimate
+**One-time restructuring cost:** €500m–€1.5bn  
+**Annual recurring savings:** €600m–€1.2bn  
+**Payback:** ~2.5–5.0 years  
+**ROS impact:** +0.9 to +1.8 pp
+
+### Interpretation
+This delivers the **largest long-run cost reduction**, but it also brings:
+- highest execution risk,
+- highest industrial-relations conflict,
+- greatest political resistance,
+- and the largest one-time cash drain.
+
+---
+
+# 5) Timing of cash flows
+
+## Scenario A: Non-closure
+- **Year 0:** minor implementation cost
+- **Year 1:** partial savings begin
+- **Year 2:** near-full savings
+- **Year 3 onward:** full run-rate
+
+**Best for liquidity and speed**
+
+## Scenario B: Partial footprint reduction
+- **Year 0–1:** restructuring costs dominate
+- **Year 1–2:** transition period
+- **Year 3 onward:** steady savings
+
+**Best compromise between speed and structural impact**
+
+## Scenario C: Full closure
+- **Year 0–2:** significant cash outflow
+- **Year 2–4:** ramp-down and transfer period
+- **Year 4 onward:** full recurring savings
+
+**Highest value creation if execution succeeds, but longest and riskiest path**
+
+---
+
+# 6) Decision interpretation
+
+## If the structural gap is modest
+If the company needs roughly **€200m–€400m** of annual improvement, then:
+- **Scenario A** may be enough, especially if product allocation improves.
+
+## If the structural gap is medium
+If the gap is roughly **€400m–€800m**, then:
+- **Scenario A alone is unlikely to be enough**
+- **Scenario B becomes the most plausible solution**
+
+## If the structural gap is large
+If the gap is above **€800m**, then:
+- partial footprint reduction may still be insufficient,
+- and **Scenario C** becomes economically more likely.
+
+---
+
+# 7) Neutral conclusion
+
+## My evidence-based assessment
+- **Non-closure measures can plausibly deliver material savings**, but usually not enough to eliminate major overcapacity on their own.
+- **Partial footprint reduction** is often the most economically balanced route when labour resistance to closures is high.
+- **Full closure** yields the biggest recurring savings but also the largest one-time cost and greatest execution risk.
+
+## Best-practice restructuring logic
+1. Quantify plant economics site by site
+2. Exhaust non-closure measures first
+3. Use partial footprint reduction if the residual gap remains material
+4. Reserve closure for the true last resort
+
+---
+
+# 8) Key uncertainty range
+
+Because we do not have site-level data, I would place the overall uncertainty at:
+
+- **±20–30%** on annual savings estimates
+- **±25–40%** on one-time restructuring costs
+- **±0.1 to ±0.3 pp** on ROS impact
+
+That is normal for a high-level restructuring model without audited plant data.
+
+---
+
+If you want, I can next convert this into a **single table by plant and scenario** with columns for:
+- headcount impact,
+- one-time cost,
+- annual savings,
+- payback,
+- ROS impact,
+- and risk rating.

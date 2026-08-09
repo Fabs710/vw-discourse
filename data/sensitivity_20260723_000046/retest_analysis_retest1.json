@@ -1,0 +1,67 @@
+{
+  "batch": "data\\sensitivity_20260723_000046",
+  "suffix": "_retest1",
+  "n_runs": 10,
+  "dimensions": {
+    "justification_level": {
+      "label": "justification level",
+      "judge_sd": 0.0092,
+      "total_within_condition_sd": 0.0156,
+      "generation_sd": 0.0126,
+      "judging_variance_share": 0.348,
+      "n_pairs": 10,
+      "mean_abs_difference": 0.0166,
+      "mean_signed_difference": 0.0166
+    },
+    "justification_content": {
+      "label": "justification content",
+      "judge_sd": 0.0524,
+      "total_within_condition_sd": 0.091,
+      "generation_sd": 0.0743,
+      "judging_variance_share": 0.332,
+      "n_pairs": 10,
+      "mean_abs_difference": 0.05,
+      "mean_signed_difference": 0.0292
+    },
+    "respect": {
+      "label": "respect",
+      "judge_sd": 0.0501,
+      "total_within_condition_sd": 0.0624,
+      "generation_sd": 0.0371,
+      "judging_variance_share": 0.646,
+      "n_pairs": 10,
+      "mean_abs_difference": 0.0625,
+      "mean_signed_difference": 0.0415
+    },
+    "constructive_politics": {
+      "label": "constructive politics",
+      "judge_sd": 0.0204,
+      "total_within_condition_sd": 0.0321,
+      "generation_sd": 0.0247,
+      "judging_variance_share": 0.406,
+      "n_pairs": 10,
+      "mean_abs_difference": 0.0248,
+      "mean_signed_difference": 0.0164
+    },
+    "individuation": {
+      "label": "individuation",
+      "judge_sd": 0.0,
+      "total_within_condition_sd": 0.0052,
+      "generation_sd": 0.0052,
+      "judging_variance_share": 0.0,
+      "n_pairs": 10,
+      "mean_abs_difference": 0.0,
+      "mean_signed_difference": 0.0
+    },
+    "position_move": {
+      "label": "position movement",
+      "judge_sd": 0.1178,
+      "total_within_condition_sd": 0.1461,
+      "generation_sd": 0.0864,
+      "judging_variance_share": 0.65,
+      "n_pairs": 10,
+      "mean_abs_difference": 0.15,
+      "mean_signed_difference": 0.0834
+    }
+  }
+}

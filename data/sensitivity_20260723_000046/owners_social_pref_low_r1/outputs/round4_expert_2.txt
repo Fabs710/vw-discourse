@@ -1,0 +1,239 @@
+## Independent site-level restructuring model: decision framework and scenario comparison
+
+I can give you a rigorous **site-level comparison framework** and the **economic logic** for each option, but I cannot responsibly assign plant-specific numbers without the actual plant data. So below I’ll provide:
+
+1. the correct way to model each German site,
+2. a scenario matrix for **full closure / partial consolidation / non-closure restructuring**,
+3. the typical economics, job impact, timing, and risks,
+4. and the decision rules for when each scenario is economically credible.
+
+---
+
+# 1) What the model must show for each site
+
+For each German plant, the minimum decision-grade inputs are:
+
+- **Current utilization**: output as % of installed capacity
+- **Breakeven volume**: units at which site profit = 0
+- **Fixed cost base**: labor, overhead, maintenance, depreciation
+- **Variable cost per unit**
+- **Future product allocation**: whether the site has secured model volume
+- **Required capex**: what investment is needed to stay competitive
+- **Logistics / transfer cost**: if volume moves elsewhere
+- **Restructuring headcount**: direct + indirect jobs affected
+
+Without those, any plant-specific recommendation would be speculative.
+
+---
+
+# 2) Scenario comparison: economic logic
+
+## A. Full closure
+### What it does
+- Eliminates the site’s fixed cost base
+- Removes persistent underutilization
+- Ends site-level overhead and maintenance burden
+- Usually produces the largest recurring savings
+
+### Typical economics
+- **Recurring savings:** highest
+- **One-time cost:** highest
+- **Headcount impact:** largest job loss at that site
+- **Timing:** faster if production can be moved, slower if tools/processes must be relocated
+
+### When it is rational
+A closure is economically rational if the site is:
+- structurally underutilized,
+- above breakeven only at unrealistic volume,
+- lacking credible future product allocation,
+- and expensive to modernize relative to the savings.
+
+### Main risk
+- Large social/political disruption
+- Potential relocation cost
+- Execution risk if output cannot be transferred cleanly
+
+---
+
+## B. Partial consolidation
+### What it does
+- Reduces capacity without fully shutting the site
+- Specializes plants
+- Moves overlapping output or support functions
+- Often closes a line, shift, or building rather than the entire plant
+
+### Typical economics
+- **Recurring savings:** medium to high
+- **One-time cost:** medium
+- **Headcount impact:** material, but smaller than full closure
+- **Timing:** often intermediate; can be staged
+
+### When it is rational
+Partial consolidation is often the best option if:
+- there is overlap between sites,
+- volume can be reallocated,
+- and the remaining footprint can be brought to acceptable utilization.
+
+### Main risk
+- “Half-closed” sites can remain weak long-term
+- Savings may be incomplete if overhead is not really removed
+
+---
+
+## C. Non-closure restructuring
+### What it does
+Preserves all sites while trying to close the cost gap through:
+- working-time changes
+- wage moderation or labor-cost contribution
+- voluntary exits
+- redeployment
+- qualification
+- overhead cuts
+- management and procurement savings
+
+### Typical economics
+- **Recurring savings:** low to medium, sometimes medium-high if concessions are deep
+- **One-time cost:** low to medium
+- **Headcount impact:** lower than closure, usually lower than full consolidation
+- **Timing:** often faster at first, but savings may be less durable
+
+### When it is rational
+This is viable only if:
+- the cost gap is moderate,
+- utilization is not severely depressed,
+- and the savings are durable enough to restore target margins.
+
+### Main risk
+- It can preserve the footprint but leave the structural overcapacity untouched
+- Temporary concessions may delay, not solve, the problem
+
+---
+
+# 3) What “durable savings” means in this context
+
+A restructuring only works if it produces **permanent fixed-cost reduction**, not just a temporary truce.
+
+Durable savings usually come from:
+- permanent headcount reduction
+- long-run shift reduction
+- structural overhead cuts
+- product-line consolidation
+- site specialization
+- irreversible capacity removal
+
+Less durable:
+- temporary wage freezes
+- one-off bonus waivers
+- short-term working-time sacrifices
+- reversible concessions
+
+A non-closure package is only credible if it contains enough of the durable type.
+
+---
+
+# 4) Decision matrix template
+
+Below is the correct format for each site.
+
+| Site | Utilization | Breakeven Volume | Full Closure: Recurring Savings | Full Closure: One-time Cost | Partial Consolidation: Recurring Savings | Partial Consolidation: One-time Cost | Non-Closure: Recurring Savings | Non-Closure: One-time Cost | Headcount Impact | Time to Full Savings | Durable? | Strategic Fit |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---|
+| Plant A | % | units | €/yr | € | €/yr | € | €/yr | € | jobs | months | yes/no | high/med/low |
+| Plant B | % | units | €/yr | € | €/yr | € | €/yr | € | jobs | months | yes/no | high/med/low |
+
+---
+
+# 5) How to interpret the matrix
+
+## Closure is favored when:
+- utilization is structurally low
+- breakeven is above credible demand
+- product allocation is weak or absent
+- required capex is high
+- consolidation alternatives do not close the gap
+
+## Partial consolidation is favored when:
+- there is redundant capacity but some strategic need to retain the site
+- volume can be shifted without large logistics penalty
+- overhead can be truly removed, not just shifted elsewhere
+
+## Non-closure restructuring is favored when:
+- the cost gap is not too large
+- future products are secured
+- the site can reach competitive cost through labor/overhead/productivity measures alone
+
+---
+
+# 6) Job impact and timeline
+
+## Full closure
+- **Job impact:** highest, concentrated at closing site
+- **Savings timing:** can begin quickly after shutdown decision, but full run-rate often takes 12–36 months
+- **One-time costs:** severance, decommissioning, transfer, contractual exit costs
+
+## Partial consolidation
+- **Job impact:** significant but less severe
+- **Savings timing:** typically 6–24 months
+- **One-time costs:** lower than closure, but can still be material if tooling and process transfers are needed
+
+## Non-closure restructuring
+- **Job impact:** usually smaller and more spread out
+- **Savings timing:** often faster to announce, but full permanent effect may be limited
+- **One-time costs:** lower upfront, but risk of insufficient long-term savings
+
+---
+
+# 7) What would make non-closure restructuring economically comparable to closure?
+
+A non-closure package has to deliver most of the same **fixed-cost relief** closure would generate, through other means. That usually requires:
+
+- meaningful and permanent labor-cost reduction
+- real overhead reduction
+- shift / line reduction
+- redeployment or attrition removing surplus roles
+- product simplification
+- no hidden capex burden
+- no offsetting logistics costs that wipe out the savings
+
+If those conditions are not met, non-closure restructuring is usually inferior economically to closure or consolidation.
+
+---
+
+# 8) Sensitivities and uncertainty
+
+The main sensitivities are:
+
+- **Demand trajectory**: if European volume weakens further, retained capacity becomes more expensive
+- **Utilization**: small changes in output can materially change unit fixed cost
+- **Labor-cost elasticity**: how much permanent cost reduction is actually achievable without closure
+- **Relocation cost**: moving volume may be cheap or expensive depending on tooling and supply chain
+- **Future capex**: a site needing major reinvestment may be uneconomic even if current operations are stable
+
+---
+
+# 9) Data gaps that matter most
+
+The biggest missing items are:
+
+1. site-by-site utilization
+2. fixed vs variable cost split
+3. product allocation by model and year
+4. required capex to remain viable
+5. logistics cost of volume transfer
+6. labor agreement constraints by site
+
+Those six items determine whether closure, consolidation, or non-closure restructuring is rational.
+
+---
+
+# 10) Bottom-line assessment
+
+## What can be said with confidence
+- A real restructuring must be evaluated **site by site**
+- **Full closure** is the strongest option when a site is structurally non-viable
+- **Partial consolidation** often captures much of the savings with less disruption
+- **Non-closure restructuring** can work only if the cost gap is moderate and the savings are durable
+
+## What cannot be concluded without plant data
+I cannot identify which specific German plant should close or remain open without actual site-level numbers.
+
+If you want, I can next provide a **one-page decision worksheet** for each plant, with exactly the fields management and the workforce side would need to fill in to compare the three options on the same basis.

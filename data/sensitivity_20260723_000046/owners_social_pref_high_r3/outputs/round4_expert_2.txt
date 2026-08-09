@@ -1,0 +1,103 @@
+From a restructuring-economics standpoint, the next useful step is a **site-by-site decision framework** that compares:
+
+1. **No-closure negotiated package**
+2. **Partial capacity reduction**
+3. **Closure / shutdown**
+
+The key is to quantify each site on the same basis.
+
+## Decision framework
+
+For each plant, estimate:
+
+- **Annual fixed cost base**
+  - labor, maintenance, utilities, overhead, depreciation/capex support
+- **Variable conversion cost**
+  - direct labor, energy, scrap, logistics, material handling
+- **Current and forecast utilization**
+  - output vs. installed capacity
+- **Avoidable cost under restructuring**
+  - what actually disappears if volume or headcount falls
+- **One-time restructuring cost**
+  - severance, site exit, asset write-downs, transfer costs, pension or contract termination if applicable
+- **Incremental capex required to stay competitive**
+  - especially for EV / platform conversion
+- **Net annual savings**
+  - after accounting for any added logistics or transfer burden
+- **NPV**
+  - savings over 3–5 years less one-time costs, discounted
+- **Operational risk**
+  - ramp risk, supply-chain disruption, labor conflict, quality loss
+
+## Practical decision rule
+
+A site becomes a strong closure candidate if all of the following hold:
+
+- **persistent underutilization** after realistic product allocation,
+- **high fixed cost that cannot be structurally reduced enough** through internal measures,
+- **weak contribution margin** relative to alternative sites,
+- **high future capex requirement** to remain competitive,
+- **positive NPV of closure** versus keeping it open,
+- and no strategic reason to preserve it as a buffer or platform node.
+
+By contrast, a site should usually stay open if:
+
+- it can reach acceptable utilization after consolidation,
+- the avoided annual savings from closure are modest once transfer/logistics costs are included,
+- closure would destroy useful future capacity,
+- or the one-time cost and conflict risk overwhelm the benefit.
+
+## Typical economics of the three options
+
+### 1) No-closure negotiated package
+Usually yields:
+- moderate annual savings
+- low one-time cost
+- low immediate disruption
+
+But it often cannot remove enough fixed cost if overcapacity is structural.
+
+### 2) Partial capacity reduction
+Usually yields:
+- better savings than no-closure
+- lower disruption than closure
+- but more complex execution
+
+This is often the best compromise if the gap is real but not extreme.
+
+### 3) Closure
+Usually yields:
+- largest long-term fixed-cost reduction
+- highest one-time cost
+- highest labor and political risk
+
+It only wins if the site is clearly structurally non-viable.
+
+## What I would recommend analytically
+Do not decide closure first. Instead:
+
+1. Build a **site P&L** for each plant.
+2. Model **reversible measures first**.
+3. Then test **partial capacity reduction**.
+4. Only then compare against **full closure**.
+5. Use **NPV and annual margin impact**, not just headcount, as the decision metric.
+
+## What would settle the dispute
+The decisive comparison is whether the package of:
+- voluntary exits,
+- working-time changes,
+- pay moderation,
+- redeployment,
+- productivity actions,
+- and partial capacity reduction
+
+can close enough of the gap to restore target margins **without** adding a closure-level one-time cost and conflict burden.
+
+If it can, closures are not economically necessary.  
+If it cannot, then at least one closure may be justified — but only by the numbers, site by site.
+
+If you want, I can turn this into a **quantitative template** with columns for:
+- annual savings,
+- one-time costs,
+- employment impact,
+- and NPV per site.

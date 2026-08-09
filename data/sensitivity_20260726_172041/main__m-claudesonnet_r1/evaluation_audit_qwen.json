@@ -1,0 +1,490 @@
+{
+  "run_folder": "data\\sensitivity_20260726_172041\\main__m-claudesonnet_r1",
+  "dqi": {
+    "justification_level": 2.0,
+    "justification_content": 1.958,
+    "respect": 1.958,
+    "constructive_politics": 2.0,
+    "individuation": 2.0
+  },
+  "outcome": {
+    "agreement": false,
+    "rounds": 4,
+    "convergence": "progressing",
+    "position_move_mean": 0.833,
+    "key_terms_per_judge": [
+      {
+        "judge": 0,
+        "terms": [
+          {
+            "issue": "Compulsory redundancy and plant closure exclusion",
+            "outcome": "Unresolved standoff between labour's unconditional veto and capital/state's demand for an evidence-based re-opener."
+          },
+          {
+            "issue": "Sequencing of cost-saving measures",
+            "outcome": "Agreed to mandate non-compulsory tools as the mandatory first-line response before any escalation."
+          },
+          {
+            "issue": "Owner sacrifice sizing principle",
+            "outcome": "Agreed to proportional contribution tied to total stakeholder cost, rejecting inverse scaling formulas."
+          },
+          {
+            "issue": "Verification and audit process",
+            "outcome": "Agreed to an 8-week jointly-scoped, independently audited modelling exercise with formal labour input."
+          },
+          {
+            "issue": "Cost-of-delay pricing methodology",
+            "outcome": "Provisionally resolved in favor of sequenced pricing, though management retains methodological objections."
+          }
+        ]
+      }
+    ]
+  },
+  "floor": {
+    "token_share": {
+      "works_council": 0.186,
+      "ig_metall": 0.11,
+      "management": 0.217,
+      "lower_saxony": 0.193,
+      "owners": 0.128,
+      "investors": 0.167
+    },
+    "speaking_rank": {
+      "works_council": 1,
+      "ig_metall": 2,
+      "management": 3,
+      "lower_saxony": 4,
+      "owners": 5,
+      "investors": 6
+    }
+  },
+  "per_stakeholder": {
+    "works_council": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 1.0
+    },
+    "ig_metall": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 1.0
+    },
+    "management": {
+      "justification_level": 2.0,
+      "justification_content": 1.75,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 1.0
+    },
+    "lower_saxony": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "owners": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "investors": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 1.75,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 2.0
+    }
+  },
+  "contribution_scores": [
+    {
+      "stakeholder": "works_council",
+      "round": 1,
+      "chars": 2692,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides a fully elaborated justification grounded in a shared social contract and fairness, explicitly acknowledges management's market pressures while offering concrete, burden-sharing alternatives, and is highly distinctive to the German co-determination context."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 2,
+      "chars": 5979,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning that appeals to jointly held standards of transparency and concurrent sacrifice, explicitly engages with and acknowledges counter-arguments from all parties, proposes a concrete joint modeling and review alternative, and is deeply rooted in the specific legal and operational realities of a German Works Council."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 3,
+      "chars": 8414,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution delivers fully elaborated, logically linked reasoning that appeals to shared co-determination principles and proportional sacrifice standards, respectfully engages with multiple parties' counter-arguments, offers concrete procedural commitments for joint auditing and timeline extension, and is deeply grounded in the specific legal mandate and board-level veto power of a German Works Council."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 4,
+      "chars": 7781,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning that appeals to a jointly held procedural standard, explicitly engages with and respects all counter-arguments, offers a concrete mediating threshold proposal, and is strongly distinctive to the Works Council's co-determination mandate."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 1,
+      "chars": 3356,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning grounded in a reciprocal shared-sacrifice standard that applies to all parties, explicitly acknowledges management's cost concerns, offers a concrete conditional counter-proposal, and is highly distinctive to the union's legal mandate and collective bargaining role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 2,
+      "chars": 4969,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked justifications grounded in reciprocal fairness and procedural standards, explicitly engages with counter-arguments, offers concrete conditional proposals, and is highly distinctive to the union's collective-bargaining mandate and member obligations."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 3,
+      "chars": 7001,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked justifications grounded in a shared standard of proportional sacrifice and reciprocal leverage, explicitly engages with other parties' arguments respectfully, offers concrete conditional proposals for negotiation and audit scoping, and is highly distinctive to the union's collective-bargaining mandate and jurisdictional boundaries."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 4,
+      "chars": 6680,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution delivers fully elaborated, logically linked reasoning that appeals to jointly held standards like ratification stability and audit verification, respectfully engages with all counter-arguments, offers concrete mediating mechanisms for residual shortfalls, and is strongly distinctive to the union's collective-bargaining mandate and membership constraints."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 1,
+      "chars": 4668,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides a fully elaborated, logically linked justification grounded in a shared viability standard, explicitly balances burdens by offering executive and owner sacrifices, respectfully engages with both parties' specific demands, proposes a concrete conditional framework to avoid closures, and is strongly distinctive to the executive management mandate."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 2,
+      "chars": 7939,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked justifications grounded in fiduciary and market realities, demonstrates explicit respect by directly engaging counter-arguments, offers concrete mediating proposals like joint modelling and synchronized owner sacrifices, and is highly distinctive to executive management's restructuring mandate."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 3,
+      "chars": 8117,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning grounded in a reciprocal, jointly verified audit standard that applies to all parties, explicitly acknowledges and engages with counter-arguments, offers concrete mediating proposals, and strongly reflects the executive management perspective on restructuring."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 4,
+      "chars": 9277,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution demonstrates fully elaborated reasoning grounded in a universal standard of leverage symmetry and structural viability, explicitly respects and engages with counter-arguments, offers concrete procedural concessions, and is strongly distinctive to executive management's board and market accountability."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 1,
+      "chars": 3975,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning grounded in a universal fairness standard of balanced sacrifice, explicitly respects and engages all parties' positions, proposes a concrete mediating framework for transparent alternative comparison, and strongly reflects the distinctive statutory mandate, veto power, and regional-political interests of a state government shareholder."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 2,
+      "chars": 5192,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning grounded in a universal fairness standard requiring shared sacrifice and joint verification, explicitly respects and engages with all counter-arguments, proposes concrete mediating process structures, and is highly distinctive to the state government's dual political and shareholder mandate."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 3,
+      "chars": 8638,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning grounded in a universal fairness standard applied to all parties, demonstrates explicit respect and serious engagement with counter-arguments, offers concrete mediating proposals for audit scope and cost modelling, and is strongly distinctive to the state anchor shareholder’s dual political and fiduciary mandate."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 4,
+      "chars": 9044,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning that applies a universal, evidence-based conditionality standard to all parties, explicitly engages and credits counter-arguments, proposes a clear procedural mediation framework, and strongly reflects the distinctive veto-wielding, politically accountable perspective of a state anchor shareholder."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 1,
+      "chars": 3817,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning that explicitly balances cross-party burdens, respectfully engages with each stakeholder's position, proposes a concrete mediating framework, and is deeply distinctive to the controlling shareholder's governance and fiduciary role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 2,
+      "chars": 5675,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated reasoning, appeals to a shared standard of proportional burden-sharing and verified joint processes that explicitly constrain the speaker, respectfully engages with counter-arguments, offers concrete mediating procedural proposals, and is strongly distinctive to the controlling shareholder's governance role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 3,
+      "chars": 6385,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked justifications grounded in a jointly applicable standard of shared sacrifice and verified audit outcomes, explicitly engages and respects counter-arguments from all parties, offers conditional mediating proposals tied to joint verification, and is strongly distinctive to the controlling family's multi-generational stewardship and governance role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 4,
+      "chars": 6670,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides a fully elaborated, logically linked justification that appeals to a universal standard of procedural symmetry and factual openness, explicitly respects and engages with all parties' positions, offers a clear mediating proposal on sequencing and pre-commitments, and is strongly distinctive to the long-term governance and capital-stewardship role of a controlling family holding."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 1,
+      "chars": 4267,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning grounded in a joint viability standard that explicitly balances burdens and accepts conditional sacrifice, offers a concrete mediating proposal, and uses highly distinctive capital-market terminology, though its direct, transactional tone registers as neutral rather than explicitly respectful."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 2,
+      "chars": 6057,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides fully elaborated, logically linked reasoning grounded in a jointly verifiable financial standard that applies to all parties, explicitly engages with counter-arguments respectfully, offers concrete mediating proposals, and uses highly distinctive institutional investor terminology and mandate constraints."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 3,
+      "chars": 6390,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution demonstrates highly developed, logically linked reasoning grounded in shared viability standards like audited reality and structural competitiveness, explicitly engages and respects counter-arguments while offering concrete mediating frameworks, and is strongly distinctive to institutional investors through its focus on deal certainty, risk pricing, and market metrics."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 4,
+      "chars": 6623,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides a fully elaborated, logically linked justification grounded in a jointly held criterion of evidence-responsive process integrity, explicitly respects and engages with other parties' positions, offers concrete mediating proposals and concessions, and is highly distinctive to institutional investors through its consistent focus on market pricing, audit credibility, and structural risk."
+        }
+      ]
+    }
+  ],
+  "inter_judge_kappa": {},
+  "n_judges": 1,
+  "judging_cost": {
+    "per_judge": {
+      "qwen/qwen3.6-27b": {
+        "calls": 31,
+        "input_tokens": 60179,
+        "output_tokens": 68771,
+        "cost_usd": 0.1824
+      }
+    },
+    "total_calls": 31,
+    "total_input_tokens": 60179,
+    "total_output_tokens": 68771,
+    "cost_usd": 0.1824,
+    "unpriced_models": []
+  }
+}

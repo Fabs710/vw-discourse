@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "owners",
+  "salience": 6.33,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 6,
+    "urgency": 5,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.49,
+    "frustration": 0.35,
+    "openness": 0.74,
+    "declared_red_line": "ep, I would ask the other sides to stop repeating red lines and instead table a package that shows, in concrete terms:\n- how much capacity reduction they accept,\n- what labour-cost relief they can del"
+  }
+}

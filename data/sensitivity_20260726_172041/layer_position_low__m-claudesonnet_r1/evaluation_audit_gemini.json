@@ -1,0 +1,486 @@
+{
+  "run_folder": "data\\sensitivity_20260726_172041\\layer_position_low__m-claudesonnet_r1",
+  "dqi": {
+    "justification_level": 2.0,
+    "justification_content": 1.625,
+    "respect": 1.875,
+    "constructive_politics": 2.0,
+    "individuation": 2.0
+  },
+  "outcome": {
+    "agreement": false,
+    "rounds": 4,
+    "convergence": "progressing",
+    "position_move_mean": 0.5,
+    "key_terms_per_judge": [
+      {
+        "judge": 0,
+        "terms": [
+          {
+            "issue": "Plant Closures and Compulsory Redundancies",
+            "outcome": "Agreed unconditional commitment against closures and compulsory redundancies through 2030."
+          },
+          {
+            "issue": "Product and Platform Allocation Authority",
+            "outcome": "Unresolved standoff between management's ordinary authority and labor/state demands for joint-body oversight."
+          },
+          {
+            "issue": "20% Restructuring Cost Gap",
+            "outcome": "Unresolved pending management's plant-level cost breakdown and non-labor savings sizing."
+          },
+          {
+            "issue": "Dividend and Wage Burden-Sharing Symmetry",
+            "outcome": "Live proposal for time-bounded symmetry through 2030, contested by labor over long-term fairness."
+          }
+        ]
+      }
+    ]
+  },
+  "floor": {
+    "token_share": {
+      "works_council": 0.157,
+      "ig_metall": 0.123,
+      "management": 0.265,
+      "lower_saxony": 0.169,
+      "owners": 0.134,
+      "investors": 0.152
+    },
+    "speaking_rank": {
+      "works_council": 1,
+      "ig_metall": 2,
+      "management": 3,
+      "lower_saxony": 4,
+      "owners": 5,
+      "investors": 6
+    }
+  },
+  "per_stakeholder": {
+    "works_council": {
+      "justification_level": 2.0,
+      "justification_content": 1.0,
+      "respect": 1.75,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "ig_metall": {
+      "justification_level": 2.0,
+      "justification_content": 1.5,
+      "respect": 1.5,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "management": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 2.0
+    },
+    "lower_saxony": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    },
+    "owners": {
+      "justification_level": 2.0,
+      "justification_content": 2.0,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 1.0
+    },
+    "investors": {
+      "justification_level": 2.0,
+      "justification_content": 1.25,
+      "respect": 2.0,
+      "constructive_politics": 2.0,
+      "individuation": 2.0,
+      "position_move": 0.0
+    }
+  },
+  "contribution_scores": [
+    {
+      "stakeholder": "works_council",
+      "round": 1,
+      "chars": 2881,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated justifications for their red lines and proposes a conditional compromise linking workforce concessions to site guarantees, while strongly reflecting the specific legal and institutional context of the German Works Council."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 2,
+      "chars": 4565,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides a fully elaborated justification and concrete proposals for joint governance while explicitly engaging with counterarguments from investors and management from the distinct perspective of the Works Council."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 3,
+      "chars": 7228,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully developed logical arguments for their positions, engages respectfully and constructively with other parties' counter-proposals, and offers concrete compromise conditions while remaining strongly grounded in the Works Council role."
+        }
+      ]
+    },
+    {
+      "stakeholder": "works_council",
+      "round": 4,
+      "chars": 7418,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution provides deeply elaborated justifications and concrete mediating proposals while directly and respectfully addressing other parties' arguments within a highly role-specific co-determination framework."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 1,
+      "chars": 3719,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated reasoning for their conditional willingness to accept labor concessions for long-term viability while making a concrete counter-proposal grounded in shared sacrifice, using highly role-specific union terminology alongside mixed tone that includes strike threats."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 2,
+      "chars": 5074,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The union representative delivers a fully elaborated justification and a concrete integrative proposal for shared burden-sharing, engaging directly with counter-arguments across multiple stakeholders in a highly authentic trade-union voice."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 3,
+      "chars": 7140,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The contribution features highly elaborated logical reasoning, respectful and serious engagement with counter-arguments, constructive conditional proposals for a compromise deal, and a strongly distinct union voice, though its justifications ultimately frame the shared interest instrumentally around securing labor outcomes."
+        }
+      ]
+    },
+    {
+      "stakeholder": "ig_metall",
+      "round": 4,
+      "chars": 6369,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 1,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated reasoning across all points and offers concrete proposal conditions for a deal, while maintaining a strongly distinctive union perspective with mixed respect due to explicit strike warnings."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 1,
+      "chars": 4317,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder presents a fully elaborated justification based on a shared viability test and proportional sacrifices across management and labor, engaging directly with counter-arguments to propose a clear collaborative framework."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 2,
+      "chars": 5960,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides thoroughly elaborated, logically linked justifications while engaging respectfully with counter-arguments, offering concrete mediating proposals (including executive compensation cuts), and evaluating options against a shared viability criterion."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 3,
+      "chars": 7605,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated justifications for every position, explicitly balances burdens across stakeholders by tying executive compensation cuts directly to workforce benchmarks, actively engages with counter-arguments, and makes concrete mediating proposals clearly distinct to executive management."
+        }
+      ]
+    },
+    {
+      "stakeholder": "management",
+      "round": 4,
+      "chars": 7289,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The speaker provides fully elaborated, logically linked justifications for their proposals, engages respectfully with counterarguments while conceding key points, applies shared standards of sacrifice across executive compensation and workforce wages, offers concrete mediating solutions, and speaks in a voice highly tailored to executive management."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 1,
+      "chars": 4465,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The state government provides fully elaborated reasoning for its stance, balances the burdens and interests of workers, management, and long-term regional stability, engages respectfully with all parties' counter-arguments, proposes a concrete shared-risk compromise, and strongly embodies its unique role as a public anchor shareholder."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 2,
+      "chars": 7015,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The Regional State Government delivers an exceptionally well-reasoned, respectful, and balanced contribution that offers a concrete mediating proposal (using its board seats for a standing joint oversight body) while distinctly leveraging its unique political and legal role as a blocking minority."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 3,
+      "chars": 7665,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The state government representative offers a highly detailed, logically coherent response that explicitly balances the interests and burdens of management, labor, investors, and family capital while proposing concrete mediating mechanisms like a graduated-response milestone framework."
+        }
+      ]
+    },
+    {
+      "stakeholder": "lower_saxony",
+      "round": 4,
+      "chars": 5873,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder presents fully elaborated, logical justifications that explicitly balance management's strategic authority with labour's security needs, shows deep engagement with all parties' positions, offers detailed mediating proposals, and strongly reflects the unique statutory role of a regional state shareholder."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 1,
+      "chars": 3802,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder presents a fully elaborated, logically linked argument that explicitly balances the burdens and contributions of all parties—including accepting potential reductions in dividend policy—while directly and respectfully engaging each party's arguments to propose a supervisory board-centered mediating framework."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 2,
+      "chars": 5728,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated justifications appealing to common governance standards and balanced burdens, shows high respect by directly and constructively engaging with other parties' counterarguments, offers clear integrative proposals, and strongly embodies the distinct perspective of a long-term family holding steward."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 3,
+      "chars": 5272,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated reasoning for their positions, commits to a binding dividend-reduction formula tied to labor sacrifices (a shared standard requiring capital sacrifice), respectfully engages with counter-arguments from the state and union, offers concrete mediating proposals, and speaks in a voice highly tailored to a long-term family controlling shareholder."
+        }
+      ]
+    },
+    {
+      "stakeholder": "owners",
+      "round": 4,
+      "chars": 5038,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides a thoroughly elaborated justification grounded in long-term enterprise value and proportional burden-sharing, explicitly engages counter-arguments with respect, offers a concrete mediating commitment on dividend policy through 2030, and speaks in a voice uniquely distinct to a family holding controlling owner."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 1,
+      "chars": 3089,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully developed reasoning anchored in market pricing and cost structures, respectfully engages with counter-arguments while acknowledging the risks of both inaction and strikes, and outlines flexible, role-specific criteria for a negotiated settlement."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 2,
+      "chars": 5445,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated reasoning for its market-based demands, engages seriously and respectfully with arguments from all other parties, offers constructive proposals on governance and disclosure, and speaks in a highly authentic capital-markets voice, though its justifications ultimately center on investor returns and risk management without offering self-sacrifice."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 3,
+      "chars": 7069,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 2,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder presents a highly developed, logically articulated market-viability argument with detailed justifications, engages constructively and respectfully with proposals from all other parties, and clearly maintains a distinct investor perspective while endorsing shared sacrifices."
+        }
+      ]
+    },
+    {
+      "stakeholder": "investors",
+      "round": 4,
+      "chars": 6352,
+      "judges": [
+        {
+          "justification_level": 2,
+          "justification_content": 1,
+          "respect": 2,
+          "constructive_politics": 2,
+          "individuation": 2,
+          "rationale": "The stakeholder provides fully elaborated justifications, engages respectfully with counter-arguments, offers concrete mediating conditions for an investable agreement, and speaks in a highly distinctive institutional investor voice, though justifications ultimately pivot on capital efficiency and returns."
+        }
+      ]
+    }
+  ],
+  "inter_judge_kappa": {},
+  "n_judges": 1,
+  "judging_cost": {
+    "per_judge": {
+      "gemini-3.6-flash": {
+        "calls": 31,
+        "input_tokens": 55402,
+        "output_tokens": 2501,
+        "cost_usd": 0.1019
+      }
+    },
+    "total_calls": 31,
+    "total_input_tokens": 55402,
+    "total_output_tokens": 2501,
+    "cost_usd": 0.1019,
+    "unpriced_models": []
+  }
+}

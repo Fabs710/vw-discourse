@@ -1,0 +1,191 @@
+Below is a practical **site-by-site scenario template** you can use to compare **non-closure** versus **closure-inclusive** restructuring on a common economic basis.
+
+## 1) What the model must answer
+For each German site, the decision is driven by four numbers:
+
+1. **Current annual EBITDA contribution**
+2. **Annualized savings under the non-closure package**
+3. **Annualized savings under closure / footprint reduction**
+4. **Cash cost to get there**  
+   - severance
+   - wind-down / remediation
+   - retooling
+   - transition costs
+   - working-capital release or drag
+
+The core test is:
+
+> **Does the non-closure package close enough of the EBITDA gap, at acceptable cash cost, to justify preserving the site?**
+
+If yes, closure is not financially required.  
+If no, closure remains the stronger economic lever.
+
+---
+
+## 2) Simple scenario structure
+Use the same line items for each site in both scenarios.
+
+### A. Baseline by site
+- Current annual vehicle output
+- Capacity utilization %
+- Headcount
+- Direct labour cost
+- Fixed overhead
+- Energy / utilities
+- Logistics / inbound / outbound
+- Maintenance / property / depreciation
+- EBITDA contribution
+- Capital intensity
+- Working capital tied up
+
+### B. Non-closure package
+Typical measures:
+- working-time reduction / short-time equivalent adjustment
+- voluntary exits / attrition
+- redeployment to other plants
+- wage moderation / temporary concessions
+- productivity gains
+- management overhead cuts
+- shift pattern changes
+- SKU / complexity reduction
+- insourcing / outsourcing changes
+
+### C. Closure / consolidation package
+Typical measures:
+- transfer volume to other plants
+- eliminate site fixed costs
+- severance / redundancy costs
+- asset write-downs
+- remediation / decommissioning
+- logistics cost increase from reallocation
+- one-time transition losses
+- possible capacity constraints at receiving plants
+
+---
+
+## 3) Site-by-site template
+Use this table structure:
+
+| Site | Current Output | Utilization | EBITDA Now | Non-Closure Annual Savings | Non-Closure Cash Cost | Closure Annual Savings | Closure Cash Cost | Net EBITDA 2030 Non-Closure | Net EBITDA 2030 Closure | Capacity Impact |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Plant A | x | x% | €x m | €x m | €x m | €x m | €x m | €x m | €x m | -x units |
+| Plant B | x | x% | €x m | €x m | €x m | €x m | €x m | €x m | €x m | -x units |
+| Plant C | x | x% | €x m | €x m | €x m | €x m | €x m | €x m | €x m | -x units |
+
+Then roll up to group level:
+- total EBITDA
+- total free cash flow
+- total one-time restructuring cash need
+- total capacity removed
+- total jobs removed / preserved
+
+---
+
+## 4) Economics logic by scenario
+
+### Scenario 1: Non-closure package
+This is usually strongest when:
+- the site has **strategic product relevance**
+- utilization can be improved materially
+- fixed overhead is high but not irreducible
+- labour flexibility can be bought at moderate cost
+- voluntary exits are enough to right-size headcount
+- logistics savings from closure would be modest
+
+Typical annualized benefit range in a mature auto plant:
+- **Labour-cost / flexibility measures:** meaningful, but often limited if the plant is already lean
+- **Productivity and overhead measures:** modest to moderate
+- **Total annualized savings:** often enough to bridge a **partial** gap, not always a full structural overcapacity problem
+
+Key risk:
+- if the site remains underutilized, non-closure savings may not offset the fixed-cost penalty.
+
+### Scenario 2: Closure-inclusive package
+This is usually strongest when:
+- a site is structurally underutilized
+- product allocation can be moved without large quality or supply risk
+- the receiving plants have spare capacity
+- the site’s fixed costs are high relative to output
+- the required savings exceed what labour flexibility can realistically deliver
+
+Typical economics:
+- higher annual fixed-cost elimination
+- but significant one-time cash costs
+- plus some offset from higher logistics and transition cost
+
+Key advantage:
+- closure gives **durable fixed-cost relief**, not just recurring labour concessions.
+
+---
+
+## 5) The key financial test
+For each site, calculate:
+
+### Non-closure net benefit
+**Annual EBITDA improvement**
+minus
+**annualized implementation cost**
+
+### Closure net benefit
+**Annual EBITDA improvement**
+minus
+**annualized transition cost**
+minus
+**any ongoing logistics cost increase**
+
+Then compare:
+
+> **NPV(non-closure)** vs **NPV(closure)** over 5–7 years
+
+Also compare:
+- payback period
+- cash required in years 1–2
+- margin impact by 2030
+- sensitivity to volumes / EV mix / utilization
+
+---
+
+## 6) Practical rule of thumb
+A non-closure deal is economically credible only if it can do most of the following:
+
+- close a large share of the gap on a **durable** basis
+- improve utilization materially
+- reduce fixed cost per unit enough to restore target margins
+- require limited recurring labour concessions
+- avoid a large permanent overcapacity overhang
+
+If the gap is mostly fixed-cost driven, then **capacity reduction usually outperforms pure labour measures**.
+
+That is the central operational point.
+
+---
+
+## 7) What I would ask management to produce
+To make this decision properly, management should present for each site:
+
+1. **Baseline cost per unit**
+2. **Target cost per unit**
+3. **Current utilization**
+4. **Utilization after non-closure measures**
+5. **Utilization after closure / consolidation**
+6. **Annual savings by instrument**
+7. **One-time restructuring cash cost**
+8. **Estimated EBITDA in 2027 / 2030**
+9. **Estimated free cash flow impact**
+10. **Capacity risk at the receiving plants**
+
+Without those, the discussion is political rather than financial.
+
+---
+
+## 8) Bottom line
+My expert assessment is:
+
+- **Non-closure measures can work only if the site-specific savings gap is modest-to-medium and utilisation can be improved materially.**
+- **If the gap is driven by structurally excessive fixed cost and persistent underutilisation, closure or footprint reduction will usually dominate on EBITDA and long-run cash flow.**
+- The decisive question is not abstract principle; it is **whether the recurring savings from non-closure measures exceed the recurring fixed-cost burden left behind.**
+
+If you want, I can next turn this into a **filled-in scenario model with illustrative numbers** for 3–5 plants, showing EBITDA and cash flow under:
+1. non-closure,
+2. partial consolidation,
+3. full closure.

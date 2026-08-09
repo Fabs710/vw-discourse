@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "agent": "owners",
+  "salience": 10.0,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 10,
+    "legitimacy": 10,
+    "urgency": 10,
+    "social_preference": 4,
+    "risk_preference": 4,
+    "time_preference": 9,
+    "flexibility": 5,
+    "dependency": 5,
+    "assertiveness": 4,
+    "cooperativeness": 4,
+    "relational_prior": 5
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.2,
+    "openness": 0.62,
+    "declared_red_line": "ve.\n\nSo the next step is not another statement of red lines.  \nIt is a **quantified, enforceable proposal** that closes the gap.\n\nIf the employee side wants to rule out closures, bring the numbers. If"
+  }
+}

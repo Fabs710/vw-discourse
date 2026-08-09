@@ -1,0 +1,172 @@
+**Independent restructuring finance modeler response**
+
+The technical readout is now sufficient to do a first-pass comparison, but it is still missing the key inputs needed for a full DCF. So I can answer the **questions directed to my domain** in a disciplined way and then outline what would be required to quantify the options properly.
+
+## My core view
+A **deep non-closure package** can be financially credible **if** it delivers:
+
+- enough **recurring savings**
+- enough **capacity reduction**
+- enough **labor-cost relief**
+- and enough **implementation certainty**
+
+In practice, the main question is not “closures or no closures” in the abstract. It is whether the non-closure package can close **most of the structural gap on a recurring basis** after implementation costs.
+
+## Technical threshold
+Based on the expert’s range, I would use the following rule of thumb:
+
+- **Below ~60% of required recurring savings:** generally not durable enough
+- **Around ~70% to 80%:** potentially credible if implementation is fast and execution risk is low
+- **Above ~80%:** usually financially defensible as a stand-alone non-closure path
+
+That is not a legal or political threshold; it is a **financial durability threshold**.
+
+## What makes closures hard to beat financially
+Closures typically produce the cleanest recurring savings because they remove:
+
+- fixed site overhead
+- underutilized capacity
+- maintenance and utilities
+- local support functions
+- some duplicated logistics and administrative cost
+
+But closures also bring significant offsets:
+
+- severance and termination costs
+- decommissioning and remediation
+- transition and logistics disruption
+- possible volume loss elsewhere in the network
+- labor conflict and delay risk
+
+So the closure case is not just “higher savings.” It is **higher gross savings with higher friction and higher upfront cost**.
+
+## Why a non-closure package can still win in NPV terms
+A non-closure package can have a better NPV if:
+
+1. **implementation is faster**
+   - savings begin earlier
+   - payback starts sooner
+
+2. **upfront cash costs are lower**
+   - fewer shutdown and remediation costs
+
+3. **execution risk is lower**
+   - less litigation / industrial disruption / delay
+
+4. **the investment plan is preserved**
+   - better retention of volume, skills, and launch capability
+
+If the no-closure package reduces cash burn earlier and avoids a long implementation lag, it can outperform a closure-heavy plan even if the gross savings are somewhat smaller.
+
+## Main downside risk
+The biggest downside risk for a non-closure package is **under-delivery on recurring savings**.
+
+Typical failure modes:
+
+- promised headcount reductions do not fully materialize
+- productivity gains are slower than expected
+- capacity reductions are too shallow
+- volume remains too fragmented
+- cost reductions are partly one-off rather than structural
+
+If that happens, the company ends up with:
+- some concession fatigue
+- limited savings realization
+- and no structural fix
+
+That is the worst NPV outcome: **costly compromise without durable benefit**.
+
+## Break-even logic
+The no-closure package becomes financially preferable if the present value of:
+
+- recurring labor savings
+- overhead savings
+- capacity rationalization benefits
+- and avoided closure costs
+
+exceeds the present value of:
+
+- severance and transition costs
+- incentive payments
+- retained fixed costs from keeping sites open
+- and any residual underutilization
+
+A simplified break-even test is:
+
+> **NPV of non-closure savings – NPV of non-closure implementation costs**
+> compared with
+> **NPV of closure savings – NPV of closure implementation costs**
+
+The key sensitivities are:
+
+- timing of savings
+- magnitude of recurring savings
+- discount rate
+- volume recovery assumptions
+- duration of labor peace
+- residual capacity utilization
+
+## Sensitivity view
+The non-closure package is most sensitive to:
+
+1. **timing**
+   - if savings are delayed by 12–24 months, NPV falls sharply
+
+2. **permanence**
+   - one-off savings are much less valuable than recurring reductions
+
+3. **utilization**
+   - if remaining plants stay underfilled, fixed costs persist
+
+4. **enforcement**
+   - without hard milestones, planned savings often erode in execution
+
+5. **volume assumptions**
+   - if EV demand or European demand weakens further, the package may be insufficient
+
+## My answer to the expert’s threshold question
+If asked for the **lowest technically credible savings threshold** for a non-closure package to be durable over a multi-year settlement, I would say:
+
+- **roughly 70% of the closure-equivalent recurring savings gap**,  
+- plus a **meaningful capacity reduction**,  
+- plus a **credible implementation mechanism**.
+
+If the package is materially below that, it likely needs either:
+- deeper measures,
+- a stronger productivity assumption,
+- or a fallback mechanism.
+
+## What I would need to do a proper valuation
+To compare options properly, I would need:
+
+- baseline EBIT / operating margin
+- current domestic fixed cost base
+- plant-level capacity and utilization
+- severance and transfer costs
+- expected volume by model / platform
+- timing of workforce changes
+- wage moderation assumptions
+- investment commitments
+- discount rate / WACC
+- implementation timing by year
+
+Without those, I can only give a **directionally sound scenario framework**, not a precise NPV.
+
+## Bottom line
+From a restructuring finance perspective:
+
+- A **deep non-closure package can be credible**
+- It must be **front-loaded, measurable, and structurally durable**
+- It becomes insufficient if it captures **too little of the recurring savings gap**
+- The practical durability threshold is around **70%+ of required structural savings**, with real capacity reduction and low execution slippage
+
+If you want, I can now produce a **compact scenario table** with:
+- **Closure-heavy**
+- **Deep non-closure**
+- **Hybrid / staged**
+and compare them on:
+- NPV
+- recurring savings
+- implementation cost
+- execution risk
+- downside sensitivity

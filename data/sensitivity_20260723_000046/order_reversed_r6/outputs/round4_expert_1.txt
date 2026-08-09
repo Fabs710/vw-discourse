@@ -1,0 +1,176 @@
+Understood. I’m now responding only in my finance/costing capacity.
+
+## What is missing to produce the requested plant-by-plant bridge
+To build a defensible closure vs. non-closure model, I need these inputs for each plant/site and for the group as a whole:
+
+1. **Current baseline economics**
+   - annual output, utilization, and product mix
+   - variable cost per unit
+   - fixed cash operating costs
+   - allocated overheads
+   - current EBIT / ROS by plant or program
+   - remaining useful life / depreciation profile of major assets
+
+2. **Closure scenario data**
+   - one-time closure costs: severance, decommissioning, environmental remediation, contract termination, logistics transfer, asset write-downs
+   - timing of closure and ramp-down
+   - residual savings after closure
+   - relocation / replacement capacity costs at remaining sites
+
+3. **Non-closure scenario data**
+   - headcount reduction path
+   - wage moderation / bonus reduction / working-time changes
+   - voluntary exit assumptions
+   - productivity gains
+   - shift / line consolidation
+   - capex needed to keep the sites competitive
+   - any compensation for employment guarantees
+
+4. **Commercial and financial parameters**
+   - discount rate / WACC
+   - tax rate
+   - analysis horizon
+   - inflation assumptions for labor and energy
+   - capex maintenance vs. growth split
+   - baseline demand forecast by model/region
+
+Without those, any numeric answer is necessarily provisional.
+
+---
+
+## Provisional model structure
+The cleanest way to compare the options is with a **scenario cash-flow model** at plant level and then consolidated:
+
+### A. Closure scenario
+For each plant:
+- **Year 0–1 one-off closure cash costs**
+  - severance
+  - decommissioning
+  - remediation
+  - transfer costs
+  - write-downs
+- **Annual avoided cash costs**
+  - fixed payroll
+  - site overhead
+  - utilities and maintenance
+  - plant-level SG&A if directly attributable
+- **Annual substitution costs**
+  - extra cost at receiving plants
+  - logistics
+  - temporary inefficiency / re-ramp cost
+
+### B. Non-closure scenario
+For each plant:
+- **Annual savings**
+  - headcount reduction
+  - wage concessions
+  - shift reduction / capacity rationalization
+  - productivity improvements
+  - overhead simplification
+- **Annual costs**
+  - guarantee costs / retention costs
+  - retraining
+  - local capex
+  - transition friction
+- **Residual underperformance**
+  - if utilization remains too low, fixed cost absorption stays weak
+
+### C. Comparison metrics
+- **Incremental EBIT**
+- **Annual recurring savings**
+- **Payback period**
+- **NPV**
+- **ROS impact**
+- **Break-even savings threshold**
+- **Execution risk haircut** on expected savings
+
+---
+
+## How to define “economic equivalence”
+A non-closure package is economically equivalent to closure only if, on a **risk-adjusted NPV basis**, it delivers at least the same value as the closure alternative after accounting for:
+- one-off costs
+- timing delays
+- underdelivery risk
+- any extra capex or operating subsidies required to keep sites open
+
+A practical test:
+
+\[
+NPV_{nonclosure} \ge NPV_{closure}
+\]
+
+Where each scenario includes all incremental cash flows versus the current baseline.
+
+If you want a stricter board test, use:
+- **higher NPV**
+- **shorter payback**
+- **equal or better ROS**
+- **lower execution risk**
+
+---
+
+## Provisional threshold logic
+Because no hard data were provided, the most defensible way to frame the threshold is:
+
+### Minimum recurring annual savings required for a no-closure package
+\[
+Annual\ Savings\ Threshold \approx \frac{Closure\ One\text{-}Time\ Costs - Avoided\ Transition\ Costs}{Present\ Value\ Factor} + Risk\ Premium
+\]
+
+In plain terms:
+- if closure creates large one-time costs,
+- a non-closure package can still win if it generates enough recurring savings fast enough,
+- but it must also overcome:
+  - slower realization,
+  - weaker durability,
+  - and any extra investment needed to keep plants viable.
+
+A useful rule of thumb in restructuring cases:
+- if the non-closure option delivers **less than about 70–80% of closure savings** on a durable cash basis, it usually needs compensating advantages such as much lower one-off costs, faster implementation, or materially lower execution risk.
+- if it delivers **90%+ of closure savings** with lower one-offs and better execution, it is often superior financially.
+
+That is only a heuristic, not a conclusion for this case.
+
+---
+
+## What the plant-by-plant table should look like
+I would structure it like this:
+
+| Plant | Current annual cash cost | Current utilization | Closure one-off cost | Closure annual savings | Non-closure annual savings | Non-closure capex / transition cost | NPV closure | NPV non-closure | Payback closure | Payback non-closure | ROS impact |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+
+And then a summary row:
+- **Total group closure NPV**
+- **Total group non-closure NPV**
+- **Gap to target ROS**
+- **Minimum additional annual savings needed**
+
+---
+
+## Key financial uncertainty points
+The biggest sensitivity drivers will likely be:
+1. **Severance magnitude**
+2. **Speed of labor-cost realization**
+3. **Whether savings are permanent or temporary**
+4. **Utilization after capacity reduction**
+5. **Incremental capex needed to retain sites**
+6. **Implementation delay from negotiation / strike risk**
+7. **Demand forecast for the next 3–5 years**
+
+In many restructuring cases, the decision flips depending on:
+- discount rate
+- how many years the savings are expected to last
+- whether the non-closure package requires ongoing concessions that expire
+- whether closure causes hidden network/logistics costs
+
+---
+
+## Bottom line
+At present, I cannot honestly give a numeric “minimum savings threshold” without the plant-level cost data.
+
+What I can say is:
+- the correct comparison is **incremental cash flow and NPV**, not headline job counts;
+- a non-closure package must be judged against closure **after** closure costs, relocation costs, and execution risk are included;
+- the decision hinges on whether non-closure savings are **durable, fast, and large enough** to close the gap in ROS and cash cost.
+
+If you want, I can next give you a **ready-to-fill plant-by-plant spreadsheet template** and a **sample NPV formula set** so the parties can plug in their numbers immediately.

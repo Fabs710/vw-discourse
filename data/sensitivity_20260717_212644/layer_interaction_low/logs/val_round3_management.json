@@ -1,0 +1,25 @@
+{
+  "round": 3,
+  "agent": "management",
+  "salience": 7.67,
+  "conflict_mode": "avoiding",
+  "params": {
+    "power": 8,
+    "legitimacy": 7,
+    "urgency": 8,
+    "social_preference": 3,
+    "risk_preference": 6,
+    "time_preference": 7,
+    "flexibility": 5,
+    "dependency": 6,
+    "assertiveness": 1,
+    "cooperativeness": 1,
+    "relational_prior": 4
+  },
+  "state": {
+    "trust": 0.5,
+    "frustration": 0.15,
+    "openness": 0.5,
+    "declared_red_line": "] My position stands; this is unacceptable to me. cannot concede."
+  }
+}

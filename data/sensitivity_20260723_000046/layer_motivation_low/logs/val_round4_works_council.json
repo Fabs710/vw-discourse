@@ -1,0 +1,25 @@
+{
+  "round": 4,
+  "agent": "works_council",
+  "salience": 9.0,
+  "conflict_mode": "competing",
+  "params": {
+    "power": 9,
+    "legitimacy": 9,
+    "urgency": 9,
+    "social_preference": 1,
+    "risk_preference": 1,
+    "time_preference": 1,
+    "flexibility": 3,
+    "dependency": 6,
+    "assertiveness": 8,
+    "cooperativeness": 4,
+    "relational_prior": 3
+  },
+  "state": {
+    "trust": 0.47,
+    "frustration": 0.45,
+    "openness": 0.58,
+    "declared_red_line": "or evidence.** But let me be equally clear: **our red lines have not moved.** No German plant closures. No compulsory redundancies. No dismantling of the job-security framework. No stripping co-determ"
+  }
+}

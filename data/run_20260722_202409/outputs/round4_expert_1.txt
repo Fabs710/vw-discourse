@@ -1,0 +1,55 @@
+From a **pension / restructuring mechanics** standpoint, the immediate issue is the **economic equivalence** of the retiree trust package versus the unsecured bondholder package.
+
+## Core valuation point
+A package for the retiree trust that includes:
+- a **haircut**,
+- plus **equity**,
+- plus **warrants**,
+- plus any **contingent value right**,
+- and especially any **recovery floor**,
+
+will usually have a **higher present value** and **lower downside risk** than a package made up only of equity/warrants.
+
+So the valuation question is not whether the trust can receive a different instrument mix. It can. The question is whether the **present value, expected value, and risk profile** are roughly equal to what similarly situated unsecured bondholders receive.
+
+## On the “floor” issue
+A **floor** matters a lot. Even if labeled contingent, it behaves economically like **credit support** if it is:
+- funded,
+- near-term,
+- contractually enforceable,
+- or otherwise likely to pay.
+
+That means a trust floor can create a **de facto preference** unless bondholders receive an **offsetting increase in value**.
+
+## Practical restructuring implication
+If the parties want a settlement that is more defensible on parity grounds, the cleaner structure is:
+
+- **Trust:** material impairment, primarily equity/warrants/CVRs, no meaningful floor
+- **Bondholders:** material impairment, similar upside instruments, with total PV calibrated to match unsecured-parity economics
+- **No class receives a hidden seniority advantage**
+
+If the trust does get a floor, then one of two things must be true:
+1. bondholders get **more equity / more warrants / more enterprise value**, or  
+2. the floor is so small and remote that its PV is **de minimis**.
+
+Otherwise, the trust is likely receiving a **better economic recovery** than the bondholders.
+
+## On public co-funding and governance
+From a capital-structure perspective, neighboring governments can justifiably ask for:
+- **equity**
+- **board/governance rights**
+- or another instrument with measurable economic value
+
+in exchange for funding.
+
+But tying public money to **binding plant commitments** can become expensive very quickly if it reduces the company’s ability to rationalize excess capacity. The key is to link commitments only to **plants that pass a viability test**; otherwise the public contribution is effectively subsidizing overcapacity.
+
+## Bottom line
+- A **trust floor** is economically meaningful and often creates a preference unless offset.
+- **Equity/warrants alone** are much easier to calibrate for parity.
+- Any final term sheet should be tested on **present value**, not headline haircut percentages.
+- Public funding should be matched with **measurable governance value**, but not with a veto over uneconomic closures.
+
+If you want, I can next build a simple **PV comparison framework** for:
+1. trust with floor + equity/warrants, and  
+2. bondholders with equity/warrants only.
