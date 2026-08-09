@@ -36,9 +36,13 @@ run.py                       entry point
 run_sensitivity.py           sensitivity analysis + order-robustness harness
 ```
 
-## Privacy
-Keep this repository **private until after grading** (per supervisor). Secrets live in
-`.env` (gitignored); copy `.env.example` to `.env` and fill in your keys.
+## Availability and secrets
+This repository is the public reproducibility record for the thesis: the frozen run
+data under `data/` (the 141 controlled runs, the validation runs and the rating audits)
+is part of that record. Secrets live in `.env` (gitignored); copy `.env.example` to
+`.env` and fill in your own keys to run the engine. The copyrighted validation-case
+source document (the YPFS study of the GM rescue) is not redistributed here — the
+thesis appendix gives its link and DOI.
 
 ## Run
 ```
