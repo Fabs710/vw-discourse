@@ -252,7 +252,7 @@ def fig_pipeline():
 # -------------------------------------------------------- B2 programme map
 def fig_programme():
     fig,ax=plt.subplots(figsize=(11.0,5.8)); ax.set_xlim(0,11.0); ax.set_ylim(0,6.35); ax.axis("off")
-    ax.text(5.5,6.14,"The experimental programme: conditions, repetitions and run counts",
+    ax.text(5.5,6.14,"The experimental program: conditions, repetitions and run counts",
             ha="center",fontsize=12,fontweight="bold")
     ax.text(8.06,5.84,"reps",ha="center",fontsize=7.6,color=GREY,fontweight="bold")
     ax.text(8.92,5.84,"runs",ha="center",fontsize=7.6,color=GREY,fontweight="bold")
@@ -286,8 +286,8 @@ def fig_programme():
     for y in ys: arrow(ax,(2.92,y+h/2),(3.30,y+h/2),color=BLUE)
     arrow(ax,(2.60,yv+h/2),(3.30,yv+h/2),color=ORANGE)
     ax.plot([8.42,8.42],[yv-0.05,ys[0]+h+0.05],color=LGREY,lw=0.8,zorder=0)
-    ax.text(0.15,0.30,"121 runs analysed: 35 on the layer screen (baseline + poles + order), 83 across the drill-down and its "
-        "confirmatory top-up, 3 on the round-cap check;\n3 on the validation case, with 9 cross-model runs executing. "
+    ax.text(0.15,0.30,"144 runs carry the reported results: the 129-run main batch (35 screen-era; 54 drill-down; 40 confirmatory and baseline/order top-ups),\n"
+        "the 3-run round-cap check, the 9-run cross-model replication, and the 3 validation runs. "
         "Every condition changes exactly one thing against the baseline - speaking order, round cap,\nseed and model "
         "snapshot are held constant throughout, and the round-cap runs sit in their own batch so they can never pool.",
         fontsize=7.0,color=GREY,va="center")
