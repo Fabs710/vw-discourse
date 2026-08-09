@@ -1,8 +1,8 @@
 """
 make_fig_architecture.py - Figure "System architecture of one deliberation run".
 
-Replaces the hand-drawn 11a PNG with a scripted diagram in the corpus style.
-Colour legend matches the thesis caption exactly:
+Clean rebuild (v3): numbered stages, strictly orthogonal arrows, no element
+overlaps or crossings. Colour legend matches the thesis caption exactly:
   green  = configuration and control components
   blue   = model-facing prompts and outputs
   orange = shared information (the central scenario and the growing transcript)
@@ -14,7 +14,7 @@ import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Rectangle
+from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Rectangle, Circle
 
 OUT = os.path.join("..", "Current Draft and Structure", "Figures")
 os.makedirs(OUT, exist_ok=True)
@@ -22,82 +22,103 @@ GREEN="#009E73"; BLUE="#0072B2"; ORANGE="#E69F00"; GREY="#4D4D4D"; PURPLE="#CC79
 plt.rcParams.update({"font.family":"DejaVu Sans","font.size":9,
     "figure.dpi":300,"savefig.dpi":300,"savefig.bbox":"tight"})
 
-fig, ax = plt.subplots(figsize=(11.6, 6.4))
-ax.set_xlim(0, 11.6); ax.set_ylim(0, 6.4); ax.axis("off")
+fig, ax = plt.subplots(figsize=(12.4, 7.0))
+ax.set_xlim(0, 12.4); ax.set_ylim(0, 7.0); ax.axis("off")
 
-def box(x, y, w, h, text, color, fs=8.2, bold=False, dashed=False):
-    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.055",
-        facecolor=color + "1A", edgecolor=color, linewidth=1.3,
-        linestyle=(0, (4, 2)) if dashed else "solid", zorder=2))
+def fit(w, text, fs):
+    """Warn when the longest line would not fit the box width."""
+    longest = max(len(l) for l in text.split("\n"))
+    need = longest * 0.0102 * fs
+    if need > w - 0.14:
+        print(f"  [fit warning] '{text.splitlines()[0][:30]}...' needs {need:.2f} > {w-0.14:.2f}")
+
+def box(x, y, w, h, text, color, fs=7.2, num=None):
+    fit(w, text, fs)
+    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.045",
+        facecolor=color + "1A", edgecolor=color, linewidth=1.3, zorder=2))
     ax.text(x + w/2, y + h/2, text, ha="center", va="center", fontsize=fs,
-            color="#222222", fontweight="bold" if bold else "normal",
-            linespacing=1.25, zorder=3)
+            color="#222222", linespacing=1.3, zorder=3)
+    if num is not None:
+        ax.add_patch(Circle((x + 0.16, y + h - 0.02), 0.125, facecolor="white",
+                            edgecolor=color, linewidth=1.2, zorder=4))
+        ax.text(x + 0.16, y + h - 0.02, str(num), ha="center", va="center",
+                fontsize=7.6, color=color, fontweight="bold", zorder=5)
 
-def arrow(a, b, color=GREY, lw=1.4, dashed=False, rad=0.0):
-    ax.add_patch(FancyArrowPatch(a, b, arrowstyle="-|>", mutation_scale=13,
+def arr(a, b, color=GREY, dashed=False, lw=1.4):
+    ax.add_patch(FancyArrowPatch(a, b, arrowstyle="-|>", mutation_scale=12,
         color=color, lw=lw, linestyle=(0, (4, 2)) if dashed else "solid",
-        connectionstyle=f"arc3,rad={rad}", zorder=4, shrinkA=2, shrinkB=2))
+        zorder=4, shrinkA=1, shrinkB=1))
 
-ax.text(5.8, 6.22, "System architecture of one deliberation run",
+def elbow(points, color=GREY, lw=1.4):
+    """Polyline through points, arrow head on the last segment only."""
+    xs = [p[0] for p in points[:-1]]; ys = [p[1] for p in points[:-1]]
+    ax.plot(xs, ys, color=color, lw=lw, solid_capstyle="round", zorder=1)
+    arr(points[-2], points[-1], color=color, lw=lw)
+
+ax.text(6.2, 6.76, "System architecture of one deliberation run",
         ha="center", fontsize=12.5, fontweight="bold")
 
 # ---- left column: configuration and control (green)
-box(0.25, 4.85, 2.05, 0.80, "configuration\n11 parameters × 6 stakeholders\n(seed, pinned snapshot)", GREEN, 7.6)
-box(0.25, 3.75, 2.05, 0.70, "prompt builder\nslider → banded descriptor\n+ calibration sentence", GREEN, 7.6)
-box(0.25, 2.65, 2.05, 0.70, "salience ordering\npower · legitimacy · urgency\nsets who speaks first", GREEN, 7.6)
-arrow((1.27, 4.85), (1.27, 4.45))
-arrow((1.27, 3.75), (1.27, 3.35))
+box(0.30, 5.45, 2.30, 0.95, "configuration\n11 parameters × 6 stakeholders\nseed, pinned model snapshot", GREEN, 7.0, num=1)
+box(0.30, 4.15, 2.30, 0.95, "prompt builder\nslider → banded descriptor\n+ calibration sentence", GREEN, 7.2, num=2)
+box(0.30, 2.85, 2.30, 0.95, "salience ordering\npower · legitimacy · urgency\nsets the speaking order", GREEN, 7.2)
+arr((1.45, 5.45), (1.45, 5.13))
+arr((1.45, 4.15), (1.45, 3.83))
+arr((2.60, 4.62), (3.38, 4.68))                      # builder -> agent briefs
+arr((2.60, 3.32), (3.09, 3.32))                      # ordering -> loop frame
+ax.text(2.78, 3.08, "turn order", fontsize=6.0, color=GREY, ha="center")
 
-# ---- shared information (orange)
-box(2.75, 5.05, 2.30, 0.62, "SCENARIO (central case file)\nidentical for every agent", ORANGE, 7.8, bold=False)
-box(3.05, 0.62, 2.30, 0.62, "SHARED TRANSCRIPT\ngrows turn by turn", ORANGE, 7.8)
-
-# ---- roundtable loop (frame)
-ax.add_patch(Rectangle((2.60, 1.45), 5.45, 3.30, facecolor="none",
+# ---- roundtable loop frame
+ax.add_patch(Rectangle((3.10, 1.35), 5.45, 4.95, facecolor="none",
              edgecolor=GREY, linewidth=1.1, zorder=1))
-ax.text(2.72, 4.58, "ROUNDTABLE LOOP  (up to 4 rounds)", fontsize=8.0,
-        color=GREY, fontweight="bold")
+ax.text(3.10, 6.40, "ROUNDTABLE LOOP (max 4 rounds)", fontsize=7.4,
+        color=GREY, fontweight="bold")   # sits ABOVE the frame - cannot touch any box
 
-# agents / turns (blue)
-box(2.85, 3.30, 2.05, 1.05, "agent briefs\n6 stakeholder system prompts\n(case-neutral personas)", BLUE, 7.6)
-box(5.25, 3.30, 2.60, 1.05, "stakeholder turn\nscenario + transcript window\n+ re-grounding reminder", BLUE, 7.6)
-box(5.25, 2.48, 2.60, 0.62, "expert summons (max 2 per run)\npersona generated on the fly", BLUE, 7.3)
-box(2.85, 1.65, 2.05, 0.68, "moderator summary\nneutral, per round", BLUE, 7.4)
-box(5.25, 1.65, 2.60, 0.68, "convergence monitor\ncontinue | intervene | synthesize", GREEN, 7.4)
+# shared information (orange)
+box(6.10, 5.55, 2.35, 0.55, "SCENARIO - central case file\nidentical for every agent", ORANGE, 6.8)
+box(4.60, 0.42, 2.50, 0.60, "SHARED TRANSCRIPT\ngrows turn by turn", ORANGE, 7.2)
+ax.add_patch(FancyArrowPatch((5.85, 1.02), (5.85, 1.35), arrowstyle="<|-|>",
+    mutation_scale=11, color=ORANGE, lw=1.4, zorder=4))
+ax.text(6.00, 1.13, "read + append, every turn", fontsize=6.2, color=ORANGE, ha="left")
 
-arrow((2.30, 4.10), (2.85, 3.95))                      # prompt builder -> briefs
-arrow((2.30, 3.00), (2.62, 3.00))                      # ordering -> loop
-arrow((3.90, 5.05), (5.90, 4.35), rad=-0.15, color=ORANGE)   # scenario -> turn
-arrow((4.90, 3.82), (5.25, 3.82))                      # briefs -> turn
-arrow((6.55, 3.30), (6.55, 3.10))                      # turn -> expert
-arrow((5.32, 3.30), (5.12, 1.28), rad=0.10, color=ORANGE)    # contributions -> transcript
-ax.text(4.99, 2.40, "contributions", fontsize=6.5, color=ORANGE, rotation=82, ha="center")
-arrow((3.60, 1.65), (3.60, 1.24), color=ORANGE)        # moderator summary -> transcript
-arrow((5.25, 3.38), (3.95, 2.33), rad=0.20)            # round end -> moderator
-arrow((3.90, 1.99), (5.25, 1.99))                      # moderator -> monitor
-arrow((7.88, 2.10), (7.88, 3.55), rad=-0.16)           # monitor 'continue' -> next turn
-ax.text(7.74, 2.85, "continue", fontsize=6.4, color=GREY, rotation=90, va="center", ha="center")
+# loop stages
+box(3.40, 4.20, 2.15, 1.00, "agent briefs\n6 system prompts\n(case-neutral personas)", BLUE, 7.0, num=3)
+box(6.10, 4.20, 2.35, 1.00, "stakeholder turn\nscenario + transcript window\n+ re-grounding reminder", BLUE, 6.8, num=4)
+box(6.10, 3.50, 2.35, 0.48, "optional expert summons\n≤ 2 per run, on-the-fly persona", BLUE, 6.4)
+box(6.10, 2.58, 2.35, 0.72, "moderator summary\nneutral, per round", BLUE, 7.2, num=5)
+box(6.10, 1.55, 2.35, 0.80, "convergence monitor\ncontinue | intervene | synthesize", GREEN, 6.7, num=6)
+arr((7.275, 5.55), (7.275, 5.22), color=ORANGE)        # scenario -> turn
+arr((5.55, 4.70), (6.08, 4.70))                      # briefs -> turn
+arr((7.275, 4.20), (7.275, 4.00))                      # turn -> summons
+arr((7.275, 3.50), (7.275, 3.32))                      # summons -> moderator
+arr((7.275, 2.58), (7.275, 2.37))                      # moderator -> monitor
+elbow([(6.10, 1.95), (3.75, 1.95), (3.75, 4.18)])    # monitor 'continue' -> next round
+ax.text(3.62, 3.00, "continue: next round", fontsize=6.2, color=GREY,
+        rotation=90, va="center", ha="center")
 
-# ---- synthesis + artifacts
-box(8.45, 3.55, 2.85, 0.90, "SYNTHESIS\nten-section decision document\n(salience-weighted)", BLUE, 7.8)
-box(8.45, 2.20, 2.85, 0.95, "frozen run artifacts\nbriefs · transcript · synthesis\nrun summary (tokens, cost, calls)", GREEN, 7.4)
-arrow((7.85, 1.85), (8.45, 3.85), rad=-0.28)           # monitor 'synthesize' -> synthesis
-ax.text(8.32, 2.55, "synthesize", fontsize=6.4, color=GREY, style="italic", rotation=64)
-arrow((9.87, 3.55), (9.87, 3.15))                      # synthesis -> artifacts
-
-# ---- evaluation (dashed, post-hoc)
-box(8.45, 0.55, 2.85, 1.20, "EVALUATION (post hoc)\ntwo-judge DQI jury · outcome family\nfloor metrics - reads frozen files only,\nnever touches the simulation", PURPLE, 7.3, dashed=True)
-arrow((9.87, 2.20), (9.87, 1.75), dashed=True, color=PURPLE)
+# ---- right column: synthesis, artifacts, evaluation
+box(9.05, 4.90, 3.05, 1.00, "SYNTHESIS\nten-section decision document\n(salience-weighted)", BLUE, 7.2, num=7)
+box(9.05, 3.20, 3.05, 1.00, "frozen run artifacts\nbriefs · transcript · synthesis\nrun summary: tokens, cost, calls", GREEN, 6.9)
+ax.add_patch(FancyBboxPatch((9.05, 1.30), 3.05, 1.40, boxstyle="round,pad=0.045",
+    facecolor=PURPLE + "14", edgecolor=PURPLE, linewidth=1.3,
+    linestyle=(0, (4, 2)), zorder=2))
+ax.text(10.575, 2.00, "EVALUATION - post hoc\ntwo-judge DQI jury · outcome family\nfloor metrics; reads the frozen\nfiles only, never the simulation",
+        ha="center", va="center", fontsize=6.9, linespacing=1.3, zorder=3)
+elbow([(8.45, 1.95), (8.80, 1.95), (8.80, 5.40), (9.03, 5.40)])   # monitor -> synthesis
+ax.text(8.68, 3.65, "synthesize", fontsize=6.2, color=GREY,
+        rotation=90, va="center", ha="center")
+arr((10.575, 4.90), (10.575, 4.22))                  # synthesis -> artifacts
+arr((10.575, 3.20), (10.575, 2.72), color=PURPLE, dashed=True)
 
 # ---- legend
-ax.add_patch(Rectangle((0.25, 0.30), 0.28, 0.18, facecolor=GREEN+"1A", edgecolor=GREEN))
-ax.text(0.60, 0.39, "configuration / control", fontsize=7.4, va="center")
-ax.add_patch(Rectangle((2.30, 0.30), 0.28, 0.18, facecolor=BLUE+"1A", edgecolor=BLUE))
-ax.text(2.65, 0.39, "model-facing prompts / outputs", fontsize=7.4, va="center")
-ax.add_patch(Rectangle((4.95, 0.30), 0.28, 0.18, facecolor=ORANGE+"1A", edgecolor=ORANGE))
-ax.text(5.30, 0.39, "shared information", fontsize=7.4, va="center")
-ax.add_patch(Rectangle((6.75, 0.30), 0.28, 0.18, facecolor=PURPLE+"1A", edgecolor=PURPLE, linestyle=(0,(4,2))))
-ax.text(7.10, 0.39, "post-hoc evaluation (separate)", fontsize=7.4, va="center")
+def swatch(x, color, label, dashed=False):
+    ax.add_patch(Rectangle((x, 0.05), 0.28, 0.17, facecolor=color + "1A",
+        edgecolor=color, linestyle=(0, (4, 2)) if dashed else "solid"))
+    ax.text(x + 0.36, 0.135, label, fontsize=7.3, va="center")
+swatch(0.30, GREEN, "configuration / control")
+swatch(2.55, BLUE, "model-facing prompts / outputs")
+swatch(5.45, ORANGE, "shared information")
+swatch(7.60, PURPLE, "post-hoc evaluation (separate)", dashed=True)
 
 fig.savefig(os.path.join(OUT, "Fig 6.5 - System Architecture.png"), facecolor="white")
 print("  wrote Fig 6.5 - System Architecture.png")

@@ -217,13 +217,13 @@ def fig_pipeline():
     box(ax,0.15,4.28,1.42,0.92,"frozen run\nartifacts",SKY+"30",SKY,7.8)
     box(ax,1.92,4.72,2.30,0.60,"QUALITY family\nDQI per contribution",BLUE+"20",BLUE,7.3,True)
     box(ax,1.92,3.98,2.30,0.60,"OUTCOME family\nagreement - movement - terms",ORANGE+"20",ORANGE,7.0,True)
-    box(ax,1.92,3.24,2.30,0.60,"PARTICIPATION\nfloor metrics (not judged)",GREEN+"20",GREEN,7.2,True)
-    box(ax,4.52,5.02,1.78,0.50,"judge A - OpenAI family",BLUE+"14",BLUE,7.3)
-    box(ax,4.52,4.42,1.78,0.50,"judge B - Anthropic family",BLUE+"14",BLUE,7.3)
+    box(ax,1.92,3.18,2.30,0.66,"PARTICIPATION\nfloor metrics (not judged)\ndescriptive only - not screened",GREEN+"20",GREEN,6.9,True)
+    box(ax,4.52,5.02,1.78,0.50,"judge A - OpenAI",BLUE+"14",BLUE,7.3)
+    box(ax,4.52,4.42,1.78,0.50,"judge B - Anthropic",BLUE+"14",BLUE,7.3)
     box(ax,6.45,4.72,1.42,0.60,"jury mean\nper dimension",BLUE+"20",BLUE,7.5)
     box(ax,6.45,3.98,1.42,0.60,"per-run\noutcome values",ORANGE+"20",ORANGE,7.5)
     box(ax,8.22,4.30,1.62,0.94,"condition aggregate\nover R repetitions\n(mean, SD, n)","#F2F2F2",GREY,7.5,True)
-    box(ax,7.05,2.62,3.95,0.74,"DOUBLE SCREENING FILTER\n(1) outside the order-noise band  AND  (2) beyond twice the baseline SD",
+    box(ax,7.05,2.52,3.95,0.84,"DOUBLE SCREENING FILTER\n(1) outside the order-noise band\nAND (2) beyond twice the baseline SD",
         VERM+"16",VERM,7.3,True)
     box(ax,7.05,1.62,3.95,0.62,"reported effect:   robust  |  suggestive  |  null",VERM+"26",VERM,8.2,True)
     arrow(ax,(1.57,4.74),(1.92,5.02)); arrow(ax,(1.57,4.74),(1.92,4.28)); arrow(ax,(1.57,4.74),(1.92,3.54))
@@ -231,20 +231,19 @@ def fig_pipeline():
     arrow(ax,(6.30,5.27),(6.45,5.14)); arrow(ax,(6.30,4.67),(6.45,4.90))
     arrow(ax,(4.22,4.28),(6.45,4.28))
     arrow(ax,(7.87,5.02),(8.22,4.95)); arrow(ax,(7.87,4.28),(8.22,4.60))
-    arrow(ax,(9.03,4.30),(9.03,3.36)); arrow(ax,(9.03,2.62),(9.03,2.24))
-    ax.text(1.95,3.06,"reported descriptively; never enters the screening filter",fontsize=6.8,color=GREEN,
-            style="italic",va="center",ha="left")
+    arrow(ax,(9.03,4.30),(9.03,3.38)); arrow(ax,(9.03,2.52),(9.03,2.24))
     # instrument-validation strip
     ax.add_patch(Rectangle((0.15,0.42),6.30,1.42,facecolor=PURPLE,alpha=0.06,
                            edgecolor=PURPLE,linewidth=1.0,linestyle=(0,(4,2)),zorder=0))
-    ax.text(0.32,1.58,"INSTRUMENT VALIDATION - completed before any behavioural claim rests on the numbers",
+    ax.text(0.32,1.60,"INSTRUMENT VALIDATION - completed before any behavioral claim",
             fontsize=7.4,color=PURPLE,fontweight="bold")
     box(ax,0.32,0.62,1.88,0.82,"brief legibility\n54 briefs,\nback-translation",PURPLE+"18",PURPLE,7.1)
     box(ax,2.36,0.62,1.88,0.82,"human anchor\n28 contributions,\nblind; v1 -> v2 repair",PURPLE+"18",PURPLE,7.1)
     box(ax,4.40,0.62,1.88,0.82,"judge-bias checks\nverbosity, self-preference\n(576 / 840 records)",PURPLE+"18",PURPLE,7.1)
-    arrow(ax,(1.26,1.44),(1.26,4.28),ls=(0,(4,2)),color=PURPLE,lw=1.0,rad=0.0)
-    arrow(ax,(3.30,1.44),(4.90,4.42),ls=(0,(4,2)),color=PURPLE,lw=1.0,rad=-0.16)
-    arrow(ax,(5.34,1.44),(5.34,4.42),ls=(0,(4,2)),color=PURPLE,lw=1.0,rad=-0.10)
+    # dashed arrows start at the STRIP EDGE, so they never cross the strip title
+    arrow(ax,(1.26,1.86),(1.26,4.26),ls=(0,(4,2)),color=PURPLE,lw=1.0,rad=0.0)
+    arrow(ax,(3.30,1.86),(4.90,4.40),ls=(0,(4,2)),color=PURPLE,lw=1.0,rad=-0.16)
+    arrow(ax,(5.34,1.86),(5.34,4.40),ls=(0,(4,2)),color=PURPLE,lw=1.0,rad=-0.10)
     ax.text(0.15,0.18,"Evaluation runs only on frozen artifacts - it never touches the simulation.",
             fontsize=7.2,color=GREY,style="italic")
     save(fig,"Fig 8.1 - Evaluation Pipeline.png")

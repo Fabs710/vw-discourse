@@ -39,17 +39,21 @@ for i,(k,s) in enumerate(zip(ORDER, share)):
     col = VERM if s >= 50 else LGREY
     ax.barh(i, s, color=col, height=0.6)
     ax.barh(i, 100-s, left=s, color=SKY if s>=50 else "#E8EDF1", height=0.6)
-    ax.text(s+1.5 if s<80 else s-1.5, i, "%.0f%%" % s, va="center",
-            ha="left" if s<80 else "right", fontsize=8.4,
-            color="white" if s>=80 else GREY, fontweight="bold")
+    if s >= 25:   # label centred INSIDE the filled segment, white - never on top of the boundary
+        ax.text(s/2, i, "%.0f%%" % s, va="center", ha="center", fontsize=8.4,
+                color="white", fontweight="bold")
+    else:         # tiny share: label just outside the filled part, on the pale remainder
+        ax.text(s+1.5, i, "%.0f%%" % s, va="center", ha="left", fontsize=8.4,
+                color=GREY, fontweight="bold")
 ax.set_yticks(list(ys)); ax.set_yticklabels([LBL[k] for k in ORDER], fontsize=8.6)
-ax.set_xlim(0,100); ax.set_ylim(-0.6, len(ORDER)-0.15); ax.set_xlabel("share of within-condition variance (%)", fontsize=8.6)
+ax.set_xlim(0,100); ax.set_ylim(-0.6, len(ORDER)+0.45); ax.set_xlabel("share of within-condition variance (%)", fontsize=8.6)
 ax.set_title("Two-thirds of the variance on the measures that\ncarry the findings is the scorer, not the simulation",
              fontsize=9.8, fontweight="bold", loc="left")
 ax.axvline(50, color=GREY, lw=0.8, ls=(0,(4,2)))
 for s in ("top","right"): ax.spines[s].set_visible(False)
-ax.text(2, len(ORDER)-0.72, "JUDGING", fontsize=7.6, color=VERM, fontweight="bold")
-ax.text(72, len(ORDER)-0.72, "GENERATION", fontsize=7.6, color=BLUE, fontweight="bold")
+# column headers ABOVE the top bar, clear of every element
+ax.text(1, len(ORDER)-0.05, "JUDGING", fontsize=7.6, color=VERM, fontweight="bold")
+ax.text(99, len(ORDER)-0.05, "GENERATION", fontsize=7.6, color=BLUE, fontweight="bold", ha="right")
 for k,note in CARRIES.items():
     i = ORDER.index(k)
     ax.text(101, i, note, fontsize=6.9, color=GREY, va="center", ha="left")
@@ -65,8 +69,8 @@ for k,t in zip(ks,tot):
     ax.annotate("%.4f" % t, (k,t), textcoords="offset points", xytext=(0,9),
                 ha="center", fontsize=8, color=GREY)
 ax.axhline(math.sqrt(gen2), color=BLUE, lw=1.4, ls=(0,(4,2)))
-ax.text(4.05, math.sqrt(gen2), " floor: generation\n only (%.4f)" % math.sqrt(gen2),
-        fontsize=7.4, color=BLUE, va="center")
+ax.text(5.30, math.sqrt(gen2) + 0.0006, "floor: generation only (%.4f)" % math.sqrt(gen2),
+        fontsize=7.4, color=BLUE, va="bottom", ha="right")
 ax.set_xticks(ks); ax.set_xlabel("independent scoring passes, averaged", fontsize=8.6)
 ax.set_ylabel("total within-condition SD, respect", fontsize=8.6)
 ax.set_title("A second pass costs no generation\nand removes 18% of the noise",
